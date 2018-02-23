@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<window>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<!--<onload condition="Window.Previous(startup)">PlayMedia(special://skin/skinextras/intromovie.mp4)</onload>-->
+	<onload>RunScript(script.skinshortcuts,type=buildxml&amp;mainmenuID=9000&amp;group=x1|x2|x3|x4|x5|x6|x7|x8|x9|x10|x11|x12|x13|x101|x202|x303|x404|x50​5|x606)</onload>
+	<onload>Skin.Reset(WidgetEditor)</onload>
+	<onload>Skin.Reset(WE-Widget1)</onload>
+	<onload>Skin.Reset(WE-Widget2)</onload>
+	<onload>Skin.Reset(WE-Art1)</onload>
+	<onload>Skin.Reset(WE-Art2)</onload>
+	<onload>Skin.Reset(WE-Style1)</onload>
+	<onload>Skin.Reset(WE-Style2)</onload>
+	<onload condition="IsEmpty(Skin.String(PicturesHomeItem.WidgetStyle))">Skin.SetString(PicturesHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(MusicHomeItem.WidgetStyle))">Skin.SetString(MusicHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(MovieHomeItem.WidgetStyle))">Skin.SetString(MovieHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(TVShowHomeItem.WidgetStyle))">Skin.SetString(TVShowHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(LiveTVHomeItem.WidgetStyle))">Skin.SetString(LiveTVHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(VideosHomeItem.WidgetStyle))">Skin.SetString(VideosHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(ProgramsHomeItem.WidgetStyle))">Skin.SetString(ProgramsHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(SettingsHomeItem.WidgetStyle))">Skin.SetString(SettingsHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(ShutdownHomeItem.WidgetStyle))">Skin.SetString(ShutdownHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(FavouritesHomeItem.WidgetStyle))">Skin.SetString(FavouritesHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(WeatherHomeItem.WidgetStyle))">Skin.SetString(WeatherHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(MusicVideoHomeItem.WidgetStyle))">Skin.SetString(MusicVideoHomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom1HomeItem.WidgetStyle))">Skin.SetString(Custom1HomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom2HomeItem.WidgetStyle))">Skin.SetString(Custom2HomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom3HomeItem.WidgetStyle))">Skin.SetString(Custom3HomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom4HomeItem.WidgetStyle))">Skin.SetString(Custom4HomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom5HomeItem.WidgetStyle))">Skin.SetString(Custom5HomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom6HomeItem.WidgetStyle))">Skin.SetString(Custom6HomeItem.WidgetStyle,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(PicturesHomeItem.WidgetStyle2))">Skin.SetString(PicturesHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(MusicHomeItem.WidgetStyle2))">Skin.SetString(MusicHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(MovieHomeItem.WidgetStyle2))">Skin.SetString(MovieHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(TVShowHomeItem.WidgetStyle2))">Skin.SetString(TVShowHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(LiveTVHomeItem.WidgetStyle2))">Skin.SetString(LiveTVHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(VideosHomeItem.WidgetStyle2))">Skin.SetString(VideosHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(ProgramsHomeItem.WidgetStyle2))">Skin.SetString(ProgramsHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(SettingsHomeItem.WidgetStyle2))">Skin.SetString(SettingsHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(ShutdownHomeItem.WidgetStyle2))">Skin.SetString(ShutdownHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(FavouritesHomeItem.WidgetStyle2))">Skin.SetString(FavouritesHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(WeatherHomeItem.WidgetStyle2))">Skin.SetString(WeatherHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(MusicVideoHomeItem.WidgetStyle2))">Skin.SetString(MusicVideoHomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom1HomeItem.WidgetStyle2))">Skin.SetString(Custom1HomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom2HomeItem.WidgetStyle2))">Skin.SetString(Custom2HomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom3HomeItem.WidgetStyle2))">Skin.SetString(Custom3HomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom4HomeItem.WidgetStyle2))">Skin.SetString(Custom4HomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom5HomeItem.WidgetStyle2))">Skin.SetString(Custom5HomeItem.WidgetStyle2,Panel)</onload>
+	<onload condition="IsEmpty(Skin.String(Custom6HomeItem.WidgetStyle2))">Skin.SetString(Custom6HomeItem.WidgetStyle2,Panel)</onload>
+	<controls>
+		<include>CommonBackground</include>
+		<include condition="!Skin.HasSetting(Disable.Videoinfo)">NowPlayingVideoWidget</include>
+		<include condition="!Skin.HasSetting(Disable.Musicinfo)">NowPlayingMusicWidget</include>
+		<include>HomeRecentlyAddedInfo</include>
+		<include>HomeWidgetInfo</include>
+		<include>WeatherWidget</include>
+
+		<control type="group">
+			<top>490</top>
+			<animation effect="slide" end="0,-370" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(HomwInfo)">Conditional</animation>
+			<animation effect="slide" end="0,388" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation type="WindowOpen" reversible="false" condition="Window.Previous(Startup)">
+				<effect type="zoom" start="0" end="100" center="960,540" delay="500" time="300" tween="cubic" />
+			</animation>
+			<animation type="WindowOpen" reversible="false" condition="!Window.Previous(Startup)">
+				<effect type="zoom" start="150" end="100" center="960,540" time="300" tween="cubic" />
+				<effect type="fade" start="50" end="100" time="300" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="fade" start="100" end="0" time="300" />
+				<effect type="zoom" start="100" end="130" center="960,540" time="300" tween="cubic" easing="in" />
+			</animation>
+
+			<control type="image">
+				<visible>Skin.HasSetting(HomeAnimation1)</visible>
+				<top>-220</top>
+				<height>720</height>
+				<width>3280</width>
+				<texture colordiffuse="$VAR[Color1]">pulse/$VAR[Pulse1A].png</texture>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+				<effect type="slide" start="-1360,0" end="0,0" time="30000" />
+				<effect type="slide" start="0,0" end="-1360,0" time="30000" delay="30000"/>
+				</animation>
+			</control>
+			<control type="image">
+				<visible>Skin.HasSetting(HomeAnimation1)</visible>
+				<top>-220</top>
+				<height>720</height>
+				<width>3280</width>
+				<texture colordiffuse="$VAR[Color2]">pulse/$VAR[Pulse1B].png</texture>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+				<effect type="slide" start="0,0" end="-1360,0" time="30000" />
+				<effect type="slide" start="0,0" end="1360,0" time="30000" delay="30000"/>
+				</animation>
+			</control>
+			<control type="image">
+				<visible>Skin.HasSetting(HomeAnimation2)</visible>
+				<top>-220</top>
+				<height>720</height>
+				<width>3280</width>
+				<texture colordiffuse="$VAR[Color3]">pulse/$VAR[Pulse2A].png</texture>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+				<effect type="slide" start="-1360,0" end="0,0" time="60000" />
+				<effect type="slide" start="0,0" end="-1360,0" time="60000" delay="60000"/>
+				</animation>
+			</control>
+			<control type="image">
+				<visible>Skin.HasSetting(HomeAnimation2)</visible>
+				<top>-220</top>
+				<height>720</height>
+				<width>3280</width>
+				<texture colordiffuse="$VAR[Color4]">pulse/$VAR[Pulse2B].png</texture>
+				<animation type="Conditional" condition="true" loop="true" reversible="false">
+				<effect type="slide" start="0,0" end="-1360,0" time="60000" />
+				<effect type="slide" start="0,0" end="1360,0" time="60000" delay="60000"/>
+				</animation>
+			</control>
+
+			<control type="image">
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<top>-27</top>
+				<left>50</left>
+				<width>90</width>
+				<height>87</height>
+				<texture colordiffuse="$VAR[Color6]" flipy="true">submenu_end.png</texture>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<top>-27</top>
+				<left>140</left>
+				<width>1640</width>
+				<height>87</height>
+				<texture colordiffuse="$VAR[Color6]" flipy="true">submenu_bar.png</texture>
+			</control>
+			<control type="image">
+				<top>-27</top>
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<left>1780</left>
+				<width>90</width>
+				<height>87</height>
+				<texture colordiffuse="$VAR[Color6]" flipx="true" flipy="true">submenu_end.png</texture>
+			</control>
+			<include condition="System.HasAddon(service.library.data.provider)">PlayListStatsList</include>
+			<control type="label">
+				<left>115</left>
+				<top>20</top>
+				<width>1780</width>
+				<height>40</height>
+				<label>$VAR[LibraryStatsVar]</label>
+				<textoffsetx>15</textoffsetx>
+				<font>font13_title</font>
+				<textcolor>$VAR[Color10]</textcolor>
+				<shadowcolor>shadow</shadowcolor>
+			</control>
+
+			<control type="group" id="9001">
+				<left>0</left>
+				<top>161</top>
+				<onup>9000</onup>
+				<ondown>9002</ondown>
+				<include condition="!Skin.HasSetting(Enable.VisibleSubmenu) | StringCompare(Skin.String(RSS.Position),$LOCALIZE[571])">SubMenuAnimation</include>
+				<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+				<animation effect="slide" start="1870,0" end="0,0" delay="200" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
+				<control type="image" id="90101">
+					<visible>!Skin.HasSetting(HomeNoBar)</visible>
+					<left>50</left>
+					<width>90</width>
+					<height>87</height>
+					<texture colordiffuse="$VAR[Color6]">submenu_end.png</texture>
+				</control>
+				<control type="image">
+					<visible>!Skin.HasSetting(HomeNoBar)</visible>
+					<left>140</left>
+					<width>1640</width>
+					<height>87</height>
+					<texture colordiffuse="$VAR[Color6]">submenu_bar.png</texture>
+				</control>
+				<control type="image" id="90101">
+					<visible>!Skin.HasSetting(HomeNoBar)</visible>
+					<left>1780</left>
+					<left>50</left>
+					<width>90</width>
+					<height>87</height>
+					<texture colordiffuse="$VAR[Color6]" flipx="true">submenu_end.png</texture>
+				</control>
+				<control type="fixedlist" id="9010">
+					<left>210</left>
+					<top>0</top>
+					<width>1500</width>
+					<height>87</height>
+					<onup>9000</onup>
+					<ondown condition="!Skin.HasSetting(lowermainmenu) + Control.IsVisible(8012)">SetFocus(8012)</ondown>
+					<pagecontrol>-</pagecontrol>
+					<scrolltime tween="quadratic" easing="out">300</scrolltime>
+					<focusposition>2</focusposition>
+					<movement>2</movement>
+					<orientation>Horizontal</orientation>
+					<itemlayout height="87" width="300">
+						<control type="label">
+							<width>300</width>
+							<height>41</height>
+							<font>font13_title</font>
+							<textcolor>$VAR[Color9]</textcolor>
+							<shadowcolor>shadow</shadowcolor>
+							<align>center</align>
+							<aligny>center</aligny>
+							<label>$INFO[ListItem.Label]</label>
+						</control>
+					</itemlayout>
+					<focusedlayout height="87" width="300">
+						<control type="group">
+							<visible>Control.HasFocus(9010)</visible>
+							<control type="image">
+								<width>300</width>
+								<height>41</height>
+								<texture>listselect_fo.png</texture>
+							</control>
+							<control type="label">
+								<width>300</width>
+								<height>41</height>
+								<font>font13_title</font>
+								<shadowcolor>shadow</shadowcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+						<control type="group">
+							<visible>!Control.HasFocus(9010)</visible>
+							<control type="label">
+								<width>300</width>
+								<height>41</height>
+								<font>font13_title</font>
+								<textcolor>$VAR[Color9]</textcolor>
+								<shadowcolor>shadow</shadowcolor>
+								<align>center</align>
+								<aligny>center</aligny>
+								<label>$INFO[ListItem.Label]</label>
+							</control>
+						</control>
+					</focusedlayout>
+					<include condition="!System.HasAddon(script.skinshortcuts)">FallbackSubMenu</include>
+					<include condition="System.HasAddon(script.skinshortcuts)">CustomSubMenu</include>
+				</control>
+				<control type="button">
+					<left>130</left>
+					<top>6</top>
+					<width>30</width>
+					<height>30</height>
+					<texturefocus flipx="true" colordiffuse="white">arrowright.png</texturefocus>
+					<texturenofocus flipx="true">arrowright.png</texturenofocus>
+					<visible>Container(9010).HasPrevious</visible>
+					<onclick>Control.Move(9010,-1)</onclick>
+				</control>
+				<control type="button">
+					<left>1750</left>
+					<top>6</top>
+					<width>30</width>
+					<height>30</height>
+					<texturefocus colordiffuse="white">arrowright.png</texturefocus>
+					<texturenofocus>arrowright.png</texturenofocus>
+					<visible>Container(9010).HasNext</visible>
+					<onclick>Control.Move(9010,1)</onclick>
+				</control>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<top>0</top>
+				<width>FullScreenWidth</width>
+				<height>225</height>
+				<texture colordiffuse="$VAR[Color5]">menubar/$VAR[MenuBar].png</texture>
+			</control>	
+
+			<!-- Main Menu (Includes_Home.xml) -->
+			<include condition="StringCompare(Skin.String(MainMenu.Layout),1 $LOCALIZE[31025])">OneMainMenuItemListContent</include>
+			<include condition="Skin.HasSetting(HomeMenuNavVar) + !StringCompare(Skin.String(MainMenu.Layout),1 $LOCALIZE[31025])">MainMenuListFixed</include>
+			<include condition="!Skin.HasSetting(HomeMenuNavVar) + !StringCompare(Skin.String(MainMenu.Layout),1 $LOCALIZE[31025])">MainMenuListWrapped</include>
+			<!--<control type="group">
+				<visible>IsEmpty(Container(9000).ListItem.Label)</visible>
+				<left>912</left>
+				<top>64</top>
+				<control type="image">
+					<description>Busy animation</description>
+					<width>96</width>
+					<height>96</height>
+					<texture>android/spinner_48_inner_holo.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" start="0" end="360" center="auto" time="2000" loop="true" condition="true">conditional</animation>
+				</control>
+				<control type="image">
+					<description>Busy animation</description>
+					<width>96</width>
+					<height>96</height>
+					<texture>android/spinner_48_outer_holo.png</texture>
+					<aspectratio>keep</aspectratio>
+					<animation effect="rotate" start="360" end="0" center="auto" time="2000" loop="true" condition="true">conditional</animation>
+				</control>
+			</control>-->
+			<control type="label">
+				<left>0</left>
+				<top>17</top>
+				<width>FullScreenWidth</width>
+				<height>41</height>
+				<font>font13_title</font>
+				<textcolor>$VAR[Color9]</textcolor>
+				<align>center</align>
+				<aligny>center</aligny>
+				<label>[UPPERCASE]$INFO[Container(9000).ListItem.Label][/UPPERCASE]</label>
+				<visible>StringCompare(Skin.String(MainMenu.Layout),$LOCALIZE[536])</visible>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<left>0</left>
+				<top>58</top>
+				<width>100</width>
+				<height>104</height>
+				<texture border="1">side_fade.png</texture>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<left>1820</left>
+				<top>58</top>
+				<width>100</width>
+				<height>104</height>
+				<texture flipx="true" border="1">side_fade.png</texture>
+			</control>
+			<control type="image">
+				<visible>!Skin.HasSetting(HomeNoBar)</visible>
+				<top>90</top>
+				<width>FullScreenWidth</width>
+				<height>72</height>
+				<texture border="1">gradient_floor.png</texture>
+			</control>
+		</control>
+		<include>HomeWidgetEditor</include>
+		<control type="group">
+			<top>513</top>
+			<control type="group">
+				<animation effect="slide" end="0,-70" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(HomeInfo)">Conditional</animation>
+				<animation effect="slide" end="0,388" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<animation effect="slide" end="-1870,0" time="240">WindowClose</animation>
+				<animation effect="slide" start="-1870,0" end="0,0" delay="300" time="240" condition="!Window.Previous(startup)">WindowOpen</animation>
+				<animation effect="slide" start="-1870" end="0" time="240">VisibleChange</animation>
+				<animation effect="slide" start="-1870,0" end="0,0" delay="800" time="480" condition="Window.Previous(startup)">WindowOpen</animation>
+				<control type="grouplist" id="9020">
+					<left>0</left>
+					<top>-4</top>
+					<width>1790</width>
+					<height>41</height>
+					<align>right</align>
+					<orientation>horizontal</orientation>
+					<onup condition="Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(WidgetEditor) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">Skin.ToggleSetting(WidgetEditor)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(WidgetEditor) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90100)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Widget1) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90200)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Type1) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90300)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Art1) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90400)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Style1) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90500)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Widget2) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90600)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Type2) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90700)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Art2) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90800)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Style2) + !Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(90900)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Control.IsVisible(8011) + !Control.IsVisible(8012)">SetFocus(8011)</onup>
+					<onup condition="Skin.HasSetting(lowermainmenu) + Control.IsVisible(8012)">SetFocus(8012)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(WidgetEditor) + !Control.IsVisible(8011)">Skin.ToggleSetting(WidgetEditor)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + !Skin.HasSetting(WidgetEditor) + !Control.IsVisible(8011)">SetFocus(90100)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Widget1) + !Control.IsVisible(8011)">SetFocus(90200)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Type1) + !Control.IsVisible(8011)">SetFocus(90300)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Art1) + !Control.IsVisible(8011)">SetFocus(90400)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Style1) + !Control.IsVisible(8011)">SetFocus(90500)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Widget2) + !Control.IsVisible(8011)">SetFocus(90600)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Type2) + !Control.IsVisible(8011)">SetFocus(90700)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Art2) + !Control.IsVisible(8011)">SetFocus(90800)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WE-Style2) + !Control.IsVisible(8011)">SetFocus(90900)</onup>
+					<onup condition="!Skin.HasSetting(lowermainmenu) + Control.IsVisible(8011)">SetFocus(8011)</onup>
+					<ondown>9000</ondown>
+					<include condition="System.HasAddon(script.globalsearch) + !Skin.HasSetting(Disable.SearchButton)">HomeSearchButton</include>
+					<control type="button" id="9021">
+						<label></label>
+						<label></label>
+						<textoffsetx>0</textoffsetx>
+						<width>50</width>
+						<height>41</height>
+						<align>center</align>
+						<font>IconTiny</font>
+						<textcolor>$VAR[Color9]</textcolor>
+						<shadowcolor>shadow</shadowcolor>
+						<visible>System.HasMediaDVD</visible>
+						<onclick>EjectTray()</onclick>
+						<animation type="Visible">
+							<effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
+							<effect type="zoom" start="50" end="100" center="auto" tween="sine" easing="inout" time="300" />
+						</animation>
+						<animation type="Hidden">
+							<effect type="fade" start="100" end="0" tween="sine" easing="inout" time="300" />
+							<effect type="zoom" start="100" end="50" center="auto" tween="sine" easing="inout" time="300" />
+						</animation>
+					</control>
+					<control type="button" id="9022">
+						<label></label>
+						<textoffsetx>0</textoffsetx>
+						<width>50</width>
+						<height>41</height>
+						<align>center</align>
+						<font>IconTiny</font>
+						<textcolor>$VAR[Color9]</textcolor>
+						<shadowcolor>shadow</shadowcolor>
+						<visible>System.HasMediaDVD</visible>
+						<onclick>PlayDVD</onclick>
+						<animation type="Visible">
+							<effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
+							<effect type="zoom" start="50" end="100" center="auto" tween="sine" easing="inout" time="300" />
+						</animation>
+						<animation type="Hidden">
+							<effect type="fade" start="100" end="0" tween="sine" easing="inout" time="300" />
+							<effect type="zoom" start="100" end="50" center="auto" tween="sine" easing="inout" time="300" />
+						</animation>
+					</control>
+					<control type="label" id="9026">
+						<width>5</width>
+						<height>41</height>
+						<label>-</label>
+						<font>font13_title</font>
+						<textcolor>$VAR[Color10]</textcolor>
+					</control>
+					<control type="label" id="9023">
+						<width>auto</width>
+						<height>41</height>
+						<label>$INFO[Weather.Temperature,,[COLOR grey] | [/COLOR]]</label>
+						<font>font13_title</font>
+						<textcolor>$VAR[Color10]</textcolor>
+						<visible>Weather.IsFetched + !IsEmpty(Weather.Plugin)</visible>
+						<shadowcolor>shadow</shadowcolor>
+					</control>
+					<control type="label" id="9025">
+						<width>auto</width>
+						<height>41</height>
+						<label>$INFO[System.Date,[COLOR grey], | [/COLOR]]$INFO[System.Time]</label>
+						<font>font13_title</font>
+						<textcolor>$VAR[Color10]</textcolor>
+						<shadowcolor>shadow</shadowcolor>
+					</control>
+				</control>
+			</control>
+		</control>
+		<include>RSSFeedWidget3</include>
+	</controls>
+</window>

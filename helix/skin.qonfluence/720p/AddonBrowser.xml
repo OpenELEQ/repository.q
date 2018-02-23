@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window>
+	<defaultcontrol always="true">50</defaultcontrol>
+	<allowoverlay>no</allowoverlay>
+	<onload condition="!Skin.HasSetting(FirstTimeRun)">ActivateWindow(1112)</onload>
+	<views>50,51,550,551</views>
+	<controls>
+		<include>CommonBackground</include>
+		<include>ContentPanelBackgrounds</include>
+		<control type="group">
+			<include>Window_OpenClose_Animation</include>		
+			<include>CommonRootView</include> <!-- view id = 50 -->
+			<include>FullWidthList</include> <!-- view id = 51 -->
+			<include>AddonInfoListView1</include> <!-- view id = 550 -->
+			<include>AddonInfoThumbView1</include> <!-- view id = 551 -->
+		</control>
+		<include>CommonPageCount</include>
+		<include>CommonNowPlaying</include>
+		<include>MainWindowMouseButtons</include>
+		<include>BehindDialogFadeOut</include>
+		<include>ScrollOffsetLabel</include>
+		<control type="image">
+			<description>Section header image</description>
+			<left>20</left>
+			<top>3</top>
+			<width>35</width>
+			<height>35</height>
+			<aspectratio>keep</aspectratio>
+			<texture>icon_addons.png</texture>
+		</control>
+		<control type="grouplist">
+			<left>65</left>
+			<top>5</top>
+			<width>1000</width>
+			<height>30</height>
+			<orientation>horizontal</orientation>
+			<align>left</align>
+			<itemgap>5</itemgap>
+			<control type="label">
+				<include>WindowTitleCommons</include>
+				<label>$LOCALIZE[24001]</label>
+			</control>
+			<control type="label">
+				<include>WindowTitleCommons</include>
+				<label>[COLOR=blue] - [/COLOR]$INFO[Container.FolderName]</label>
+				<visible>!IsEmpty(Container.FolderName)</visible>
+			</control>
+		</control>
+		<control type="group">
+			<left>-250</left>
+			<include>SideBladeLeft</include>
+			<control type="grouplist" id="9000">
+				<left>0</left>
+				<top>110</top>
+				<width>250</width>
+				<height>600</height>
+				<onleft>9000</onleft>
+				<onright>50</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<onback>50</onback>
+				<itemgap>0</itemgap>
+				<control type="label" id="200">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>31006</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="2">
+					<description>View As button</description>
+					<textwidth>235</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>-</label>
+				</control>
+				<control type="button" id="3">
+					<description>Sort by button</description>
+					<include>ButtonCommonValues</include>
+					<label>103</label>
+				</control>
+				<control type="togglebutton" id="4">
+					<description>Sort asc</description>
+					<include>ButtonCommonValues</include>
+					<alttexturefocus border="5">button-focus.png</alttexturefocus>
+					<alttexturenofocus>-</alttexturenofocus>
+					<label>31051</label>
+					<altlabel>31050</altlabel>
+					<usealttexture>Container.SortDirection(Ascending)</usealttexture>
+				</control>
+				<control type="label" id="201">
+					<width>250</width>
+					<height>35</height>
+					<font>font12</font>
+					<label>31026</label>
+					<textcolor>blue</textcolor>
+					<align>center</align>
+					<aligny>center</aligny>
+				</control>
+				<control type="button" id="5">
+					<description>addon-updates</description>
+					<textwidth>235</textwidth>
+					<include>ButtonCommonValues</include>
+					<label>24063</label>
+				</control>
+				<control type="radiobutton" id="6">
+					<description>No notifications</description>
+					<left>0</left>
+					<top>170</top>
+					<include>ButtonCommonValues</include>
+					<label>25000</label>
+				</control>
+				<control type="radiobutton" id="7">
+					<description>Hide foreign</description>
+					<left>0</left>
+					<top>210</top>
+					<include>ButtonCommonValues</include>
+					<label>25001</label>
+				</control>
+				<control type="button" id="9">
+					<description>Check for updates</description>
+					<include>ButtonCommonValues</include>
+					<label>Check for updates</label>
+				</control>
+				<include>CommonNowPlaying_Controls</include>
+			</control>
+		</control>
+		<control type="group">
+			<left>585</left>
+			<top>660</top>
+			<visible>Skin.HasSetting(SystemWeatherinfo) + !IsEmpty(Weather.Plugin)</visible>
+			<include>Window_OpenClose_Animation</include>
+			<control type="image">
+				<description>Weather image</description>
+				<left>0</left>
+				<top>0</top>
+				<width>60</width>
+				<height>60</height>
+				<aspectratio>keep</aspectratio>
+				<texture>$INFO[Weather.Conditions]</texture>
+			</control>
+			<control type="label">
+				<description>Location label</description>
+				<left>65</left>
+				<top>5</top>
+				<width>500</width>
+				<height>15</height>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font10</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[Window(Weather).Property(Location)]</label>
+			</control>
+			<control type="grouplist">
+				<left>65</left>
+				<top>20</top>
+				<width>1000</width>
+				<height>30</height>
+				<orientation>horizontal</orientation>
+				<align>left</align>
+				<itemgap>0</itemgap>
+				<control type="label">
+					<description>Temp label</description>
+					<width min="0" max="300">auto</width>
+					<height>30</height>
+					<align>left</align>
+					<aligny>center</aligny>
+					<font>font28_title</font>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>[B]$INFO[Window(Weather).Property(Current.Temperature)][/B]</label>
+				</control>
+				<control type="label">
+					<description>Temp Units</description>
+					<width min="0" max="100">auto</width>
+					<height>22</height>
+					<font>font10</font>
+					<aligny>center</aligny>
+					<label>$INFO[System.TemperatureUnits]</label>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
+				</control>
+				<control type="label">
+					<description>Conditions Label</description>
+					<width>500</width>
+					<height>22</height>
+					<font>font10</font>
+					<aligny>center</aligny>
+					<label>$INFO[Window(Weather).Property(Current.Condition),  ]</label>
+					<textcolor>grey2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+		</control>
+		<include>Clock</include>
+		<control type="label">
+			<visible>Skin.HasSetting(SystemDate)</visible>
+			<description>Date label</description>
+			<right>20</right>
+			<top>35</top>
+			<width>200</width>
+			<height>15</height>
+			<align>right</align>
+			<aligny>center</aligny>
+			<font>font10</font>
+			<textcolor>white</textcolor>
+			<shadowcolor>black</shadowcolor>
+			<label>$INFO[System.Date]</label>
+			<include>Window_OpenClose_Animation</include>
+			<animation effect="slide" start="0,0" end="-40,0" time="100" condition="Window.IsVisible(Mutebug)">conditional</animation>
+		</control>
+	</controls>
+</window>

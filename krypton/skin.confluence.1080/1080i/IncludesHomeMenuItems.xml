@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="HomeSubMenuVideos">
+		<control type="image" id="901000">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90100).NumItems,0)</visible>
+		</control>
+		<control type="button" id="901001">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="901002">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="901003">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="901004">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="901005">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="901006">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="button" id="901007">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(6).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(6).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(6).Label)</visible>
+		</control>
+		<control type="button" id="901008">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(7).Label)</visible>
+		</control>
+		<control type="button" id="901009">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(8).Label)</visible>
+		</control>
+		<control type="button" id="901010">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90100).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90100).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90100).ListItemNoWrap(9).Label)</visible>
+		</control>
+		<control type="image" id="901011">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90100).NumItems,0)</visible>
+		</control>
+	</include>
+	<include name="HomeSubMenuMovies">
+		<control type="image" id="901600">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90160).NumItems,0)</visible>
+		</control>
+		<control type="button" id="901601">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="901602">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="901603">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="901604">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="901605">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="901606">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="button" id="901607">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(6).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(6).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(6).Label)</visible>
+		</control>
+		<control type="button" id="901608">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(7).Label)</visible>
+		</control>
+		<control type="button" id="901609">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(8).Label)</visible>
+		</control>
+		<control type="button" id="901610">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90160).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90160).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90160).ListItemNoWrap(9).Label)</visible>
+		</control>
+		<control type="image" id="901611">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90160).NumItems,0)</visible>
+		</control>
+	</include>
+	<include name="HomeSubMenuTVShows">
+		<control type="image" id="901700">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90170).NumItems,0)</visible>
+		</control>
+		<control type="button" id="901701">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="901702">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="901703">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="901704">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="901705">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="901706">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="button" id="901707">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(6).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(6).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(6).Label)</visible>
+		</control>
+		<control type="button" id="901708">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(7).Label)</visible>
+		</control>
+		<control type="button" id="901709">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(8).Label)</visible>
+		</control>
+		<control type="button" id="901710">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90170).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90170).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90170).ListItemNoWrap(9).Label)</visible>
+		</control>
+		<control type="image" id="901711">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90170).NumItems,0)</visible>
+		</control>
+	</include>
+	<include name="HomeSubMenuMusic">
+		<control type="image" id="901100">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90110).NumItems,0)</visible>
+		</control>
+		<control type="button" id="901101">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(0).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901102">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(1).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901103">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(2).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901104">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(3).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901105">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(4).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901106">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(5).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901107">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(6).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(6).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(6).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901108">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(7).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901109">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(8).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901110">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90110).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(Music,$INFO[Container(90110).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90110).ListItemNoWrap(9).Label) + Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901111">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>136</label>
+			<onclick>ActivateWindow(MusicPlaylist,return)</onclick>
+			<visible>!Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901112">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>744</label>
+			<onclick>ActivateWindow(Music,sources://music/,return)</onclick>
+			<visible>!Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="901113">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>1038</label>
+			<onclick>ActivateWindow(Music,addons://sources/audio/,return)</onclick>
+			<visible>!Library.HasContent(Music)</visible>
+		</control>
+		<control type="image" id="901114">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90110).NumItems,0)</visible>
+		</control>
+	</include>
+	<include name="HomeSubMenuSystem">
+		<control type="image" id="901200">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="901201">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$LOCALIZE[166] $LOCALIZE[1390]</label>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+		</control>
+		<control type="button" id="901202">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>7</label>
+			<onclick>ActivateWindow(FileManager)</onclick>
+		</control>
+		<control type="button" id="901203">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>13200</label>
+			<onclick>ActivateWindow(Profiles)</onclick>
+		</control>
+		<control type="button" id="901204">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>130</label>
+			<onclick>ActivateWindow(SystemInfo)</onclick>
+		</control>
+		<control type="button" id="901205">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>14111</label>
+			<onclick>ActivateWindow(EventLog,events://,return)</onclick>
+			<visible>system.getbool(eventlog.enabled)</visible>
+		</control>
+		<control type="button" id="901206">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>LibreELEC</label>
+			<onclick>RunAddon(service.libreelec.settings)</onclick>
+			<visible>System.HasAddon(service.libreelec.settings)</visible>
+		</control>
+		<control type="button" id="901207">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>OpenELEC</label>
+			<onclick>RunAddon(service.openelec.settings)</onclick>
+			<visible>System.HasAddon(service.openelec.settings)</visible>
+		</control>
+		<control type="image" id="901208">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuPlayDisc">
+		<control type="image" id="901300">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="901301">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>13391</label>
+			<onclick>SetFocus(9000)</onclick>
+			<onclick>EjectTray()</onclick>
+		</control>
+		<control type="image" id="901302">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuPictures">
+		<control type="image" id="901400">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="901401">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24001</label>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+		</control>
+		<control type="image" id="901402">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuTV">
+		<control type="image" id="901900">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="901901">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19019</label>
+			<onclick>ActivateWindow(TVChannels)</onclick>
+		</control>
+		<control type="button" id="901902">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>22020</label>
+			<onclick>ActivateWindow(TVGuide)</onclick>
+		</control>
+		<control type="button" id="901903">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19163</label>
+			<onclick>ActivateWindow(TVRecordings)</onclick>
+		</control>
+		<control type="button" id="901904">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19138</label>
+			<onclick>ActivateWindow(TVTimerRules)</onclick>
+		</control>
+		<control type="button" id="901905">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19040</label>
+			<onclick>ActivateWindow(TVTimers)</onclick>
+		</control>
+		<control type="button" id="901906">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>137</label>
+			<onclick>ActivateWindow(TVSearch)</onclick>
+		</control>
+		<control type="image" id="901907">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuRadio">
+		<control type="image" id="902000">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="902001">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19019</label>
+			<onclick>ActivateWindow(RadioChannels)</onclick>
+		</control>
+		<control type="button" id="902002">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>22020</label>
+			<onclick>ActivateWindow(RadioGuide)</onclick>
+		</control>
+		<control type="button" id="902003">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19163</label>
+			<onclick>ActivateWindow(RadioRecordings)</onclick>
+		</control>
+		<control type="button" id="902004">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19138</label>
+			<onclick>ActivateWindow(RadioTimerRules)</onclick>
+		</control>
+		<control type="button" id="902005">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19040</label>
+			<onclick>ActivateWindow(RadioTimers)</onclick>
+		</control>
+		<control type="button" id="902006">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>137</label>
+			<onclick>ActivateWindow(RadioSearch)</onclick>
+		</control>
+		<control type="image" id="902007">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuMusicVideos">
+		<control type="image" id="901800">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90180).NumItems,0)</visible>
+		</control>
+		<control type="button" id="901801">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="901802">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="901803">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="901804">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="901805">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="901806">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="button" id="901807">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(6).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(6).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(6).Label)</visible>
+		</control>
+		<control type="button" id="901808">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(7).Label)</visible>
+		</control>
+		<control type="button" id="901809">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(8).Label)</visible>
+		</control>
+		<control type="button" id="901810">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90180).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(Videos,$INFO[Container(90180).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90180).ListItemNoWrap(9).Label)</visible>
+		</control>
+		<control type="image" id="901811">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90180).NumItems,0)</visible>
+		</control>
+	</include>
+	<include name="HomeSubMenuPrograms">
+		<control type="image" id="901200">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4" flipx="true">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90120).NumItems,0)</visible>
+		</control>
+		<control type="button" id="901201">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(0).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(0).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(0).Label)</visible>
+		</control>
+		<control type="button" id="901202">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(1).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(1).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(1).Label)</visible>
+		</control>
+		<control type="button" id="901203">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(2).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(2).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(2).Label)</visible>
+		</control>
+		<control type="button" id="901204">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(3).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(3).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(3).Label)</visible>
+		</control>
+		<control type="button" id="901205">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(4).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(4).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(4).Label)</visible>
+		</control>
+		<control type="button" id="901206">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(5).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(5).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(5).Label)</visible>
+		</control>
+		<control type="button" id="901207">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(6).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(6).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(6).Label)</visible>
+		</control>
+		<control type="button" id="901208">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(7).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(7).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(7).Label)</visible>
+		</control>
+		<control type="button" id="901209">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(8).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(8).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(8).Label)</visible>
+		</control>
+		<control type="button" id="901210">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Container(90120).ListItemNoWrap(9).Label]</label>
+			<onclick>ActivateWindow(AddonBrowser,$INFO[Container(90120).ListItemNoWrap(9).FileNameAndPath],return)</onclick>
+			<visible>!String.IsEmpty(Container(90120).ListItemNoWrap(9).Label)</visible>
+			<onright>901211</onright>
+		</control>
+		<!--<control type="button" id="901211">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24996</label>
+			<onclick>ActivateWindow(AddonBrowser,addons://dependencies/,return)</onclick>
+		</control>
+		<control type="button" id="901212">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>23054</label>
+			<onclick>ActivateWindow(AddonBrowser,addons://running/,return)</onclick>
+		</control>
+		<control type="button" id="901213">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24034</label>
+			<onclick>UpdateLocalAddons</onclick>
+			<onclick>UpdateAddonRepos</onclick>
+		</control>-->
+		<control type="image" id="901214">
+			<width>52</width>
+			<height>52</height>
+			<texture border="0,0,0,4">HomeSubEnd.png</texture>
+			<visible>!String.IsEqual(Container(90120).NumItems,0)</visible>
+		</control>
+	</include>
+	<include name="HomeAddonItemsWeather">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeWeatherButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeWeatherButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeWeatherButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeWeatherButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeWeatherButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsPictures">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePicturesButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomePicturesButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomePicturesButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomePicturesButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomePicturesButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsRadio">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeRadioButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeRadioButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeRadioButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeRadioButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeRadioButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsTV">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsVideos">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeVideosButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeVideosButton7))]</thumb>
+			<thumb>DefaultAddonsUpdates.png</thumb>
+			<visible>!String.IsEmpty(Skin.String(HomeVideosButton7))</visible>
+		</item>
+	</include>
+
+	<include name="HomeAddonItemsMovies">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton1))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton1)])</onclick>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMoviesButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMoviesButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMoviesButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMoviesButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMoviesButton7))</visible>
+		</item>
+	</include>
+
+	<include name="HomeAddonItemsTVShows">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeTVShowsButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeTVShowsButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeTVShowsButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeTVShowsButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeTVShowsButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsMusicVideos">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicVideosButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicVideosButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicVideosButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicVideosButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicVideosButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsMusic">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeMusicButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeMusicButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeMusicButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsPrograms">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramsButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeProgramsButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramsButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeProgramsButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeProgramsButton7))</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsSystem">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton1))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton1)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton1)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton1))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton1))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton2))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton2)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton2)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton2))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton2))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton3))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton3)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton3)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton3))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton3))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton4))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton4)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton4)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton4))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton4))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton5))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton5)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton5)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton5))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton5))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton6))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton6)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton6)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton6))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton6))</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeSystemButton7))]</label>
+			<onclick>InstallAddon($INFO[Skin.String(HomeSystemButton7)])</onclick>
+			<onclick>RunAddon($INFO[Skin.String(HomeSystemButton7)])</onclick>
+			<thumb>$INFO[system.addonicon(Skin.String(HomeSystemButton7))]</thumb>
+			<icon>DefaultAddonsUpdates.png</icon>
+			<visible>!String.IsEmpty(Skin.String(HomeSystemButton7))</visible>
+		</item>
+	</include>
+</includes>

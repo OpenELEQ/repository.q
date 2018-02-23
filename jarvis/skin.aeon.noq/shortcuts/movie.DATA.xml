@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>movie</label>
+		<label2>Custom item</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>plugin://plugin.video.metalliq/settings/movies</action>
+	</shortcut>
+</shortcuts>

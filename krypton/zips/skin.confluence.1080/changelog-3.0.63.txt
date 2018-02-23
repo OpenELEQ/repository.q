@@ -1,0 +1,475 @@
+[B]3.0.63[/B]
+- Added conditional visibility to Artwork Downloader and Library Editor context-menu-entries
+- Added color-change on focus to keyboardbutton-images 
+- Added plot on OSD
+- Added some missing textures
+- Added screenshots to addoninfo
+
+[B]3.0.62[/B]
+- Added Artwork Downloader integration
+- Added AutoCompletion integration
+- Added Library Ediitor Script integration
+- Added AutoComplete Toggle to keyboard
+- Added theme-color to numeric keyboard
+
+[B]3.0.61[/B]
+- Fixed PVR guide overlap
+- Fixed main menu not focusing on startup
+- Fixed radio-widget's item-label when focused
+- Tweaked widget's arrows
+
+[B]3.0.60[/B]
+- Added addon-settings button in side-blade
+- Added fallback images for episodes
+- Fixed missing header in keyboard dialog
+- Fixed navigating homescreen > video - widget when there is only content in either Movies or TVShows-library
+- Fixed pvr-widget overlapping recording-info
+- Reverted resizing plot-area so plot-text is no longer overlayed with mediaflags
+- Tweaked player-label
+
+[B]3.0.59[/B]
+- Added favourites-scrollbar
+- Added subtitles-scrollbar
+- Added color-accents
+- Added 5 themes
+- Added 5 colors 
+- Fixed missing aspectratio-info
+
+[B]3.0.58[/B]
+- Added configurable sorting methods & direction to node-based submenus
+- Tweaked pvr-widgets
+
+[B]3.0.57[/B]
+- Added appropriate moviesets-icon and overlay
+- Added collection-indicators to all views that did not have them
+- Added collection info
+- Fixed clickable area for addon shortcuts
+- Fixed video- and movie-now-playing info not changing position according to set mainmenu-position
+- Edited default tv background
+- Removed screenshots from zip
+
+[B]3.0.56[/B]
+- Added two mainmenu positions: "high" and "low"
+- Changed label "system" to "settings"
+- Changed position of title for Videos-widget to avoid it overlapping now playing info.
+- Changed weather, pictures, programs and settings widget, they can now be dis/enabled seperately
+- Changed layout of MusicInfo from 2 rows to three
+- Removed DefaultAlbumCover.png from MusicInfo
+
+[B]3.0.55[/B]
+- Added AddonName to Label in Add-on Shortcuts section
+- Added custom onclick action for ProgramsWidget (RunAddon)
+- Added custom submenu for Programs using root AddonBrowser entries
+- Added ProgramsWidget (addon-sections)
+- Added quantity indicator for widgets
+- Added slash-suffix to all preset-paths in PictureWidget
+- Added some height to plot-space in LibraryViews
+- Added UpdateLocalAddons and UpdateAddonRepos to AddonBrowser onload
+- Changed Label for NetworkItem in SystemWidget, now shows ip when network connected
+- Changed Label2 (AddonName to AddonID) for Add-on Shortcuts section in skinsettings
+- Changed order of items in SystemWidget
+- Changed the localized strings used for MainMenuItems and added UPPERCASE
+- Edited Next-Arrows to be visible if input.enablemouse = True
+- Fixed Label and Label2 for Lyrics script
+- Fixed onclick action for MusicWidget default content
+- Moved System-submenu back from Programs to System
+- Re-introduced System-HomeItem
+- Removed MainMenu seperators
+- Shortened labelwidth for submenu so text does not overlap
+
+[B]3.0.54[/B]
+- Added TotalPlayerInfo-setting (in skinsettings). If enabled, the DialogPlayerProcessInfo-window toggles PlayerDebug onload and unload. The ProcessInfo is moved half a screen to the right for better visibility of the PlayerDebug-info.
+- Changed position of swidgets on VideosHomeItem so it is more obvious which widget they control
+- Corrected swidgets numbering and conditional visibility
+- Fixed missing label2 in widgets. Pictures (Size), TVShows (TVShowTitle), Music (Artist), Musicvideos (Artist), TV (Plot) and Radio (Plot)
+- Switched movie and tvshow widget position on Videos-HomeMenuItem so it corresponds with the default confluence icon.
+
+[B]3.0.53[/B]
+- Added android settings in system settings, leads to custom android settings window (1100)
+- Edited textviewer: larger size and smaller font
+- Fixed posterwrapviews in music and video nav
+- Fixed PVRView
+
+[B]3.0.52[/B]
+- Added icon-fonts
+- Added install-option & fallback-icon to all add-on shortcuts
+- Added 5 custom-path options to home-widgets (except weather & programs)
+- Added onscreen swidget
+- Added appropriate onclick-actions to weather- & program-widgets
+- Added a section to skinsettings to manage widget-content
+- Added preset 7 clear-option to widget- & addon shortcuts-section in skinsettings
+- Added custom_overlay and grids (Debug, Layout & Phi)
+- Added smartplaylists for movies, episodes, musicvideos & music
+- Added "Swidgets" (that's right: you read it first here, lol) for fast & easy switching of widget content
+- Added skin-settings to bootmenu
+- Edited weather-layout to accomodate weather widgets' onclick-actions
+
+[B]3.0.51[/B]
+- Added "Music videos"-button to Home
+- Added widgets to all HomeItems
+- Added 2 add-on shortcuts per HomeItem for 7 total
+- Added seperate add-on shortcuts to all HomeItems
+- Added option to disable widgets per type
+- Added subtitle & audio actions to onup/ondown from VideoOSD's pause-button
+- Added image & video splash options
+- Added "Favourites"-button to shutdownmenu
+- Added "Settings"-button to shutdownmenu (only visible if "Programs" is disabled)
+- Added Open/LibreELEC-button to Program's submenu
+- Converted to 1080
+- Removed System from Home (System's submenu now under Programs)
+- Updated addon.xml
+
+[B]3.0.39[/B]
+
+- Fixed home Weather item
+- Added 'Privacy Policy' to system info
+- Updated background video conditions
+
+[B]3.0.38[/B]
+
+- Fix using DeafultUser.png added in v3.0.6 and remove unknown-user.png
+
+[B]3.0.36[/B]
+
+- Added customisable home submenus that use library nodes
+- Added news feature
+
+[B]3.0.35[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.34[/B]
+
+- Added player speed controls (tempo) and on-screen indicator
+
+[B]3.0.33[/B]
+
+- Changed LibrarySettings to MediaSettings
+
+[B]3.0.32[/B]
+
+- Added DialogPlayerProcessInfo.xml
+- Removed player process info from video OSD
+- Added 'assets' to addon.xml
+
+[B]3.0.31[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.30[/B]
+
+- Updated DialogSelect.xml
+
+[B]3.0.29[/B]
+
+- Updated video osd player process info
+
+[B]3.0.28[/B]
+
+- Added player processing info to video osd
+
+[B]3.0.27[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.26[/B]
+
+- Show addon status if available, instead of size
+
+[B]3.0.25[/B]
+
+- Added size label to addon browser
+
+[B]3.0.24[/B]
+
+- Removed changelog button from addon info dialog
+
+[B]3.0.23[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.22[/B]
+
+- Cleanup after removal of Player.ShowCodec
+
+[B]3.0.21[/B]
+
+- Remove startup window heading
+
+[B]3.0.20[/B]
+
+- Fix case issue with Defaults.xml
+
+[B]3.0.19[/B]
+
+- Fix include problem
+- Case change for Defaults.xml and Includes.xml
+
+[B]3.0.18[/B]
+
+- Fix text width for buttons in addon settings
+
+[B]3.0.17[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.16[/B]
+
+- Fixed PVR OSD guide label problem
+
+[B]3.0.15[/B]
+
+- Added horizontal orientation tag to default slider control
+
+[B]3.0.14[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.13[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.12[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.11[/B]
+
+- Updated settings layout
+- Remove the set of ADSP manager dialog list types, becomes done from Kodi itself
+
+[B]3.0.10[/B]
+
+- Updated global search
+- Updated music and video info
+- Added DefaultAddonsRecentlyUpdated.png and DefaultMusicRoles.png
+
+[B]3.0.9[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.8[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.7[/B]
+
+- Updated include calls
+
+[B]3.0.6[/B]
+
+- Added game controller support
+- Added DefaultAddonInputstream.png and DefaultAddonLookAndFeel.png
+- Changed unknown-user.png to DefaultUser.png
+- Removed obsolete fanart code from DialogVideoInfo.xml
+- Updated boolean conditions
+
+[B]3.0.5[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.4[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.3[/B]
+
+- Removed Player.ShowCodec
+
+[B]3.0.2[/B]
+
+- Merged setting dialogs into DialogSettings
+
+[B]3.0.1[/B]
+
+- Updated language files from Transifex
+
+[B]3.0.0[/B]
+
+- Move skin to repository
+
+[B]2.8.2[/B]
+
+- Updated language files from Transifex
+
+[B]2.8.1[/B]
+
+- Updated language files from Transifex
+
+[B]2.7.3[/B]
+
+- Updated language files from Transifex
+
+[B]2.7.2[/B]
+
+- Updated language files from Transifex
+
+[B]2.7.1[/B]
+
+- Updated language files from Transifex
+
+[B]2.7.0[/B]
+
+- Removed new/edit/delete buttons from the channel manager dialog
+
+[B]2.6.0[/B]
+
+- Moved some context menu functionality for PVR channels to the sideblade
+
+[B]2.5.8[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.7[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.6[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.5[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.4[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.3[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.2[/B]
+
+- Updated language files from Transifex
+
+[B]2.5.0[/B]
+- Kodi name change
+
+[B]2.4.0[/B]
+- Set minimum GUI version to 5.2.0
+- Rewrite of the PVR section
+
+[B]2.2.14[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.13[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.12[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.11[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.10[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.9[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.8[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.7[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.6[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.5[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.4[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.3[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.2[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.1[/B]
+
+- Updated language files from Transifex
+
+[B]2.2.0[/B]
+- Set minimum GUI version to 5.0.0
+- Adjusted to Gotham code changes
+
+[B]2.1.7[/B]
+
+- Updated language files from Transifex
+
+[B]2.1.6[/B]
+
+- Updated language files from Transifex
+
+[B]2.1.5[/B]
+
+- Updated language files from Transifex
+
+[B]2.1.4[/B]
+
+- Updated language files from Transifex
+
+[B]2.1.3[/B]
+
+- Updated language files from Transifex
+
+[B]2.1.2[/B]
+
+- Updated language files from Transifex
+
+[B]2.1.0[/B]
+
+- Changed the home menu to Horizontal Layout instead of Vertical
+- Added support for the TvTunes Addon enable it in skin settings\General (if you have it installed)
+- Added support for the Weather+ script (install it and select it in weather settings)
+- Updated translation files
+- Added some more codec flagging images (eg: pcm_bluray, wav files, etc)
+- Added Visual notification in Add-on Thumbnail view if an add-on is broken
+
+[B]2.0.0[/B]
+
+- Bumped the skin version up for the major change to eden branch
+
+[B]1.2.0[/B]
+
+- All media views now follow a similar layout off File List on the Left hand side and icons/data on the right
+- Views are all now in content panels (no fullscreen black)
+- Added a thumb view for addons
+- Non full screen Now Playing Media info (Bottom left) has more info
+- Full screen Now Playing Media info trimmed down
+- Fullscreen Player controls changed
+- Media windows side menu is completely redesigned (and also lower case)
+- Added a "filter" button to all media windows
+- Added Filter (BLAH) text to the item/page count bottom right
+- Removed the Disc Play button from home (which relies on !System.HasMediaDVD to appear)
+- Repositioned the seekbar from lower right to upper right
+
+[B]1.1.0[/B]
+
+- Redesigned the video and Music OSD Info and controls
+- Added more images for codec flagging on videos and audio
+- Added all the windows needed for the new Addon Browser
+- Removed the right hand side bar graphic from all windows and only made the left hand one visible if a menu is there
+- Lots of other little changes
+
+[B]1.0.0[/B]
+
+- Initial Commit to the SVN

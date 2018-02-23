@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1122" type="dialog">
+	<defaultcontrol always="true">100</defaultcontrol>
+	<include>dialogeffect</include>
+	<coordinates>
+		<system>2</system>
+		<left>405</left>
+		<top>260</top>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>460</width>
+				<height>160</height>
+				<texture border="40">DialogBack.png</texture>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>370</left>
+				<top>15</top>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>	
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
+
+			<control type="group">
+				<left>30</left>
+				<top>40</top>
+				<!-- 1st row images -->
+				<control type="grouplist">
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="image" id="100">
+						<onup>140</onup>
+						<ondown>140</ondown>
+						<include>ColorPresetImage</include>
+						<texture colordiffuse="99000000">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="101">
+						<onup>141</onup>
+						<ondown>141</ondown>
+						<include>ColorPresetImage</include>
+						<texture colordiffuse="FFFF0000">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="102">
+						<onup>142</onup>
+						<ondown>142</ondown>
+						<include>ColorPresetImage</include>
+						<texture colordiffuse="FF00FF00">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="103">
+						<onup>143</onup>
+						<ondown>143</ondown>
+						<include>ColorPresetImage</include>
+						<texture colordiffuse="FF0000FF">ColorMiddle.png</texture>
+					</control>
+				</control>
+					<!-- 2nd row images -->
+				<control type="grouplist">
+					<top>50</top>
+					<orientation>horizontal</orientation>
+					<itemgap>0</itemgap>
+					<control type="image" id="140">
+						<onup>100</onup>
+						<ondown>100</ondown>
+						<include>ColorPresetImage</include>
+						<texture colordiffuse="00000001">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="141">
+						<onup>101</onup>
+						<ondown>101</ondown>
+						<include>ColorPresetImage</include>>
+						<texture colordiffuse="FFFFFFFF">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="142">
+						<onup>102</onup>
+						<ondown>102</ondown>
+						<include>ColorPresetImage</include>>
+						<texture colordiffuse="88888888">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="143">
+						<onup>103</onup>
+						<ondown>103</ondown>
+						<include>ColorPresetImage</include>
+						<texture colordiffuse="FF000000">ColorMiddle.png</texture>
+					</control>
+				</control>
+			</control>
+		
+			<control type="group">
+				<left>30</left>
+				<top>40</top>
+				<!-- 1st row buttons-->
+				<control type="grouplist">
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button" id="100">
+						<label>Default</label>
+						<onup>140</onup>
+						<ondown>140</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,9)</onclick>
+						<onclick>Skin.SetString(Hex2,9)</onclick>
+						<onclick>Skin.SetString(Hex3,0)</onclick>
+						<onclick>Skin.SetString(Hex4,0)</onclick>
+						<onclick>Skin.SetString(Hex5,0)</onclick>
+						<onclick>Skin.SetString(Hex6,0)</onclick>
+						<onclick>Skin.SetString(Hex7,0)</onclick>
+						<onclick>Skin.SetString(Hex8,0)</onclick>
+						<onclick>Skin.SetString(Color1,99000000)</onclick>
+					</control>
+					<control type="button" id="101">
+						<label>Red</label>
+						<onup>141</onup>
+						<ondown>141</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,F)</onclick>
+						<onclick>Skin.SetString(Hex2,F)</onclick>
+						<onclick>Skin.SetString(Hex3,F)</onclick>
+						<onclick>Skin.SetString(Hex4,F)</onclick>
+						<onclick>Skin.SetString(Hex5,0)</onclick>
+						<onclick>Skin.SetString(Hex6,0)</onclick>
+						<onclick>Skin.SetString(Hex7,0)</onclick>
+						<onclick>Skin.SetString(Hex8,1)</onclick>
+						<onclick>Skin.SetString(Color1,FFFF0000)</onclick>
+					</control>
+					<control type="button" id="102">
+						<label>Green</label>
+						<onup>142</onup>
+						<ondown>142</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,F)</onclick>
+						<onclick>Skin.SetString(Hex2,F)</onclick>
+						<onclick>Skin.SetString(Hex3,0)</onclick>
+						<onclick>Skin.SetString(Hex4,0)</onclick>
+						<onclick>Skin.SetString(Hex5,F)</onclick>
+						<onclick>Skin.SetString(Hex6,F)</onclick>
+						<onclick>Skin.SetString(Hex7,0)</onclick>
+						<onclick>Skin.SetString(Hex8,0)</onclick>
+						<onclick>Skin.SetString(Color1,FF00FF00)</onclick>
+					</control>
+					<control type="button" id="103">
+						<label>Blue</label>
+						<onup>143</onup>
+						<ondown>143</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,F)</onclick>
+						<onclick>Skin.SetString(Hex2,F)</onclick>
+						<onclick>Skin.SetString(Hex3,0)</onclick>
+						<onclick>Skin.SetString(Hex4,0)</onclick>
+						<onclick>Skin.SetString(Hex5,0)</onclick>
+						<onclick>Skin.SetString(Hex6,0)</onclick>
+						<onclick>Skin.SetString(Hex7,F)</onclick>
+						<onclick>Skin.SetString(Hex8,F)</onclick>
+						<onclick>Skin.SetString(Color1,FF0000FF)</onclick>
+					</control>
+				</control>
+					<!-- 2nd row buttons -->
+				<control type="grouplist">
+					<top>50</top>
+					<orientation>horizontal</orientation>
+					<itemgap>0</itemgap>
+					<control type="button" id="140">
+						<label>Clear</label>
+						<onup>100</onup>
+						<ondown>100</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,0)</onclick>
+						<onclick>Skin.SetString(Hex2,0)</onclick>
+						<onclick>Skin.SetString(Hex3,0)</onclick>
+						<onclick>Skin.SetString(Hex4,0)</onclick>
+						<onclick>Skin.SetString(Hex5,0)</onclick>
+						<onclick>Skin.SetString(Hex6,0)</onclick>
+						<onclick>Skin.SetString(Hex7,0)</onclick>
+						<onclick>Skin.SetString(Hex8,1)</onclick>
+						<onclick>Skin.SetString(Color1,00000001)</onclick>
+					</control>
+					<control type="button" id="141">
+						<label>White</label>
+						<onup>101</onup>
+						<ondown>101</ondown>
+						<color>FF000000</color>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,F)</onclick>
+						<onclick>Skin.SetString(Hex2,F)</onclick>
+						<onclick>Skin.SetString(Hex3,F)</onclick>
+						<onclick>Skin.SetString(Hex4,F)</onclick>
+						<onclick>Skin.SetString(Hex5,F)</onclick>
+						<onclick>Skin.SetString(Hex6,F)</onclick>
+						<onclick>Skin.SetString(Hex7,F)</onclick>
+						<onclick>Skin.SetString(Hex8,F)</onclick>
+						<onclick>Skin.SetString(Color1,FFFFFFFF)</onclick>
+					</control>
+					<control type="button" id="142">
+						<label>Grey</label>
+						<onup>102</onup>
+						<ondown>102</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,8)</onclick>
+						<onclick>Skin.SetString(Hex2,8)</onclick>
+						<onclick>Skin.SetString(Hex3,8)</onclick>
+						<onclick>Skin.SetString(Hex4,8)</onclick>
+						<onclick>Skin.SetString(Hex5,8)</onclick>
+						<onclick>Skin.SetString(Hex6,8)</onclick>
+						<onclick>Skin.SetString(Hex7,8)</onclick>
+						<onclick>Skin.SetString(Hex8,8)</onclick>
+						<onclick>Skin.SetString(Color1,88888888)</onclick>
+					</control>
+					<control type="button" id="143">
+						<label>Black</label>
+						<onup>103</onup>
+						<ondown>103</ondown>
+						<include>ColorPresetButton</include>
+						<onclick>Skin.SetString(Hex1,F)</onclick>
+						<onclick>Skin.SetString(Hex2,F)</onclick>
+						<onclick>Skin.SetString(Hex3,0)</onclick>
+						<onclick>Skin.SetString(Hex4,0)</onclick>
+						<onclick>Skin.SetString(Hex5,0)</onclick>
+						<onclick>Skin.SetString(Hex6,0)</onclick>
+						<onclick>Skin.SetString(Hex7,0)</onclick>
+						<onclick>Skin.SetString(Hex8,0)</onclick>
+						<onclick>Skin.SetString(Color1,FF000000)</onclick>
+					</control>
+				</control>
+			</control>
+
+		</control>
+	</controls>
+</window>

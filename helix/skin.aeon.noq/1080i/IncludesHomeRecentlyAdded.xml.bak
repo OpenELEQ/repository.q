@@ -1,0 +1,2453 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="HomeRecentlyAddedInfo">
+		<!-- Common Background -->
+		<control type="group">
+			<description>Widget 1 Gradient</description>
+			<top>0</top>
+			<include>WP-GradientFlip1</include>
+			<visible>SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Gradient)</visible>
+			<animation effect="fade" time="100" end="0" reversible="false" condition="[Control.HasFocus(8002) | Control.HasFocus(8022)] + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)">Conditional</animation>
+			<animation effect="rotatex" end="180" center="250" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-25" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		</control>
+		<control type="group">
+			<description>Widget 1 Panel Info Gradient</description>
+			<top>350</top>
+			<include>WP-Gradient1</include>
+			<visible>[Control.HasFocus(8001) | Control.HasFocus(8021)] + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)</visible>
+			<animation effect="rotatex" end="180" center="250" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-950" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		</control>
+		<control type="group">
+			<description>Widget 1 Classic Info Gradient</description>
+			<top>0</top>
+			<include>WP-GradientFlip1</include>
+			<visible>[!SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Gradient) + [Control.HasFocus(8001) | Control.HasFocus(8021)] + SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)] | [!SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Gradient) + Skin.HasSetting(WP-ClassicInfo1) + SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)]</visible>
+			<animation effect="fade" time="100" end="0" reversible="false" condition="[Control.HasFocus(8002) | Control.HasFocus(8022)] + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)">Conditional</animation>
+			<animation effect="rotatex" end="180" center="250" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-25" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		</control>
+		<control type="group">
+			<description>Widget 2 Gradient</description>
+			<top>350</top>
+			<include>WP-Gradient2</include>
+			<visible>SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Gradient)</visible>
+			<animation effect="fade" time="100" end="0" reversible="false" condition="[Control.HasFocus(8001) | Control.HasFocus(8011)] + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)">Conditional</animation>
+			<animation effect="rotatex" end="180" center="250" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-950" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		</control>
+		<control type="group">
+			<description>Widget 2 Panel Info Gradient</description>
+			<top>0</top>
+			<include>WP-GradientFlip2</include>
+			<visible>[Control.HasFocus(8002) | Control.HasFocus(8022)] + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)</visible>
+			<animation effect="rotatex" end="180" center="250" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-25" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		</control>
+		<control type="group">
+			<description>Widget 2 Classic Info Gradient</description>
+			<top>350</top>
+			<include>WP-Gradient2</include>
+			<visible>[!SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Gradient) + [Control.HasFocus(8002) | Control.HasFocus(8022)] + SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)] | [!SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Gradient) + Skin.HasSetting(WP-ClassicInfo2) + SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)]</visible>
+			<animation effect="fade" time="100" end="0" reversible="false" condition="[Control.HasFocus(8001) | Control.HasFocus(8021)] + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)">Conditional</animation>
+			<animation effect="rotatex" end="180" center="250" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-950" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+		</control>
+		<!-- ****************  Widget 1  ****************** -->
+		<control type="group" id="8011">
+			<animation effect="slide" tween="cubic" time="720" start="0,-1080" end="0,0">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,-1080" start="0,0">WindowClose</animation>
+			<animation effect="fade" time="1000" end="0" reversible="false" condition="[Control.HasFocus(8002) | Control.HasFocus(8022)] + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)">Conditional</animation>
+			<animation effect="slide" end="0,26" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<visible>!IsEmpty(Container(9000).ListItem.Property(Widget))</visible>
+			<include>VisibleFadeEffect</include>
+			<top>-12</top>
+			<!-- Classic Background -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+				<include>WP-ClassicBackgroundAnimationL1</include>
+				<include>WP-ClassicBackgroundL1</include>
+			</control>
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+				<include>WP-ClassicBackgroundAnimationR1</include>
+				<include>WP-ClassicBackgroundR1</include>
+			</control>
+			<!-- Classic Banner Background -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+				<include>WP-ClassicBackgroundL1</include>
+			</control>
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight) + StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+				<include>WP-ClassicBackgroundR1</include>
+			</control>
+			<!-- Classic Artwork/Labels -->
+			<control type="group">
+				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft)</visible>
+				<include>WP-ClassicFadeAnimation1</include>
+				<include>WP-ClassicBackgroundAnimationL1</include>
+				<include>WP-ClassicArtL1</include>
+				<include>WP-ClassicLabelL1</include>
+			</control>
+			<control type="group">
+				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight)</visible>
+				<include>WP-ClassicFadeAnimation1</include>
+				<include>WP-ClassicBackgroundAnimationR1</include>
+				<include>WP-ClassicArtR1</include>
+				<include>WP-ClassicLabelR1</include>
+			</control>
+			<!-- Info Classic-->
+			<control type="group">
+				<visible>[Skin.HasSetting(WP-ClassicInfo1) + SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)] | [[Control.HasFocus(8001) | Control.HasFocus(8021)] + SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)]</visible>
+				<top>0</top>
+				<include>WP-Info1</include>
+			</control>
+			<!-- Info Panel-->
+			<control type="group">
+				<visible>Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic) + [Control.HasFocus(8001) | Control.HasFocus(8021)]</visible>
+				<left>-79</left>
+				<top>364</top>
+				<include>WP-Info1</include>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic) + [Control.HasFocus(8001) | Control.HasFocus(8021)]</visible>
+				<left>-79</left>
+				<top>586</top>
+				<include>WP-Info1</include>
+			</control>
+			<!-- Panels Background/Labels -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+				<include>WP-PanelBackgroundAnimation</include>
+				<control type="group">
+					<include>WP-PanelBackgroundHeader1</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetInfo1</include>
+					<visible>[Control.HasFocus(8001) | Control.HasFocus(8021)] + IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabel1</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader))</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelLow1</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyleHeader),Low)</visible>
+				</control>
+				<include>WP-PanelBackground1</include>
+			</control>
+			<!-- Panels Extended Background/Labels -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+				<include>WP-PanelBackgroundAnimation</include>
+				<control type="group">
+					<include>WP-PanelBackgroundHeaderExt1</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetInfoExt1</include>
+					<visible>[Control.HasFocus(8001) | Control.HasFocus(8021)] + IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelExt1</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader))</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelLow1</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyleHeader),Low)</visible>
+				</control>
+				<include>WP-PanelBackground1</include>
+			</control>
+			<!-- ** Dynamic Panels ** -->
+			<control type="group">
+				<visible>!StringCompare(Container(9000).ListItem.Property(Widget),44) + !StringCompare(Container(9000).ListItem.Property(Widget),11)</visible>
+				<!-- Classic Dynamic Updating -->
+				<control type="group">
+					<include>WP-ClassicUpdatingL</include>
+					<visible>IsEmpty(Container(8001).ListItem.Label) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>WP-ClassicUpdatingR</include>
+					<visible>IsEmpty(Container(8001).ListItem.Label) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Panel Dynamic Updating -->
+				<control type="group">
+					<include>WP-PanelUpdating</include>
+					<visible>IsEmpty(Container(8001).ListItem.Label) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Classic Widgets-->
+				<control type="panel" id="8001">
+					<include>WP-PanelClassicL1</include>
+					<include>WP-PanelClassicDimensionsL</include>
+					<include>WP-ClassicAnimationL1</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic1</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus1</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<control type="panel" id="8001">
+					<include>WP-PanelClassicR1</include>
+					<include>WP-PanelClassicDimensionsR</include>
+					<include>WP-ClassicAnimationR1</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic1</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus1</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Classic Banner Widget -->
+				<control type="panel" id="8001">
+					<include>WP-PanelClassicL1</include>
+					<include>WP-PanelClassicBannerDimensionsL</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+						<include>WP-ClassicFocusBanner1</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<control type="panel" id="8001">
+					<include>WP-PanelClassicR1</include>
+					<include>WP-PanelClassicBannerDimensionsR</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight)  + StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+						<include>WP-ClassicFocusBanner1</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Portrait Widget-->
+				<control type="panel" id="8001">
+					<include>WP-PanelPortrait1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Portrait Ext Widget-->
+				<control type="panel" id="8001">
+					<include>WP-PanelPortraitExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Square Widget	-->
+				<control type="panel" id="8001">
+					<include>WP-PanelSquare1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square1</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Square Ext Widget	-->
+				<control type="panel" id="8001">
+					<include>WP-PanelSquareExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square1</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Landscape Widget-->
+				<control type="panel" id="8001">
+					<include>WP-PanelLandscape1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="275" width ="494">
+						<include>WP-Landscape1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="494">
+						<include>WP-Landscape1</include>
+						<include>WP-LandscapeFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Landscape Extended Widget-->
+				<control type="panel" id="8001">
+					<include>WP-PanelLandscapeExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="261" width ="469">
+						<include>WP-LandscapeExt1</include>
+					</itemlayout>
+					<focusedlayout height="261" width="469">
+						<include>WP-LandscapeExt1</include>
+						<include>WP-LandscapeFocusExt</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Banner Widget-->
+				<control type="panel" id="8001">
+					<include>WP-PanelBanner1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="140" width ="735">
+						<include>WP-Banner1</include>
+					</itemlayout>
+					<focusedlayout height="140" width ="735">
+						<include>WP-Banner1</include>
+						<include>WP-BannerFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+				<!-- Banner Extended Widget-->
+				<control type="panel" id="8001">
+					<include>WP-PanelBannerExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="120" width ="625">
+						<include>WP-BannerExt1</include>
+					</itemlayout>
+					<focusedlayout height="120" width ="620">
+						<include>WP-BannerExt1</include>
+						<include>WP-BannerFocusExt</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTargetVar]">$VAR[WidgetListContent]</content>
+				</control>
+			</control>
+			<!-- ** Static Panels ** -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(Widget),44) | StringCompare(Container(9000).ListItem.Property(Widget),11)</visible>
+				<!-- Classic Static Updating -->
+				<control type="group">
+					<include>WP-ClassicUpdatingL</include>
+					<visible>IsEmpty(Container(8021).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget),11) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>WP-ClassicUpdatingR</include>
+					<visible>IsEmpty(Container(8021).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget),11) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Panel Static Updating -->
+				<control type="group">
+					<include>WP-PanelUpdating</include>
+					<visible>IsEmpty(Container(8021).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget),11) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Classic Widgets-->
+				<control type="panel" id="8021">
+					<include>WP-PanelClassicL1</include>
+					<include>WP-PanelClassicDimensionsL</include>
+					<include>WP-ClassicAnimationL1</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic1</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus1</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<control type="panel" id="8021">
+					<include>WP-PanelClassicR1</include>
+					<include>WP-PanelClassicDimensionsR</include>
+					<include>WP-ClassicAnimationR1</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic1</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus1</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Classic Banner Widget -->
+				<control type="panel" id="8021">
+					<include>WP-PanelClassicL1</include>
+					<include>WP-PanelClassicBannerDimensionsL</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+						<include>WP-ClassicFocusBanner1</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<control type="panel" id="8021">
+					<include>WP-PanelClassicR1</include>
+					<include>WP-PanelClassicBannerDimensionsR</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle),ClassicRight)  + StringCompare(Container(9000).ListItem.Property(WidgetArt),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner1</include>
+						<include>WP-ClassicFocusBanner1</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Portrait Widget-->
+				<control type="panel" id="8021">
+					<include>WP-PanelPortrait1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Portrait Ext Widget-->
+				<control type="panel" id="8021">
+					<include>WP-PanelPortraitExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait1</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Square Widget	-->
+				<control type="panel" id="8021">
+					<include>WP-PanelSquare1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square1</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather1</include>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Square Ext Widget	-->
+				<control type="panel" id="8021">
+					<include>WP-PanelSquareExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square1</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather1</include>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Landscape Widget-->
+				<control type="panel" id="8021">
+					<include>WP-PanelLandscape1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="275" width ="494">
+						<include>WP-Landscape1</include>
+					</itemlayout>
+					<focusedlayout height="275" width="494">
+						<include>WP-Landscape1</include>
+						<include>WP-LandscapeFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather1</include>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Landscape Extended Widget-->
+				<control type="panel" id="8021">
+					<include>WP-PanelLandscapeExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="261" width ="469">
+						<include>WP-LandscapeExt1</include>
+					</itemlayout>
+					<focusedlayout height="261" width="469">
+						<include>WP-LandscapeExt1</include>
+						<include>WP-LandscapeFocusExt</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather1</include>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Banner Widget-->
+				<control type="panel" id="8021">
+					<include>WP-PanelBanner1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),Panel)</visible>
+					<itemlayout height="140" width ="735">
+						<include>WP-Banner1</include>
+					</itemlayout>
+					<focusedlayout height="140" width ="735">
+						<include>WP-Banner1</include>
+						<include>WP-BannerFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+				<!-- Banner Extended Widget-->
+				<control type="panel" id="8021">
+					<include>WP-PanelBannerExt1</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle),PanelExtended)</visible>
+					<itemlayout height="120" width ="625">
+						<include>WP-BannerExt1</include>
+					</itemlayout>
+					<focusedlayout height="120" width ="620">
+						<include>WP-BannerExt1</include>
+						<include>WP-BannerFocusExt</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired1</include>
+					</content>
+				</control>
+			</control>
+		</control>
+		<!-- ****************  Widget 2 NormalMenu ****************** -->
+		<control type="group" id="8012">
+			<animation effect="slide" tween="cubic" time="720" start="0,-1080" end="0,0">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,-1080" start="0,0">WindowClose</animation>
+			<animation effect="fade" time="1000" end="0" reversible="false" condition="[Control.HasFocus(8001) | Control.HasFocus(8021)] + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)">Conditional</animation>
+			<animation effect="slide" end="0,210" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<visible>!IsEmpty(Container(9000).ListItem.Property(Widget2)) + Skin.HasSetting(lowermainmenu)</visible>
+			<include>VisibleFadeEffect</include>
+			<top>400</top>
+			<!-- Classic Background -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundAnimationL2</include>
+				<include>WP-ClassicBackgroundL2</include>
+			</control>
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundAnimationR2</include>
+				<include>WP-ClassicBackgroundR2</include>
+			</control>
+			<!-- Classic Banner Background -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundL2</include>
+			</control>
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundR2</include>
+			</control>
+			<!-- Classic Artwork/Labels -->
+			<control type="group">
+				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft)</visible>
+				<include>WP-ClassicFadeAnimation2</include>
+				<include>WP-ClassicBackgroundAnimationL2</include>
+				<include>WP-ClassicArtL2</include>
+				<include>WP-ClassicLabelL2</include>
+			</control>
+			<control type="group">
+				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)</visible>
+				<include>WP-ClassicFadeAnimation2</include>
+				<include>WP-ClassicBackgroundAnimationR2</include>
+				<include>WP-ClassicArtR2</include>
+				<include>WP-ClassicLabelR2</include>
+			</control>
+			<!-- Info Classic-->
+			<control type="group">
+				<visible>[Skin.HasSetting(WP-ClassicInfo2) + SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)] | [[Control.HasFocus(8002) | Control.HasFocus(8022)] + SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)]</visible>
+				<top>0</top>
+				<include>WP-Info2</include>
+			</control>
+			<!-- Info Panel-->
+			<control type="group">
+				<visible>Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic) + [Control.HasFocus(8002) | Control.HasFocus(8022)]</visible>
+				<left>-79</left>
+				<top>-394</top>
+				<include>WP-Info2</include>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic) + [Control.HasFocus(8002) | Control.HasFocus(8022)]</visible>
+				<left>-79</left>
+				<top>-586</top>
+				<include>WP-Info2</include>
+			</control>
+			<!-- Panels Background/Labels -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+				<include>WP-PanelBackgroundAnimation</include>
+				<control type="group">
+					<include>WP-PanelBackgroundHeader2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetInfo2</include>
+					<visible>[Control.HasFocus(8002) | Control.HasFocus(8022)] + IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabel2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2))</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelLow2</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyleHeader2),Low)</visible>
+				</control>
+				<include>WP-PanelBackground2</include>
+			</control>
+			<!-- Panels Extended Background/Labels -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+				<include>WP-PanelBackgroundAnimation</include>
+				<control type="group">
+					<include>WP-PanelBackgroundHeaderExt2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetInfoExt2</include>
+					<visible>[Control.HasFocus(8002) | Control.HasFocus(8021)] + IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelExt2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2))</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelLow2</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyleHeader2),Low)</visible>
+				</control>
+				<include>WP-PanelBackground2</include>
+			</control>
+			<!-- ** Dynamic Panels ** -->
+			<control type="group">
+				<visible>!StringCompare(Container(9000).ListItem.Property(Widget2),44) + !StringCompare(Container(9000).ListItem.Property(Widget2),11)</visible>
+				<!-- Classic Dynamic Updating -->
+				<control type="group">
+					<include>WP-ClassicUpdatingL</include>
+					<visible>IsEmpty(Container(8002).ListItem.Label) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>WP-ClassicUpdatingR</include>
+					<visible>IsEmpty(Container(8002).ListItem.Label) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Panel Dynamic Updating -->
+				<control type="group">
+					<include>WP-PanelUpdating</include>
+					<visible>IsEmpty(Container(8002).ListItem.Label) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Classic Widgets-->
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicDimensionsL</include>
+					<include>WP-ClassicAnimationL2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicDimensionsR</include>
+					<include>WP-ClassicAnimationR2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Classic Banner Widget -->
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicBannerDimensionsL</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicBannerDimensionsR</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)  + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Portrait Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelPortrait2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Portrait Ext Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelPortraitExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Square Widget	-->
+				<control type="panel" id="8002">
+					<include>WP-PanelSquare2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Square Ext Widget	-->
+				<control type="panel" id="8002">
+					<include>WP-PanelSquareExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Landscape Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelLandscape2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width ="494">
+						<include>WP-Landscape2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="494">
+						<include>WP-Landscape2</include>
+						<include>WP-LandscapeFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Landscape Extended Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelLandscapeExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="261" width ="469">
+						<include>WP-LandscapeExt2</include>
+					</itemlayout>
+					<focusedlayout height="261" width="469">
+						<include>WP-LandscapeExt2</include>
+						<include>WP-LandscapeFocusExt</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Banner Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelBanner2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+					</itemlayout>
+					<focusedlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+						<include>WP-BannerFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Banner Extended Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelBannerExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="120" width ="625">
+						<include>WP-BannerExt2</include>
+					</itemlayout>
+					<focusedlayout height="120" width ="620">
+						<include>WP-BannerExt2</include>
+						<include>WP-BannerFocusExt</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+			</control>
+			<!-- ** Static Panels ** -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(Widget2),44) | StringCompare(Container(9000).ListItem.Property(Widget2),11)</visible>
+				<!-- Classic Static Updating -->
+				<control type="group">
+					<include>WP-ClassicUpdatingL</include>
+					<visible>IsEmpty(Container(8022).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget2),11) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>WP-ClassicUpdatingR</include>
+					<visible>IsEmpty(Container(8022).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget2),11) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Panel Static Updating -->
+				<control type="group">
+					<include>WP-PanelUpdating</include>
+					<visible>IsEmpty(Container(8022).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget2),11) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Classic Widgets-->
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicDimensionsL</include>
+					<include>WP-ClassicAnimationL2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicDimensionsR</include>
+					<include>WP-ClassicAnimationR2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Classic Banner Widget -->
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicBannerDimensionsL</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicBannerDimensionsR</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)  + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Portrait Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelPortrait2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Portrait Ext Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelPortraitExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Square Widget	-->
+				<control type="panel" id="8022">
+					<include>WP-PanelSquare2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Square Ext Widget	-->
+				<control type="panel" id="8022">
+					<include>WP-PanelSquareExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Landscape Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelLandscape2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width ="494">
+						<include>WP-Landscape2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="494">
+						<include>WP-Landscape2</include>
+						<include>WP-LandscapeFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Landscape Extended Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelLandscapeExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="261" width ="469">
+						<include>WP-LandscapeExt2</include>
+					</itemlayout>
+					<focusedlayout height="261" width="469">
+						<include>WP-LandscapeExt2</include>
+						<include>WP-LandscapeFocusExt</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Banner Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelBanner2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+					</itemlayout>
+					<focusedlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+						<include>WP-BannerFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Banner Extended Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelBannerExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="120" width ="625">
+						<include>WP-BannerExt2</include>
+					</itemlayout>
+					<focusedlayout height="120" width ="620">
+						<include>WP-BannerExt2</include>
+						<include>WP-BannerFocusExt</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+			</control>
+		</control>
+		<!-- ****************  Widget 2 LowerMenu ****************** -->
+		<control type="group" id="8012">
+			<animation effect="slide" tween="cubic" time="720" start="0,-1080" end="0,0">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,-1080" start="0,0">WindowClose</animation>
+			<animation effect="fade" time="1000" end="0" reversible="false" condition="[Control.HasFocus(8001) | Control.HasFocus(8021)] + Skin.HasSetting(WP-PanelInfo1) + !SubString(Container(9000).ListItem.Property(WidgetStyle),Classic)">Conditional</animation>
+			<animation effect="slide" end="0,210" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<visible>!IsEmpty(Container(9000).ListItem.Property(Widget2)) + !Skin.HasSetting(lowermainmenu)</visible>
+			<include>VisibleFadeEffect</include>
+			<top>450</top>
+			<!-- Classic Background -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundAnimationL2</include>
+				<include>WP-ClassicBackgroundL2</include>
+			</control>
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundAnimationR2</include>
+				<include>WP-ClassicBackgroundR2</include>
+			</control>
+			<!-- Classic Banner Background -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundL2</include>
+			</control>
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+				<include>WP-ClassicBackgroundR2</include>
+			</control>
+			<!-- Classic Artwork/Labels -->
+			<control type="group">
+				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft)</visible>
+				<include>WP-ClassicFadeAnimation2</include>
+				<include>WP-ClassicBackgroundAnimationL2</include>
+				<include>WP-ClassicArtL2</include>
+				<include>WP-ClassicLabelL2</include>
+			</control>
+			<control type="group">
+				<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)</visible>
+				<include>WP-ClassicFadeAnimation2</include>
+				<include>WP-ClassicBackgroundAnimationR2</include>
+				<include>WP-ClassicArtR2</include>
+				<include>WP-ClassicLabelR2</include>
+			</control>
+			<!-- Info Classic-->
+			<control type="group">
+				<visible>[Skin.HasSetting(WP-ClassicInfo2) + SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)] | [[Control.HasFocus(8002) | Control.HasFocus(8022)] + SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)]</visible>
+				<top>0</top>
+				<include>WP-Info2</include>
+			</control>
+			<!-- Info Panel-->
+			<control type="group">
+				<visible>Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic) + [Control.HasFocus(8002) | Control.HasFocus(8022)]</visible>
+				<left>-79</left>
+				<top>-394</top>
+				<include>WP-Info2</include>
+			</control>
+			<control type="group">
+				<visible>!Skin.HasSetting(lowermainmenu) + Skin.HasSetting(WP-PanelInfo2) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic) + [Control.HasFocus(8002) | Control.HasFocus(8022)]</visible>
+				<left>-79</left>
+				<top>-586</top>
+				<include>WP-Info2</include>
+			</control>
+			<!-- Panels Background/Labels -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+				<include>WP-PanelBackgroundAnimation</include>
+				<control type="group">
+					<include>WP-PanelBackgroundHeader2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetInfo2</include>
+					<visible>[Control.HasFocus(8002) | Control.HasFocus(8022)] + IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabel2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2))</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelLow2</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyleHeader2),Low)</visible>
+				</control>
+				<include>WP-PanelBackground2</include>
+			</control>
+			<!-- Panels Extended Background/Labels -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+				<include>WP-PanelBackgroundAnimation</include>
+				<control type="group">
+					<include>WP-PanelBackgroundHeaderExt2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetInfoExt2</include>
+					<visible>[Control.HasFocus(8002) | Control.HasFocus(8021)] + IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2)) + [IsEmpty(Container(9000).ListItem.Property(WidgetStyleBackground2)) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Glow) | SubString(Container(9000).ListItem.Property(WidgetStyleBackground2),Flat)]</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelExt2</include>
+					<visible>IsEmpty(Container(9000).ListItem.Property(WidgetStyleHeader2))</visible>
+				</control>
+				<control type="group">
+					<include>WP-PanelWidgetLabelLow2</include>
+					<visible>StringCompare(Container(9000).ListItem.Property(WidgetStyleHeader2),Low)</visible>
+				</control>
+				<include>WP-PanelBackground2</include>
+			</control>
+			<!-- ** Dynamic Panels ** -->
+			<control type="group">
+				<visible>!StringCompare(Container(9000).ListItem.Property(Widget2),44) + !StringCompare(Container(9000).ListItem.Property(Widget2),11)</visible>
+				<!-- Classic Dynamic Updating -->
+				<control type="group">
+					<include>WP-ClassicUpdatingL</include>
+					<visible>IsEmpty(Container(8002).ListItem.Label) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>WP-ClassicUpdatingR</include>
+					<visible>IsEmpty(Container(8002).ListItem.Label) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Panel Dynamic Updating -->
+				<control type="group">
+					<include>WP-PanelUpdating</include>
+					<visible>IsEmpty(Container(8002).ListItem.Label) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Classic Widgets-->
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicDimensionsL</include>
+					<include>WP-ClassicAnimationL2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicDimensionsR</include>
+					<include>WP-ClassicAnimationR2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Classic Banner Widget -->
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicBannerDimensionsL</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<control type="panel" id="8002">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicBannerDimensionsR</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)  + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Portrait Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelPortrait2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Portrait Ext Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelPortraitExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Square Widget	-->
+				<control type="panel" id="8002">
+					<include>WP-PanelSquare2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Square Ext Widget	-->
+				<control type="panel" id="8002">
+					<include>WP-PanelSquareExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Landscape Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelLandscape2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width ="494">
+						<include>WP-Landscape2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="494">
+						<include>WP-Landscape2</include>
+						<include>WP-LandscapeFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Landscape Extended Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelLandscapeExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="261" width ="469">
+						<include>WP-LandscapeExt2</include>
+					</itemlayout>
+					<focusedlayout height="261" width="469">
+						<include>WP-LandscapeExt2</include>
+						<include>WP-LandscapeFocusExt</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Banner Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelBanner2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+					</itemlayout>
+					<focusedlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+						<include>WP-BannerFocus</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+				<!-- Banner Extended Widget-->
+				<control type="panel" id="8002">
+					<include>WP-PanelBannerExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="120" width ="625">
+						<include>WP-BannerExt2</include>
+					</itemlayout>
+					<focusedlayout height="120" width ="620">
+						<include>WP-BannerExt2</include>
+						<include>WP-BannerFocusExt</include>
+					</focusedlayout>
+					<content target="$VAR[WidgetListTarget2Var]">$VAR[WidgetListContent2]</content>
+				</control>
+			</control>
+			<!-- ** Static Panels ** -->
+			<control type="group">
+				<visible>StringCompare(Container(9000).ListItem.Property(Widget2),44) | StringCompare(Container(9000).ListItem.Property(Widget2),11)</visible>
+				<!-- Classic Static Updating -->
+				<control type="group">
+					<include>WP-ClassicUpdatingL</include>
+					<visible>IsEmpty(Container(8022).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget2),11) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<control type="group">
+					<include>WP-ClassicUpdatingR</include>
+					<visible>IsEmpty(Container(8022).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget2),11) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Panel Static Updating -->
+				<control type="group">
+					<include>WP-PanelUpdating</include>
+					<visible>IsEmpty(Container(8022).ListItem.Label) + !StringCompare(Container(9000).ListItem.Property(Widget2),11) + !SubString(Container(9000).ListItem.Property(WidgetStyle2),Classic)</visible>
+					<control type="image">
+						<include>WP-Spinner</include>
+						<colordiffuse>labelheader</colordiffuse>
+					</control>
+					<control type="image">
+						<include>WP-Spinner</include>
+					</control>
+				</control>
+				<!-- Classic Widgets-->
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicDimensionsL</include>
+					<include>WP-ClassicAnimationL2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicDimensionsR</include>
+					<include>WP-ClassicAnimationR2</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight) + !StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="52" width="350">
+						<include>WP-Classic2</include>
+					</itemlayout>
+					<focusedlayout height="52" width="350">
+						<include>WP-ClassicFocus2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Classic Banner Widget -->
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicL2</include>
+					<include>WP-PanelClassicBannerDimensionsL</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicLeft) + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<control type="panel" id="8022">
+					<include>WP-PanelClassicR2</include>
+					<include>WP-PanelClassicBannerDimensionsR</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),ClassicRight)  + StringCompare(Container(9000).ListItem.Property(WidgetArt2),Banner)</visible>
+					<itemlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+					</itemlayout>
+					<focusedlayout height="64" width="345">
+						<include>WP-ClassicBanner2</include>
+						<include>WP-ClassicFocusBanner2</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Portrait Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelPortrait2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Portrait Ext Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelPortraitExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Portrait) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="188">
+						<include>WP-Portrait2</include>
+						<include>WP-PortraitFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Square Widget	-->
+				<control type="panel" id="8022">
+					<include>WP-PanelSquare2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Square Ext Widget	-->
+				<control type="panel" id="8022">
+					<include>WP-PanelSquareExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Square) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="275" width="280">
+						<include>WP-Square2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="280">
+						<include>WP-Square2</include>
+						<include>WP-SquareFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Landscape Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelLandscape2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="275" width ="494">
+						<include>WP-Landscape2</include>
+					</itemlayout>
+					<focusedlayout height="275" width="494">
+						<include>WP-Landscape2</include>
+						<include>WP-LandscapeFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Landscape Extended Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelLandscapeExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Landscape) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="261" width ="469">
+						<include>WP-LandscapeExt2</include>
+					</itemlayout>
+					<focusedlayout height="261" width="469">
+						<include>WP-LandscapeExt2</include>
+						<include>WP-LandscapeFocusExt</include>
+					</focusedlayout>
+					<content>
+						<include>WP-Weather2</include>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Banner Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelBanner2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),Panel)</visible>
+					<itemlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+					</itemlayout>
+					<focusedlayout height="140" width ="735">
+						<include>WP-Banner2</include>
+						<include>WP-BannerFocus</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+				<!-- Banner Extended Widget-->
+				<control type="panel" id="8022">
+					<include>WP-PanelBannerExt2</include>
+					<include>WP-PanelAnimation</include>
+					<visible>!Container(9000).OnNext + !Container(9000).OnPrevious + SubString(Container(9000).ListItem.Property(WidgetArt2),Banner) + StringCompare(Container(9000).ListItem.Property(WidgetStyle2),PanelExtended)</visible>
+					<itemlayout height="120" width ="625">
+						<include>WP-BannerExt2</include>
+					</itemlayout>
+					<focusedlayout height="120" width ="620">
+						<include>WP-BannerExt2</include>
+						<include>WP-BannerFocusExt</include>
+					</focusedlayout>
+					<content>
+						<include>WP-NextAired2</include>
+					</content>
+				</control>
+			</control>
+		</control>
+	</include>
+	
+	<include name="NowPlayingVideoWidget">
+		<!-- Video Info -->
+		<control type="group">
+			<left>0</left>
+			<top>622</top>
+			<visible>[Skin.HasSetting(Disable.CompactInfo) + Player.HasVideo + Skin.HasSetting(lowermainmenu) + IsEmpty(Container(9000).ListItem.Property(Widget))]  | [Skin.HasSetting(Disable.CompactInfo) + Player.HasVideo + !Skin.HasSetting(lowermainmenu) + IsEmpty(Container(9000).ListItem.Property(Widget2))]</visible>
+			<include>VisibleFadeEffect</include>
+			<animation effect="slide" tween="cubic" time="720" start="0,1080" end="0,0" condition="!Skin.HasSetting(lowermainmenu)">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,1080" start="0,0" condition="!Skin.HasSetting(lowermainmenu)">WindowClose</animation>
+			<animation effect="slide" tween="cubic" time="720" start="0,-1080" end="0,0" condition="Skin.HasSetting(lowermainmenu)">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,-1080" start="0,0" condition="Skin.HasSetting(lowermainmenu)">WindowClose</animation>
+			<animation effect="slide" end="0,-640" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<control type="group">
+				<control type="image">
+					<left>0</left>
+					<top>-172</top>
+					<width>FullScreenWidth</width>
+					<height>630</height>
+					<texture border="1">nowplaying_shadow.png</texture>
+					<visible>!Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image">
+					<left>0</left>
+					<top>-70</top>
+					<width>FullScreenWidth</width>
+					<height>630</height>
+					<texture flipy="true" border="1">nowplaying_shadow.png</texture>
+					<visible>Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image" id="8666">
+					<left>240</left>
+					<top>109</top>
+					<width>303</width>
+					<height>303</height>
+					<fadetime>300</fadetime>
+					<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+					<texture>$INFO[Player.FolderPath]disc.png</texture>
+				</control>
+				<control type="image">
+					<description>Cover image</description>
+					<left>61</left>
+					<top>79</top>
+					<width>363</width>
+					<height>363</height>
+					<aspectratio align="right">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture fallback="DefaultAlbumCover.png">$VAR[HomeNowPlayingThumbVar]</texture>
+					<bordertexture border="20">thumbs/thumb_shadow.png</bordertexture>
+					<bordersize>20</bordersize>
+				</control>
+				<control type="image" id="8668">
+					<left>513</left>
+					<top>92</top>
+					<width>400</width>
+					<height>155</height>
+					<aspectratio align="left">keep</aspectratio>
+					<fadetime>300</fadetime>
+					<texture>$INFO[Player.FolderPath]logo.png</texture>
+					<bordersize>30</bordersize>
+					<visible>!IsEmpty(Control.GetLabel(8668))</visible>
+					<animation effect="slide" end="-135,0" time="320" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(8666))">Conditional</animation>
+				</control>
+				<control type="grouplist">
+					<left>550</left>
+					<top>87</top>
+					<width>1510</width>
+					<height>344</height>
+					<align>center</align>
+					<animation effect="slide" end="-135,0" time="320" tween="cubic" easing="inout" condition="IsEmpty(Control.GetLabel(8666))">Conditional</animation>
+					<control type="label">
+						<width>1300</width>
+						<height>55</height>
+						<font>font48_title</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<visible>!IsEmpty(VideoPlayer.Title) + !VideoPlayer.Content(episodes) + !VideoPlayer.Content(musicvideos) + IsEmpty(Control.GetLabel(8668))</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>55</height>
+						<font>font48_title</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.TvShowTitle]</label>
+						<visible>!IsEmpty(VideoPlayer.TvShowTitle) + VideoPlayer.Content(episodes) + IsEmpty(Control.GetLabel(8668))</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>55</height>
+						<font>font48_title</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Artist]</label>
+						<visible>!IsEmpty(VideoPlayer.Artist) + VideoPlayer.Content(musicvideos) + IsEmpty(Control.GetLabel(8668))</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>105</height>
+						<font>font48_title</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label></label>
+						<visible>!IsEmpty(Control.GetLabel(8668))</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>45</height>
+						<font>font16</font>
+						<textcolor>labelheader</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Tagline]</label>
+						<visible>!IsEmpty(VideoPlayer.Tagline) + VideoPlayer.Content(movies)</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>45</height>
+						<font>font16</font>
+						<textcolor>labelheader</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<visible>!IsEmpty(VideoPlayer.Title) + [VideoPlayer.Content(episodes) | VideoPlayer.Content(musicvideos)]</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>45</height>
+						<font>font16</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Year]</label>
+						<visible>!IsEmpty(VideoPlayer.Year) + !VideoPlayer.Content(episodes)</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>45</height>
+						<font>font16</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Premiered]</label>
+						<visible>!IsEmpty(VideoPlayer.Premiered) + VideoPlayer.Content(episodes)</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>45</height>
+						<font>font16</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Genre]</label>
+						<visible>!IsEmpty(VideoPlayer.Genre) + !VideoPlayer.Content(episodes)</visible>
+					</control>
+					<control type="label">
+						<width>1300</width>
+						<height>45</height>
+						<font>font16</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[VideoPlayer.Season,$LOCALIZE[20373] ,], $INFO[VideoPlayer.Episode,$LOCALIZE[20452] , , ]</label>
+						<visible>[!IsEmpty(VideoPlayer.Season) | !IsEmpty(VideoPlayer.Episode)] + VideoPlayer.Content(episodes) + !Player.IsInternetStream</visible>
+					</control>
+					<control type="label">
+						<description>Time Label</description>
+						<height>55</height>
+						<width>1300</width>
+						<label>$INFO[Player.Time]$INFO[Player.Duration, / ]</label>
+						<font>font48</font>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<left>0</left>
+			<top>0</top>
+			<visible>!Skin.HasSetting(Disable.CompactInfo) + Player.HasVideo</visible>
+			<include>VisibleFadeEffect</include>
+			<animation effect="slide" tween="cubic" time="720" start="0,1080" end="0,0" condition="">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,1080" start="0,0" condition="">WindowClose</animation>
+			<control type="image" id="8667">
+				<left>-145</left>
+				<top>900</top>
+				<width>400</width>
+				<height>400</height>
+				<aligny>top</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<texture background="true" diffuse="thumbs/cdart_mask.png">$INFO[Player.FolderPath]disc.png</texture>
+				<bordersize>30</bordersize>
+			</control>
+			<control type="image">
+				<left>-145</left>
+				<top>900</top>
+				<width>400</width>
+				<height>400</height>
+				<aligny>top</aligny>
+				<aspectratio aligny="top" scalediffuse="false">scale</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<texture background="true" diffuse="discart/cdart.png" fallback="special://skin/extras/cdart/default.png">$VAR[HomeNowPlayingThumbVar]</texture>
+				<visible>IsEmpty(Control.GetLabel(8667))</visible>
+				<bordersize>30</bordersize>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>1030</top>
+				<width>FullScreenWidth</width>
+				<height>100</height>
+				<texture border="1">nowplaying_shadow.png</texture>
+			</control>
+			<control type="label">
+				<top>1049</top>
+				<left>230</left>
+				<width>30</width>
+				<height>20</height>
+				<font>CloseButton</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label></label>
+			</control>
+			<control type="label">
+				<top>1050</top>
+				<left>257</left>
+				<width>1300</width>
+				<height>20</height>
+				<font>font12_title</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[VideoPlayer.TvShowTitle,, - ]$INFO[VideoPlayer.Artist,, - ]$INFO[VideoPlayer.Title]</label>
+			</control>
+		</control>
+	</include>
+	<include name="NowPlayingMusicWidget">
+		<!-- Music Info -->
+		<control type="group">
+			<left>0</left>
+			<top>622</top>
+			<visible>[Skin.HasSetting(Disable.CompactInfo) + Player.HasAudio + Skin.HasSetting(lowermainmenu) + IsEmpty(Container(9000).ListItem.Property(Widget))]  | [Skin.HasSetting(Disable.CompactInfo) + Player.HasAudio + !Skin.HasSetting(lowermainmenu) + IsEmpty(Container(9000).ListItem.Property(Widget2))]</visible>
+			<include>VisibleFadeEffect</include>
+			<animation effect="slide" tween="cubic" time="720" start="0,1080" end="0,0" condition="!Skin.HasSetting(lowermainmenu)">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,1080" start="0,0" condition="!Skin.HasSetting(lowermainmenu)">WindowClose</animation>
+			<animation effect="slide" tween="cubic" time="720" start="0,-1080" end="0,0" condition="Skin.HasSetting(lowermainmenu)">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,-1080" start="0,0" condition="Skin.HasSetting(lowermainmenu)">WindowClose</animation>
+			<animation effect="slide" end="0,-640" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<control type="image">
+				<left>0</left>
+				<top>-172</top>
+				<width>FullScreenWidth</width>
+				<height>630</height>
+				<texture border="1">nowplaying_shadow.png</texture>
+				<visible>!Skin.HasSetting(lowermainmenu)</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>-70</top>
+				<width>FullScreenWidth</width>
+				<height>630</height>
+				<texture flipy="true" border="1">nowplaying_shadow.png</texture>
+				<visible>Skin.HasSetting(lowermainmenu)</visible>
+			</control>
+			<control type="grouplist">
+				<left>550</left>
+				<top>87</top>
+				<width>1510</width>
+				<height>344</height>
+				<align>center</align>
+				<control type="label">
+					<width>1300</width>
+					<height>55</height>
+					<font>font48_title</font>
+					<textcolor>white2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[MusicPlayer.TrackNumber,,. ]$INFO[Player.Title]</label>
+				</control>
+				<control type="label">
+					<width>1300</width>
+					<height>45</height>
+					<font>font15</font>
+					<textcolor>white2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[MusicPlayer.Artist]</label>
+				</control>
+				<control type="label">
+					<width>1300</width>
+					<height>45</height>
+					<font>font15</font>
+					<textcolor>white2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[MusicPlayer.Album]$INFO[musicplayer.discnumber, - $LOCALIZE[427]:]</label>
+				</control>
+				<control type="label">
+					<width>1300</width>
+					<height>45</height>
+					<font>font15</font>
+					<textcolor>white2</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<label>$INFO[MusicPlayer.offset(1).TrackNumber,[COLOR=labelheader]$LOCALIZE[19031]:[/COLOR] ,. ]$INFO[MusicPlayer.offset(1).Artist,, - ]$INFO[MusicPlayer.offset(1).Title]</label>
+				</control>
+				<control type="label">
+					<description>Time Label</description>
+					<height>55</height>
+					<width>1300</width>
+					<label>$INFO[Player.Time]$INFO[Player.Duration,[COLOR=labelheader] / [/COLOR]]</label>
+					<font>font48</font>
+					<textcolor>white2</textcolor>
+					<shadowcolor>black</shadowcolor>
+				</control>
+			</control>
+			<control type="image">
+				<left>240</left>
+				<top>109</top>
+				<width>303</width>
+				<height>303</height>
+				<aspectratio align="left">keep</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<texture background="true" fallback="special://skin/extras/cdart/default.png" diffuse="thumbs/cdart_mask.png">$INFO[Player.FolderPath]cdart.png</texture>
+			</control>
+			<control type="image">
+				<description>Cover image</description>
+				<left>61</left>
+				<top>79</top>
+				<width>363</width>
+				<height>363</height>
+				<aspectratio>stretch</aspectratio>
+				<aspectratio align="right">keep</aspectratio>
+				<texture diffuse="thumbs/cdcover_mask2.png" fallback="homewidgets/playerfallback_square.png">$INFO[Player.Art(thumb)]</texture>
+				<bordertexture border="20">thumbs/cd_shadow2.png</bordertexture>
+				<bordersize>20</bordersize>
+			</control>
+		</control>
+		<control type="group">
+			<left>0</left>
+			<top>0</top>
+			<visible>!Skin.HasSetting(Disable.CompactInfo) + Player.HasAudio</visible>
+			<include>VisibleFadeEffect</include>
+			<animation effect="slide" tween="cubic" time="720" start="0,1080" end="0,0" condition="">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,1080" start="0,0" condition="">WindowClose</animation>
+			<control type="image" id="8669">
+				<left>-145</left>
+				<top>900</top>
+				<width>400</width>
+				<height>400</height>
+				<aligny>top</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<texture background="true" diffuse="thumbs/cdart_mask.png">$INFO[Player.FolderPath]cdart.png</texture>
+				<bordersize>30</bordersize>
+			</control>
+			<control type="image">
+				<left>-145</left>
+				<top>900</top>
+				<width>400</width>
+				<height>400</height>
+				<aligny>top</aligny>
+				<aspectratio align="left">keep</aspectratio>
+				<fadetime>300</fadetime>
+				<animation effect="rotate" end="-360" center="auto" time="4800" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+				<texture background="true" diffuse="discart/cdart.png">$INFO[Player.Art(thumb)]</texture>
+				<bordersize>30</bordersize>
+				<visible>IsEmpty(Control.GetLabel(8669))</visible>
+			</control>
+			<control type="image">
+				<left>0</left>
+				<top>1030</top>
+				<width>FullScreenWidth</width>
+				<height>100</height>
+				<texture border="1">nowplaying_shadow.png</texture>
+			</control>
+			<control type="label">
+				<top>1049</top>
+				<left>230</left>
+				<width>30</width>
+				<height>20</height>
+				<font>CloseButton</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label></label>
+			</control>
+			<control type="label">
+				<top>1050</top>
+				<left>257</left>
+				<width>1300</width>
+				<height>20</height>
+				<font>font12_title</font>
+				<textcolor>grey</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>$INFO[MusicPlayer.Artist] - $INFO[MusicPlayer.Title]</label>
+			</control>
+		</control>
+	</include>
+	<include name="RSSFeedWidget">
+		<control type="group">
+			<animation effect="slide" end="1870,0" time="240">WindowClose</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!window.previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="1870" end="0" time="240">VisibleChange</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="800" time="480" condition="window.previous(startup)">WindowOpen</animation>
+			<animation effect="slide" end="0,340" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,340" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<top>-343</top>
+			<control type="group">
+				<control type="image" id="90101">
+					<left>50</left>
+					<width>90</width>
+					<height>87</height>
+					<texture>submenu_end.png</texture>
+				</control>
+				<control type="image">
+					<left>140</left>
+					<width>1640</width>
+					<height>87</height>
+					<texture>submenu_bar.png</texture>
+				</control>
+				<control type="image" id="90101">
+					<left>1780</left>
+					<width>90</width>
+					<height>87</height>
+					<texture flipx="true">submenu_end.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<control type="rss">
+					<description>RSS feed</description>
+					<left>140</left>
+					<top>0</top>
+					<height>30</height>
+					<width>1640</width>
+					<font>font13</font>
+					<urlset>1</urlset>
+					<textcolor>themecolor</textcolor>
+					<titlecolor>themecolor</titlecolor>
+					<headlinecolor>grey</headlinecolor>
+					<shadowcolor>shadow</shadowcolor>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="RSSFeedWidget2">
+		<control type="group">
+			<animation effect="slide" end="1870,0" time="240">WindowClose</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!window.previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="1870" end="0" time="240">VisibleChange</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="800" time="480" condition="window.previous(startup)">WindowOpen</animation>
+			<animation effect="slide" end="0,-946" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<animation effect="slide" end="0,-1040" time="320" tween="cubic" easing="inout" condition="!Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<top>993</top>
+			<control type="group">
+				<animation effect="rotatex" end="180" time="320" center="20" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<control type="image">
+					<left>140</left>
+					<width>1640</width>
+					<height>87</height>
+					<texture flipy="true">submenu_bar.png</texture>
+					<visible>Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image">
+					<left>140</left>
+					<top>44</top>
+					<width>1640</width>
+					<height>87</height>
+					<texture>submenu_bar.png</texture>
+					<visible>!Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image">
+					<left>50</left>
+					<width>90</width>
+					<height>87</height>
+					<texture flipy="true" border="78,0,0,0">submenu_end.png</texture>
+					<visible>Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image">
+					<left>1780</left>
+					<width>90</width>
+					<height>87</height>
+					<texture flipx="true" flipy="true" border="78,0,0,0">submenu_end.png</texture>
+					<visible>Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image">
+					<left>50</left>
+					<top>44</top>
+					<width>90</width>
+					<height>87</height>
+					<texture border="78,0,0,0">submenu_end.png</texture>
+					<visible>!Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+				<control type="image">
+					<top>44</top>
+					<left>1780</left>
+					<width>90</width>
+					<height>87</height>
+					<texture flipx="true" border="78,0,0,0">submenu_end.png</texture>
+					<visible>!Skin.HasSetting(lowermainmenu)</visible>
+				</control>
+			</control>
+			<control type="group">
+				<animation effect="slide" end="0,-96" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<control type="rss">
+					<description>RSS feed</description>
+					<left>140</left>
+					<top>44</top>
+					<height>30</height>
+					<width>1640</width>
+					<font>font13</font>
+					<urlset>1</urlset>
+					<textcolor>themecolor</textcolor>
+					<titlecolor>themecolor</titlecolor>
+					<headlinecolor>grey</headlinecolor>
+					<shadowcolor>shadow</shadowcolor>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="RSSFeedWidget3">
+		<control type="group">
+			<animation effect="slide" end="1870,0" time="240">WindowClose</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="300" time="240" condition="!window.previous(startup)">WindowOpen</animation>
+			<animation effect="slide" start="1870" end="0" time="240">VisibleChange</animation>
+			<animation effect="slide" start="1870,0" end="0,0" delay="800" time="480" condition="window.previous(startup)">WindowOpen</animation>
+			<animation effect="slide" end="0,-90" time="300" tween="cubic" easing="inout" condition="ControlGroup(9001).HasFocus()">conditional</animation>
+			<animation effect="fade" start="100" end="0" time="300" condition="ControlGroup(9001).HasFocus()">conditional</animation>
+			<animation effect="slide" end="0,340" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			<top>699</top>
+			<control type="group">
+				<control type="image">
+					<left>50</left>
+					<width>90</width>
+					<height>87</height>
+					<texture>submenu_end.png</texture>
+				</control>
+				<control type="image">
+					<left>140</left>
+					<width>1640</width>
+					<height>87</height>
+					<texture>submenu_bar.png</texture>
+				</control>
+				<control type="image">
+					<left>1780</left>
+					<width>90</width>
+					<height>87</height>
+					<texture flipx="true">submenu_end.png</texture>
+				</control>
+			</control>
+			<control type="group">
+				<control type="rss">
+					<description>RSS feed</description>
+					<left>140</left>
+					<top>0</top>
+					<height>30</height>
+					<width>1640</width>
+					<font>font13</font>
+					<urlset>1</urlset>
+					<textcolor>themecolor</textcolor>
+					<titlecolor>themecolor</titlecolor>
+					<headlinecolor>grey</headlinecolor>
+					<shadowcolor>shadow</shadowcolor>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="WeatherWidget">
+		<control type="group">
+			<animation effect="slide" tween="cubic" time="720" start="0,-1080" end="0,0">WindowOpen</animation>
+			<animation effect="slide" tween="cubic" time="720" end="0,-1080" start="0,0">WindowClose</animation>
+			<include>VisibleFadeEffect</include>
+			<visible>StringCompare(Container(9000).ListItem.Property(WidgetType),3)</visible>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>FullScreenWidth</width>
+				<height>630</height>
+				<texture flipy="true" border="1">nowplaying_shadow.png</texture>
+				<animation effect="rotatex" end="180" time="320" center="20" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<animation effect="slide" end="0,-810" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+			</control>
+			<control type="panel" id="300">
+				<left>0</left>
+				<top>0</top>
+				<width>FullScreenWidth</width>
+				<height>300</height>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<orientation>horizontal</orientation>
+				<scrolltime tween="quadratic" easing="out">200</scrolltime>
+				<animation effect="slide" end="0,508" time="320" tween="cubic" easing="inout" condition="Skin.HasSetting(lowermainmenu)">Conditional</animation>
+				<itemlayout height="300" width="320">
+					<control type="image">
+						<left>327</left>
+						<width>2</width>
+						<height>300</height>
+						<texture border="1">separator3.png</texture>
+					</control>
+					<control type="image">
+						<description>current weather icon</description>
+						<top>60</top>
+						<width>320</width>
+						<height>100</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
+					<control type="label">
+						<width>320</width>
+						<height>60</height>
+						<font>font15</font>
+						<align>center</align>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<selectedcolor>selected</selectedcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<textoffsetx>15</textoffsetx>
+					</control>
+					<control type="label">
+						<top>160</top>
+						<width>320</width>
+						<height>60</height>
+						<font>font15</font>
+						<align>center</align>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<selectedcolor>selected</selectedcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<textoffsetx>15</textoffsetx>
+					</control>
+					<control type="label">
+						<top>240</top>
+						<width>320</width>
+						<height>60</height>
+						<font>font15</font>
+						<align>center</align>
+						<textcolor>white2</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<selectedcolor>selected</selectedcolor>
+						<label>$INFO[ListItem.Property(HighTemp),[COLOR red],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR blue],[/COLOR]]</label>
+						<textoffsetx>15</textoffsetx>
+					</control>
+				</itemlayout>
+				<focusedlayout height="300" width="320">
+					<control type="image">
+						<left>318</left>
+						<width>2</width>
+						<height>300</height>
+						<texture border="1">separator3.png</texture>
+					</control>
+					<control type="image">
+						<width>320</width>
+						<height>300</height>
+						<texture border="4">listselect_fo.png</texture>
+					</control>
+					<control type="image">
+						<description>current weather icon</description>
+						<top>60</top>
+						<width>320</width>
+						<height>100</height>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<aspectratio aligny="top">keep</aspectratio>
+					</control>
+					<control type="label">
+						<width>320</width>
+						<height>60</height>
+						<font>font15</font>
+						<align>center</align>
+						<selectedcolor>selected</selectedcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[ListItem.Label]</label>
+						<textoffsetx>15</textoffsetx>
+					</control>
+					<control type="label">
+						<top>160</top>
+						<width>320</width>
+						<height>60</height>
+						<font>font15</font>
+						<align>center</align>
+						<selectedcolor>selected</selectedcolor>
+						<shadowcolor>black</shadowcolor>
+						<label>$INFO[ListItem.Label2]</label>
+						<textoffsetx>15</textoffsetx>
+					</control>
+					<control type="label">
+						<top>240</top>
+						<width>320</width>
+						<height>60</height>
+						<font>font15</font>
+						<align>center</align>
+						<shadowcolor>black</shadowcolor>
+						<selectedcolor>selected</selectedcolor>
+						<label>$INFO[ListItem.Property(HighTemp),[COLOR red],[/COLOR]]$INFO[ListItem.Property(LowTemp), | [COLOR blue],[/COLOR]]</label>
+						<textoffsetx>15</textoffsetx>
+					</control>
+				</focusedlayout>
+				<content>
+					<item>
+						<label>$LOCALIZE[31909]</label>
+						<icon>-</icon>
+						<onclick>noop</onclick>
+						<visible>!Weather.IsFetched</visible>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day0.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day0.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day0.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day1.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day1.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day1.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day1.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day1.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day2.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day2.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day2.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day2.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day2.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day3.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day3.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day3.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day3.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day3.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day4.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day4.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day4.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day4.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day4.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day5.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day5.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day5.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day5.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day5.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+					<item>
+						<label>$INFO[Window(weather).Property(Day6.Title)]</label>
+						<label2>$INFO[Window(weather).Property(Day6.Outlook)]</label2>
+						<icon>$INFO[Window(weather).Property(Day6.OutlookIcon)]</icon>
+						<property name="HighTemp">$INFO[Window(weather).Property(Day6.HighTemp)]$INFO[System.TemperatureUnits]</property>
+						<property name="LowTemp">$INFO[Window(weather).Property(Day6.LowTemp)]$INFO[System.TemperatureUnits]</property>
+						<onclick>noop</onclick>
+					</item>
+				</content>
+			</control>
+		</control>
+	</include>
+</includes>

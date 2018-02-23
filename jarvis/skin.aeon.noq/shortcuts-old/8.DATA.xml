@@ -1,0 +1,10 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>videos</defaultID>
+		<label>10006</label>
+		<label2>Common menu item</label2>
+		<icon>DefaultVideo.png</icon>
+		<thumb />
+		<action>ActivateWindow(Videos)</action>
+	</shortcut>
+</shortcuts>

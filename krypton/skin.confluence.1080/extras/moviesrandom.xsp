@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<smartplaylist type="movies">
+	<name>Random Movie</name>
+	<match>all</match>
+	<rule field="playcount" operator="is">
+		<value>0</value>
+	</rule>
+	<order direction="ascending">random</order>
+	<limit>20</limit>
+</smartplaylist>

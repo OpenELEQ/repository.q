@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1102" type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="button" id="9001">
+			<description>Make sure we hit the first button in the group list and not the close window button</description>
+			<left>-16</left>
+			<top>-16</top>
+			<width>4</width>
+			<height>4</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>down</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="grouplist" id="9000">
+			<left>470</left>
+			<top>0</top>
+			<width>420</width>
+			<height>720</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<itemgap>0</itemgap>
+			<align>center</align>
+			<control type="group" id="1">
+				<width>420</width>
+				<height>30</height>
+				<control type="image">
+					<description>background top image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>420</width>
+					<height>30</height>
+					<texture border="20,19,20,0">DialogContextTop.png</texture>
+				</control>
+				<control type="button" id="20">
+					<description>Close Window button</description>
+					<left>220</left>
+					<top>5</top>
+					<width>64</width>
+					<height>32</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>PreviousMenu</onclick>
+					<texturefocus>DialogCloseButton-focus.png</texturefocus>
+					<texturenofocus>DialogCloseButton.png</texturenofocus>
+					<onleft>2</onleft>
+					<onright>22</onright>
+					<onup>22</onup>
+					<ondown>2</ondown>
+					<visible>false</visible>
+				</control>
+			</control>
+			<control type="button" id="2">
+				<description>Enable All Add-ons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnableAll.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32022] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(AllAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="3">
+				<description>Disable All Add-ons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisableAll.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32022] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="4">
+				<description>Enable Basic Add-ons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnableBasic.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32023] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(BasicAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="5">
+				<description>Disable Basic Add-ons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisableBasic.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32023] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="6">
+				<description>Enable Video Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnableVideo.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32037] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(VideoAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="7">
+				<description>Disable Video Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisableVideo.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32037] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(VideoAddonsEnabled) | Skin.HasSetting(AllAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="8">
+				<description>Enable Music Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnableMusic.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32026] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(MusicAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="9">
+				<description>Disable Music Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisableMusic.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32026] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(MusicAddonsEnabled) | Skin.HasSetting(AllAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="10">
+				<description>Enable Kids Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnableKids.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32024] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(KidsAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="11">
+				<description>Disable Kids Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisableKids.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32024] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(KidsAddonsEnabled) | Skin.HasSetting(AllAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="12">
+				<description>Enable Sports Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnableSports.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32025] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(SportsAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="13">
+				<description>Disable Sports Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisableSports.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32025] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(SportsAddonsEnabled) | Skin.HasSetting(AllAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="14">
+				<description>Enable XXX Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxon)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32027] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(XXX)</visible>
+			</control>
+			<control type="button" id="15">
+				<description>Disable XXX Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/xxx.py,xxxoff)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32027] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(XXX)</visible>
+			</control>
+			<control type="button" id="16">
+				<description>Enable Pulsar Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsEnablePulsar.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32015]$LOCALIZE[32038] $LOCALIZE[32021]</label>
+				<visible>!Skin.HasSetting(PulsarAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="17">
+				<description>Disable Pulsar Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/AddonsDisablePulsar.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32018]$LOCALIZE[32038] $LOCALIZE[32021]</label>
+				<visible>Skin.HasSetting(PulsarAddonsEnabled) | Skin.HasSetting(AllAddonsEnabled) | Skin.HasSetting(DeveloperMode)</visible>
+			</control>
+			<control type="button" id="18">
+				<description>Update Repos</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>UpdateAddonRepos</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218] $LOCALIZE[32031]</label>
+			</control>
+			<control type="button" id="19">
+				<description>Update Addons</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>UpdateLocalAddons</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218] $LOCALIZE[32021]</label>
+			</control>
+			<control type="button" id="20">
+				<description>Weather refresh</description>
+				<width>420</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>370</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>Weather.Refresh</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32032] $LOCALIZE[8]</label>
+			</control>
+			<control type="button" id="21">
+				<description>Developer script</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/DeveloperOnly.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31130]</label>
+				<visible>false</visible>
+			</control>
+			<control type="image" id="22">
+				<description>background bottom image</description>
+				<left>0</left>
+				<width>420</width>
+				<height>25</height>
+				<texture border="20,0,19,20">DialogContextBottom.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>

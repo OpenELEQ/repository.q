@@ -1,0 +1,18 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.program.super.favourites</defaultID>
+		<label>Super Favourites</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.program.super.favourites/icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.program.super.favourites",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>script.extendedinfo</defaultID>
+		<label>ExtendedInfo</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/script.extendedinfo/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://script.extendedinfo",return)</action>
+	</shortcut>
+</shortcuts>

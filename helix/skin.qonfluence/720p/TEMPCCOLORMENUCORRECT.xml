@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1121" type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<onunload>Skin.SetString(ColorLast1,$INFO[Skin.String(Hex1)]$INFO[Skin.String(Hex2)]$INFO[Skin.String(Hex3)]$INFO[Skin.String(Hex4)]$INFO[Skin.String(Hex5)]$INFO[Skin.String(Hex6)]$INFO[Skin.String(Hex7)]$INFO[Skin.String(Hex8)])</onunload>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="button" id="9001">
+			<description>Make sure we hit the first button in the group list and not the close window button</description>
+			<left>-16</left>
+			<top>-16</top>
+			<width>4</width>
+			<height>4</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>down</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="grouplist" id="9000">
+			<left>500</left>
+			<top>0</top>
+			<width>280</width>
+			<height>720</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<itemgap>0</itemgap>
+			<align>center</align>
+			<control type="group" id="1">
+				<width>280</width>
+				<height>30</height>
+				<control type="image">
+					<description>background top image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>280</width>
+					<height>30</height>
+					<texture border="20,19,20,0">DialogContextTop.png</texture>
+				</control>
+				<control type="image" id="22">
+					<description>Close Window button</description>
+					<left>20</left>
+					<top>17</top>
+					<width>60</width>
+					<height>20</height>
+					<texture colordiffuse="$VAR[ColorHex]">Color1.png</texture>
+				</control>
+				<control type="image" id="23">
+					<description>Close Window button</description>
+					<left>80</left>
+					<top>17</top>
+					<width>60</width>
+					<height>20</height>
+					<texture colordiffuse="$INFO[Skin.String(Color1)]">Color1.png</texture>
+				</control>
+				<control type="image" id="24">
+					<description>Close Window button</description>
+					<left>140</left>
+					<top>17</top>
+					<width>60</width>
+					<height>20</height>
+					<texture colordiffuse="$INFO[Skin.String(ColorFO1)]">Color1.png</texture>
+				</control>
+				<control type="image" id="25">
+					<description>Close Window button</description>
+					<left>200</left>
+					<top>17</top>
+					<width>60</width>
+					<height>20</height>
+					<texture colordiffuse="$INFO[Skin.String(ColorFOLast1)]">Color1.png</texture>
+				</control>
+			</control>
+			<control type="button" id="2">
+				<description>Color1</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex1]</label>
+				<onclick condition="StringCompare(Skin.String(Hex1),)">Skin.SetString(Hex1,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),0)">Skin.SetString(Hex1,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),1)">Skin.SetString(Hex1,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),2)">Skin.SetString(Hex1,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),3)">Skin.SetString(Hex1,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),4)">Skin.SetString(Hex1,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),5)">Skin.SetString(Hex1,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),6)">Skin.SetString(Hex1,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),7)">Skin.SetString(Hex1,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),8)">Skin.SetString(Hex1,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),9)">Skin.SetString(Hex1,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),A)">Skin.SetString(Hex1,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),B)">Skin.SetString(Hex1,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),C)">Skin.SetString(Hex1,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),D)">Skin.SetString(Hex1,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),E)">Skin.SetString(Hex1,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex1),F)">Skin.SetString(Hex1,0)</onclick>
+			</control>
+			<control type="button" id="3">
+				<description>Hex2</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex2]</label>
+				<onclick condition="StringCompare(Skin.String(Hex2),)">Skin.SetString(Hex2,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),0)">Skin.SetString(Hex2,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),1)">Skin.SetString(Hex2,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),2)">Skin.SetString(Hex2,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),3)">Skin.SetString(Hex2,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),4)">Skin.SetString(Hex2,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),5)">Skin.SetString(Hex2,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),6)">Skin.SetString(Hex2,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),7)">Skin.SetString(Hex2,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),8)">Skin.SetString(Hex2,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),9)">Skin.SetString(Hex2,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),A)">Skin.SetString(Hex2,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),B)">Skin.SetString(Hex2,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),C)">Skin.SetString(Hex2,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),D)">Skin.SetString(Hex2,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),E)">Skin.SetString(Hex2,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex2),F)">Skin.SetString(Hex2,0)</onclick>
+			</control>
+			<control type="button" id="4">
+				<description>Hex3</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex3]</label>
+				<onclick condition="StringCompare(Skin.String(Hex3),)">Skin.SetString(Hex3,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),0)">Skin.SetString(Hex3,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),1)">Skin.SetString(Hex3,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),2)">Skin.SetString(Hex3,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),3)">Skin.SetString(Hex3,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),4)">Skin.SetString(Hex3,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),5)">Skin.SetString(Hex3,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),6)">Skin.SetString(Hex3,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),7)">Skin.SetString(Hex3,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),8)">Skin.SetString(Hex3,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),9)">Skin.SetString(Hex3,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),A)">Skin.SetString(Hex3,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),B)">Skin.SetString(Hex3,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),C)">Skin.SetString(Hex3,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),D)">Skin.SetString(Hex3,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),E)">Skin.SetString(Hex3,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex3),F)">Skin.SetString(Hex3,0)</onclick>
+			</control>
+			<control type="button" id="5">
+				<description>Hex4</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex4]</label>
+				<onclick condition="StringCompare(Skin.String(Hex4),)">Skin.SetString(Hex4,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),0)">Skin.SetString(Hex4,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),1)">Skin.SetString(Hex4,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),2)">Skin.SetString(Hex4,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),3)">Skin.SetString(Hex4,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),4)">Skin.SetString(Hex4,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),5)">Skin.SetString(Hex4,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),6)">Skin.SetString(Hex4,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),7)">Skin.SetString(Hex4,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),8)">Skin.SetString(Hex4,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),9)">Skin.SetString(Hex4,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),A)">Skin.SetString(Hex4,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),B)">Skin.SetString(Hex4,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),C)">Skin.SetString(Hex4,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),D)">Skin.SetString(Hex4,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),E)">Skin.SetString(Hex4,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex4),F)">Skin.SetString(Hex4,0)</onclick>
+			</control>
+			<control type="button" id="6">
+				<description>Hex5</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex5]</label>
+				<onclick condition="StringCompare(Skin.String(Hex5),)">Skin.SetString(Hex5,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),0)">Skin.SetString(Hex5,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),1)">Skin.SetString(Hex5,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),2)">Skin.SetString(Hex5,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),3)">Skin.SetString(Hex5,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),4)">Skin.SetString(Hex5,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),5)">Skin.SetString(Hex5,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),6)">Skin.SetString(Hex5,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),7)">Skin.SetString(Hex5,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),8)">Skin.SetString(Hex5,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),9)">Skin.SetString(Hex5,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),A)">Skin.SetString(Hex5,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),B)">Skin.SetString(Hex5,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),C)">Skin.SetString(Hex5,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),D)">Skin.SetString(Hex5,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),E)">Skin.SetString(Hex5,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex5),F)">Skin.SetString(Hex5,0)</onclick>
+			</control>
+			<control type="button" id="7">
+				<description>Hex6</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex6]</label>
+				<onclick condition="StringCompare(Skin.String(Hex6),)">Skin.SetString(Hex6,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),0)">Skin.SetString(Hex6,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),1)">Skin.SetString(Hex6,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),2)">Skin.SetString(Hex6,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),3)">Skin.SetString(Hex6,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),4)">Skin.SetString(Hex6,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),5)">Skin.SetString(Hex6,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),6)">Skin.SetString(Hex6,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),7)">Skin.SetString(Hex6,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),8)">Skin.SetString(Hex6,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),9)">Skin.SetString(Hex6,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),A)">Skin.SetString(Hex6,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),B)">Skin.SetString(Hex6,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),C)">Skin.SetString(Hex6,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),D)">Skin.SetString(Hex6,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),E)">Skin.SetString(Hex6,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex6),F)">Skin.SetString(Hex6,0)</onclick>
+			</control>
+			<control type="button" id="8">
+				<description>Hex7</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex7]</label>
+				<onclick condition="StringCompare(Skin.String(Hex7),)">Skin.SetString(Hex7,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),0)">Skin.SetString(Hex7,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),1)">Skin.SetString(Hex7,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),2)">Skin.SetString(Hex7,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),3)">Skin.SetString(Hex7,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),4)">Skin.SetString(Hex7,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),5)">Skin.SetString(Hex7,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),6)">Skin.SetString(Hex7,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),7)">Skin.SetString(Hex7,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),8)">Skin.SetString(Hex7,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),9)">Skin.SetString(Hex7,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),A)">Skin.SetString(Hex7,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),B)">Skin.SetString(Hex7,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),C)">Skin.SetString(Hex7,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),D)">Skin.SetString(Hex7,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),E)">Skin.SetString(Hex7,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex7),F)">Skin.SetString(Hex7,0)</onclick>
+			</control>
+			<control type="button" id="9">
+				<description>Hex8</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$VAR[Hex8]</label>
+				<onclick condition="StringCompare(Skin.String(Hex8),)">Skin.SetString(Hex8,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),0)">Skin.SetString(Hex8,1)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),1)">Skin.SetString(Hex8,2)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),2)">Skin.SetString(Hex8,3)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),3)">Skin.SetString(Hex8,4)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),4)">Skin.SetString(Hex8,5)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),5)">Skin.SetString(Hex8,6)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),6)">Skin.SetString(Hex8,7)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),7)">Skin.SetString(Hex8,8)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),8)">Skin.SetString(Hex8,9)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),9)">Skin.SetString(Hex8,A)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),A)">Skin.SetString(Hex8,B)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),B)">Skin.SetString(Hex8,C)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),C)">Skin.SetString(Hex8,D)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),D)">Skin.SetString(Hex8,E)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),E)">Skin.SetString(Hex8,F)</onclick>
+				<onclick condition="StringCompare(Skin.String(Hex8),F)">Skin.SetString(Hex8,0)</onclick>
+			</control>
+			<control type="button" id="10">
+				<description>Presets</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>Presets</label>
+				<onclick>ActivateWindow(1122)</onclick>
+			</control>
+			<control type="button" id="11">
+				<description>Save Color 1</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>Save Color 1</label>
+				<onclick>Skin.SetString(Color1,$INFO[Skin.String(Hex1)]$INFO[Skin.String(Hex2)]$INFO[Skin.String(Hex3)]$INFO[Skin.String(Hex4)]$INFO[Skin.String(Hex5)]$INFO[Skin.String(Hex6)]$INFO[Skin.String(Hex7)]$INFO[Skin.String(Hex8)])</onclick>
+			</control>
+			<control type="image" id="12">
+				<description>background bottom image</description>
+				<left>0</left>
+				<width>280</width>
+				<height>25</height>
+				<texture border="20,0,19,20">DialogContextBottom.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>

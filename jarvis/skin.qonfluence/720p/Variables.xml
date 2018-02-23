@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+
+    <!--EIM/Qlick-->
+    <variable name="enhanced">
+        <value condition="Skin.hasSetting(Enhanced)">script.extendedinfo</value>
+        <value>script.extendedinfo</value>
+    </variable>
+    <!--Shortcuts-->
+    <variable name="shortcuts">
+        <value condition="Skin.hasSetting(SuperShortcuts)">special://home/addons/plugin.program.super.favourites/chooser.py,changetitle=true&property=</value>
+        <value>script.favourites,changetitle=true&property=</value>
+    </variable>
+    <!--ShortcutsLabel-->
+    <variable name="shortcutslabel">
+        <value condition="Skin.hasSetting(SuperShortcuts)">Super</value>
+        <value></value>
+    </variable>
+
+    <!--MovieWidgetContent-->
+    <variable name="MovieWidgetContent">
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Current DVD Releases)">plugin://script.extendedinfo?info=currentdvdreleases&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Upcoming DVD Releases)">plugin://script.extendedinfo?info=upcomingdvds&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),In Theaters)">plugin://script.extendedinfo?info=intheaters&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Coming Soon)">plugin://script.extendedinfo?info=comingsoon&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Opening)">plugin://script.extendedinfo?info=opening&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Box Office)">plugin://script.extendedinfo?info=boxoffice&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Top Rentals)">plugin://script.extendedinfo?info=toprentals&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),In Cinemas)">plugin://script.extendedinfo?info=incinemas&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Upcoming)">plugin://script.extendedinfo?info=upcoming&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Popular)">plugin://script.extendedinfo?info=popularmovies&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Top Rated)">plugin://script.extendedinfo?info=topratedmovies&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Trending)">plugin://script.extendedinfo?info=trendingmovies&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Recently Added)">plugin://service.library.data.provider?type=recentmovies</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Random)">plugin://service.library.data.provider?type=randommovies&reload=$INFO[Window.Property(randommovies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Recommended)">plugin://service.library.data.provider?type=recommendedmovies&reload=$INFO[Window.Property(recommendedmovies)]</value>
+        <value condition="StringCompare(Skin.String(MovieWidgetContent),Custom)">$INFO[Skin.String(CustomMovieWidgetContent.List)]&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+        <value>plugin://script.extendedinfo?info=newdvdreleases&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</value>
+    </variable>
+    <!--MovieWidgetLabel-->
+    <variable name="MovieWidgetLabel">
+        <value condition="!IsEmpty(Skin.String(MovieWidgetContent)) + !StringCompare(Skin.String(MovieWidgetContent),Custom)">$INFO[Skin.String(MovieWidgetContent)]</value>
+        <value condition="!IsEmpty(Skin.String(MovieWidgetContent)) + StringCompare(Skin.String(MovieWidgetContent),Custom)">$INFO[Skin.String(CustomMovieWidgetContent.Label)]</value>
+        <value condition="IsEmpty(Skin.String(MovieWidgetContent))">New DVD Releases</value>
+    </variable>
+	
+    <!--TVShowWidgetContent-->
+    <variable name="TVShowWidgetContent">
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Popular)">plugin://script.extendedinfo?info=populartvshows&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-tvshows)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Top Rated)">plugin://script.extendedinfo?info=topratedtvshows&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-tvshows)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Currently Airing)">plugin://script.extendedinfo?info=onairtvshows&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-tvshows)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Airing Today)">plugin://script.extendedinfo?info=airingtodaytvshows&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-tvshows)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Trending)">plugin://script.extendedinfo?info=trendingshows&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-tvshows)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Premiered Last Week)">plugin://script.extendedinfo?info=premieredlastweek&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-episodes)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Recently Added Episodes)">plugin://service.library.data.provider?type=recentepisodes&reload=$INFO[Window.Property(recentepisodes)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Random Episodes)">plugin://service.library.data.provider?type=randomepisodes&reload=$INFO[Window.Property(randomepisodes)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Recommended Episodes)">plugin://service.library.data.provider?type=recommendedepisodes&reload=$INFO[Window.Property(recommendedepisodes)]</value>
+        <value condition="StringCompare(Skin.String(TVShowWidgetContent),Custom)">$INFO[Skin.String(CustomTVShowWidgetContent.List)]</value>
+        <value>plugin://script.extendedinfo?info=airedyesterday&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-episodes)]</value>
+    </variable>
+    <!--TVShowWidgetLabel-->
+    <variable name="TVShowWidgetLabel">
+        <value condition="!IsEmpty(Skin.String(TVShowWidgetContent)) + !StringCompare(Skin.String(TVShowWidgetContent),Custom)">$INFO[Skin.String(TVShowWidgetContent)]</value>
+        <value condition="!IsEmpty(Skin.String(TVShowWidgetContent)) + StringCompare(Skin.String(TVShowWidgetContent),Custom)">$INFO[Skin.String(CustomTVShowWidgetContent.Label)]</value>
+        <value condition="IsEmpty(Skin.String(TVShowWidgetContent))">Aired Yesterday</value>
+    </variable>
+
+    <!--MusicWidgetContent-->
+    <variable name="MusicWidgetContent">
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Ambient)">plugin://plugin.audio.mixcloud/?key=/categories/ambient/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Bass)">plugin://plugin.audio.mixcloud/?key=/categories/bass/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Beats)">plugin://plugin.audio.mixcloud/?key=/categories/beats/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Chillout)">plugin://plugin.audio.mixcloud/?key=/categories/chillout/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Classical)">plugin://plugin.audio.mixcloud/?key=/categories/classical/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>	
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Deep House)">plugin://plugin.audio.mixcloud/?key=/categories/deep-house/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Drum & Base)">plugin://plugin.audio.mixcloud/?key=/categories/drum-bass/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Dub)">plugin://plugin.audio.mixcloud/?key=/categories/dub/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Dubstep)">plugin://plugin.audio.mixcloud/?key=/categories/dubstep/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),EDM)">plugin://plugin.audio.mixcloud/?key=/categories/edm/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Electronica)">plugin://plugin.audio.mixcloud/?key=/categories/electronica/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Funk)">plugin://plugin.audio.mixcloud/?key=/categories/funk/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Garage)">plugin://plugin.audio.mixcloud/?key=/categories/garage/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Hip Hop)">plugin://plugin.audio.mixcloud/?key=/categories/hip-hop/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),House)">plugin://plugin.audio.mixcloud/?key=/categories/house/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Indie)">plugin://plugin.audio.mixcloud/?key=/categories/indie/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Jazz)">plugin://plugin.audio.mixcloud/?key=/categories/jazz/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Pop)">plugin://plugin.audio.mixcloud/?key=/categories/pop/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Rap)">plugin://plugin.audio.mixcloud/?key=/categories/rap/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Reggae)">plugin://plugin.audio.mixcloud/?key=/categories/reggae/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),RnB)">plugin://plugin.audio.mixcloud/?key=/categories/rb/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Rock)">plugin://plugin.audio.mixcloud/?key=/categories/rock/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Soul)">plugin://plugin.audio.mixcloud/?key=/categories/soul/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Tech House)">plugin://plugin.audio.mixcloud/?key=/categories/tech-house/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Techno)">plugin://plugin.audio.mixcloud/?key=/categories/techno/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Trance)">plugin://plugin.audio.mixcloud/?key=/categories/trance/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Trap)">plugin://plugin.audio.mixcloud/?key=/categories/trap/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),World)">plugin://plugin.audio.mixcloud/?key=/categories/world/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Business)">plugin://plugin.audio.mixcloud/?key=/categories/business/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Comedy)">plugin://plugin.audio.mixcloud/?key=/categories/comedy/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Education)">plugin://plugin.audio.mixcloud/?key=/categories/education/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Lifestyle)">plugin://plugin.audio.mixcloud/?key=/categories/lifestyle/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Interview)">plugin://plugin.audio.mixcloud/?key=/categories/interview/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),News)">plugin://plugin.audio.mixcloud/?key=/categories/news/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Politics)">plugin://plugin.audio.mixcloud/?key=/categories/politics/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Science)">plugin://plugin.audio.mixcloud/?key=/categories/science/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Sport)">plugin://plugin.audio.mixcloud/?key=/categories/sport/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Technology)">plugin://plugin.audio.mixcloud/?key=/categories/technology/&mode=20&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Hyped Artists)">plugin://script.extendedinfo?info=hypedartists&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Top Artists)">plugin://script.extendedinfo?info=topartists&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Near Events)">plugin://script.extendedinfo?info=nearevents&limit=50&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Random Songs)">plugin://service.library.data.provider?type=randomsongs&reload=$INFO[Window.Property(randomsongs)]&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Recently Added Albums)">plugin://service.library.data.provider?type=recentalbums&reload=$INFO[Window.Property(recentalbums)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Random Albums)">plugin://service.library.data.provider?type=randomalbums&reload=$INFO[Window.Property(randomalbums)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Recommended Albums)">plugin://service.library.data.provider?type=recommendedalbums&reload=$INFO[Window.Property(recommendedalbums)]</value>
+        <value condition="StringCompare(Skin.String(MusicWidgetContent),Custom)">$INFO[Skin.String(CustomMusicWidgetContent.List)]</value>
+        <value>plugin://plugin.audio.mixcloud/?mode=13&offset=0&amp;reload=$INFO[Window(Home).Property(widgetreload-music)]</value>
+    </variable>
+    <!--MusicWidgetLabel-->
+    <variable name="MusicWidgetLabel">
+        <value condition="!IsEmpty(Skin.String(MusicWidgetContent)) + !StringCompare(Skin.String(MusicWidgetContent),Custom)">$INFO[Skin.String(MusicWidgetContent)]</value>
+        <value condition="!IsEmpty(Skin.String(MusicWidgetContent)) + StringCompare(Skin.String(MusicWidgetContent),Custom)">$INFO[Skin.String(CustomMusicWidgetContent.Label)]</value>
+        <value condition="IsEmpty(Skin.String(MusicWidgetContent))">Hot</value>
+    </variable>
+
+
+    <!--Hexes-->
+    <variable name="Hex1" description="Hex1 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex1))">$INFO[Skin.String(Hex1)]</value>
+        <value condition="IsEmpty(Skin.String(Hex1))">F</value>
+    </variable>
+    <variable name="Hex2" description="Hex2 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex2))">$INFO[Skin.String(Hex2)]</value>
+        <value condition="IsEmpty(Skin.String(Hex2))">F</value>
+    </variable>
+    <variable name="Hex3" description="Hex3 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex3))">$INFO[Skin.String(Hex3)]</value>
+        <value condition="IsEmpty(Skin.String(Hex3))">0</value>
+    </variable>
+    <variable name="Hex4" description="Hex4 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex4))">$INFO[Skin.String(Hex4)]</value>
+        <value condition="IsEmpty(Skin.String(Hex4))">0</value>
+    </variable>
+    <variable name="Hex5" description="Hex5 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex5))">$INFO[Skin.String(Hex5)]</value>
+        <value condition="IsEmpty(Skin.String(Hex5))">0</value>
+    </variable>
+    <variable name="Hex6" description="Hex6 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex6))">$INFO[Skin.String(Hex6)]</value>
+        <value condition="IsEmpty(Skin.String(Hex6))">0</value>
+    </variable>
+    <variable name="Hex7" description="Hex7 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex7))">$INFO[Skin.String(Hex7)]</value>
+        <value condition="IsEmpty(Skin.String(Hex7))">0</value>
+    </variable>
+    <variable name="Hex8" description="Hex8 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex8))">$INFO[Skin.String(Hex8)]</value>
+        <value condition="IsEmpty(Skin.String(Hex8))">0</value>
+    </variable>
+
+    <variable name="Hex1Plus" description="Hex1 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex1),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex1),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex1),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex1),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex1),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex1),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex1),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex1),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex1),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex1),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex1),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex1),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex1),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex1),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex1),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex1),F)">0</value>
+        <value>0</value>
+    </variable>
+    <variable name="Hex1Minus" description="Hex1 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex1),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex1),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex1),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex1),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex1),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex1),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex1),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex1),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex1),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex1),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex1),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex1),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex1),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex1),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex1),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex1),F)">E</value>
+        <value>E</value>
+    </variable>
+    <variable name="Hex2Plus" description="Hex2 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex2),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex2),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex2),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex2),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex2),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex2),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex2),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex2),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex2),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex2),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex2),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex2),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex2),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex2),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex2),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex2),F)">0</value>
+        <value>0</value>
+    </variable>
+    <variable name="Hex2Minus" description="Hex2 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex2),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex2),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex2),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex2),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex2),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex2),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex2),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex2),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex2),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex2),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex2),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex2),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex2),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex2),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex2),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex2),F)">E</value>
+        <value>E</value>
+    </variable>
+    <variable name="Hex3Plus" description="Hex3 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex3),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex3),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex3),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex3),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex3),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex3),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex3),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex3),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex3),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex3),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex3),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex3),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex3),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex3),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex3),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex3),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex3Minus" description="Hex3 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex3),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex3),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex3),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex3),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex3),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex3),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex3),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex3),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex3),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex3),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex3),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex3),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex3),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex3),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex3),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex3),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex4Plus" description="Hex4 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex4),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex4),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex4),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex4),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex4),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex4),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex4),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex4),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex4),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex4),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex4),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex4),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex4),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex4),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex4),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex4),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex4Minus" description="Hex4 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex4),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex4),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex4),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex4),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex4),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex4),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex4),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex4),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex4),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex4),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex4),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex4),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex4),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex4),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex4),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex4),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex5Plus" description="Hex5 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex5),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex5),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex5),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex5),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex5),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex5),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex5),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex5),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex5),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex5),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex5),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex5),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex5),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex5),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex5),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex5),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex5Minus" description="Hex5 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex5),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex5),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex5),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex5),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex5),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex5),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex5),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex5),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex5),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex5),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex5),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex5),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex5),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex5),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex5),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex5),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex6Plus" description="Hex6 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex6),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex6),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex6),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex6),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex6),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex6),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex6),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex6),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex6),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex6),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex6),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex6),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex6),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex6),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex6),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex6),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex6Minus" description="Hex6 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex6),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex6),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex6),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex6),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex6),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex6),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex6),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex6),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex6),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex6),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex6),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex6),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex6),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex6),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex6),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex6),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex7Plus" description="Hex7 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex7),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex7),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex7),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex7),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex7),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex7),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex7),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex7),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex7),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex7),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex7),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex7),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex7),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex7),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex7),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex7),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex7Minus" description="Hex7 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex7),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex7),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex7),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex7),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex7),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex7),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex7),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex7),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex7),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex7),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex7),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex7),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex7),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex7),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex7),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex7),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex8Plus" description="Hex8 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex8),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex8),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex8),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex8),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex8),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex8),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex8),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex8),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex8),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex8),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex8),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex8),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex8),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex8),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex8),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex8),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex8Minus" description="Hex8 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex8),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex8),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex8),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex8),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex8),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex8),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex8),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex8),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex8),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex8),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex8),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex8),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex8),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex8),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex8),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex8),F)">E</value>
+        <value>F</value>
+    </variable>
+
+    <!--ColorHex-->
+    <variable name="ColorHex" description="Color Hex">
+        <value>$VAR[Hex1]$VAR[Hex2]$VAR[Hex3]$VAR[Hex4]$VAR[Hex5]$VAR[Hex6]$VAR[Hex7]$VAR[Hex8]</value>
+    </variable>
+	
+    <!--Color1-->
+    <variable name="Color1" description="Color1 Variable">
+        <value condition="!IsEmpty(Skin.String(Color1))">$INFO[Skin.String(Color1)]</value>
+        <value condition="IsEmpty(Skin.String(Color1))">BB000000</value>
+    </variable>
+    <!--ColorFO1-->
+    <variable name="ColorFO1" description="ColorFO1 Variable">
+        <value condition="!IsEmpty(Skin.String(ColorFO1))">$INFO[Skin.String(ColorFO1)]</value>
+        <value condition="IsEmpty(Skin.String(ColorFO1))">880084FF</value>
+    </variable>
+
+    <!--TransparancyLabel-->
+    <variable name="TransparancyLabel" description="Transparancy Label">
+        <value condition="StringCompare(Skin.String(Transparancy),FF)">100</value>
+        <value condition="StringCompare(Skin.String(Transparancy),F2)">95</value>
+        <value condition="StringCompare(Skin.String(Transparancy),E6)">90</value>
+        <value condition="StringCompare(Skin.String(Transparancy),D9)">85</value>
+        <value condition="StringCompare(Skin.String(Transparancy),CC)">80</value>
+        <value condition="StringCompare(Skin.String(Transparancy),BF)">75</value>
+        <value condition="StringCompare(Skin.String(Transparancy),B3)">70</value>
+        <value condition="StringCompare(Skin.String(Transparancy),A6)">65</value>
+        <value condition="StringCompare(Skin.String(Transparancy),99)">60</value>
+        <value condition="StringCompare(Skin.String(Transparancy),8C)">55</value>
+        <value condition="StringCompare(Skin.String(Transparancy),80)">50</value>
+        <value condition="StringCompare(Skin.String(Transparancy),73)">45</value>
+        <value condition="StringCompare(Skin.String(Transparancy),66)">40</value>
+        <value condition="StringCompare(Skin.String(Transparancy),59)">35</value>
+        <value condition="StringCompare(Skin.String(Transparancy),4D)">30</value>
+        <value condition="StringCompare(Skin.String(Transparancy),40)">25</value>
+        <value condition="StringCompare(Skin.String(Transparancy),33)">20</value>
+        <value condition="StringCompare(Skin.String(Transparancy),26)">15</value>
+        <value condition="StringCompare(Skin.String(Transparancy),1A)">10</value>
+        <value condition="StringCompare(Skin.String(Transparancy),0D)">5</value>
+        <value condition="StringCompare(Skin.String(Transparancy),00)">0</value>
+    </variable>
+</includes>

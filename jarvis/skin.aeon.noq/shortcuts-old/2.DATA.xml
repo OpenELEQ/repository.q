@@ -1,0 +1,66 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>Audio Addons</label>
+		<label2>Custom shortcut</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>ActivateWindow(MusicLibrary,Addons,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.mixcloud</defaultID>
+		<label>MixCloud</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.audio.mixcloud/icon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.mixcloud",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.radio_de</defaultID>
+		<label>Radio</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.audio.radio_de/icon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.radio_de",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>StreamBox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.streamengine/resources/art/radio.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=http%3A%2F%2Fwww.listenlive.eu%2Fuk.html&amp;mode=4&amp;name=%5BCOLOR+white%5DRADIO%5B%2FCOLOR%5D&amp;iconimage=C%3A/Users/daddy/AppData/Roaming/Kodi/addons/plugin.video.streamengine/resources/art/radio.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.soundcloud</defaultID>
+		<label>SoundCloud</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.audio.soundcloud/icon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.ramfm</defaultID>
+		<label>RAM FM 80 Radio</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.audio.ramfm/icon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.ramfm",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.di.fm</defaultID>
+		<label>Digitally Imported</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.audio.di.fm/icon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.di.fm",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.audio.radioreference</defaultID>
+		<label>Broadcastify</label>
+		<label2>Music Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.audio.radioreference/icon.png/</thumb>
+		<action>ActivateWindow(10501,"plugin://plugin.audio.radioreference",return)</action>
+	</shortcut>
+</shortcuts>

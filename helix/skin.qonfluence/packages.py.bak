@@ -1,0 +1,28 @@
+import os
+import re
+import sys
+import xbmc
+import xbmcgui
+import xbmcplugin
+import xbmcaddon
+import random
+import urllib
+import shutil
+import glob, os
+import time
+
+__addon__     = xbmcaddon.Addon('skin.qonfluence')
+__addonid__   = __addon__.getAddonInfo('id')
+addonPath = xbmcaddon.Addon('skin.qonfluence').getAddonInfo("path")
+image    = os.path.join(addonPath,'notification.png')
+dialog = xbmcgui.Dialog()
+
+def packages():
+    localtxt1 = __language__(32006)+__language__(32002)
+    path=xbmc.translatePath(os.path.join('special://home/addons/packages',''))
+    if dialog.yesno(localtxt1, localtxt3):
+        shutil.rmtree(path)
+        os.mkdir(path)
+        xbmc.executebuiltin("Notification("+localtxt9+","+localtxt2+", 5000, %s)" % (image))
+
+packages()

@@ -1,0 +1,3023 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<includes>
+	<include name="skinshortcuts-mainmenu" />
+	<include />
+	<include name="skinshortcuts-submenu">
+		<item id="1">
+			<label>Addon Installer</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.program.addoninstaller%2ficon.png/</thumb>
+			<property name="labelID">plugin.program.addoninstaller</property>
+			<property name="defaultID">plugin.program.addoninstaller</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x1)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x1</property>
+		</item>
+		<item id="2">
+			<label>USB-SDCARD WIZARD</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.usbwizard%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.usbwizard</property>
+			<property name="defaultID">plugin.video.usbwizard</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.video.usbwizard",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.video.usbwizard",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x1)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x1</property>
+		</item>
+		<item id="3">
+			<label>Maintenance Tool</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.xbmchubmaintenance%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.xbmchubmaintenance</property>
+			<property name="defaultID">plugin.video.xbmchubmaintenance</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x1)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x1</property>
+		</item>
+		<item id="1">
+			<label>[COLOR hotpink]Kids[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fcreateapk.com%2fproject%2f2014%2f09%2fafrizaldarwin%2fthe-minions-despicable-me-wallpaper%2ficon.png/</thumb>
+			<property name="labelID">colorhotpink-kids-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="2">
+			<label>[COLOR purple]Kidzone[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs20.postimg.org%2foptusf57h%2fkidzone.png/</thumb>
+			<property name="labelID">colorpurple-kidzone-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Kidzone+Shortcut&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FKids%2520Directories%2FKidzone%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Foptusf57h%2Fkidzone.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Kidzone+Shortcut&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FKids%2520Directories%2FKidzone%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Foptusf57h%2Fkidzone.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="3">
+			<label>[COLOR green]Cartoons8[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.cartoons8%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.cartoons8</property>
+			<property name="defaultID">plugin.video.cartoons8</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="4">
+			<label>[COLOR purple]Kiddie Cartoons[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.kiddiecartoons%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.kiddiecartoons</property>
+			<property name="defaultID">plugin.video.kiddiecartoons</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="5">
+			<label>[COLOR hotpink]Kids Live Action[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fwalter.trakt.us%2fimages%2fmovies%2f000%2f007%2f229%2ffanarts%2foriginal%2f75b32c169e.jpg/</thumb>
+			<property name="labelID">colorhotpink-kidsliveaction-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="1">
+			<label>VEVO TV</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vevo_tv-master%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vevo_tv</property>
+			<property name="defaultID">plugin.video.vevo_tv</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.video.vevo_tv",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.video.vevo_tv",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="2">
+			<label>SoundCloud</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.audio.soundcloud%2ficon.png/</thumb>
+			<property name="labelID">plugin.audio.soundcloud</property>
+			<property name="defaultID">plugin.audio.soundcloud</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="3">
+			<label>Bin@ural Audio</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fkinkin-xbmc-repository.googlecode.com%2fsvn%2ftrunk%2fzips%2fplugin.audio.binaural%2fart%2faudio.png/</thumb>
+			<property name="labelID">bin-uralaudio</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1300&amp;name=Audio&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Faudio.png&amp;artist=",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1300&amp;name=Audio&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Faudio.png&amp;artist=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="4">
+			<label>Bin@ural Video</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fkinkin-xbmc-repository.googlecode.com%2fsvn%2ftrunk%2fzips%2fplugin.audio.binaural%2fart%2fvideo.png/</thumb>
+			<property name="labelID">bin-uralvideo</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1301&amp;name=Video&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Fvideo.png&amp;artist=",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1301&amp;name=Video&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Fvideo.png&amp;artist=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="5">
+			<label>MP3 Streams</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.audio.mp3streams%2ficon.png/</thumb>
+			<property name="labelID">plugin.audio.mp3streams</property>
+			<property name="defaultID">plugin.audio.mp3streams</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="6">
+			<label>Pandora</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fscript.audio.pandora%2ficon.png/</thumb>
+			<property name="labelID">script.audio.pandora</property>
+			<property name="defaultID">script.audio.pandora</property>
+			<onclick>RunAddOn(script.audio.pandora)</onclick>
+			<property name="path">RunAddOn(script.audio.pandora)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="7">
+			<label>Concert Archive</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.concertarchive%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.concertarchive</property>
+			<property name="defaultID">plugin.video.concertarchive</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.video.concertarchive",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.video.concertarchive",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[24001]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">24001</property>
+			<property name="defaultID">24001</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x4)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x4</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[24001]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">24001</property>
+			<property name="defaultID">24001</property>
+			<onclick>ActivateWindow(AddonBrowser)</onclick>
+			<property name="path">ActivateWindow(AddonBrowser)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[20077]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">20077</property>
+			<property name="defaultID">20077</property>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+			<property name="path">ActivateWindow(SkinSettings)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[7]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">7</property>
+			<property name="defaultID">7</property>
+			<onclick>ActivateWindow(FileManager)</onclick>
+			<property name="path">ActivateWindow(FileManager)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[13009]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13009</property>
+			<property name="defaultID">13009</property>
+			<visible>System.ShowExitButton</visible>
+			<onclick>Quit</onclick>
+			<property name="path">Quit</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[10007]</label>
+			<label2>Common Shortcut</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">10007</property>
+			<property name="defaultID">10007</property>
+			<onclick>ActivateWindow(SystemInfo)</onclick>
+			<property name="path">ActivateWindow(SystemInfo)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[13005]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13005</property>
+			<property name="defaultID">13005</property>
+			<onclick>ShutDown</onclick>
+			<property name="path">ShutDown</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x6)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x6</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[13013]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13013</property>
+			<property name="defaultID">13013</property>
+			<onclick>Reboot</onclick>
+			<property name="path">Reboot</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x6)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x6</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[13011]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13011</property>
+			<property name="defaultID">13011</property>
+			<visible>System.CanSuspend</visible>
+			<onclick>Suspend</onclick>
+			<property name="path">Suspend</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x6)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x6</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[1037]</label>
+			<label2>Videos</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1037</property>
+			<property name="defaultID">1037</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="2">
+			<label>Program Add-ons</label>
+			<label2>Programs</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">programadd-ons</property>
+			<property name="defaultID">programs</property>
+			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Programs,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="3">
+			<label>Addon Installer</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.program.addoninstaller%2ficon.png/</thumb>
+			<property name="labelID">plugin.program.addoninstaller</property>
+			<property name="defaultID">plugin.program.addoninstaller</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[1038]</label>
+			<label2>Music</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1038</property>
+			<property name="defaultID">1038</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[1039]</label>
+			<label2>Pictures</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1039</property>
+			<property name="defaultID">1039</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[16101]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">16101</property>
+			<property name="defaultID">16101</property>
+			<onclick>ActivateWindow(Videos,special://skin/extras/Unwatched.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://skin/extras/Unwatched.xsp,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">575</property>
+			<property name="defaultID">575</property>
+			<onclick>ActivateWindow(Videos,special://skin/extras/InProgress.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://skin/extras/InProgress.xsp,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(Movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[20434]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>Library.HasContent(MovieSets)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="7">
+			<label>$LOCALIZE[344]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="8">
+			<label>$LOCALIZE[20459]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20459</property>
+			<property name="defaultID">20459</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/tags/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/tags/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[4]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">4</property>
+			<property name="defaultID">4</property>
+			<visible>System.HasAddon(script.tv.show.next.aired)</visible>
+			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
+			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">575</property>
+			<property name="defaultID">575</property>
+			<onclick>ActivateWindow(Videos,library://video/inprogressshows.xml,return)</onclick>
+			<property name="path">ActivateWindow(Videos,library://video/inprogressshows.xml,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(TVShows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[344]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="1">
+			<label>Phoenix TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+			<property name="labelID">phoenixtv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="2">
+			<label>FilmOn.TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.F.T.V%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.F.T.V</property>
+			<property name="defaultID">plugin.video.F.T.V</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="3">
+			<label>Genesis Live</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fchannels_movies.jpg/</thumb>
+			<property name="labelID">genesislive</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="4">
+			<label>Crusader88</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2falaska.watchkodi.com%2fcrusader88A.png/</thumb>
+			<property name="labelID">crusader88</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="5">
+			<label>UK Turk Live Streams</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.ukturk%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.ukturk</property>
+			<property name="defaultID">plugin.video.ukturk</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="6">
+			<label>Vdubt25</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vdubt%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vdubt</property>
+			<property name="defaultID">plugin.video.vdubt</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="1">
+			<label>$LOCALIZE[133]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">133</property>
+			<property name="defaultID">133</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/artists/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/genres,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/genres,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(MusicVideos)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[20459]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20459</property>
+			<property name="defaultID">20459</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/tags/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/tags/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="1">
+			<label>Search</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.phstreams%2fart%2fsearch.png/</thumb>
+			<property name="labelID">search</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=search",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=search",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="2">
+			<label>Phoenix TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+			<property name="labelID">phoenixtv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="3">
+			<label>TNPB</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fzenica.watchkodi.com%2fMyIcon.png/</thumb>
+			<property name="labelID">tnpb</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="4">
+			<label>Staael2014</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs29.postimg.org%2fta0bxj12f%2fstaael1.png/</thumb>
+			<property name="labelID">staael2014</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="5">
+			<label>Rockcrusher</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fyork.watchkodi.com%2fmyicon.jpg/</thumb>
+			<property name="labelID">rockcrusher</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="6">
+			<label>Her Place</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fhonolulu.watchkodi.com%2fmyicon.jpg/</thumb>
+			<property name="labelID">herplace</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Her+Place&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Her+Place&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="7">
+			<label>One242415</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fgibraltar.watchkodi.com%2fskullPhoenicIcon.png/</thumb>
+			<property name="labelID">one242415</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="8">
+			<label>Crusader88</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2falaska.watchkodi.com%2fcrusader88A.png/</thumb>
+			<property name="labelID">crusader88</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="9">
+			<label>NHL</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.phstreams%2fart%2fhockey.jpg/</thumb>
+			<property name="labelID">nhl</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=mainnhl",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=mainnhl",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="1">
+			<label>Search</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_search.jpg/</thumb>
+			<property name="labelID">search</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=searchNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=searchNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="2">
+			<label>Latest Movies</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fmovies_added.jpg/</thumb>
+			<property name="labelID">latestmovies</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieWidget",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieWidget",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="3">
+			<label>Latest Episodes</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fepisodes_added.jpg/</thumb>
+			<property name="labelID">latestepisodes</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvWidget",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvWidget",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="4">
+			<label>Movies</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_movies.jpg/</thumb>
+			<property name="labelID">movies</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="5">
+			<label>TV Shows</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_shows.jpg/</thumb>
+			<property name="labelID">tvshows</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="6">
+			<label>My Genesis</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_genesis.jpg/</thumb>
+			<property name="labelID">mygenesis</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=myNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=myNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="7">
+			<label>Tools</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_tools.jpg/</thumb>
+			<property name="labelID">tools</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=toolNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=toolNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="8">
+			<label>Channels</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fchannels_movies.jpg/</thumb>
+			<property name="labelID">channels</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="1">
+			<label>Phoenix Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs20.postimg.org%2fy47sfmnfh%2fSports.png/</thumb>
+			<property name="labelID">phoenixsports</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Sports&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Fy47sfmnfh%2FSports.png&amp;fanart=http%3A%2F%2Fs20.postimg.org%2Fw4r6o7t3x%2FPhoenix_Fanart.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Sports&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Fy47sfmnfh%2FSports.png&amp;fanart=http%3A%2F%2Fs20.postimg.org%2Fw4r6o7t3x%2FPhoenix_Fanart.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="2">
+			<label>DigiTele Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.SportsDevil%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDevil</property>
+			<property name="defaultID">plugin.video.SportsDevil</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="3">
+			<label>Sports Donkey</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.SportsDonkey%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDonkey</property>
+			<property name="defaultID">plugin.video.SportsDonkey</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDonkey",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDonkey",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="4">
+			<label>UK Turk Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk%2fthumbs%2fUK%2520TURK%2520sports.jpg/</thumb>
+			<property name="labelID">ukturksports</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2FSports.txt&amp;mode=1&amp;name=Sports+%5BCOLOR+gold%5D%5BI%5D+-+01%2F06%2F2015%5B%2FI%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2Fthumbs%2FUK%2520TURK%2520sports.jpg&amp;description=",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2FSports.txt&amp;mode=1&amp;name=Sports+%5BCOLOR+gold%5D%5BI%5D+-+01%2F06%2F2015%5B%2FI%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2Fthumbs%2FUK%2520TURK%2520sports.jpg&amp;description=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="5">
+			<label>Vdubt25</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vdubt%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vdubt</property>
+			<property name="defaultID">plugin.video.vdubt</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="6">
+			<label>SportsAccess</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.sportsaccess%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.sportsaccess</property>
+			<property name="defaultID">plugin.video.sportsaccess</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.sportsaccess",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.sportsaccess",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x1">
+		<item id="1">
+			<label>Addon Installer</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.program.addoninstaller%2ficon.png/</thumb>
+			<property name="labelID">plugin.program.addoninstaller</property>
+			<property name="defaultID">plugin.program.addoninstaller</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x1</property>
+		</item>
+		<item id="2">
+			<label>USB-SDCARD WIZARD</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.usbwizard%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.usbwizard</property>
+			<property name="defaultID">plugin.video.usbwizard</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.video.usbwizard",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.video.usbwizard",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x1</property>
+		</item>
+		<item id="3">
+			<label>Maintenance Tool</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.xbmchubmaintenance%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.xbmchubmaintenance</property>
+			<property name="defaultID">plugin.video.xbmchubmaintenance</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x1</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x1">
+		<item id="1">
+			<label>Addon Installer</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.program.addoninstaller%2ficon.png/</thumb>
+			<property name="labelID">plugin.program.addoninstaller</property>
+			<property name="defaultID">plugin.program.addoninstaller</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x1)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x1</property>
+		</item>
+		<item id="2">
+			<label>USB-SDCARD WIZARD</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.usbwizard%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.usbwizard</property>
+			<property name="defaultID">plugin.video.usbwizard</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.video.usbwizard",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.video.usbwizard",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x1)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x1</property>
+		</item>
+		<item id="3">
+			<label>Maintenance Tool</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.xbmchubmaintenance%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.xbmchubmaintenance</property>
+			<property name="defaultID">plugin.video.xbmchubmaintenance</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.video.xbmchubmaintenance",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x1)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x1</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x2">
+		<item id="1">
+			<label>[COLOR hotpink]Kids[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fcreateapk.com%2fproject%2f2014%2f09%2fafrizaldarwin%2fthe-minions-despicable-me-wallpaper%2ficon.png/</thumb>
+			<property name="labelID">colorhotpink-kids-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x2</property>
+		</item>
+		<item id="2">
+			<label>[COLOR purple]Kidzone[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs20.postimg.org%2foptusf57h%2fkidzone.png/</thumb>
+			<property name="labelID">colorpurple-kidzone-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Kidzone+Shortcut&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FKids%2520Directories%2FKidzone%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Foptusf57h%2Fkidzone.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Kidzone+Shortcut&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FKids%2520Directories%2FKidzone%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Foptusf57h%2Fkidzone.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x2</property>
+		</item>
+		<item id="3">
+			<label>[COLOR green]Cartoons8[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.cartoons8%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.cartoons8</property>
+			<property name="defaultID">plugin.video.cartoons8</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x2</property>
+		</item>
+		<item id="4">
+			<label>[COLOR purple]Kiddie Cartoons[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.kiddiecartoons%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.kiddiecartoons</property>
+			<property name="defaultID">plugin.video.kiddiecartoons</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x2</property>
+		</item>
+		<item id="5">
+			<label>[COLOR hotpink]Kids Live Action[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fwalter.trakt.us%2fimages%2fmovies%2f000%2f007%2f229%2ffanarts%2foriginal%2f75b32c169e.jpg/</thumb>
+			<property name="labelID">colorhotpink-kidsliveaction-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x2</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x2">
+		<item id="1">
+			<label>[COLOR hotpink]Kids[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fcreateapk.com%2fproject%2f2014%2f09%2fafrizaldarwin%2fthe-minions-despicable-me-wallpaper%2ficon.png/</thumb>
+			<property name="labelID">colorhotpink-kids-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids.xml&amp;audio=0&amp;image=http%3A%2F%2Fcreateapk.com%2Fproject%2F2014%2F09%2Fafrizaldarwin%2Fthe-minions-despicable-me-wallpaper%2Ficon.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="2">
+			<label>[COLOR purple]Kidzone[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs20.postimg.org%2foptusf57h%2fkidzone.png/</thumb>
+			<property name="labelID">colorpurple-kidzone-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Kidzone+Shortcut&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FKids%2520Directories%2FKidzone%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Foptusf57h%2Fkidzone.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Kidzone+Shortcut&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2FDirectories%2FKids%2520Directories%2FKidzone%2520Directory.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Foptusf57h%2Fkidzone.png&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F4ph8mo5q9%2FBackdrop.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="3">
+			<label>[COLOR green]Cartoons8[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.cartoons8%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.cartoons8</property>
+			<property name="defaultID">plugin.video.cartoons8</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.cartoons8",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="4">
+			<label>[COLOR purple]Kiddie Cartoons[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.kiddiecartoons%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.kiddiecartoons</property>
+			<property name="defaultID">plugin.video.kiddiecartoons</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.kiddiecartoons",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+		<item id="5">
+			<label>[COLOR hotpink]Kids Live Action[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://https%3a%2f%2fwalter.trakt.us%2fimages%2fmovies%2f000%2f007%2f229%2ffanarts%2foriginal%2f75b32c169e.jpg/</thumb>
+			<property name="labelID">colorhotpink-kidsliveaction-color</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=%5BCOLOR+hotpink%5DKids+Live+Action%5B%2FCOLOR%5D&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2FPlaylists%2FKids%2520Live%2520Action.xml&amp;audio=0&amp;image=https%3A%2F%2Fwalter.trakt.us%2Fimages%2Fmovies%2F000%2F007%2F229%2Ffanarts%2Foriginal%2F75b32c169e.jpg&amp;fanart=http%3A%2F%2Fs6.postimg.org%2F6tj6zom81%2Fkids4.png&amp;playable=true&amp;content=movies&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x2)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x2</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x3">
+		<item id="1">
+			<label>VEVO TV</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vevo_tv-master%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vevo_tv</property>
+			<property name="defaultID">plugin.video.vevo_tv</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.video.vevo_tv",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.video.vevo_tv",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+		<item id="2">
+			<label>SoundCloud</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.audio.soundcloud%2ficon.png/</thumb>
+			<property name="labelID">plugin.audio.soundcloud</property>
+			<property name="defaultID">plugin.audio.soundcloud</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+		<item id="3">
+			<label>Bin@ural Audio</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fkinkin-xbmc-repository.googlecode.com%2fsvn%2ftrunk%2fzips%2fplugin.audio.binaural%2fart%2faudio.png/</thumb>
+			<property name="labelID">bin-uralaudio</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1300&amp;name=Audio&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Faudio.png&amp;artist=",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1300&amp;name=Audio&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Faudio.png&amp;artist=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+		<item id="4">
+			<label>Bin@ural Video</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fkinkin-xbmc-repository.googlecode.com%2fsvn%2ftrunk%2fzips%2fplugin.audio.binaural%2fart%2fvideo.png/</thumb>
+			<property name="labelID">bin-uralvideo</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1301&amp;name=Video&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Fvideo.png&amp;artist=",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1301&amp;name=Video&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Fvideo.png&amp;artist=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+		<item id="5">
+			<label>MP3 Streams</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.audio.mp3streams%2ficon.png/</thumb>
+			<property name="labelID">plugin.audio.mp3streams</property>
+			<property name="defaultID">plugin.audio.mp3streams</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+		<item id="6">
+			<label>Pandora</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fscript.audio.pandora%2ficon.png/</thumb>
+			<property name="labelID">script.audio.pandora</property>
+			<property name="defaultID">script.audio.pandora</property>
+			<onclick>RunAddOn(script.audio.pandora)</onclick>
+			<property name="path">RunAddOn(script.audio.pandora)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+		<item id="7">
+			<label>Concert Archive</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.concertarchive%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.concertarchive</property>
+			<property name="defaultID">plugin.video.concertarchive</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.video.concertarchive",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.video.concertarchive",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x3</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x3">
+		<item id="1">
+			<label>VEVO TV</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vevo_tv-master%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vevo_tv</property>
+			<property name="defaultID">plugin.video.vevo_tv</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.video.vevo_tv",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.video.vevo_tv",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="2">
+			<label>SoundCloud</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.audio.soundcloud%2ficon.png/</thumb>
+			<property name="labelID">plugin.audio.soundcloud</property>
+			<property name="defaultID">plugin.audio.soundcloud</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.soundcloud",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="3">
+			<label>Bin@ural Audio</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fkinkin-xbmc-repository.googlecode.com%2fsvn%2ftrunk%2fzips%2fplugin.audio.binaural%2fart%2faudio.png/</thumb>
+			<property name="labelID">bin-uralaudio</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1300&amp;name=Audio&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Faudio.png&amp;artist=",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1300&amp;name=Audio&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Faudio.png&amp;artist=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="4">
+			<label>Bin@ural Video</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fkinkin-xbmc-repository.googlecode.com%2fsvn%2ftrunk%2fzips%2fplugin.audio.binaural%2fart%2fvideo.png/</thumb>
+			<property name="labelID">bin-uralvideo</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1301&amp;name=Video&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Fvideo.png&amp;artist=",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.binaural/?url=url&amp;mode=1301&amp;name=Video&amp;iconimage=http%3A%2F%2Fkinkin-xbmc-repository.googlecode.com%2Fsvn%2Ftrunk%2Fzips%2Fplugin.audio.binaural%2Fart%2Fvideo.png&amp;artist=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="5">
+			<label>MP3 Streams</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.audio.mp3streams%2ficon.png/</thumb>
+			<property name="labelID">plugin.audio.mp3streams</property>
+			<property name="defaultID">plugin.audio.mp3streams</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.audio.mp3streams",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="6">
+			<label>Pandora</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultAddon.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fscript.audio.pandora%2ficon.png/</thumb>
+			<property name="labelID">script.audio.pandora</property>
+			<property name="defaultID">script.audio.pandora</property>
+			<onclick>RunAddOn(script.audio.pandora)</onclick>
+			<property name="path">RunAddOn(script.audio.pandora)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+		<item id="7">
+			<label>Concert Archive</label>
+			<label2>Music Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.concertarchive%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.concertarchive</property>
+			<property name="defaultID">plugin.video.concertarchive</property>
+			<onclick>ActivateWindow(10501,"plugin://plugin.video.concertarchive",return)</onclick>
+			<property name="path">ActivateWindow(10501,"plugin://plugin.video.concertarchive",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x3)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x3</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x4">
+		<item id="1">
+			<label>$LOCALIZE[24001]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">24001</property>
+			<property name="defaultID">24001</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x4</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x4">
+		<item id="1">
+			<label>$LOCALIZE[24001]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">24001</property>
+			<property name="defaultID">24001</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x4)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x4</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x5">
+		<item id="1">
+			<label>$LOCALIZE[24001]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">24001</property>
+			<property name="defaultID">24001</property>
+			<onclick>ActivateWindow(AddonBrowser)</onclick>
+			<property name="path">ActivateWindow(AddonBrowser)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x5</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[20077]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">20077</property>
+			<property name="defaultID">20077</property>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+			<property name="path">ActivateWindow(SkinSettings)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x5</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[7]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">7</property>
+			<property name="defaultID">7</property>
+			<onclick>ActivateWindow(FileManager)</onclick>
+			<property name="path">ActivateWindow(FileManager)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x5</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[13009]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13009</property>
+			<property name="defaultID">13009</property>
+			<visible>System.ShowExitButton</visible>
+			<onclick>Quit</onclick>
+			<property name="path">Quit</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x5</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[10007]</label>
+			<label2>Common Shortcut</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">10007</property>
+			<property name="defaultID">10007</property>
+			<onclick>ActivateWindow(SystemInfo)</onclick>
+			<property name="path">ActivateWindow(SystemInfo)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x5</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x5">
+		<item id="1">
+			<label>$LOCALIZE[24001]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">24001</property>
+			<property name="defaultID">24001</property>
+			<onclick>ActivateWindow(AddonBrowser)</onclick>
+			<property name="path">ActivateWindow(AddonBrowser)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[20077]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">20077</property>
+			<property name="defaultID">20077</property>
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+			<property name="path">ActivateWindow(SkinSettings)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[7]</label>
+			<label2 />
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">7</property>
+			<property name="defaultID">7</property>
+			<onclick>ActivateWindow(FileManager)</onclick>
+			<property name="path">ActivateWindow(FileManager)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[13009]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13009</property>
+			<property name="defaultID">13009</property>
+			<visible>System.ShowExitButton</visible>
+			<onclick>Quit</onclick>
+			<property name="path">Quit</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[10007]</label>
+			<label2>Common Shortcut</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">10007</property>
+			<property name="defaultID">10007</property>
+			<onclick>ActivateWindow(SystemInfo)</onclick>
+			<property name="path">ActivateWindow(SystemInfo)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x5)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x5</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x6">
+		<item id="1">
+			<label>$LOCALIZE[13005]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13005</property>
+			<property name="defaultID">13005</property>
+			<onclick>ShutDown</onclick>
+			<property name="path">ShutDown</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x6</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[13013]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13013</property>
+			<property name="defaultID">13013</property>
+			<onclick>Reboot</onclick>
+			<property name="path">Reboot</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x6</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[13011]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13011</property>
+			<property name="defaultID">13011</property>
+			<visible>System.CanSuspend</visible>
+			<onclick>Suspend</onclick>
+			<property name="path">Suspend</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x6</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x6">
+		<item id="1">
+			<label>$LOCALIZE[13005]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13005</property>
+			<property name="defaultID">13005</property>
+			<onclick>ShutDown</onclick>
+			<property name="path">ShutDown</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x6)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x6</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[13013]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13013</property>
+			<property name="defaultID">13013</property>
+			<onclick>Reboot</onclick>
+			<property name="path">Reboot</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x6)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x6</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[13011]</label>
+			<label2>Kodi Command</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">13011</property>
+			<property name="defaultID">13011</property>
+			<visible>System.CanSuspend</visible>
+			<onclick>Suspend</onclick>
+			<property name="path">Suspend</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x6)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x6</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x7" />
+	<include name="skinshortcuts-group-alt-x7" />
+	<include name="skinshortcuts-group-x8">
+		<item id="1">
+			<label>$LOCALIZE[1037]</label>
+			<label2>Videos</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1037</property>
+			<property name="defaultID">1037</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x8</property>
+		</item>
+		<item id="2">
+			<label>Program Add-ons</label>
+			<label2>Programs</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">programadd-ons</property>
+			<property name="defaultID">programs</property>
+			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Programs,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x8</property>
+		</item>
+		<item id="3">
+			<label>Addon Installer</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.program.addoninstaller%2ficon.png/</thumb>
+			<property name="labelID">plugin.program.addoninstaller</property>
+			<property name="defaultID">plugin.program.addoninstaller</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x8</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[1038]</label>
+			<label2>Music</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1038</property>
+			<property name="defaultID">1038</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x8</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[1039]</label>
+			<label2>Pictures</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1039</property>
+			<property name="defaultID">1039</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x8</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x8">
+		<item id="1">
+			<label>$LOCALIZE[1037]</label>
+			<label2>Videos</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1037</property>
+			<property name="defaultID">1037</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="2">
+			<label>Program Add-ons</label>
+			<label2>Programs</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">programadd-ons</property>
+			<property name="defaultID">programs</property>
+			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Programs,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="3">
+			<label>Addon Installer</label>
+			<label2>Program</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.program.addoninstaller%2ficon.png/</thumb>
+			<property name="labelID">plugin.program.addoninstaller</property>
+			<property name="defaultID">plugin.program.addoninstaller</property>
+			<onclick>ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</onclick>
+			<property name="path">ActivateWindow(10001,"plugin://plugin.program.addoninstaller",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[1038]</label>
+			<label2>Music</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1038</property>
+			<property name="defaultID">1038</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[1039]</label>
+			<label2>Pictures</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1039</property>
+			<property name="defaultID">1039</property>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Pictures,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x8)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x8</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x9" />
+	<include name="skinshortcuts-group-alt-x9" />
+	<include name="skinshortcuts-group-x10">
+		<item id="1">
+			<label>$LOCALIZE[16101]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">16101</property>
+			<property name="defaultID">16101</property>
+			<onclick>ActivateWindow(Videos,special://skin/extras/Unwatched.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://skin/extras/Unwatched.xsp,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">575</property>
+			<property name="defaultID">575</property>
+			<onclick>ActivateWindow(Videos,special://skin/extras/InProgress.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://skin/extras/InProgress.xsp,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(Movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[20434]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>Library.HasContent(MovieSets)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="7">
+			<label>$LOCALIZE[344]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+		<item id="8">
+			<label>$LOCALIZE[20459]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20459</property>
+			<property name="defaultID">20459</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/tags/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/tags/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x10</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x10">
+		<item id="1">
+			<label>$LOCALIZE[16101]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">16101</property>
+			<property name="defaultID">16101</property>
+			<onclick>ActivateWindow(Videos,special://skin/extras/Unwatched.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://skin/extras/Unwatched.xsp,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">575</property>
+			<property name="defaultID">575</property>
+			<onclick>ActivateWindow(Videos,special://skin/extras/InProgress.xsp,return)</onclick>
+			<property name="path">ActivateWindow(Videos,special://skin/extras/InProgress.xsp,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(Movies)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmovies/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[20434]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20434</property>
+			<property name="defaultID">20434</property>
+			<visible>Library.HasContent(MovieSets)</visible>
+			<onclick>ActivateWindow(Videos,videodb://movies/sets/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/sets/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/genres/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="7">
+			<label>$LOCALIZE[344]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/actors/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+		<item id="8">
+			<label>$LOCALIZE[20459]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20459</property>
+			<property name="defaultID">20459</property>
+			<onclick>ActivateWindow(Videos,videodb://movies/tags/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://movies/tags/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x10)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x10</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x11">
+		<item id="1">
+			<label>$LOCALIZE[4]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">4</property>
+			<property name="defaultID">4</property>
+			<visible>System.HasAddon(script.tv.show.next.aired)</visible>
+			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
+			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">575</property>
+			<property name="defaultID">575</property>
+			<onclick>ActivateWindow(Videos,library://video/inprogressshows.xml,return)</onclick>
+			<property name="path">ActivateWindow(Videos,library://video/inprogressshows.xml,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(TVShows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[344]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x11</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x11">
+		<item id="1">
+			<label>$LOCALIZE[4]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">4</property>
+			<property name="defaultID">4</property>
+			<visible>System.HasAddon(script.tv.show.next.aired)</visible>
+			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
+			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[575]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">575</property>
+			<property name="defaultID">575</property>
+			<onclick>ActivateWindow(Videos,library://video/inprogressshows.xml,return)</onclick>
+			<property name="path">ActivateWindow(Videos,library://video/inprogressshows.xml,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(TVShows)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedepisodes/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/genres/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/genres/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+		<item id="6">
+			<label>$LOCALIZE[344]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">344</property>
+			<property name="defaultID">344</property>
+			<onclick>ActivateWindow(Videos,videodb://tvshows/actors/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://tvshows/actors/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x11)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x11</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x12">
+		<item id="1">
+			<label>Phoenix TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+			<property name="labelID">phoenixtv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+		</item>
+		<item id="2">
+			<label>FilmOn.TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.F.T.V%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.F.T.V</property>
+			<property name="defaultID">plugin.video.F.T.V</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+		</item>
+		<item id="3">
+			<label>Genesis Live</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fchannels_movies.jpg/</thumb>
+			<property name="labelID">genesislive</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+		</item>
+		<item id="4">
+			<label>Crusader88</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2falaska.watchkodi.com%2fcrusader88A.png/</thumb>
+			<property name="labelID">crusader88</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+		</item>
+		<item id="5">
+			<label>UK Turk Live Streams</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.ukturk%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.ukturk</property>
+			<property name="defaultID">plugin.video.ukturk</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+		</item>
+		<item id="6">
+			<label>Vdubt25</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vdubt%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vdubt</property>
+			<property name="defaultID">plugin.video.vdubt</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x12</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x12">
+		<item id="1">
+			<label>Phoenix TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+			<property name="labelID">phoenixtv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="2">
+			<label>FilmOn.TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.F.T.V%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.F.T.V</property>
+			<property name="defaultID">plugin.video.F.T.V</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.F.T.V",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="3">
+			<label>Genesis Live</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fchannels_movies.jpg/</thumb>
+			<property name="labelID">genesislive</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="4">
+			<label>Crusader88</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2falaska.watchkodi.com%2fcrusader88A.png/</thumb>
+			<property name="labelID">crusader88</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="5">
+			<label>UK Turk Live Streams</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.ukturk%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.ukturk</property>
+			<property name="defaultID">plugin.video.ukturk</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ukturk",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+		<item id="6">
+			<label>Vdubt25</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vdubt%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vdubt</property>
+			<property name="defaultID">plugin.video.vdubt</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x12)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x12</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x13">
+		<item id="1">
+			<label>$LOCALIZE[133]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">133</property>
+			<property name="defaultID">133</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/artists/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x13</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/genres,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/genres,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x13</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(MusicVideos)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x13</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x13</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[20459]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20459</property>
+			<property name="defaultID">20459</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/tags/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/tags/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x13</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x13">
+		<item id="1">
+			<label>$LOCALIZE[133]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">133</property>
+			<property name="defaultID">133</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/artists/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/artists/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="2">
+			<label>$LOCALIZE[135]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">135</property>
+			<property name="defaultID">135</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/genres,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/genres,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="3">
+			<label>$LOCALIZE[31328]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">31328</property>
+			<property name="defaultID">31328</property>
+			<visible>Library.HasContent(MusicVideos)</visible>
+			<onclick>ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://recentlyaddedmusicvideos/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="4">
+			<label>$LOCALIZE[652]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">652</property>
+			<property name="defaultID">652</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/years/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/years/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+		<item id="5">
+			<label>$LOCALIZE[20459]</label>
+			<label2 />
+			<icon />
+			<thumb />
+			<property name="labelID">20459</property>
+			<property name="defaultID">20459</property>
+			<onclick>ActivateWindow(Videos,videodb://musicvideos/tags/,return)</onclick>
+			<property name="path">ActivateWindow(Videos,videodb://musicvideos/tags/,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x13)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x13</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x101">
+		<item id="1">
+			<label>Search</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.phstreams%2fart%2fsearch.png/</thumb>
+			<property name="labelID">search</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=search",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=search",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="2">
+			<label>Phoenix TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+			<property name="labelID">phoenixtv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="3">
+			<label>TNPB</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fzenica.watchkodi.com%2fMyIcon.png/</thumb>
+			<property name="labelID">tnpb</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="4">
+			<label>Staael2014</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs29.postimg.org%2fta0bxj12f%2fstaael1.png/</thumb>
+			<property name="labelID">staael2014</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="5">
+			<label>Rockcrusher</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fyork.watchkodi.com%2fmyicon.jpg/</thumb>
+			<property name="labelID">rockcrusher</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="6">
+			<label>Her Place</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fhonolulu.watchkodi.com%2fmyicon.jpg/</thumb>
+			<property name="labelID">herplace</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Her+Place&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Her+Place&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="7">
+			<label>One242415</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fgibraltar.watchkodi.com%2fskullPhoenicIcon.png/</thumb>
+			<property name="labelID">one242415</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="8">
+			<label>Crusader88</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2falaska.watchkodi.com%2fcrusader88A.png/</thumb>
+			<property name="labelID">crusader88</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+		<item id="9">
+			<label>NHL</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.phstreams%2fart%2fhockey.jpg/</thumb>
+			<property name="labelID">nhl</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=mainnhl",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=mainnhl",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x101</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x101">
+		<item id="1">
+			<label>Search</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.phstreams%2fart%2fsearch.png/</thumb>
+			<property name="labelID">search</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=search",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=search",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="2">
+			<label>Phoenix TV</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fshanghai.watchkodi.com%2fPhoenix%2520Tv%2520Icon.jpg/</thumb>
+			<property name="labelID">phoenixtv</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Phoenix+TV&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fshanghai.watchkodi.com%2FPhoenix%2520Tv%2520Icon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="3">
+			<label>TNPB</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fzenica.watchkodi.com%2fMyIcon.png/</thumb>
+			<property name="labelID">tnpb</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=TNPB&amp;url=http%3A%2F%2Fzenica.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fzenica.watchkodi.com%2FMyIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="4">
+			<label>Staael2014</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs29.postimg.org%2fta0bxj12f%2fstaael1.png/</thumb>
+			<property name="labelID">staael2014</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Staael2014&amp;url=http%3A%2F%2Ftuzla.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fs29.postimg.org%2Fta0bxj12f%2Fstaael1.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="5">
+			<label>Rockcrusher</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fyork.watchkodi.com%2fmyicon.jpg/</thumb>
+			<property name="labelID">rockcrusher</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Rockcrusher&amp;url=http%3A%2F%2Fyork.watchkodi.com%2FMainDir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fyork.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="6">
+			<label>Her Place</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fhonolulu.watchkodi.com%2fmyicon.jpg/</thumb>
+			<property name="labelID">herplace</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Her+Place&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Her+Place&amp;url=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fhonolulu.watchkodi.com%2Fmyicon.jpg&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="7">
+			<label>One242415</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fgibraltar.watchkodi.com%2fskullPhoenicIcon.png/</thumb>
+			<property name="labelID">one242415</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=One242415&amp;url=http%3A%2F%2Fgibraltar.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Fgibraltar.watchkodi.com%2FskullPhoenicIcon.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="8">
+			<label>Crusader88</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2falaska.watchkodi.com%2fcrusader88A.png/</thumb>
+			<property name="labelID">crusader88</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Crusader88&amp;url=http%3A%2F%2Falaska.watchkodi.com%2Fmaindir%2Fmain.xml&amp;audio=0&amp;image=http%3A%2F%2Falaska.watchkodi.com%2Fcrusader88A.png&amp;fanart=%2Fstorage%2F.kodi%2Faddons%2Fplugin.video.phstreams%2Ffanart.jpg&amp;playable=false&amp;content=0&amp;mode=dmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+		<item id="9">
+			<label>NHL</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.phstreams%2fart%2fhockey.jpg/</thumb>
+			<property name="labelID">nhl</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=mainnhl",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?mode=mainnhl",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x101)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x101</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x202">
+		<item id="1">
+			<label>Search</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_search.jpg/</thumb>
+			<property name="labelID">search</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=searchNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=searchNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="2">
+			<label>Latest Movies</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fmovies_added.jpg/</thumb>
+			<property name="labelID">latestmovies</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieWidget",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieWidget",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="3">
+			<label>Latest Episodes</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fepisodes_added.jpg/</thumb>
+			<property name="labelID">latestepisodes</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvWidget",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvWidget",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="4">
+			<label>Movies</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_movies.jpg/</thumb>
+			<property name="labelID">movies</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="5">
+			<label>TV Shows</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_shows.jpg/</thumb>
+			<property name="labelID">tvshows</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="6">
+			<label>My Genesis</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_genesis.jpg/</thumb>
+			<property name="labelID">mygenesis</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=myNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=myNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="7">
+			<label>Tools</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_tools.jpg/</thumb>
+			<property name="labelID">tools</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=toolNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=toolNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+		<item id="8">
+			<label>Channels</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fchannels_movies.jpg/</thumb>
+			<property name="labelID">channels</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x202</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x202">
+		<item id="1">
+			<label>Search</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_search.jpg/</thumb>
+			<property name="labelID">search</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=searchNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=searchNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="2">
+			<label>Latest Movies</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fmovies_added.jpg/</thumb>
+			<property name="labelID">latestmovies</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieWidget",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieWidget",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="3">
+			<label>Latest Episodes</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fepisodes_added.jpg/</thumb>
+			<property name="labelID">latestepisodes</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvWidget",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvWidget",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="4">
+			<label>Movies</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_movies.jpg/</thumb>
+			<property name="labelID">movies</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=movieNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="5">
+			<label>TV Shows</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_shows.jpg/</thumb>
+			<property name="labelID">tvshows</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=tvNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="6">
+			<label>My Genesis</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_genesis.jpg/</thumb>
+			<property name="labelID">mygenesis</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=myNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=myNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="7">
+			<label>Tools</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2froot_tools.jpg/</thumb>
+			<property name="labelID">tools</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=toolNavigator",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=toolNavigator",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+		<item id="8">
+			<label>Channels</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.genesis%2fresources%2fart%2fgone%2fchannels_movies.jpg/</thumb>
+			<property name="labelID">channels</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.genesis/?action=channels",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x202)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x202</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x303">
+		<item id="1">
+			<label>Phoenix Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs20.postimg.org%2fy47sfmnfh%2fSports.png/</thumb>
+			<property name="labelID">phoenixsports</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Sports&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Fy47sfmnfh%2FSports.png&amp;fanart=http%3A%2F%2Fs20.postimg.org%2Fw4r6o7t3x%2FPhoenix_Fanart.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Sports&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Fy47sfmnfh%2FSports.png&amp;fanart=http%3A%2F%2Fs20.postimg.org%2Fw4r6o7t3x%2FPhoenix_Fanart.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x303</property>
+		</item>
+		<item id="2">
+			<label>DigiTele Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.SportsDevil%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDevil</property>
+			<property name="defaultID">plugin.video.SportsDevil</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x303</property>
+		</item>
+		<item id="3">
+			<label>Sports Donkey</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.SportsDonkey%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDonkey</property>
+			<property name="defaultID">plugin.video.SportsDonkey</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDonkey",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDonkey",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x303</property>
+		</item>
+		<item id="4">
+			<label>UK Turk Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk%2fthumbs%2fUK%2520TURK%2520sports.jpg/</thumb>
+			<property name="labelID">ukturksports</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2FSports.txt&amp;mode=1&amp;name=Sports+%5BCOLOR+gold%5D%5BI%5D+-+01%2F06%2F2015%5B%2FI%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2Fthumbs%2FUK%2520TURK%2520sports.jpg&amp;description=",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2FSports.txt&amp;mode=1&amp;name=Sports+%5BCOLOR+gold%5D%5BI%5D+-+01%2F06%2F2015%5B%2FI%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2Fthumbs%2FUK%2520TURK%2520sports.jpg&amp;description=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x303</property>
+		</item>
+		<item id="5">
+			<label>Vdubt25</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vdubt%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vdubt</property>
+			<property name="defaultID">plugin.video.vdubt</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x303</property>
+		</item>
+		<item id="6">
+			<label>SportsAccess</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.sportsaccess%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.sportsaccess</property>
+			<property name="defaultID">plugin.video.sportsaccess</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.sportsaccess",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.sportsaccess",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x303</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x303">
+		<item id="1">
+			<label>Phoenix Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fs20.postimg.org%2fy47sfmnfh%2fSports.png/</thumb>
+			<property name="labelID">phoenixsports</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Sports&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Fy47sfmnfh%2FSports.png&amp;fanart=http%3A%2F%2Fs20.postimg.org%2Fw4r6o7t3x%2FPhoenix_Fanart.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.phstreams/?name=Sports&amp;url=http%3A%2F%2Fshanghai.watchkodi.com%2FDirectories%2FSports.xml&amp;audio=0&amp;image=http%3A%2F%2Fs20.postimg.org%2Fy47sfmnfh%2FSports.png&amp;fanart=http%3A%2F%2Fs20.postimg.org%2Fw4r6o7t3x%2FPhoenix_Fanart.png&amp;playable=false&amp;content=0&amp;mode=ndmode",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="2">
+			<label>DigiTele Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.SportsDevil%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDevil</property>
+			<property name="defaultID">plugin.video.SportsDevil</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDevil",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="3">
+			<label>Sports Donkey</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.SportsDonkey%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.SportsDonkey</property>
+			<property name="defaultID">plugin.video.SportsDonkey</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.SportsDonkey",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.SportsDonkey",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="4">
+			<label>UK Turk Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk%2fthumbs%2fUK%2520TURK%2520sports.jpg/</thumb>
+			<property name="labelID">ukturksports</property>
+			<property name="defaultID" />
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2FSports.txt&amp;mode=1&amp;name=Sports+%5BCOLOR+gold%5D%5BI%5D+-+01%2F06%2F2015%5B%2FI%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2Fthumbs%2FUK%2520TURK%2520sports.jpg&amp;description=",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2FSports.txt&amp;mode=1&amp;name=Sports+%5BCOLOR+gold%5D%5BI%5D+-+01%2F06%2F2015%5B%2FI%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk%2Fthumbs%2FUK%2520TURK%2520sports.jpg&amp;description=",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="5">
+			<label>Vdubt25</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.vdubt%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.vdubt</property>
+			<property name="defaultID">plugin.video.vdubt</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.vdubt",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+		<item id="6">
+			<label>SportsAccess</label>
+			<label2>Video Add-On</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb>image://%2fstorage%2f.kodi%2faddons%2fplugin.video.sportsaccess%2ficon.png/</thumb>
+			<property name="labelID">plugin.video.sportsaccess</property>
+			<property name="defaultID">plugin.video.sportsaccess</property>
+			<onclick>ActivateWindow(10025,"plugin://plugin.video.sportsaccess",return)</onclick>
+			<property name="path">ActivateWindow(10025,"plugin://plugin.video.sportsaccess",return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x303)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x303</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x404" />
+	<include name="skinshortcuts-group-alt-x404" />
+	<include name="skinshortcuts-group-x50-5" />
+	<include name="skinshortcuts-group-alt-x50-5" />
+	<include name="skinshortcuts-group-x606" />
+	<include name="skinshortcuts-group-alt-x606" />
+</includes>

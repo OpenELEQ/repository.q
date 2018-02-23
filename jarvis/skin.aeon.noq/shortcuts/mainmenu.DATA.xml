@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<shortcuts>
+	<shortcut>
+		<defaultID>8</defaultID>
+		<label>8</label>
+		<label2 />
+		<icon>views/list/DefaultWeather.png</icon>
+		<thumb />
+		<action>ActivateWindow(weather)</action>
+		<visible>StringCompare(Skin.String(8.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>1036</defaultID>
+		<label>1036</label>
+		<label2 />
+		<icon>views/list/DefaultFavourites.png</icon>
+		<thumb />
+		<action>ActivateWindow(favourites)</action>
+		<visible>StringCompare(Skin.String(1036.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.metalliq/movies/blockbusters/1</defaultID>
+		<label>Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cdaddy%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.metalliq%5cicon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.metalliq/movies/blockbusters/1",return)</action>
+		<visible>StringCompare(Skin.String(20342.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.metalliq/tv/most_popular/1</defaultID>
+		<label>TV shows</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cdaddy%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.metalliq%5cicon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.metalliq/tv/most_popular/1",return)</action>
+		<visible>StringCompare(Skin.String(20343.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.uktvnow</defaultID>
+		<label>LiveTv</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://C%3a%5cUsers%5cdaddy%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.uktvnow%5cicon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.uktvnow",return)</action>
+		<visible>StringCompare(Skin.String(31999.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>31995</defaultID>
+		<label>$SKIN[31995|skin.aeon.noq|Sports]</label>
+		<label2 />
+		<icon>views/list/DefaultSports.png</icon>
+		<thumb />
+		<action>ActivateWindow(video,plugin://plugin.video.SportsDevil,return)</action>
+		<visible>StringCompare(Skin.String(31995.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>31996</defaultID>
+		<label>MetalliQ</label>
+		<label2>Custom item</label2>
+		<icon>views/list/DefaultMetalliQ.png</icon>
+		<thumb />
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.metalliq",return)</action>
+		<visible>StringCompare(Skin.String(31996.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>2</defaultID>
+		<label>2</label>
+		<label2 />
+		<icon>views/list/DefaultMusic.png</icon>
+		<thumb />
+		<action>ActivateWindow(music)</action>
+		<visible>StringCompare(Skin.String(2.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>24001</defaultID>
+		<label>24001</label>
+		<label2 />
+		<icon>views/list/DefaultAddon.png</icon>
+		<thumb />
+		<action>ActivateWindow(addonbrowser)</action>
+		<visible>StringCompare(Skin.String(24001.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>31997</defaultID>
+		<label>$SKIN[31997|skin.aeon.noq|Tools]</label>
+		<label2 />
+		<icon>views/list/DefaultAddonProgram.png</icon>
+		<thumb />
+		<action>ActivateWindow(10025,plugin://plugin.program.totalinstaller/?description&amp;fanart=special://home/addons/plugin.program.totalinstaller/fanart.jpg&amp;mode=tools&amp;name=Maintenance&amp;url=none&amp;video,return)</action>
+		<visible>StringCompare(Skin.String(31997.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>31998</defaultID>
+		<label>$SKIN[31998|skin.aeon.noq|DaPulse]</label>
+		<label2 />
+		<icon>views/list/DefaultPulse.png</icon>
+		<thumb />
+		<action>ActivateWindow(1140)</action>
+		<visible>StringCompare(Skin.String(31998.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>13000</defaultID>
+		<label>13000</label>
+		<label2 />
+		<icon>views/list/DefaultAddonService.png</icon>
+		<thumb />
+		<action>ActivateWindow(Settings)</action>
+		<visible>StringCompare(Skin.String(13000.DATA.Disable),True)</visible>
+	</shortcut>
+	<shortcut>
+		<defaultID>33060</defaultID>
+		<label>33060</label>
+		<label2 />
+		<icon>views/list/DefaultPower.png</icon>
+		<thumb />
+		<action>ActivateWindow(shutdownmenu)</action>
+		<visible>StringCompare(Skin.String(33060.DATA.Disable),True)</visible>
+	</shortcut>
+</shortcuts>

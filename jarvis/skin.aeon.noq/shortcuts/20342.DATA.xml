@@ -1,0 +1,106 @@
+<shortcuts>
+	<shortcut>
+		<defaultID />
+		<label>Exodus</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://DefaultMovies.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.exodus/?action=movieNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.phstreams</defaultID>
+		<label>Phoenix</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.phstreams/icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.phstreams",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Salts HD Lite</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.saltshd.lite/art/themes/SALTy/movies.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.saltshd.lite/?section=Movies&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>SALTS</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/script.salts.themepak/art/themes/Shine/movies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.salts/?section=Movies&amp;mode=browse",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdm4u</defaultID>
+		<label>M4U</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.mdm4u/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.mdm4u",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.titan</defaultID>
+		<label>[COLOR blue]T[/COLOR]itan</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.titan/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.titan",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Specto</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.specto/resources/media/gone/movies.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.specto/?action=movieNavigator",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.icefilms</defaultID>
+		<label>IceFilms</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.icefilms/icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.icefilms",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>velocity</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.velocity/resources/art/movies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.velocity/?url=&amp;mode=movie_menu&amp;name=Movies&amp;movie_title=&amp;thumb=C%3A/Users/daddy/AppData/Roaming/Kodi/addons/plugin.video.velocity/resources/art/movies.png&amp;trakt_id=&amp;media=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>1Channel</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/script.1channel.themepak/art/themes/Classic/movies.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.1channel/?section=movie&amp;mode=BrowseListMenu",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.md123movies</defaultID>
+		<label>123Movies</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.md123movies/icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.md123movies",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>StreamBox</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fi1295.photobucket.com%2falbums%2fb636%2fbeatbox8501%2fmovs_zps6ai3abxm.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.streamengine/?url=https%3A%2F%2Fpastebin.com%2Fraw.php%3Fi%3Dsxfkx4ZY&amp;mode=1&amp;name=%5BCOLOR+white%5DMOVIES%5B%2FCOLOR%5D%5BCOLOR+red%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fi1295.photobucket.com%2Falbums%2Fb636%2Fbeatbox8501%2Fmovs_zps6ai3abxm.png&amp;play=&amp;date=&amp;description=&amp;page=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>32046</defaultID>
+		<label>32046</label>
+		<label2>Kodi Command</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>UpdateLibrary(video,,true)</action>
+	</shortcut>
+</shortcuts>

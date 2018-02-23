@@ -1,0 +1,699 @@
+Program started
+TexturePacker Path:
+XML Folder Path:
+Skin Path:
+Skin Folder chosen:
+special://home/addons/skin.confluence
+XML Folder:special://home/addons/skin.confluence/720p
+
++-----------------+
+|  Texture Check  |
++-----------------+
+Not Found: $param[icon].png - [Includes.xml : Line 1417]
+Not Found: nocover_1.png - [SlideShow.xml : Line 15]
+-- Unused Textures --
+defaultaddonaudiodsp.png
+defaultaddongame.png
+defaultaddonimages.png
+defaultaddoninfoprovider.png
+defaultaddoninputstream.png
+defaultaddonlookandfeel.png
+defaultaddonperipheral.png
+defaultaddonsinstalled.png
+defaultaddonsrecentlyupdated.png
+defaultaddonsrepo.png
+defaultaddonssearch.png
+defaultaddonsupdates.png
+defaultaddonszip.png
+defaultaddonuisounds.png
+defaultdvdfull.png
+defaultgameaddons.png
+defaulticonwarning.png
+defaultmusicroles.png
+icon_addons.png
+icon_events.png
+icon_music.png
+icon_pictures.png
+icon_system.png
+icon_weather.png
+pvr-epgprogressindicator.png
+epg-genres/0.png
+epg-genres/112.png
+epg-genres/128.png
+epg-genres/144.png
+epg-genres/16.png
+epg-genres/160.png
+epg-genres/176.png
+epg-genres/192.png
+epg-genres/208.png
+epg-genres/224.png
+epg-genres/240.png
+epg-genres/256.png
+epg-genres/32.png
+epg-genres/48.png
+epg-genres/64.png
+epg-genres/80.png
+epg-genres/96.png
+epg-genres/genre-numbers.txt
+flagging/aspectratio/1.33.png
+flagging/aspectratio/1.37.png
+flagging/aspectratio/1.66.png
+flagging/aspectratio/1.78.png
+flagging/aspectratio/1.85.png
+flagging/aspectratio/2.20.png
+flagging/aspectratio/2.35.png
+flagging/aspectratio/2.40.png
+flagging/aspectratio/2.55.png
+flagging/aspectratio/2.76.png
+flagging/audio/1.png
+flagging/audio/10.png
+flagging/audio/2.png
+flagging/audio/3.png
+flagging/audio/4.png
+flagging/audio/5.png
+flagging/audio/6.png
+flagging/audio/7.png
+flagging/audio/8.png
+flagging/audio/aac.png
+flagging/audio/ac3.png
+flagging/audio/aif.png
+flagging/audio/aifc.png
+flagging/audio/aiff.png
+flagging/audio/alac.png
+flagging/audio/ape.png
+flagging/audio/avc.png
+flagging/audio/cdda.png
+flagging/audio/dca.png
+flagging/audio/dts.png
+flagging/audio/dtshd_hra.png
+flagging/audio/dtshd_ma.png
+flagging/audio/eac3.png
+flagging/audio/flac.png
+flagging/audio/mp1.png
+flagging/audio/mp2.png
+flagging/audio/mp3.png
+flagging/audio/ogg.png
+flagging/audio/opus.png
+flagging/audio/pcm.png
+flagging/audio/pcm_bluray.png
+flagging/audio/pcm_s16le.png
+flagging/audio/pcm_s24le.png
+flagging/audio/truehd.png
+flagging/audio/vorbis.png
+flagging/audio/wav.png
+flagging/audio/wavpack.png
+flagging/audio/wma.png
+flagging/audio/wmapro.png
+flagging/audio/wmav2.png
+flagging/lists/1080.png
+flagging/lists/480.png
+flagging/lists/4k.png
+flagging/lists/540.png
+flagging/lists/576.png
+flagging/lists/720.png
+flagging/ratings/mpaa_general.png
+flagging/ratings/mpaa_nc17.png
+flagging/ratings/mpaa_notrated.png
+flagging/ratings/mpaa_pg.png
+flagging/ratings/mpaa_pg13.png
+flagging/ratings/mpaa_restricted.png
+flagging/video/1080.png
+flagging/video/480.png
+flagging/video/4k.png
+flagging/video/540.png
+flagging/video/576.png
+flagging/video/720.png
+flagging/video/avc1.png
+flagging/video/bluray.png
+flagging/video/divx.png
+flagging/video/dvd.png
+flagging/video/flv.png
+flagging/video/h264.png
+flagging/video/hddvd.png
+flagging/video/hdmv.png
+flagging/video/hev1.png
+flagging/video/hevc.png
+flagging/video/hvc1.png
+flagging/video/mpeg1video.png
+flagging/video/mpeg2video.png
+flagging/video/tv.png
+flagging/video/vc-1.png
+flagging/video/vhs.png
+flagging/video/vp8.png
+flagging/video/vp9.png
+flagging/video/wmv.png
+flagging/video/wmv3.png
+flagging/video/wvc1.png
+flagging/video/xvid.png
+ratings/1.png
+ratings/10.png
+ratings/2.png
+ratings/3.png
+ratings/4.png
+ratings/5.png
+ratings/6.png
+ratings/7.png
+ratings/8.png
+ratings/9.png
+subtitles/flags/-.png
+subtitles/flags/ar.png
+subtitles/flags/bg.png
+subtitles/flags/bs.png
+subtitles/flags/ca.png
+subtitles/flags/cs.png
+subtitles/flags/da.png
+subtitles/flags/de.png
+subtitles/flags/el.png
+subtitles/flags/en.png
+subtitles/flags/es.png
+subtitles/flags/et.png
+subtitles/flags/fa.png
+subtitles/flags/fi.png
+subtitles/flags/fo.png
+subtitles/flags/fr.png
+subtitles/flags/gl.png
+subtitles/flags/he.png
+subtitles/flags/hi.png
+subtitles/flags/hr.png
+subtitles/flags/hu.png
+subtitles/flags/hy.png
+subtitles/flags/id.png
+subtitles/flags/is.png
+subtitles/flags/it.png
+subtitles/flags/ja.png
+subtitles/flags/kk.png
+subtitles/flags/ko.png
+subtitles/flags/lb.png
+subtitles/flags/license.txt
+subtitles/flags/lt.png
+subtitles/flags/lv.png
+subtitles/flags/mk.png
+subtitles/flags/ms.png
+subtitles/flags/nl.png
+subtitles/flags/no.png
+subtitles/flags/pb.png
+subtitles/flags/pl.png
+subtitles/flags/pt.png
+subtitles/flags/ro.png
+subtitles/flags/ru.png
+subtitles/flags/sk.png
+subtitles/flags/sl.png
+subtitles/flags/sq.png
+subtitles/flags/sr.png
+subtitles/flags/sv.png
+subtitles/flags/tr.png
+subtitles/flags/uk.png
+subtitles/flags/vi.png
+subtitles/flags/zh.png
+-- Texture Check Complete --
+
++--------------+
+|  Font Check  |
++--------------+
+-- Font Check Complete --
+
++-----------------+
+|  Include Check  |
++-----------------+
+Unused Include: MusicInfoPanel - [Includes.xml : Line 152]
+Unused Include: DialogBackgroundCommons - [Includes.xml : Line 239]
+Unused Include: CommonWindowHeader - [Includes.xml : Line 1403]
+Unused Include: WeatherDefaultItem - [ViewsWeather.xml : Line 393]
+Unused Include: WeatherDailyItem - [ViewsWeather.xml : Line 405]
+Unused Include: WeatherHourlyItem - [ViewsWeather.xml : Line 415]
+Unused Include: WeatherMapItem - [ViewsWeather.xml : Line 425]
+Undefined Include:  - [AddonBrowser.xml : Line 29]  
+Undefined Include:  - [DialogAddonInfo.xml : Line 14]  
+Undefined Include:  - [DialogAddonSettings.xml : Line 10]  
+Undefined Include:  - [DialogConfirm.xml : Line 10]  
+Undefined Include:  - [DialogGameControllers.xml : Line 10]  
+Undefined Include:  - [DialogKeyboard.xml : Line 14]  
+Undefined Include:  - [DialogMediaSource.xml : Line 10]  
+Undefined Include:  - [DialogMusicInfo.xml : Line 181]  
+Undefined Include:  - [DialogPVRChannelManager.xml : Line 10]  
+Undefined Include:  - [DialogPVRGuideSearch.xml : Line 10]  
+Undefined Include:  - [DialogPVRInfo.xml : Line 10]  
+Undefined Include:  - [DialogSettings.xml : Line 14]  
+Undefined Include:  - [EventLog.xml : Line 185]  
+Undefined Include:  - [FileManager.xml : Line 447]  
+Undefined Include:  - [MyMusicNav.xml : Line 41]  
+Undefined Include:  - [MyMusicPlaylistEditor.xml : Line 399]  
+Undefined Include:  - [MyPics.xml : Line 47]  
+Undefined Include:  - [MyPlaylist.xml : Line 27]  
+Undefined Include:  - [MyPlaylist.xml : Line 31]  
+Undefined Include:  - [MyPrograms.xml : Line 31]  
+Undefined Include:  - [MyVideoNav.xml : Line 47]  
+Undefined Include:  - [MyWeather.xml : Line 20]  
+Undefined Include:  - [script-RSS_Editor-rssEditor.xml : Line 10]  
+Undefined Include:  - [script-RSS_Editor-setEditor.xml : Line 10]  
+Undefined Include:  - [Settings.xml : Line 240]  
+Undefined Include:  - [SettingsCategory.xml : Line 282]  
+Undefined Include:  - [SettingsProfile.xml : Line 382]  
+Undefined Include:  - [SettingsSystemInfo.xml : Line 417]  
+Undefined Include:  - [SkinSettings.xml : Line 14]  
+Undefined Include:  - [SmartPlaylistEditor.xml : Line 13]  
+Undefined Include:  - [SmartPlaylistRule.xml : Line 10]  
+Undefined Include:  - [ViewsWeather.xml : Line 295]  
+Undefined Include:  - [ViewsWeather.xml : Line 298]  
+Undefined Include:  - [ViewsWeather.xml : Line 301]  
+Undefined Include:  - [ViewsWeather.xml : Line 304]  
+Undefined Include:  - [ViewsWeather.xml : Line 307]  
+Undefined Include:  - [ViewsWeather.xml : Line 310]  
+Undefined Include:  - [ViewsWeather.xml : Line 313]  
+Undefined Include:  - [ViewsWeather.xml : Line 316]  
+Undefined Include:  - [ViewsWeather.xml : Line 319]  
+Undefined Include:  - [ViewsWeather.xml : Line 322]  
+Undefined Include:  - [ViewsWeather.xml : Line 325]  
+Undefined Include:  - [ViewsWeather.xml : Line 328]  
+Undefined Include:  - [ViewsWeather.xml : Line 331]  
+Undefined Include:  - [ViewsWeather.xml : Line 334]  
+Undefined Include:  - [ViewsWeather.xml : Line 337]  
+Undefined Include:  - [ViewsWeather.xml : Line 340]  
+Undefined Include:  - [ViewsWeather.xml : Line 343]  
+Undefined Include:  - [ViewsWeather.xml : Line 346]  
+Undefined Include:  - [ViewsWeather.xml : Line 349]  
+Undefined Include:  - [ViewsWeather.xml : Line 352]  
+Undefined Include:  - [ViewsWeather.xml : Line 355]  
+Undefined Include:  - [ViewsWeather.xml : Line 1010]  
+Undefined Include:  - [ViewsWeather.xml : Line 1013]  
+Undefined Include:  - [ViewsWeather.xml : Line 1016]  
+Undefined Include:  - [ViewsWeather.xml : Line 1019]  
+Undefined Include:  - [ViewsWeather.xml : Line 1022]  
+Undefined Include:  - [ViewsWeather.xml : Line 1025]  
+Undefined Include:  - [ViewsWeather.xml : Line 1028]  
+Undefined Include:  - [ViewsWeather.xml : Line 1031]  
+Undefined Include:  - [ViewsWeather.xml : Line 1034]  
+Undefined Include:  - [ViewsWeather.xml : Line 1037]  
+Undefined Include:  - [ViewsWeather.xml : Line 1040]  
+Undefined Include:  - [ViewsWeather.xml : Line 1043]  
+Undefined Include:  - [ViewsWeather.xml : Line 1046]  
+Undefined Include:  - [ViewsWeather.xml : Line 1049]  
+Undefined Include:  - [ViewsWeather.xml : Line 1052]  
+Undefined Include:  - [ViewsWeather.xml : Line 1055]  
+Undefined Include:  - [ViewsWeather.xml : Line 1058]  
+Undefined Include:  - [ViewsWeather.xml : Line 1061]  
+Undefined Include:  - [ViewsWeather.xml : Line 1064]  
+Undefined Include:  - [ViewsWeather.xml : Line 1067]  
+Undefined Include:  - [ViewsWeather.xml : Line 1070]  
+Undefined Include:  - [ViewsWeather.xml : Line 1073]  
+Undefined Include:  - [ViewsWeather.xml : Line 1076]  
+Undefined Include:  - [ViewsWeather.xml : Line 1079]  
+Undefined Include:  - [ViewsWeather.xml : Line 1254]  
+Undefined Include:  - [ViewsWeather.xml : Line 1257]  
+Undefined Include:  - [ViewsWeather.xml : Line 1260]  
+Undefined Include:  - [ViewsWeather.xml : Line 1263]  
+Undefined Include:  - [ViewsWeather.xml : Line 1266]  
+-- Include Check Complete --
+
++------------------+
+|  Variable Check  |
++------------------+
+Unused Variable: PVRChannelMgrHeader - [Includes.xml : Line 130]
+-- Variable Check Complete --
+Scanning XMLs...
+Double XML Tag: param in AddonBrowser.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMusicInfo.xml
+Double XML Tag: param in DialogMusicInfo.xml
+Double XML Tag: param in DialogMusicInfo.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in EventLog.xml
+Double XML Tag: param in FileManager.xml
+Home.xml: Invalid Value for //control[@type='image']/*: depth
+Double XML Tag: param in Includes.xml
+Double XML Tag: param in Includes.xml
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+MusicVisualisation.xml: Invalid Value for //control[@type='image']/*: depth
+Double XML Tag: param in MyMusicNav.xml
+Double XML Tag: param in MyMusicPlaylistEditor.xml
+Double XML Tag: param in MyPics.xml
+Double XML Tag: param in MyPlaylist.xml
+Double XML Tag: param in MyPlaylist.xml
+Double XML Tag: param in MyPrograms.xml
+MyPVRChannels.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRRecordings.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRSearch.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRTimers.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRTimers.xml: Invalid Value for //control[@type='label']/*: depth
+Double XML Tag: param in MyVideoNav.xml
+MyWeather.xml: Invalid Value for //control[@type='multiimage']/*: depth
+Double XML Tag: param in MyWeather.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in Settings.xml
+Double XML Tag: param in SettingsCategory.xml
+Double XML Tag: param in SettingsCategory.xml
+Double XML Tag: param in SettingsProfile.xml
+Double XML Tag: param in SettingsSystemInfo.xml
+Double XML Tag: param in SkinSettings.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+VideoFullScreen.xml: Invalid Value for //control[@type='image']/*: depth
+VideoFullScreen.xml: Invalid Value for //control[@type='image']/*: depth
+VideoFullScreen.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsMusicLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsMusicLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsMusicLibrary.xml: Invalid Value for //control[@type='scrollbar']/*: depth
+ViewsPictures.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsPictures.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsPVRGuide.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsPVRGuide.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsPVRGuide.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='scrollbar']/*: depth
+ViewsWeather.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsWeather.xml: Invalid Value for //control[@type='label']/*: depth
+Scan complete
+Checking the brackets...
+Scan complete
+Checking the IDs...
+Undefined IDs:
+36
+Output Folder chosen:
+special://home/addons/skin.confluence/1080i
+Amount Of Files Chosen: 89
+converting 720 ==> 1080: Factor 1.5
+Linux Line Endings selected
+Indenting: Tab
+Double XML Tag: param in AddonBrowser.xml
+AddonBrowser.xml created successfully
+custom_SideMenuHelp.xml created successfully
+Defaults.xml created successfully
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+Double XML Tag: param in DialogAddonInfo.xml
+DialogAddonInfo.xml created successfully
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+Double XML Tag: param in DialogAddonSettings.xml
+DialogAddonSettings.xml created successfully
+DialogAudioDSPManager.xml created successfully
+DialogBusy.xml created successfully
+DialogButtonMenu.xml created successfully
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+Double XML Tag: param in DialogConfirm.xml
+DialogConfirm.xml created successfully
+DialogContextMenu.xml created successfully
+DialogExtendedProgressBar.xml created successfully
+DialogFavourites.xml created successfully
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+Double XML Tag: param in DialogGameControllers.xml
+DialogGameControllers.xml created successfully
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+Double XML Tag: param in DialogKeyboard.xml
+DialogKeyboard.xml created successfully
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+Double XML Tag: param in DialogMediaSource.xml
+DialogMediaSource.xml created successfully
+Double XML Tag: param in DialogMusicInfo.xml
+Double XML Tag: param in DialogMusicInfo.xml
+Double XML Tag: param in DialogMusicInfo.xml
+DialogMusicInfo.xml created successfully
+DialogNotification.xml created successfully
+DialogNumeric.xml created successfully
+DialogPictureInfo.xml created successfully
+DialogPlayerProcessInfo.xml created successfully
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+Double XML Tag: param in DialogPVRChannelManager.xml
+DialogPVRChannelManager.xml created successfully
+DialogPVRChannelsOSD.xml created successfully
+DialogPVRGroupManager.xml created successfully
+DialogPVRGuideOSD.xml created successfully
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+Double XML Tag: param in DialogPVRGuideSearch.xml
+DialogPVRGuideSearch.xml created successfully
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+Double XML Tag: param in DialogPVRInfo.xml
+DialogPVRInfo.xml created successfully
+DialogPVRRadioRDSInfo.xml created successfully
+DialogSeekBar.xml created successfully
+DialogSelect.xml created successfully
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+Double XML Tag: param in DialogSettings.xml
+DialogSettings.xml created successfully
+DialogSlider.xml created successfully
+DialogSubtitles.xml created successfully
+DialogTextViewer.xml created successfully
+DialogVideoInfo.xml created successfully
+DialogVolumeBar.xml created successfully
+Double XML Tag: param in EventLog.xml
+EventLog.xml created successfully
+FileBrowser.xml created successfully
+Double XML Tag: param in FileManager.xml
+FileManager.xml created successfully
+Font.xml created successfully
+Home.xml: Invalid Value for //control[@type='image']/*: depth
+Home.xml created successfully
+Double XML Tag: param in Includes.xml
+Double XML Tag: param in Includes.xml
+Includes.xml created successfully
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml: Invalid Value for //control[@type='image']/*: depth
+IncludesBackgroundBuilding.xml created successfully
+IncludesCodecFlagging.xml created successfully
+IncludesHomeMenuItems.xml created successfully
+IncludesHomeRecentlyAdded.xml created successfully
+IncludesPVR.xml created successfully
+LoginScreen.xml created successfully
+MusicOSD.xml created successfully
+MusicVisualisation.xml: Invalid Value for //control[@type='image']/*: depth
+MusicVisualisation.xml created successfully
+Double XML Tag: param in MyMusicNav.xml
+MyMusicNav.xml created successfully
+Double XML Tag: param in MyMusicPlaylistEditor.xml
+MyMusicPlaylistEditor.xml created successfully
+Double XML Tag: param in MyPics.xml
+MyPics.xml created successfully
+Double XML Tag: param in MyPlaylist.xml
+Double XML Tag: param in MyPlaylist.xml
+MyPlaylist.xml created successfully
+Double XML Tag: param in MyPrograms.xml
+MyPrograms.xml created successfully
+MyPVRChannels.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRChannels.xml created successfully
+MyPVRGuide.xml created successfully
+MyPVRRecordings.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRRecordings.xml created successfully
+MyPVRSearch.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRSearch.xml created successfully
+MyPVRTimers.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRTimers.xml: Invalid Value for //control[@type='label']/*: depth
+MyPVRTimers.xml created successfully
+Double XML Tag: param in MyVideoNav.xml
+MyVideoNav.xml created successfully
+MyWeather.xml: Invalid Value for //control[@type='multiimage']/*: depth
+Double XML Tag: param in MyWeather.xml
+MyWeather.xml created successfully
+PlayerControls.xml created successfully
+Pointer.xml created successfully
+script-cu-lrclyrics-main.xml created successfully
+script-globalsearch-main.xml created successfully
+script-NextAired-TVGuide.xml created successfully
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+Double XML Tag: param in script-RSS_Editor-rssEditor.xml
+script-RSS_Editor-rssEditor.xml created successfully
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+Double XML Tag: param in script-RSS_Editor-setEditor.xml
+script-RSS_Editor-setEditor.xml created successfully
+Double XML Tag: param in Settings.xml
+Settings.xml created successfully
+Double XML Tag: param in SettingsCategory.xml
+Double XML Tag: param in SettingsCategory.xml
+SettingsCategory.xml created successfully
+Double XML Tag: param in SettingsProfile.xml
+SettingsProfile.xml created successfully
+SettingsScreenCalibration.xml created successfully
+Double XML Tag: param in SettingsSystemInfo.xml
+SettingsSystemInfo.xml created successfully
+Double XML Tag: param in SkinSettings.xml
+SkinSettings.xml created successfully
+SlideShow.xml created successfully
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+Double XML Tag: param in SmartPlaylistEditor.xml
+SmartPlaylistEditor.xml created successfully
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+Double XML Tag: param in SmartPlaylistRule.xml
+SmartPlaylistRule.xml created successfully
+Startup.xml created successfully
+VideoFullScreen.xml: Invalid Value for //control[@type='image']/*: depth
+VideoFullScreen.xml: Invalid Value for //control[@type='image']/*: depth
+VideoFullScreen.xml: Invalid Value for //control[@type='image']/*: depth
+VideoFullScreen.xml created successfully
+VideoOSD.xml created successfully
+VideoOSDBookmarks.xml created successfully
+ViewsAddonBrowser.xml created successfully
+ViewsFileMode.xml created successfully
+ViewsLiveTV.xml created successfully
+ViewsMusicLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsMusicLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsMusicLibrary.xml: Invalid Value for //control[@type='scrollbar']/*: depth
+ViewsMusicLibrary.xml created successfully
+ViewsPictures.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsPictures.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsPictures.xml created successfully
+ViewsPVRGuide.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsPVRGuide.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsPVRGuide.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsPVRGuide.xml created successfully
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='image']/*: depth
+ViewsVideoLibrary.xml: Invalid Value for //control[@type='scrollbar']/*: depth
+ViewsVideoLibrary.xml created successfully
+ViewsWeather.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsWeather.xml: Invalid Value for //control[@type='label']/*: depth
+ViewsWeather.xml created successfully
+All Files converted

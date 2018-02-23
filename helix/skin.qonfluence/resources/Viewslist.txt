@@ -1,0 +1,16 @@
+Poster Wrap			PosterWrap				501
+Fanart				PosterWrapView2_Fanart	508
+Media-Info			MediaListView3			503
+Media-Info 2		MediaListView2			504
+Media-Info 3		MediaListView4			515
+Breed				WideIconView			505
+Lijst				CommonRootView			50
+Grote Lijst			FullWidthList	 		51
+Miniatuur			Thumbnail				500
+Fanart Album		AlbumWrapView2_Fanart	509
+Media-Info Album	MusicInfoListView		506
+Albuminformatie		MusicVideoInfoListView	511
+Lijst-Album			ArtistMediaListView		512
+Grote Lijst Album	AlbumInfoListView		513
+
+

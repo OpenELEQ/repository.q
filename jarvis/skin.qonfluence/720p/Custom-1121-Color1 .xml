@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1121" type="dialog">
+	<defaultcontrol always="true">100</defaultcontrol>
+	<onunload>Skin.SetString(ColorLast1,$INFO[Skin.String(Hex1)]$INFO[Skin.String(Hex2)]$INFO[Skin.String(Hex3)]$INFO[Skin.String(Hex4)]$INFO[Skin.String(Hex5)]$INFO[Skin.String(Hex6)]$INFO[Skin.String(Hex7)]$INFO[Skin.String(Hex8)])</onunload>
+	<include>dialogeffect</include>
+	<coordinates>
+		<system>2</system>
+		<left>305</left>
+		<top>210</top>
+	</coordinates>
+	<controls>
+		<control type="group">
+			<include>VisibleFadeEffect</include>
+			<control type="image">
+				<left>0</left>
+				<top>0</top>
+				<width>660</width>
+				<height>250</height>
+				<texture border="40">DialogBack.png</texture>
+			</control>
+			<control type="image">
+				<description>Dialog Header image</description>
+				<left>40</left>
+				<top>16</top>
+				<width>60</width>
+				<height>40</height>
+				<texture>dialogheader.png</texture>
+			</control>
+			<control type="label" id="311">
+				<description>header label</description>
+				<left>40</left>
+				<top>20</top>
+				<width>620</width>
+				<height>30</height>
+				<font>font13_title</font>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>selected</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<label>Color 1 ModMenu</label>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>570</left>
+				<top>15</top>
+				<width>64</width>
+				<height>32</height>
+				<label>-</label>
+				<font>-</font>	
+				<onclick>PreviousMenu</onclick>
+				<texturefocus>DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
+			<control type="group">
+				<left>30</left>
+				<top>60</top>
+				<!-- 1st row -->
+				<control type="grouplist">
+					<itemgap>0</itemgap>
+					<orientation>horizontal</orientation>
+					<control type="button" id="309">
+						<description>Save Color Button</description>
+						<width>200</width>
+						<height>50</height>
+						<label> Save Color 1</label>
+						<onup>300</onup>
+						<ondown>302</ondown>
+						<texturenofocus border="25,25,5,5">KeyboardCornerTopNF.png</texturenofocus>
+						<texturefocus border="25,25,5,5">KeyboardCornerTop.png</texturefocus>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font13</font>
+						<focusedcolor>black</focusedcolor>
+						<onclick>Skin.SetString(Color1,$INFO[Skin.String(Hex1)]$INFO[Skin.String(Hex2)]$INFO[Skin.String(Hex3)]$INFO[Skin.String(Hex4)]$INFO[Skin.String(Hex5)]$INFO[Skin.String(Hex6)]$INFO[Skin.String(Hex7)]$INFO[Skin.String(Hex8)])</onclick>
+					</control>
+					<control type="button" id="100">
+						<label>+</label>
+						<onup>140</onup>
+						<ondown>140</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex1,$VAR[Hex1Plus])</onclick>
+					</control>
+					<control type="button" id="101">
+						<label>+</label>
+						<onup>141</onup>
+						<ondown>141</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex2,$VAR[Hex2Plus])</onclick>
+					</control>
+					<control type="button" id="102">
+						<label>+</label>
+						<onup>142</onup>
+						<ondown>142</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex3,$VAR[Hex3Plus])</onclick>
+					</control>
+					<control type="button" id="103">
+						<label>+</label>
+						<onup>143</onup>
+						<ondown>143</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex4,$VAR[Hex4Plus])</onclick>
+					</control>
+					<control type="button" id="104">
+						<label>+</label>
+						<onup>144</onup>
+						<ondown>144</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex5,$VAR[Hex5Plus])</onclick>
+					</control>
+					<control type="button" id="105">
+						<label>+</label>
+						<onup>145</onup>
+						<ondown>145</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex6,$VAR[Hex6Plus])</onclick>
+					</control>
+					<control type="button" id="106">
+						<label>+</label>
+						<onup>146</onup>
+						<ondown>146</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex7,$VAR[Hex7Plus])</onclick>
+					</control>
+					<control type="button" id="107">
+						<label>+</label>
+						<onup>147</onup>
+						<ondown>147</ondown>
+						<texturenofocus flipx="true" border="5,25,25,5">KeyboardCornerTopNF.png</texturenofocus>
+						<texturefocus flipx="true" border="5,25,25,5">KeyboardCornerTop.png</texturefocus>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex8,$VAR[Hex8Plus])</onclick>
+					</control>
+				</control>
+					<!-- 2nd row -->
+				<control type="grouplist">
+					<orientation>horizontal</orientation>
+					<top>50</top>
+					<itemgap>0</itemgap>
+					<control type="button" id="302">
+						<description>Presets Color 1</description>
+						<width>200</width>
+						<height>50</height>
+						<label> Presets Color 1</label>
+						<onup>309</onup>
+						<ondown>303</ondown>
+						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font13</font>
+						<focusedcolor>black</focusedcolor>
+						<onclick>ActivateWindow(1122)</onclick>
+					</control>
+					<control type="button" id="120">
+						<label>$INFO[Skin.String(Hex1)]</label>
+						<onup>100</onup>
+						<ondown>140</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="121">
+						<label>$INFO[Skin.String(Hex2)]</label>
+						<onup>101</onup>
+						<ondown>141</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="122">
+						<label>$INFO[Skin.String(Hex3)]</label>
+						<onup>102</onup>
+						<ondown>142</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="123">
+						<label>$INFO[Skin.String(Hex4)]</label>
+						<onup>103</onup>
+						<ondown>143</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="124">
+						<label>$INFO[Skin.String(Hex5)]</label>
+						<onup>104</onup>
+						<ondown>144</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="125">
+						<label>$INFO[Skin.String(Hex6)]</label>
+						<onup>105</onup>
+						<ondown>145</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="126">
+						<label>$INFO[Skin.String(Hex7)]</label>
+						<onup>106</onup>
+						<ondown>146</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+					<control type="button" id="127">
+						<label>$INFO[Skin.String(Hex8)]</label>
+						<onup>107</onup>
+						<ondown>147</ondown>
+						<include>ColorModMenuButton</include>
+					</control>
+				</control>
+					<!-- 3rd row -->
+				<control type="grouplist">
+					<top>100</top>
+					<orientation>horizontal</orientation>
+					<itemgap>0</itemgap>
+					<control type="button" id="303">
+						<description>Reset Color 1</description>
+						<width>200</width>
+						<height>50</height>
+						<label> Reset Color 1</label>
+						<onup>302</onup>
+						<ondown>307</ondown>
+						<texturenofocus border="3">KeyboardKeyNF.png</texturenofocus>
+						<texturefocus border="5">KeyboardKey.png</texturefocus>
+						<align>left</align>
+						<aligny>center</aligny>
+						<font>font13</font>
+						<focusedcolor>black</focusedcolor>
+						<onclick>Skin.SetString(Hex1,9)</onclick>
+						<onclick>Skin.SetString(Hex2,9)</onclick>
+						<onclick>Skin.SetString(Hex3,0)</onclick>
+						<onclick>Skin.SetString(Hex4,0)</onclick>
+						<onclick>Skin.SetString(Hex5,0)</onclick>
+						<onclick>Skin.SetString(Hex6,0)</onclick>
+						<onclick>Skin.SetString(Hex7,0)</onclick>
+						<onclick>Skin.SetString(Hex8,0)</onclick>
+						<onclick>Skin.SetString(Color1,99000000)</onclick>
+					</control>
+					<control type="button" id="140">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>100</onup>
+						<ondown>100</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex1,$VAR[Hex1Minus])</onclick>
+					</control>
+					<control type="button" id="141">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>101</onup>
+						<ondown>101</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex2,$VAR[Hex2Minus])</onclick>
+					</control>
+					<control type="button" id="142">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>102</onup>
+						<ondown>102</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex3,$VAR[Hex3Minus])</onclick>
+					</control>
+					<control type="button" id="143">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>103</onup>
+						<ondown>103</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex4,$VAR[Hex4Minus])</onclick>
+					</control>
+					<control type="button" id="144">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>104</onup>
+						<ondown>104</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex5,$VAR[Hex5Minus])</onclick>
+					</control>
+					<control type="button" id="145">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>105</onup>
+						<ondown>105</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex6,$VAR[Hex6Minus])</onclick>
+					</control>
+					<control type="button" id="146">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>106</onup>
+						<ondown>106</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex7,$VAR[Hex7Minus])</onclick>
+					</control>
+					<control type="button" id="147">
+						<label>_</label>
+						<aligny>top</aligny>
+						<onup>107</onup>
+						<ondown>107</ondown>
+						<include>ColorModMenuButton</include>
+						<onclick>Skin.SetString(Hex8,$VAR[Hex8Minus])</onclick>
+					</control>
+				</control>
+					<!-- 4th row -->
+				<control type="grouplist">
+					<top>150</top>
+					<orientation>horizontal</orientation>
+					<itemgap>0</itemgap>
+					<control type="image" id="150">
+						<description>Color 1</description>
+						<width>50</width>
+						<height>20</height>
+						<onup>302</onup>
+						<ondown>307</ondown>
+						<texture colordiffuse="$VAR[ColorHex]">ColorCorner.png</texture>
+					</control>
+					<control type="image" id="140">
+						<description>Color 1</description>
+						<onup>120</onup>
+						<ondown>160</ondown>
+						<width>150</width>
+						<height>20</height>
+						<texture colordiffuse="$VAR[ColorHex]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="140">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(Color1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="141">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(Color1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="142">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(ColorFO1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="143">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(ColorFO1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="144">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(ColorLast1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="145">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(ColorLast1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="146">
+						<width>50</width>
+						<height>20</height>
+						<texture colordiffuse="$INFO[Skin.String(ColorFOLast1)]">ColorMiddle.png</texture>
+					</control>
+					<control type="image" id="147">
+						<width>50</width>
+						<height>20</height>
+						<texture flipx="true" colordiffuse="$INFO[Skin.String(ColorFOLast1)]">ColorCorner.png</texture>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

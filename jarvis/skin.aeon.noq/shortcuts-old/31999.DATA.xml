@@ -1,0 +1,90 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>plugin.video.livemix</defaultID>
+		<label>Live Mix</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.livemix/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.livemix",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>DNA tv</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.dnatv/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.dnatv/?url=0&amp;mode=10&amp;name=%5BCOLOR+lime%5D%3E%3E+DNA+TV%5B%2FCOLOR%5D+%5BCOLOR+red%5DFreemium+Channels%5B%2FCOLOR%5D&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Phoenix TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fphoenixtv.offshorepastebin.com%2fart%2fmain%2fDRAGONphoenixtv.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.phstreams/?action=directory&amp;url=http%3A%2F%2Fphoenixtv.offshorepastebin.com%2Ftv%2Fmain.xml",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ccloudtv</defaultID>
+		<label>cCloud TV</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.ccloudtv/icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.ccloudtv",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>UKTurks</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://http%3a%2f%2fmetalkettle.co%2fUKTurk18022016%2fthumbs%2fnew%2fUk%2520turk%2520thumbnails%2520live%2520tv.jpg/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ukturk/?url=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2FLive%2520TV.txt&amp;mode=1&amp;name=Live+TV&amp;iconimage=http%3A%2F%2Fmetalkettle.co%2FUKTurk18022016%2Fthumbs%2Fnew%2FUk%2520turk%2520thumbnails%2520live%2520tv.jpg&amp;description=",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.cosmix</defaultID>
+		<label>Cosmix</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.cosmix/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.cosmix",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>sportsdevil</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.SportsDevil/resources/images/folder.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.SportsDevil/?mode=1&amp;item=title%3DLive%2BTV%26url%3Dcustoms.cfg%26definedIn%3DmainMenu.cfg%26director%3DSportsDevil%26genre%3DLive%2BTV%26type%3Drss%26icon%3D",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID />
+		<label>Castaway</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.castaway/resources%2fmedia%2flive_sport.jpg/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.castaway/?mode=live_sport",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.VidTime</defaultID>
+		<label>VidTime</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.VidTime/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.VidTime",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.ProjectCypher</defaultID>
+		<label>ProjectCypher</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.ProjectCypher/icon.png/</thumb>
+		<action>ActivateWindow(VideoLibrary,"plugin://plugin.video.ProjectCypher",return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>plugin.video.mdfubar</defaultID>
+		<label>.F.U.B.A.R.</label>
+		<label2>Video Add-On</label2>
+		<icon>DefaultShortcut.png</icon>
+		<thumb>image://special://home/addons/plugin.video.mdfubar/icon.png/</thumb>
+		<action>ActivateWindow(10025,"plugin://plugin.video.mdfubar",return)</action>
+	</shortcut>
+</shortcuts>

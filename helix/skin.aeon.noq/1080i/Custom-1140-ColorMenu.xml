@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1140" type="dialog">
+	<defaultcontrol>101</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>450</left>
+		<top>45</top>
+	</coordinates>
+	<include>dialogeffect</include>
+	<controls>
+		<control type="group">
+			<animation effect="slide" start="0,0" end="-100,0" time="320" tween="cubic" easing="inout" condition="Window.IsActive(numericinput)">Conditional</animation>
+			<control type="image" id="0">
+				<top>0</top>
+				<width>1020</width>
+				<height>382</height>
+				<texture border="40,100,40,100">dialog_back.png</texture>
+			</control>
+			<control type="edit" id="100">
+				<label>ColorModMenu</label>
+				<left>360</left>
+				<top>20</top>
+				<width>500</width>
+				<height>50</height>
+				<align>center</align>
+				<font>font15</font>
+				<textcolor>grey2</textcolor>
+				<texturefocus>-</texturefocus>
+				<texturenofocus>-</texturenofocus>
+			</control>
+			<control type="group" id="4000">
+				<left>30</left>
+				<top>70</top>
+				<width>1180</width>
+				<height>400</height>
+				<!-- Row 1 -->
+				<control type="grouplist">
+					<orientation>horizontal</orientation>
+					<control type="button" id="101">
+						<label>Pulse 1A</label>
+						<align>left</align>
+						<onup>301</onup>
+						<ondown>201</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1141)</onclick>
+					</control>
+					<control type="button" id="102">
+						<label>Pulse 2A</label>
+						<align>left</align>
+						<onup>303</onup>
+						<ondown>202</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1143)</onclick>
+					</control>
+					<control type="button" id="103">
+						<label>Main Menu Bar</label>
+						<align>left</align>
+						<onup>304</onup>
+						<ondown>203</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1145)</onclick>
+					</control>
+				</control>
+				<!-- Row 2 -->
+				<control type="grouplist">
+					<orientation>horizontal</orientation>
+					<top>80</top>
+					<control type="button" id="201">
+						<label>Pulse 1B</label>
+						<align>left</align>
+						<onup>101</onup>
+						<ondown>301</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1142)</onclick>
+					</control>
+					<control type="button" id="202">
+						<label>Pulse 2B</label>
+						<align>left</align>
+						<onup>102</onup>
+						<ondown>302</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1144)</onclick>
+					</control>
+					<control type="button" id="203">
+						<label>Sub Menu Bars</label>
+						<align>left</align>
+						<onup>103</onup>
+						<ondown>304</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1146)</onclick>
+					</control>
+				</control>
+				<!-- Row 3 -->
+				<control type="grouplist">
+					<orientation>horizontal</orientation>
+					<top>160</top>
+					<control type="button" id="301">
+						<label>UnFocused</label>
+						<align>left</align>
+						<width>240</width>
+						<onup>201</onup>
+						<ondown>101</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1147)</onclick>
+					</control>
+					<control type="button" id="302">
+						<label>Focused</label>
+						<align>left</align>
+						<width>240</width>
+						<onup>202</onup>
+						<ondown>102</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1148)</onclick>
+					</control>
+					<control type="button" id="303">
+						<label>Secondary</label>
+						<align>left</align>
+						<width>240</width>
+						<onup>202</onup>
+						<ondown>102</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1149)</onclick>
+					</control>
+					<control type="button" id="304">
+						<label>Themed</label>
+						<align>left</align>
+						<width>240</width>
+						<onup>203</onup>
+						<ondown>103</ondown>
+						<include>ColorDoubleKeyOff</include>
+						<onclick>ActivateWindow(1150)</onclick>
+					</control>
+				</control>
+			</control>
+			<include condition="System.HasAddon(script.extendedinfo)">ExtendedInfoAutoComplete</include>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="resource.images.pulses" name="Pulses" version="0.0.1" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<extension point="kodi.resource.images" compile="true" type="pulses" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulses for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods</summary>
+		<description lang="en">Varous pulses for use in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods. Requires skintegration to work.</description>
+		<summary lang="nl">Pulsen voor [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties</summary>
+		<description lang="nl">Verscheidene pulsen voor gebruik in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties. Vereist skintegratie om te kunnen functioneren.</description>
+		<platform>all</platform>
+		<genre>skin-resources</genre>
+		<video_preview></video_preview>
+		<video_guide></video_guide>
+	</extension>
+</addon>

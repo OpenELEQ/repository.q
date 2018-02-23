@@ -1,0 +1,26 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>DaPulseYTChannels</defaultID>
+		<label>Channel</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/1ZEK6ZkR2qY/mqdefault.jpg</thumb>
+		<action>RunScript(script.qlickplay,info=list,type=channel,id=UC-jBkGiRokRd-B2ylx1VqJQ)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>DaPulseYTPlaylists</defaultID>
+		<label>Playlist</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/1ZEK6ZkR2qY/mqdefault.jpg</thumb>
+		<action>ActivateWindow(video,plugin://script.qlickplay/?info=youtubeplaylist&amp;id=PLyEyQCZKWQAM2iX3S2o2pDiSOoqAaUGdU,return)</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>DaPulseYTVideos</defaultID>
+		<label>Videos</label>
+		<label2>Favourite</label2>
+		<icon>DefaultFolder.png</icon>
+		<thumb>https://i.ytimg.com/vi/1ZEK6ZkR2qY/mqdefault.jpg</thumb>
+		<action>RunScript(script.qlickplay,info=list,type=video,query=DaButcher)</action>
+	</shortcut>
+</shortcuts>

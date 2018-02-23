@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1100">
+	<defaultcontrol always="true">95</defaultcontrol>
+	<controls>
+		<include>CommonBackground</include>
+		<control type="image">
+			<left>0</left>
+			<top>150r</top>
+			<width>1920</width>
+			<height>150</height>
+			<texture>floor.png</texture>
+			<animation effect="slide" start="0,15" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,15" time="150" condition="Window.Next(Home)">WindowClose</animation>
+		</control>
+		<control type="group">
+			<left>135</left>
+			<top>45</top>
+			<animation type="WindowOpen" reversible="false">
+				<effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="225" />
+				<effect type="fade" start="0" end="100" time="225" />
+			</animation>
+			<animation type="WindowClose" reversible="false">
+				<effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="225" />
+				<effect type="fade" start="100" end="0" time="225" />
+			</animation>
+			<control type="image">
+				<left>8</left>
+				<top>8</top>
+				<width>1635</width>
+				<height>945</height>
+				<texture border="22" colordiffuse="theme">ContentPanel.png</texture>
+			</control>
+			<control type="image">
+				<left>8</left>
+				<top>938</top>
+				<width>1635</width>
+				<height>96</height>
+				<texture border="22" colordiffuse="theme">ContentPanelMirror.png</texture>
+			</control>
+			<control type="button">
+				<description>Close Window button</description>
+				<left>1470</left>
+				<top>16</top>
+				<width>96</width>
+				<height>48</height>
+				<label>-</label>
+				<font>-</font>
+				<onclick>PreviousMenu</onclick>
+				<texturefocus colordiffuse="theme">DialogCloseButton-focus.png</texturefocus>
+				<texturenofocus>DialogCloseButton.png</texturenofocus>
+				<onleft>1</onleft>
+				<onright>1</onright>
+				<onup>1</onup>
+				<ondown>1</ondown>
+				<visible>system.getbool(input.enablemouse)</visible>
+			</control>
+			<control type="image">
+				<description>LOGO</description>
+				<left>45</left>
+				<top>22</top>
+				<width>330</width>
+				<height>120</height>
+				<aspectratio>keep</aspectratio>
+				<texture>Confluence_Logo.png</texture>
+			</control>
+			<control type="grouplist" id="9000">
+				<left>15</left>
+				<top>135</top>
+				<width>390</width>
+				<height>812</height>
+				<itemgap>-2</itemgap>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<control type="button" id="95">
+					<description>Accessibility Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[37032]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.ACCESSIBILITY_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="96">
+					<description>Applications Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[10001]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.APPLICATION_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="97">
+					<description>themetooth Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>themetooth</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.themeTOOTH_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="98">
+					<description>Cast Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>Cast</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.CAST_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="99">
+					<description>Date/Time Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[552]/$LOCALIZE[555]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.DATE_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="100">
+					<description>Device Info</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[10511]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.DEVICE_INFO_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="101">
+					<description>Display Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[131]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.DISPLAY_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="102">
+					<description>Dream Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[360]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.DREAM_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="103">
+					<description>Home Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[10000]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.HOME_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="104">
+					<description>Input Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[35000]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.INPUT_METHOD_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="105">
+					<description>Internal Storage Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[154]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.INTERNAL_STORAGE_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="106">
+					<description>Locale Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[20026]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.LOCALE_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="107">
+					<description>Memory card Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[21456]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.MEMORY_CARD_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="108">
+					<description>Privacy Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>Privacy</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.PRIVACY_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="109">
+					<description>Security Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[14093]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.SECURITY_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="110">
+					<description>Sound Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[292]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.SOUND_SETTINGS)</onclick>
+				</control>
+				<control type="button" id="111">
+					<description>Wifi Settings</description>
+					<height>90</height>
+					<width>362</width>
+					<textoffsetx>0</textoffsetx>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>font13_title</font>
+					<textcolor>grey2</textcolor>
+					<focusedcolor>white</focusedcolor>
+					<texturefocus border="8" colordiffuse="theme">MenuItemFO.png</texturefocus>
+					<texturenofocus border="8" colordiffuse="theme">MenuItemNF.png</texturenofocus>
+					<label>$LOCALIZE[705]</label>
+					<pulseonselect>false</pulseonselect>
+					<onclick>StartAndroidActivity(,android.settings.WIFI_SETTINGS)</onclick>
+				</control>
+			</control>
+			<control type="image">
+				<left>402</left>
+				<top>15</top>
+				<width>1185</width>
+				<height>927</height>
+				<texture border="8">black-back2.png</texture>
+			</control>
+			<control type="image">
+				<left>402</left>
+				<top>15</top>
+				<width>1185</width>
+				<height>78</height>
+				<texture>dialogheader.png</texture>
+			</control>
+			<control type="label" id="40">
+				<description>header label</description>
+				<left>450</left>
+				<top>30</top>
+				<width>1089</width>
+				<height>45</height>
+				<font>font16</font>
+				<label>Android $LOCALIZE[5]</label>
+				<align>center</align>
+				<aligny>center</aligny>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+			</control>
+			<control type="image">
+				<left>402</left>
+				<top>93</top>
+				<width>1185</width>
+				<height>669</height>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>600</fadetime>
+				<texture background="true">special://skin/backgrounds/settings.jpg</texture>
+			</control>
+			<control type="image">
+				<left>402</left>
+				<top>93</top>
+				<width>900</width>
+				<height>510</height>
+				<aspectratio>stretch</aspectratio>
+				<texture>GlassOverlay.png</texture>
+				<colordiffuse>AAFFFFFF</colordiffuse>
+			</control>
+			<control type="image">
+				<left>402</left>
+				<top>765</top>
+				<width>1185</width>
+				<height>177</height>
+				<texture border="8">black-back2.png</texture>
+			</control>
+			<control type="group">
+				<left>435</left>
+				<top>150</top>
+<!--				<control type="label" id="2">
+					<description>Label 2</description>
+					<left>0</left>
+					<top>0</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="3">
+					<description>Label 3</description>
+					<left>0</left>
+					<top>52</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="4">
+					<description>Label 4</description>
+					<left>0</left>
+					<top>105</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="5">
+					<description>Label 5</description>
+					<left>0</left>
+					<top>158</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="6">
+					<description>Label 6</description>
+					<left>0</left>
+					<top>210</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="7">
+					<description>Label 7</description>
+					<left>0</left>
+					<top>262</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="8">
+					<description>Label 8</description>
+					<left>0</left>
+					<top>315</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="9">
+					<description>Label 9</description>
+					<left>0</left>
+					<top>368</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="10">
+					<description>Label 10</description>
+					<left>0</left>
+					<top>420</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="label" id="11">
+					<description>Label 11</description>
+					<left>0</left>
+					<top>472</top>
+					<width>1125</width>
+					<label>-</label>
+					<font>font13</font>
+				</control>
+				<control type="textbox" id="30">
+					<description>Privacy Policy</description>
+					<left>0</left>
+					<top>0</top>
+					<width>1080</width>
+					<height>525</height>
+					<font>font13</font>
+					<align>justify</align>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<pagecontrol>61</pagecontrol>
+				</control>-->
+				<control type="scrollbar" id="61">
+					<left>1095</left>
+					<top>0</top>
+					<width>38</width>
+					<height>525</height>
+					<texturesliderbackground border="0,21,0,21">ScrollBarV.png</texturesliderbackground>
+					<texturesliderbar border="0,21,0,21">ScrollBarV_bar.png</texturesliderbar>
+					<texturesliderbarfocus border="0,21,0,21" colordiffuse="theme">ScrollBarV_bar_focus.png</texturesliderbarfocus>
+					<textureslidernib>ScrollBarNib.png</textureslidernib>
+					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+					<onleft>100</onleft>
+					<onright>100</onright>
+					<ondown>61</ondown>
+					<onup>61</onup>
+					<showonepage>true</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.HasFocus(100) | Control.HasFocus(61)</visible>
+				</control>
+				<!--<control type="label">
+					<description>CPU Text</description>
+					<left>0</left>
+					<top>525</top>
+					<width>1125</width>
+					<height>38</height>
+					<label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font12_title</font>
+				</control>
+				<control type="progress">
+					<description>CPU BAR</description>
+					<left>0</left>
+					<top>562</top>
+					<width>1125</width>
+					<height>24</height>
+					<info>System.CPUUsage</info>
+				</control>
+				<control type="label">
+					<description>Memory Text</description>
+					<left>0</left>
+					<top>592</top>
+					<width>auto</width>
+					<height>38</height>
+					<label>$LOCALIZE[31309] $INFO[system.memory(used)] [B]/[/B] $INFO[system.memory(total)] [B]-[/B] $INFO[system.memory(used.percent)]</label>
+					<align>left</align>
+					<aligny>center</aligny>
+					<textcolor>white</textcolor>
+					<shadowcolor>black</shadowcolor>
+					<font>font12_title</font>
+				</control>
+				<control type="progress">
+					<description>Memory BAR</description>
+					<left>0</left>
+					<top>630</top>
+					<width>1125</width>
+					<height>24</height>
+					<info>system.memory(used)</info>
+				</control>
+				<control type="grouplist">
+					<description>Kodi build version</description>
+					<itemgap>75</itemgap>
+					<top>675</top>
+					<left>0</left>
+					<align>left</align>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<description>Build label</description>
+						<width>auto</width>
+						<height>38</height>
+						<label>$LOCALIZE[144]</label>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<font>font13_title</font>
+					</control>
+					<control type="label" id="52">
+						<description>Kodi Build Version</description>
+						<left>135</left>
+						<top>675</top>
+						<width>auto</width>
+						<textcolor>theme</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<font>font13_title</font>
+					</control>
+				</control>
+				<control type="grouplist">
+					<description>Build date</description>
+					<itemgap>15</itemgap>
+					<top>720</top>
+					<align>left</align>
+					<left>0</left>
+					<orientation>horizontal</orientation>
+					<control type="label">
+						<description>kodi Compiled Text</description>
+						<width>auto</width>
+						<height>38</height>
+						<label>$LOCALIZE[174]</label>
+						<textcolor>white</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<font>font13_title</font>
+					</control>
+					<control type="label" id="53">
+						<description>Kodi Build Date</description>
+						<width>auto</width>
+						<textcolor>theme</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<font>font13_title</font>
+					</control>
+				</control>-->
+			</control>
+		</control>
+		<include>CommonNowPlaying</include>
+		<include>MainWindowMouseButtons</include>
+		<include content="CommonWindowHeader">
+			<param name="Icon" value="icon_system" />
+			<param name="Label" value="$LOCALIZE[130]" />
+		</include>
+	</controls>
+</window>

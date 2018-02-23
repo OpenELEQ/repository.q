@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1110" type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>-100</left>
+		<top>50</top>
+	</coordinates>
+	<controls>
+		<control type="button" id="9001">
+			<description>Make sure we hit the first button in the group list and not the close window button</description>
+			<left>-16</left>
+			<top>-16</top>
+			<width>4</width>
+			<height>4</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>down</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="grouplist" id="9000">
+			<left>500</left>
+			<top>0</top>
+			<width>480</width>
+			<height>720</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<itemgap>0</itemgap>
+			<align>center</align>
+			<control type="group" id="1">
+				<width>480</width>
+				<height>30</height>
+				<control type="image">
+					<description>background top image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>480</width>
+					<height>30</height>
+					<texture border="20,0,20,0">DialogContextTop.png</texture>
+				</control>
+				<control type="button" id="22">
+					<description>Close Window button</description>
+					<left>400</left>
+					<top>5</top>
+					<width>64</width>
+					<height>32</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>PreviousMenu</onclick>
+					<texturefocus>DialogCloseButton-focus.png</texturefocus>
+					<texturenofocus>DialogCloseButton.png</texturenofocus>
+					<onleft>2</onleft>
+					<onright>12</onright>
+					<onup>12</onup>
+					<ondown>2</ondown>
+					<visible>false</visible>
+				</control>
+			</control>
+			<control type="button" id="2">
+				<description>MovieWidgetContent</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[20342]: $VAR[MovieWidgetLabel]</label>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),)">Skin.SetString(MovieWidgetContent,Current DVD Releases)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Current DVD Releases)">Skin.SetString(MovieWidgetContent,Upcoming DVD Releases)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Upcoming DVD Releases)">Skin.SetString(MovieWidgetContent,In Theaters)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),In Theaters)">Skin.SetString(MovieWidgetContent,Coming Soon)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Coming Soon)">Skin.SetString(MovieWidgetContent,Opening)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Opening)">Skin.SetString(MovieWidgetContent,Box Office)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Box Office)">Skin.SetString(MovieWidgetContent,Top Rentals)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Top Rentals)">Skin.SetString(MovieWidgetContent,In Cinemas)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),In Cinemas)">Skin.SetString(MovieWidgetContent,Upcoming)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Upcoming)">Skin.SetString(MovieWidgetContent,Popular)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Popular)">Skin.SetString(MovieWidgetContent,Top Rated)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Top Rated)">Skin.SetString(MovieWidgetContent,Trending)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Trending)">Skin.SetString(MovieWidgetContent,Recently Added)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Recently Added)">Skin.SetString(MovieWidgetContent,Random)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Random)">Skin.SetString(MovieWidgetContent,Recommended)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Recommended)">Skin.SetString(MovieWidgetContent,Custom)</onclick>
+				<onclick condition="StringCompare(Skin.String(MovieWidgetContent),Custom)">Skin.SetString(MovieWidgetContent,)</onclick>
+			</control>
+			<control type="button" id="3">
+				<description>TV-ShowWidgetContent</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[20343]: $VAR[TVShowWidgetLabel]</label>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),)">Skin.SetString(TVShowWidgetContent,Popular)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Popular)">Skin.SetString(TVShowWidgetContent,Top Rated)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Top Rated)">Skin.SetString(TVShowWidgetContent,Currently Airing)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Currently Airing)">Skin.SetString(TVShowWidgetContent,Airing Today)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Airing Today)">Skin.SetString(TVShowWidgetContent,Premiere)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Premiere)">Skin.SetString(TVShowWidgetContent,Recently Added Episodes)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Recently Added Episodes)">Skin.SetString(TVShowWidgetContent,Random Episodes)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Random Episodes)">Skin.SetString(TVShowWidgetContent,Recommended Episodes)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Recommended Episodes)">Skin.SetString(TVShowWidgetContent,Custom)</onclick>
+				<onclick condition="StringCompare(Skin.String(TVShowWidgetContent),Custom)">Skin.SetString(TVShowWidgetContent,)</onclick>
+			</control>
+			<control type="button" id="4">
+				<description>MusicWidgetContent</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[2]: $VAR[MusicWidgetLabel]</label>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),)">Skin.SetString(MusicWidgetContent,Ambient)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Ambient)">Skin.SetString(MusicWidgetContent,Bass)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Bass)">Skin.SetString(MusicWidgetContent,Beats)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Beats)">Skin.SetString(MusicWidgetContent,Chillout)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Chillout)">Skin.SetString(MusicWidgetContent,Classical)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Classical)">Skin.SetString(MusicWidgetContent,Clubs)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Clubs)">Skin.SetString(MusicWidgetContent,Deep House)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Deep House)">Skin.SetString(MusicWidgetContent,Drum & Base)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Drum & Base)">Skin.SetString(MusicWidgetContent,Dub)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Dub)">Skin.SetString(MusicWidgetContent,Dubstep)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Dubstep)">Skin.SetString(MusicWidgetContent,EDM)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),EDM)">Skin.SetString(MusicWidgetContent,Electronica)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Electronica)">Skin.SetString(MusicWidgetContent,Funk)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Funk)">Skin.SetString(MusicWidgetContent,Garage)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Garage)">Skin.SetString(MusicWidgetContent,Hip Hop)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Hip Hop)">Skin.SetString(MusicWidgetContent,House)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),House)">Skin.SetString(MusicWidgetContent,Indie)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Indie)">Skin.SetString(MusicWidgetContent,Jazz)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Jazz)">Skin.SetString(MusicWidgetContent,Pop)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Pop)">Skin.SetString(MusicWidgetContent,Rap)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Rap)">Skin.SetString(MusicWidgetContent,Reggae)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Reggae)">Skin.SetString(MusicWidgetContent,RnB)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),RnB)">Skin.SetString(MusicWidgetContent,Rock)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Rock)">Skin.SetString(MusicWidgetContent,Soul)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Soul)">Skin.SetString(MusicWidgetContent,Tech House)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Tech House)">Skin.SetString(MusicWidgetContent,Techno)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Techno)">Skin.SetString(MusicWidgetContent,Trance)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Trance)">Skin.SetString(MusicWidgetContent,Trap)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Trap)">Skin.SetString(MusicWidgetContent,World)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),World)">Skin.SetString(MusicWidgetContent,Business)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Business)">Skin.SetString(MusicWidgetContent,Comedy)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Comedy)">Skin.SetString(MusicWidgetContent,Education)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Education)">Skin.SetString(MusicWidgetContent,Lifestyle)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Lifestyle)">Skin.SetString(MusicWidgetContent,Interview)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Interview)">Skin.SetString(MusicWidgetContent,News)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),News)">Skin.SetString(MusicWidgetContent,Politics)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Politics)">Skin.SetString(MusicWidgetContent,Science)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Science)">Skin.SetString(MusicWidgetContent,Sport)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Sport)">Skin.SetString(MusicWidgetContent,Technology)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Technology)">Skin.SetString(MusicWidgetContent,Recently Added Albums)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Recently Added Albums)">Skin.SetString(MusicWidgetContent,Random Albums)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Random Albums)">Skin.SetString(MusicWidgetContent,Recommended Albums)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Recommended Albums)">Skin.SetString(MusicWidgetContent,Custom)</onclick>
+				<onclick condition="StringCompare(Skin.String(MusicWidgetContent),Custom)">Skin.SetString(MusicWidgetContent,)</onclick>
+			</control>
+			<control type="button" id="5">
+				<description>Reset All Widgets To Default</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>Reset All Widgets</label>
+				<onclick>Skin.SetString(MovieWidgetContent,)</onclick>
+				<onclick>Skin.SetString(TVshowWidgetContent,)</onclick>
+				<onclick>Skin.SetString(MusicWidgetContent,)</onclick>
+				<onclick>dialog.close(all,true)</onclick>
+			</control>
+			<!--<control type="button" id="4">
+				<description>VPN</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1103)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>VPN</label>
+				<visible>!System.Platform.Windows + !System.Platform.IOS + !System.Platform.Darwin + !System.Platform.ATV2 + !System.Platform.Android</visible>
+			</control>
+			<control type="button" id="5">
+				<description>System</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1104)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32030]</label>
+				<visible>System.Platform.Linux.RaspberryPi</visible>	
+			</control>
+			<control type="button" id="6">
+				<description>Update Repos</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>UpdateAddonRepos</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218] $LOCALIZE[32031]</label>
+				<visible>System.Platform.Windows | System.Platform.Windows | System.Platform.IOS | System.Platform.Darwin | System.Platform.ATV2 | System.Platform.Android</visible>	
+			</control>
+			<control type="button" id="7">
+				<description>Update Addons</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>UpdateLocalAddons</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218] $LOCALIZE[32021]</label>
+				<visible>System.Platform.Windows | System.Platform.Windows | System.Platform.IOS | System.Platform.Darwin | System.Platform.ATV2 | System.Platform.Android</visible>	
+			</control>
+			<control type="button" id="8">
+				<description>Weather refresh</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>Weather.Refresh</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32032] $LOCALIZE[8]</label>
+				<visible>System.Platform.Windows | System.Platform.Windows | System.Platform.IOS | System.Platform.Darwin | System.Platform.ATV2 | System.Platform.Android</visible>		
+			</control>
+			<control type="button" id="9">
+				<description>Donate</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,donate)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>32029</label>
+				<visible>System.HasAddon(skin.qonfluence)</visible>
+			</control>
+			<control type="button" id="10">
+				<description>Developer script</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/DeveloperOnly.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31130]</label>
+				<visible>Skin.HasSetting(DeveloperMode) + System.Platform.Linux</visible>
+			</control>
+			<control type="button" id="11">
+				<description>Update</description>
+				<width>480</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>430</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Update.py)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218]</label>
+				<visible>false</visible>
+			</control>-->
+			<control type="image" id="12">
+				<description>background bottom image</description>
+				<left>0</left>
+				<width>480</width>
+				<height>25</height>
+				<texture border="20,0,19,20">DialogContextBottom.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>

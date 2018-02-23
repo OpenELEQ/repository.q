@@ -1,0 +1,722 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window type="dialog" id="1140">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<controls>
+		<control type="group">
+			<control type="image">
+				<left>30</left>
+				<top>40</top>
+				<width>1860</width>
+				<height>430</height>
+				<texture border="40">dialogs/default/bg.png</texture>
+			</control>
+		</control>
+		<control type="group">
+			<left>0</left>
+			<top>48</top>
+			<control type="list" id="9000">
+				<left>82</left>
+				<top>28</top>
+				<width>356</width>
+				<height>360</height>
+				<onleft>9010</onleft>
+				<onright>9010</onright>
+				<onup>9000</onup>
+				<ondown>9000</ondown>
+				<pagecontrol>-</pagecontrol>
+				<scrolltime tween="quadratic" easing="out">200</scrolltime>
+				<include>SettingsFadeEffect</include>
+				<itemlayout height="90" width="356">
+					<control type="image">
+						<top>30</top>
+						<width>356</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
+					<control type="label">
+						<width>356</width>
+						<height>90</height>
+						<font>font15</font>
+						<textoffsetx>20</textoffsetx>
+						<textcolor>grey2</textcolor>
+						<selectedcolor>$VAR[ThemeLabelColor]</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+					</control>
+				</itemlayout>
+				<focusedlayout height="90" width="356">
+					<control type="image">
+						<top>30</top>
+						<width>356</width>
+						<height>60</height>
+						<texture border="1">separator2.png</texture>
+					</control>
+					<control type="image">
+						<width>356</width>
+						<height>90</height>
+						<texture colordiffuse="$VAR[HighlightBarColor]" border="4">listselect_fo.png</texture>
+						<animation effect="fade" start="100" end="40" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+					<control type="label">
+						<width>356</width>
+						<height>90</height>
+						<font>font15</font>
+						<textoffsetx>20</textoffsetx>
+						<textcolor>white</textcolor>
+						<selectedcolor>$VAR[ThemeLabelColor]</selectedcolor>
+						<align>right</align>
+						<aligny>center</aligny>
+						<label>$INFO[ListItem.Label]</label>
+						<animation effect="fade" start="100" end="70" time="300" tween="sine" easing="inout" condition="!Control.HasFocus(9000)">Conditional</animation>
+					</control>
+				</focusedlayout>
+				<content>
+					<item id="2">
+						<label>16000</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="1">
+						<label>513</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="3">
+						<label>$LOCALIZE[31967] $LOCALIZE[31155]</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+					</item>
+					<item id="4">
+						<label>DaPulse</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+					</item>
+					<!--<item id="5">
+						<label>288</label>
+						<onclick>noop</onclick>
+						<icon>-</icon>
+					</item>-->
+				</content>
+			</control>
+			<control type="textbox">
+				<description>description area</description>
+				<left>1260</left>
+				<top>58</top>
+				<width>610</width>
+				<height>360</height>
+				<font>font15_textbox</font>
+				<align>left</align>
+				<textcolor>grey2</textcolor>
+				<label>$VAR[CustomColorsDescriptionVar]</label>
+				<autoscroll time="3000" delay="4000" repeat="5000">true</autoscroll>
+				<animation effect="fade" start="0" end="100" time="300" tween="sine" easing="inout">Visible</animation>
+				<animation effect="fade" start="100" end="0" time="0" tween="sine" easing="inout">Hidden</animation>
+			</control>
+			<control type="group" id="9010">
+				<control type="grouplist" id="9001">
+					<description>control area</description>
+					<left>522</left>
+					<top>28</top>
+					<width>538</width>
+					<height>360</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9001</onup>
+					<ondown>9001</ondown>
+					<visible>Container(9000).HasFocus(1)</visible>
+					<control type="button" id="100">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[15111]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=ThemeHomeLabelColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="102">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31294]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=FocusedMainMenuColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="103">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31295]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=UnfocusedMainMenuColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="104">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31296]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=FocusedSubMenuColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="105">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31297]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=UnfocusedSubMenuColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="106">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31298]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=FocusedMainMenuIconLabelColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+						<visible>StringCompare(Skin.String(MainMenu.Layout),$LOCALIZE[536])</visible>
+					</control>
+					<control type="button" id="107">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31299]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=UnfocusedMainMenuIconLabelColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+						<visible>StringCompare(Skin.String(MainMenu.Layout),$LOCALIZE[536])</visible>
+					</control>
+					<control type="button" id="108">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[20304]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=RSSFeedColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="109">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31303]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=ThemeHomeSystemBarsColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="110">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Menu Bar Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=ThemeHomeMenuBarColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="111">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Menu Bar Style</label>
+						<label2>$INFO[Skin.String(MenuBar)]</label2>
+						<onclick>Skin.SetString(MenuBar,$VAR[MenuBarPlus])</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="112">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Pulse 1</label>
+						<onclick>Skin.ToggleSetting(HomeAnimation1)</onclick>
+						<selected>Skin.HasSetting(HomeAnimation1)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="113">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Pulse 2</label>
+						<onclick>Skin.ToggleSetting(HomeAnimation2)</onclick>
+						<selected>Skin.HasSetting(HomeAnimation2)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="114">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Home System Bars</label>
+						<onclick>Skin.ToggleSetting(HomeNoSystemBar)</onclick>
+						<selected>!Skin.HasSetting(HomeNoSystemBar)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="115">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Home Menu Bar</label>
+						<onclick>Skin.ToggleSetting(HomeNoMenuBar)</onclick>
+						<selected>!Skin.HasSetting(HomeNoMenuBar)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+				</control>
+				<control type="grouplist" id="9002">
+					<description>control area</description>
+					<left>522</left>
+					<top>28</top>
+					<width>538</width>
+					<height>360</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9002</onup>
+					<ondown>9002</ondown>
+					<visible>Container(9000).HasFocus(2)</visible>
+					<control type="button" id="200">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[15111]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=ThemeLabelColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="201">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31304]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=HighlightBarColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="202">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31305]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=UnWatchedEpColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="203">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31252]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=TopBarColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+				</control>
+				<control type="grouplist" id="9003">
+					<description>control area</description>
+					<left>522</left>
+					<top>28</top>
+					<width>538</width>
+					<height>360</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9003</onup>
+					<ondown>9003</ondown>
+					<visible>Container(9000).HasFocus(3)</visible>
+					<control type="radiobutton" id="300">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Home System Bar</label>
+						<onclick>Skin.ToggleSetting(HomeNoSystemBar)</onclick>
+						<selected>!Skin.HasSetting(HomeNoSystemBar)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="301">
+						<visible>!Skin.HasSetting(HomeNoSystemBar)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31303] Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=ThemeHomeSystemBarsColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="302">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Home Menu Bar</label>
+						<onclick>Skin.ToggleSetting(HomeNoMenuBar)</onclick>
+						<selected>!Skin.HasSetting(HomeNoMenuBar)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="303">
+						<visible>!Skin.HasSetting(HomeNoMenuBar)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Menu Bar Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=ThemeHomeMenuBarColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="304">
+						<visible>!Skin.HasSetting(HomeNoMenuBar)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Menu Bar Style</label>
+						<label2>$INFO[Skin.String(MenuBar)]</label2>
+						<onclick>Skin.SetString(MenuBar,$VAR[MenuBarMinus])</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="305">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31304]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=WidgetHighlightBarColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="306">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31102]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=WidgetBackgroundColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+				</control>
+				<control type="grouplist" id="9004">
+					<description>control area</description>
+					<left>522</left>
+					<top>28</top>
+					<width>538</width>
+					<height>360</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9004</onup>
+					<ondown>9004</ondown>
+					<visible>Container(9000).HasFocus(4)</visible>
+					<control type="radiobutton" id="400">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Pulse 1</label>
+						<onclick>Skin.ToggleSetting(HomeAnimation1)</onclick>
+						<selected>Skin.HasSetting(HomeAnimation1)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="401">
+						<visible>Skin.HasSetting(HomeAnimation1)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 1A Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=Color1)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="402">
+						<visible>Skin.HasSetting(HomeAnimation1)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 1A Style</label>
+						<label2>$INFO[Skin.String(Pulse1A)]</label2>
+						<onclick>Skin.SetString(Pulse1A,$VAR[Pulse1APlus])</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="403">
+						<visible>Skin.HasSetting(HomeAnimation1)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 1B Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=Color2)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="404">
+						<visible>Skin.HasSetting(HomeAnimation1)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 1B Style</label>
+						<label2>$INFO[Skin.String(Pulse1B)]</label2>
+						<onclick>Skin.SetString(Pulse1B,$VAR[Pulse1BPlus])</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="radiobutton" id="405">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>Show Pulse 2</label>
+						<onclick>Skin.ToggleSetting(HomeAnimation2)</onclick>
+						<selected>Skin.HasSetting(HomeAnimation2)</selected>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="406">
+						<visible>Skin.HasSetting(HomeAnimation2)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 2A Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=Color3)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="407">
+						<visible>Skin.HasSetting(HomeAnimation2)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 2A Style</label>
+						<label2>$INFO[Skin.String(Pulse2A)]</label2>
+						<onclick>Skin.SetString(Pulse2A,$VAR[Pulse2APlus])</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="408">
+						<visible>Skin.HasSetting(HomeAnimation2)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 2B Color</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=Color4)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="409">
+						<visible>Skin.HasSetting(HomeAnimation2)</visible>
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>DaPulse 2B Style</label>
+						<label2>$INFO[Skin.String(Pulse2B)]</label2>
+						<onclick>Skin.SetString(Pulse2B,$VAR[Pulse2BPlus])</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+				</control>
+				<!--<control type="grouplist" id="9005">
+					<description>control area</description>
+					<left>522</left>
+					<top>32</top>
+					<width>538</width>
+					<height>720</height>
+					<itemgap>0</itemgap>
+					<pagecontrol>60</pagecontrol>
+					<onleft>9000</onleft>
+					<onright>60</onright>
+					<onup>9005</onup>
+					<ondown>9005</ondown>
+					<visible>Container(9000).HasFocus(5)</visible>
+					<control type="button" id="500">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31304]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=WidgetHighlightBarColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+					<control type="button" id="501">
+						<width>538</width>
+						<height>90</height>
+						<textoffsetx>30</textoffsetx>
+						<font>font15</font>
+						<label>$LOCALIZE[31102]</label>
+						<onclick>RunScript(script.skin.helper.service,action=colorpicker,skinstring=WidgetBackgroundColor)</onclick>
+						<texturenofocus border="1">separator5.png</texturenofocus>
+					</control>
+				</control>-->
+				<control type="grouplist">
+					<height>360</height>
+					<include name="ColorCustomizerSwatchGrouplist">
+						<param name="FocusID">1</param>
+					</include>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeLabelColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[FocusedMainMenuColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[UnfocusedMainMenuColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[FocusedSubMenuColor]</param>
+						</include>
+					</control>
+				</control>
+				<control type="grouplist">
+					<height>360</height>
+					<left>1170</left>
+					<include name="ColorCustomizerSwatchGrouplist">
+						<param name="FocusID">1</param>
+					</include>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[UnfocusedSubMenuColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[RSSFeedColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeMenuBarColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeSystemBarsColor]</param>
+						</include>
+					</control>
+				</control>
+				<control type="grouplist">
+					<itemgap>20</itemgap>
+					<orientation>vertical</orientation>
+					<visible>StringCompare(Skin.String(MainMenu.Layout),$LOCALIZE[536])</visible>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[FocusedMainMenuIconLabelColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[UnfocusedMainMenuIconLabelColor]</param>
+						</include>
+					</control>
+				</control>
+				<control type="grouplist">
+					<height>360</height>
+					<include name="ColorCustomizerSwatchGrouplist">
+						<param name="FocusID">2</param>
+					</include>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeLabelColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[HighlightBarColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[UnWatchedEpColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[TopBarColor]</param>
+						</include>
+					</control>
+				</control>
+				<control type="grouplist">
+					<height>360</height>
+					<include name="ColorCustomizerSwatchGrouplist">
+						<param name="FocusID">3</param>
+					</include>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[WidgetHighlightBarColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[WidgetBackgroundColor]</param>
+						</include>
+					</control>
+				</control>
+				<control type="grouplist">
+					<height>360</height>
+					<include name="ColorCustomizerSwatchGrouplist">
+						<param name="FocusID">4</param>
+					</include>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[Color1]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[Color2]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[Color3]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[Color4]</param>
+						</include>
+					</control>
+				</control>
+				<control type="grouplist">
+					<height>360</height>
+					<left>1170</left>
+					<include name="ColorCustomizerSwatchGrouplist">
+						<param name="FocusID">4</param>
+					</include>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeSystemBarsColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeMenuBarColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeSystemBarsColor]</param>
+						</include>
+					</control>
+					<control type="image">
+						<include name="ColorCustomizerSwatchimage">
+							<param name="ColorStringVar">$VAR[ThemeHomeMenuBarColor]</param>
+						</include>
+					</control>
+				</control>
+			</control>
+		</control>
+	</controls>
+</window>

@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<includes>
+	<include name="skinshortcuts-mainmenu" />
+	<include />
+	<include name="skinshortcuts-submenu">
+		<item id="1">
+			<label>$LOCALIZE[1038]</label>
+			<label2>Music</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1038</property>
+			<property name="defaultID">1038</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Container(9000).ListItem.Property(submenuVisibility),x4)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x4</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x1" />
+	<include name="skinshortcuts-group-alt-x1" />
+	<include name="skinshortcuts-group-x2" />
+	<include name="skinshortcuts-group-alt-x2" />
+	<include name="skinshortcuts-group-x3" />
+	<include name="skinshortcuts-group-alt-x3" />
+	<include name="skinshortcuts-group-x4">
+		<item id="1">
+			<label>$LOCALIZE[1038]</label>
+			<label2>Music</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1038</property>
+			<property name="defaultID">1038</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user)</visible>
+			<property name="group">x4</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-alt-x4">
+		<item id="1">
+			<label>$LOCALIZE[1038]</label>
+			<label2>Music</label2>
+			<icon>DefaultShortcut.png</icon>
+			<thumb />
+			<property name="labelID">1038</property>
+			<property name="defaultID">1038</property>
+			<visible>Library.HasContent(Music)</visible>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<property name="path">ActivateWindow(MusicLibrary,Addons,return)</property>
+			<visible>StringCompare(System.ProfileName,Master user) + [StringCompare(Window(10000).Property(submenuVisibility),x4)]</visible>
+			<property name="isSubmenu">True</property>
+			<property name="group">x4</property>
+		</item>
+	</include>
+	<include name="skinshortcuts-group-x5" />
+	<include name="skinshortcuts-group-alt-x5" />
+	<include name="skinshortcuts-group-x6" />
+	<include name="skinshortcuts-group-alt-x6" />
+	<include name="skinshortcuts-group-x7" />
+	<include name="skinshortcuts-group-alt-x7" />
+	<include name="skinshortcuts-group-x8" />
+	<include name="skinshortcuts-group-alt-x8" />
+	<include name="skinshortcuts-group-x9" />
+	<include name="skinshortcuts-group-alt-x9" />
+	<include name="skinshortcuts-group-x10" />
+	<include name="skinshortcuts-group-alt-x10" />
+	<include name="skinshortcuts-group-x11" />
+	<include name="skinshortcuts-group-alt-x11" />
+	<include name="skinshortcuts-group-x12" />
+	<include name="skinshortcuts-group-alt-x12" />
+	<include name="skinshortcuts-group-x13" />
+	<include name="skinshortcuts-group-alt-x13" />
+	<include name="skinshortcuts-group-x101" />
+	<include name="skinshortcuts-group-alt-x101" />
+	<include name="skinshortcuts-group-x202" />
+	<include name="skinshortcuts-group-alt-x202" />
+	<include name="skinshortcuts-group-x303" />
+	<include name="skinshortcuts-group-alt-x303" />
+	<include name="skinshortcuts-group-x404" />
+	<include name="skinshortcuts-group-alt-x404" />
+	<include name="skinshortcuts-group-x50-5" />
+	<include name="skinshortcuts-group-alt-x50-5" />
+	<include name="skinshortcuts-group-x606" />
+	<include name="skinshortcuts-group-alt-x606" />
+</includes>

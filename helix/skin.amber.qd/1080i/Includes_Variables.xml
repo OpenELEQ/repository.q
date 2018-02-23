@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+  <!--Shortcuts-->
+  <variable name="shortcuts">
+    <value condition="Skin.hasSetting(SuperShortcuts)">special://home/addons/plugin.program.super.favourites/chooser.py,changetitle=true&amp;property=</value>
+    <value>script.favourites,changetitle=true&amp;property=</value>
+  </variable>
+  <variable name="ExtendedLabel">
+    <value condition="Container.Content(movies)">Extended $LOCALIZE[10524]</value>
+    <value condition="Container.Content(tvshows)">Extended $LOCALIZE[20351]</value>
+    <value condition="Container.Content(actors)">Extended $LOCALIZE[20337] $LOCALIZE[19033]</value>
+    <value>$LOCALIZE[335] $INFO[System.AddonTitle(script.extendedinfo)]</value>
+  </variable>
+  <variable name="Time" description="Date and time">
+    <value condition="Window.IsActive(home) | Window.IsActive(weather)">[COLOR=Grey2]$INFO[System.Date][/COLOR][COLOR=Highlight]  •  [/COLOR]$INFO[System.Time]</value>
+    <value>$INFO[System.Time]</value>
+  </variable>
+  <variable name="ChapterLabel" description="Chapter label in  DialogSeekBar">
+    <value condition="Player.ChapterCount + !IsEmpty(Player.ChapterName)">$INFO[Player.ChapterName][COLOR=Highlight] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+    <value condition="Player.ChapterCount">$LOCALIZE[21396][COLOR=Highlight] • [/COLOR]$INFO[Player.Chapter]$INFO[Player.ChapterCount, / ]</value>
+  </variable>
+  <variable name="Overlay" description="Overlay image">
+    <value condition="Skin.HasSetting(plexbmc) + ListItem.property(IsResumable)">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+    <value condition="Skin.HasSetting(plexbmc) + ListItem.property(overlay)">$INFO[ListItem.property(overlay)]</value>
+    <value condition="Skin.HasSetting(Hide_Watched_Marks) + Skin.HasSetting(Hide_Unwatched_Marks)">-</value>
+    <value condition="Skin.HasSetting(Hide_Unwatched_Marks)">$INFO[ListItem.Overlay,overlay_watched/]</value>
+    <value condition="ListItem.IsResumable">$INFO[ListItem.Overlay,overlay_inprogress/]</value>
+    <value condition="Skin.HasSetting(Hide_Watched_Marks)">$INFO[ListItem.Overlay,overlay_unwatched/]</value>
+    <value condition="!IsEmpty(ListItem.Overlay)">$INFO[ListItem.Overlay]</value>
+  </variable>
+  <variable name="Banner" description="TV Banners">
+    <value condition="!IsEmpty(ListItem.Art(banner))">$INFO[ListItem.Art(banner)]</value>
+    <value condition="Skin.HasSetting(plexbmc)">$INFO[ListItem.Property(banner)]</value>
+    <value>$INFO[ListItem.Art(thumb)]</value>
+  </variable>
+  <variable name="Thumbs" description="Thumbs">
+    <value condition="!IsEmpty(ListItem.Art(poster))">$INFO[ListItem.Art(poster)]</value>
+    <value>$INFO[ListItem.Art(thumb)]</value>
+  </variable>
+  <variable name="LibraryStats" description="Home page library statistics">
+    <value condition="IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,[COLOR=Highlight]  •  [/COLOR]]$LOCALIZE[16101]$INFO[Window(Home).Property(MusicVideos.Unwatched), ]</value>
+    <value condition="!IntegerGreaterThan(Window(Home).Property(MusicVideos.Unwatched),0) + Library.HasContent(musicvideos) + [Container(300).HasFocus(13) | Container(300).HasFocus(14)]">$LOCALIZE[20389]$INFO[Window(Home).Property(MusicVideos.Count), ,[COLOR=Highlight]  •  [/COLOR]]</value>
+    <value condition="IntegerGreaterThan(Window(Home).Property(Movies.Unwatched),0) + Library.HasContent(movies) + Container(300).HasFocus(4)">$LOCALIZE[20342]$INFO[Window(Home).Property(Movies.Count), ,[COLOR=Highlight]  •  [/COLOR]]$LOCALIZE[16101]$INFO[Window(Home).Property(Movies.Unwatched), ]</value>
+    <value condition="!IntegerGreaterThan(Window(Home).Property(Movies.Unwatched),0) + Library.HasContent(movies) + Container(300).HasFocus(4)">$LOCALIZE[20342]$INFO[Window(Home).Property(Movies.Count), ,[COLOR=Highlight]  •  [/COLOR]]</value>
+    <value condition="IntegerGreaterThan(Window(Home).Property(Episodes.Unwatched),0) + Library.HasContent(tvshows) + Container(300).HasFocus(5)">$LOCALIZE[20360]$INFO[Window(Home).Property(Episodes.Count), ,[COLOR=Highlight]  •  [/COLOR]]$LOCALIZE[16101]$INFO[Window(Home).Property(Episodes.Unwatched), ]</value>
+    <value condition="!IntegerGreaterThan(Window(Home).Property(Episodes.Unwatched),0) + Library.HasContent(tvshows) + Container(300).HasFocus(5)">$LOCALIZE[20343]$INFO[Window(Home).Property(TVShows.Count), ,[COLOR=Highlight]  •  [/COLOR]]$LOCALIZE[20360]$INFO[Window(Home).Property(Episodes.Count), ,[COLOR=Highlight]  •  [/COLOR]]</value>
+    <value condition="Library.HasContent(music) + Container(300).HasFocus(6)">$LOCALIZE[134]$INFO[Window(Home).Property(Music.SongsCount), ,[COLOR=Highlight]  •  [/COLOR]]$LOCALIZE[132]$INFO[Window(Home).Property(Music.AlbumsCount), ]</value>
+  </variable>
+  <variable name="GlobalHeadings" description="Global Headings">
+    <value condition="Skin.hassetting(plexbmc) + !Window.IsActive(Home) + !IsEmpty(Window.Property(heading))">$INFO[Window.Property(heading),,[COLOR=Highlight]  •  [/COLOR]]$INFO[Window.Property(heading2),,[COLOR=Highlight]  •  [/COLOR]]$INFO[Container.NumItems]</value>
+    <value condition="Window.IsActive(Settings.xml) | Window.IsActive(SettingsCategory.xml)">$LOCALIZE[5]</value>
+    <value condition="Window.IsActive(AddonBrowser.xml) + IsEmpty(Container.FolderName)">$LOCALIZE[31291]</value>
+    <value condition="Window.IsActive(MyVideoPlaylist.xml)">$LOCALIZE[20012]</value>
+    <value condition="Window.IsActive(MyMusicPlaylist.xml)">$LOCALIZE[20011]</value>
+    <value condition="Window.IsActive(DialogVideoInfo.xml)">$LOCALIZE[20159]</value>
+    <value condition="Window.IsActive(DialogFavourites.xml)">$LOCALIZE[1036]</value>
+    <value condition="Container.content(movies) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20342][COLOR=Highlight]  •  [/COLOR]$INFO[Container.NumItems]</value>
+    <value condition="Container.content(tvshows) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20343][COLOR=Highlight]  •  [/COLOR]$INFO[Container.NumItems]</value>
+    <value condition="Container.content(musicvideos) + StringCompare(Container.FolderName,$LOCALIZE[369])">$LOCALIZE[20389][COLOR=Highlight]  •  [/COLOR]$INFO[Container.NumItems]</value>
+    <value condition="!IsEmpty(Container.FolderName)">$INFO[Container.FolderName,,[COLOR=Highlight]  •  [/COLOR]]$INFO[Container.NumItems]</value>
+  </variable>
+  <variable name="QuitLabel2" description="Label2 for skin settings Quit function item">
+    <value condition="StringCompare(Skin.String(shutdown),quit)">$LOCALIZE[13009]</value>
+    <value condition="StringCompare(Skin.String(shutdown),powerdown)">$LOCALIZE[13005]</value>
+    <value condition="StringCompare(Skin.String(shutdown),hibernate)">$LOCALIZE[13010]</value>
+    <value condition="StringCompare(Skin.String(shutdown),suspend)">$LOCALIZE[13011]</value>
+    <value condition="StringCompare(Skin.String(shutdown),reboot)">$LOCALIZE[13013]</value>
+    <value condition="StringCompare(Skin.String(shutdown),logoff) + System.HasLoginScreen">$LOCALIZE[20126]</value>
+  </variable>
+  <variable name="QuitAction" description="Action for Quit function item">
+    <value condition="StringCompare(Skin.String(shutdown),quit)">XBMC.quit()</value>
+    <value condition="StringCompare(Skin.String(shutdown),powerdown)">XBMC.powerdown()</value>
+    <value condition="StringCompare(Skin.String(shutdown),hibernate)">XBMC.hibernate()</value>
+    <value condition="StringCompare(Skin.String(shutdown),suspend)">XBMC.suspend()</value>
+    <value condition="StringCompare(Skin.String(shutdown),reboot)">XBMC.reboot()</value>
+    <value condition="StringCompare(Skin.String(shutdown),logoff) + System.HasLoginScreen">System.logoff</value>
+    <value>ActivateWindow(shutdownmenu)</value>
+  </variable>
+  <variable name="MovieEntryPoint" description="Action for Movie home button">
+    <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Path)]</value>
+	<value condition="StringCompare(Skin.String(movie_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+    <value condition="StringCompare(Skin.String(movie_entries),files)">ActivateWindow(Videos,Files,return)</value>
+    <value condition="StringCompare(Skin.String(movie_entries),library)">ActivateWindow(Videos,Movies,return)</value>
+    <value>ActivateWindow(VideoLibrary,MovieTitles,return)</value>
+  </variable>
+  <variable name="MovieEntryPointLabel2" description="Label2 for skin settings Movies function item">
+    <value condition="!IsEmpty(Skin.String(CustomMovie.1.Path))">$INFO[Skin.String(CustomMovie.1.Label)]</value>
+	<value condition="StringCompare(Skin.String(movie_entries),playlists)">$LOCALIZE[136]</value>
+    <value condition="StringCompare(Skin.String(movie_entries),files)">$LOCALIZE[744]</value>
+    <value condition="StringCompare(Skin.String(movie_entries),library)">$LOCALIZE[15100]</value>
+  </variable>
+  <variable name="TVEntryPoint" description="Action for TV home button">
+    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Path)]</value>
+	<value condition="StringCompare(Skin.String(tv_entries),playlists)">ActivateWindow(Videos,Playlists,return)</value>
+    <value condition="StringCompare(Skin.String(tv_entries),files)">ActivateWindow(Videos,Files,return)</value>
+    <value condition="StringCompare(Skin.String(tv_entries),library)">ActivateWindow(Videos,TVShows,return)</value>
+    <value>ActivateWindow(VideoLibrary,TVShowTitles,return)</value>
+  </variable>
+  <variable name="TVEntryPointLabel2" description="Label2 for skin settings TV function item">
+    <value condition="!IsEmpty(Skin.String(CustomTV.1.Path))">$INFO[Skin.String(CustomTV.1.Label)]</value>
+	<value condition="StringCompare(Skin.String(tv_entries),playlists)">$LOCALIZE[136]</value>
+    <value condition="StringCompare(Skin.String(tv_entries),files)">$LOCALIZE[744]</value>
+    <value condition="StringCompare(Skin.String(tv_entries),library)">$LOCALIZE[15100]</value>
+  </variable>
+  <variable name="MusicPlayingFanartLabel2" description="Label2 for music playing FA">
+    <value condition="Skin.HasSetting(MusicPlayingFanart)">$LOCALIZE[449]</value>
+    <value>$LOCALIZE[13113]</value>
+  </variable>
+  <variable name="PVROverlay" description="PVR Overlay image">
+    <value condition="ListItem.IsRecording">OverlayRecording.png</value>
+    <value condition="ListItem.HasTimer">OverlayTimer.png</value>
+  </variable>
+  <variable name="Details" description="Shown Above Plots and descriptions">
+    <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
+    <value condition="Container.content(Albums)">$INFO[ListItem.Artist]</value>
+    <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.Rating,  • ]</value>
+    <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator),$LOCALIZE[21863] : ]</value>
+    <value condition="Container.Content(songs) + !IsEmpty(ListItem.Album)">[COLOR=Grey]$LOCALIZE[558]:[/COLOR] $INFO[ListItem.Album]</value>
+    <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_genre))">$INFO[ListItem.Property(artist_genre),[COLOR=Grey]$LOCALIZE[515]: [/COLOR]]</value>
+    <value condition="Container.Content(Artists) + !IsEmpty(ListItem.Property(artist_style))">$INFO[ListItem.Property(artist_style),[COLOR=Grey]$LOCALIZE[176]: [/COLOR]]</value>
+    <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
+    <value condition="Container.Content(Movies)">$INFO[ListItem.Year]$INFO[ListItem.Duration, • , $LOCALIZE[31297]]$INFO[ListItem.Rating, • ]$INFO[ListItem.MPAA, • ]</value>
+		<value condition="IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] • ] [COLOR=Highlight]$INFO[ListItem.Property(UnWatchedEpisodes), (,) ][/COLOR]</value>
+    <value condition="!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Year,, • ]$INFO[ListItem.MPAA,, • ]$INFO[ListItem.Property(TotalEpisodes),$LOCALIZE[20360] • ]</value>
+    <value>$INFO[ListItem.Label2]</value>
+  </variable>
+  <variable name="Fanart_Details" description="Shown Above Plots and descriptions">
+    <value condition="!Container.content(Addons) + Window.IsActive(MyPics.xml)">$INFO[ListItem.Date,, • ]$INFO[ListItem.Size]</value>
+    <value condition="Container.content(Albums)">$INFO[ListItem.Artist]</value>
+    <value condition="Container.Content(Episodes)">$INFO[ListItem.Premiered,,  • ]$INFO[ListItem.Duration,, $LOCALIZE[12391]]$INFO[ListItem.Rating,  • ]</value>
+    <value condition="Container.Content(Addons)">$INFO[ListItem.Property(Addon.Creator)]</value>
+    <value condition="Container.Content(songs)">$INFO[ListItem.Duration]</value>
+    <value condition="Container.Content(MusicVideos)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]</value>
+    <value condition="Container.Content(Movies)">$INFO[ListItem.Year,, • ]$INFO[ListItem.Duration,, $LOCALIZE[31297]]$INFO[ListItem.Rating, • ]</value>
+    <value condition="IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes), $LOCALIZE[20360] ] [COLOR=Highlight]$INFO[ListItem.Property(UnWatchedEpisodes), (,) ][/COLOR]</value>
+    <value condition="!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(Seasons) | Container.Content(TVShows)]">$INFO[ListItem.Year,, • ]$INFO[ListItem.Property(TotalEpisodes),, $LOCALIZE[20360]]</value>
+    <value>$INFO[ListItem.Label2]</value>
+  </variable>
+  <variable name="Plots" description="Plots and descriptions">
+    <value condition="Container.content(addons) + !IsEmpty(ListItem.Property(Addon.Description))">$INFO[ListItem.Property(Addon.Description)]</value>
+    <value condition="SubString(ListItem.Path,videodb://movies/sets/)">$LOCALIZE[20457]</value>
+    <value condition="Container.Content(Seasons) + !IsEmpty(ListItem.Plot) + !IsEmpty(ListItem.Title)">$INFO[ListItem.Plot]</value>
+	<value condition="Container.Content(Seasons) + !IsEmpty(Container.ShowPlot) + !IsEmpty(ListItem.Title)">$INFO[Container.ShowPlot]</value>
+    <value condition="Container.Content(albums) + !IsEmpty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+    <value condition="Container.Content(albums) + IsEmpty(ListItem.Property(Album_Description))">$LOCALIZE[414]</value>
+    <value condition="Container.Content(artists) + !IsEmpty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+    <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureDesc)">$INFO[ListItem.PictureDesc]</value>
+    <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureComment)">$INFO[ListItem.PictureComment]</value>
+    <value condition="Window.IsActive(MyPics.xml) + !IsEmpty(ListItem.PictureKeywords)">$INFO[ListItem.PictureKeywords]</value>
+    <value condition="Window.IsActive(MyPics.xml)">[COLOR=Grey]$LOCALIZE[21821]:[/COLOR][CR][CR]   $LOCALIZE[416]</value>
+    <value condition="!IsEmpty(ListItem.Plot)">$INFO[ListItem.Plot]</value>
+  </variable>
+  <variable name="PVROverlay" description="PVR Overlay image">
+    <value condition="ListItem.IsRecording">OverlayRecording.png</value>
+    <value condition="ListItem.HasTimer">OverlayTimer.png</value>
+  </variable>
+  <variable name="Default.Art" description="Calculate BG to show">
+    <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+    <value>special://skin/backgrounds/default/</value>
+  </variable>
+  <variable name="Settings.Art" description="Calculate BG to show">
+    <value condition="!IsEmpty(Skin.String(Settings.Background))">$INFO[Skin.String(Settings.Background)]</value>
+    <value>special://skin/backgrounds/System.jpg</value>
+  </variable>
+  <variable name="Weather.Art" description="Calculate BG to show">
+    <value condition="!IsEmpty(Skin.String(Weather.Background))">$INFO[Skin.String(Weather.Background)]</value>
+    <value>special://skin/backgrounds/Weather.jpg</value>
+  </variable>
+  <variable name="Pvr.Art" description="Calculate BG to show">
+    <value condition="!IsEmpty(Skin.String(Pvr.Background))">$INFO[Skin.String(Pvr.Background)]</value>
+    <value>special://skin/backgrounds/default</value>
+  </variable>
+  <variable name="Pictures.Art" description="Calculate BG to show">
+    <value condition="!container.content(addons) + !IsEmpty(ListItem.thumb)">$INFO[ListItem.thumb]</value>
+    <value condition="!IsEmpty(Skin.String(Default.Background))">$INFO[Skin.String(Default.Background)]</value>
+    <value>special://skin/backgrounds/default/</value>
+  </variable>
+  <variable name="SeekLabel">
+    <value condition="!IsEmpty(Player.SeekStepSize) + ![player.forwarding | player.rewinding]">$LOCALIZE[31046][COLOR=grey] $INFO[Player.SeekStepSize][/COLOR]</value>
+    <value condition="Player.DisplayAfterSeek + ![player.forwarding | player.rewinding]">$LOCALIZE[31046][COLOR=grey] $INFO[Player.SeekOffset][/COLOR]</value>
+    <value condition="!Player.DisplayAfterSeek + Player.Seeking">$LOCALIZE[31046]</value>
+  </variable>
+  
+    <!--Hexes-->
+    <variable name="Hex1" description="Hex1 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex1))">$INFO[Skin.String(Hex1)]</value>
+        <value condition="IsEmpty(Skin.String(Hex1))">F</value>
+    </variable>
+    <variable name="Hex2" description="Hex2 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex2))">$INFO[Skin.String(Hex2)]</value>
+        <value condition="IsEmpty(Skin.String(Hex2))">F</value>
+    </variable>
+    <variable name="Hex3" description="Hex3 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex3))">$INFO[Skin.String(Hex3)]</value>
+        <value condition="IsEmpty(Skin.String(Hex3))">0</value>
+    </variable>
+    <variable name="Hex4" description="Hex4 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex4))">$INFO[Skin.String(Hex4)]</value>
+        <value condition="IsEmpty(Skin.String(Hex4))">0</value>
+    </variable>
+    <variable name="Hex5" description="Hex5 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex5))">$INFO[Skin.String(Hex5)]</value>
+        <value condition="IsEmpty(Skin.String(Hex5))">0</value>
+    </variable>
+    <variable name="Hex6" description="Hex6 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex6))">$INFO[Skin.String(Hex6)]</value>
+        <value condition="IsEmpty(Skin.String(Hex6))">0</value>
+    </variable>
+    <variable name="Hex7" description="Hex7 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex7))">$INFO[Skin.String(Hex7)]</value>
+        <value condition="IsEmpty(Skin.String(Hex7))">0</value>
+    </variable>
+    <variable name="Hex8" description="Hex8 Variable">
+        <value condition="!IsEmpty(Skin.String(Hex8))">$INFO[Skin.String(Hex8)]</value>
+        <value condition="IsEmpty(Skin.String(Hex8))">0</value>
+    </variable>
+
+    <variable name="Hex1Plus" description="Hex1 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex1),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex1),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex1),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex1),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex1),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex1),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex1),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex1),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex1),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex1),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex1),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex1),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex1),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex1),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex1),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex1),F)">0</value>
+        <value>0</value>
+    </variable>
+    <variable name="Hex1Minus" description="Hex1 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex1),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex1),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex1),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex1),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex1),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex1),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex1),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex1),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex1),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex1),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex1),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex1),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex1),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex1),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex1),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex1),F)">E</value>
+        <value>E</value>
+    </variable>
+    <variable name="Hex2Plus" description="Hex2 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex2),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex2),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex2),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex2),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex2),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex2),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex2),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex2),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex2),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex2),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex2),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex2),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex2),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex2),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex2),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex2),F)">0</value>
+        <value>0</value>
+    </variable>
+    <variable name="Hex2Minus" description="Hex2 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex2),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex2),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex2),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex2),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex2),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex2),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex2),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex2),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex2),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex2),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex2),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex2),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex2),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex2),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex2),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex2),F)">E</value>
+        <value>E</value>
+    </variable>
+    <variable name="Hex3Plus" description="Hex3 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex3),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex3),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex3),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex3),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex3),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex3),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex3),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex3),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex3),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex3),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex3),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex3),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex3),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex3),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex3),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex3),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex3Minus" description="Hex3 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex3),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex3),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex3),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex3),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex3),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex3),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex3),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex3),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex3),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex3),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex3),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex3),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex3),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex3),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex3),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex3),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex4Plus" description="Hex4 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex4),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex4),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex4),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex4),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex4),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex4),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex4),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex4),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex4),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex4),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex4),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex4),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex4),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex4),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex4),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex4),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex4Minus" description="Hex4 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex4),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex4),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex4),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex4),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex4),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex4),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex4),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex4),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex4),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex4),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex4),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex4),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex4),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex4),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex4),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex4),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex5Plus" description="Hex5 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex5),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex5),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex5),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex5),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex5),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex5),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex5),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex5),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex5),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex5),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex5),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex5),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex5),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex5),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex5),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex5),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex5Minus" description="Hex5 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex5),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex5),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex5),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex5),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex5),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex5),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex5),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex5),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex5),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex5),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex5),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex5),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex5),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex5),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex5),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex5),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex6Plus" description="Hex6 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex6),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex6),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex6),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex6),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex6),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex6),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex6),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex6),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex6),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex6),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex6),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex6),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex6),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex6),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex6),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex6),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex6Minus" description="Hex6 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex6),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex6),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex6),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex6),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex6),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex6),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex6),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex6),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex6),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex6),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex6),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex6),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex6),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex6),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex6),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex6),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex7Plus" description="Hex7 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex7),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex7),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex7),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex7),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex7),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex7),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex7),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex7),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex7),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex7),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex7),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex7),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex7),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex7),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex7),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex7),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex7Minus" description="Hex7 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex7),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex7),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex7),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex7),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex7),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex7),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex7),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex7),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex7),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex7),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex7),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex7),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex7),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex7),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex7),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex7),F)">E</value>
+        <value>F</value>
+    </variable>
+    <variable name="Hex8Plus" description="Hex8 Plus 1">	
+        <value condition="StringCompare(Skin.String(Hex8),0)">1</value>
+        <value condition="StringCompare(Skin.String(Hex8),1)">2</value>
+        <value condition="StringCompare(Skin.String(Hex8),2)">3</value>
+        <value condition="StringCompare(Skin.String(Hex8),3)">4</value>
+        <value condition="StringCompare(Skin.String(Hex8),4)">5</value>
+        <value condition="StringCompare(Skin.String(Hex8),5)">6</value>
+        <value condition="StringCompare(Skin.String(Hex8),6)">7</value>
+        <value condition="StringCompare(Skin.String(Hex8),7)">8</value>
+        <value condition="StringCompare(Skin.String(Hex8),8)">9</value>
+        <value condition="StringCompare(Skin.String(Hex8),9)">A</value>
+        <value condition="StringCompare(Skin.String(Hex8),A)">B</value>
+        <value condition="StringCompare(Skin.String(Hex8),B)">C</value>
+        <value condition="StringCompare(Skin.String(Hex8),C)">D</value>
+        <value condition="StringCompare(Skin.String(Hex8),D)">E</value>
+        <value condition="StringCompare(Skin.String(Hex8),E)">F</value>
+        <value condition="StringCompare(Skin.String(Hex8),F)">0</value>
+        <value>1</value>
+    </variable>
+    <variable name="Hex8Minus" description="Hex8 Minus 1">	
+        <value condition="StringCompare(Skin.String(Hex8),0)">F</value>
+        <value condition="StringCompare(Skin.String(Hex8),1)">0</value>
+        <value condition="StringCompare(Skin.String(Hex8),2)">1</value>
+        <value condition="StringCompare(Skin.String(Hex8),3)">2</value>
+        <value condition="StringCompare(Skin.String(Hex8),4)">3</value>
+        <value condition="StringCompare(Skin.String(Hex8),5)">4</value>
+        <value condition="StringCompare(Skin.String(Hex8),6)">5</value>
+        <value condition="StringCompare(Skin.String(Hex8),7)">6</value>
+        <value condition="StringCompare(Skin.String(Hex8),8)">7</value>
+        <value condition="StringCompare(Skin.String(Hex8),9)">8</value>
+        <value condition="StringCompare(Skin.String(Hex8),A)">9</value>
+        <value condition="StringCompare(Skin.String(Hex8),B)">A</value>
+        <value condition="StringCompare(Skin.String(Hex8),C)">B</value>
+        <value condition="StringCompare(Skin.String(Hex8),D)">C</value>
+        <value condition="StringCompare(Skin.String(Hex8),E)">D</value>
+        <value condition="StringCompare(Skin.String(Hex8),F)">E</value>
+        <value>F</value>
+    </variable>
+
+    <!--ColorHex-->
+    <variable name="ColorHex" description="Color Hex">
+        <value>$VAR[Hex1]$VAR[Hex2]$VAR[Hex3]$VAR[Hex4]$VAR[Hex5]$VAR[Hex6]$VAR[Hex7]$VAR[Hex8]</value>
+    </variable>
+
+    <!--Color1-->
+    <variable name="Color1" description="Color1 Variable">
+        <value condition="!IsEmpty(Skin.String(Color1))">$INFO[Skin.String(Color1)]</value>
+        <value condition="IsEmpty(Skin.String(Color1))">BB000000</value>
+    </variable>
+    <!--Color2-->
+    <variable name="Color2" description="Color2 Variable">
+        <value condition="!IsEmpty(Skin.String(Color2))">$INFO[Skin.String(Color2)]</value>
+        <value condition="IsEmpty(Skin.String(ColorF2))">880084FF</value>
+    </variable>
+
+</includes>

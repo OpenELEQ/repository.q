@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1100" type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="button" id="9001">
+			<description>Make sure we hit the first button in the group list and not the close window button</description>
+			<left>-16</left>
+			<top>-16</top>
+			<width>4</width>
+			<height>4</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>down</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="grouplist" id="9000">
+			<left>500</left>
+			<top>0</top>
+			<width>280</width>
+			<height>720</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<itemgap>0</itemgap>
+			<align>center</align>
+			<control type="group" id="1">
+				<width>280</width>
+				<height>30</height>
+				<control type="image">
+					<description>background top image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>280</width>
+					<height>30</height>
+					<texture border="20,19,20,0">DialogContextTop.png</texture>
+				</control>
+				<control type="button" id="22">
+					<description>Close Window button</description>
+					<left>260</left>
+					<top>5</top>
+					<width>64</width>
+					<height>32</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>PreviousMenu</onclick>
+					<texturefocus>DialogCloseButton-focus.png</texturefocus>
+					<texturenofocus>DialogCloseButton.png</texturenofocus>
+					<onleft>2</onleft>
+					<onright>12</onright>
+					<onup>12</onup>
+					<ondown>2</ondown>
+					<visible>false</visible>
+				</control>
+			</control>
+			<control type="button" id="2">
+				<description>Quick Fixes</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1101)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32028]</label>
+				<visible>true</visible>
+			</control>
+			<control type="button" id="3">
+				<description>Addon Manager</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1102)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32033]</label>
+				<visible>!System.Platform.Windows + !System.Platform.Windows + !System.Platform.IOS + !System.Platform.Darwin + !System.Platform.ATV2 + !System.Platform.Android</visible>	
+			</control>
+			<control type="button" id="4">
+				<description>VPN</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1103)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>VPN</label>
+				<visible>!System.Platform.Windows + !System.Platform.IOS + !System.Platform.Darwin + !System.Platform.ATV2 + !System.Platform.Android</visible>
+			</control>
+			<control type="button" id="5">
+				<description>System</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1104)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32030]</label>
+				<visible>System.Platform.Linux.RaspberryPi</visible>	
+			</control>
+			<control type="button" id="6">
+				<description>Update Repos</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>UpdateAddonRepos</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218] $LOCALIZE[32031]</label>
+				<visible>System.Platform.Windows | System.Platform.Windows | System.Platform.IOS | System.Platform.Darwin | System.Platform.ATV2 | System.Platform.Android</visible>	
+			</control>
+			<control type="button" id="7">
+				<description>Update Addons</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>UpdateLocalAddons</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218] $LOCALIZE[32021]</label>
+				<visible>System.Platform.Windows | System.Platform.Windows | System.Platform.IOS | System.Platform.Darwin | System.Platform.ATV2 | System.Platform.Android</visible>	
+			</control>
+			<control type="button" id="8">
+				<description>Weather refresh</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>Weather.Refresh</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32032] $LOCALIZE[8]</label>
+				<visible>System.Platform.Windows | System.Platform.Windows | System.Platform.IOS | System.Platform.Darwin | System.Platform.ATV2 | System.Platform.Android</visible>		
+			</control>
+			<control type="button" id="9">
+				<description>ColorMenu</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1120)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>ColorMenu</label>
+				<visible>System.HasAddon(skin.qonfluence)</visible>
+			</control>
+			<control type="button" id="10">
+				<description>CustomWidgetContent</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1110)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>Customize Widgets</label>
+				<visible>System.HasAddon(skin.qonfluence)</visible>
+			</control>
+			<control type="button" id="10">
+				<description>Developer script</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/DeveloperOnly.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31130]</label>
+				<visible>Skin.HasSetting(DeveloperMode) + System.Platform.Linux</visible>
+			</control>
+			<control type="button" id="11">
+				<description>Update</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Update.py)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31218]</label>
+				<visible>false</visible>
+			</control>
+			<control type="button" id="12">
+				<description>Update</description>
+				<width>280</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>230</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>ActivateWindow(1141)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>ColorTestMenu</label>
+				<visible>false</visible>
+			</control>
+			<control type="image" id="13">
+				<description>background bottom image</description>
+				<left>0</left>
+				<width>280</width>
+				<height>25</height>
+				<texture border="20,0,19,20">DialogContextBottom.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>

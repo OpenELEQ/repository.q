@@ -1,0 +1,1216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<includes>
+	<include name="HomeSubMenuVideos">
+		<control type="image" id="90101">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90102">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>342</label>
+			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			<visible>Library.HasContent(Movies) + Skin.HasSetting(HomeMenuNoMovieButton)</visible>
+		</control>
+		<control type="button" id="90103">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>20343</label>
+			<onclick>ActivateWindow(Videos,TvShowTitles,return)</onclick>
+			<visible>Library.HasContent(TVShows) + Skin.HasSetting(HomeMenuNoTVShowButton)</visible>
+		</control>
+		<control type="button" id="90104">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>20389</label>
+			<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+			<visible>Library.HasContent(MusicVideos)</visible>
+		</control>
+		<control type="button" id="90105">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>744</label>
+			<onclick>ActivateWindow(Videos,Files,return)</onclick>
+		</control>
+		<control type="button" id="90106">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>14022</label>
+			<onclick>ActivateWindow(Videos,Root)</onclick>
+			<visible>Library.HasContent(Video)</visible>
+		</control>
+		<control type="button" id="90107">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24001</label>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+		</control>
+		<control type="image" id="90108">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuMovies">
+		<control type="image" id="90161">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90162">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>31328</label>
+			<onclick>ActivateWindow(Videos,RecentlyAddedMovies,return)</onclick>
+		</control>
+		<control type="button" id="90163">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>20434</label>
+			<onclick>ActivateWindow(Videos,MovieSets,return)</onclick>
+			<visible>Library.HasContent(MovieSets)</visible>
+		</control>
+		<control type="button" id="90164">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>369</label>
+			<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+		</control>
+		<control type="button" id="90165">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>135</label>
+			<onclick>ActivateWindow(Videos,MovieGenres,return)</onclick>
+		</control>
+		<control type="button" id="90166">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>652</label>
+			<onclick>ActivateWindow(Videos,MovieYears,return)</onclick>
+		</control>
+		<control type="button" id="90167">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>344</label>
+			<onclick>ActivateWindow(Videos,MovieActors,return)</onclick>
+		</control>
+		<control type="image" id="90168">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuTVShows">
+		<control type="image" id="90171">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90172">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>31328</label>
+			<onclick>ActivateWindow(Videos,RecentlyAddedEpisodes,return)</onclick>
+		</control>
+		<control type="button" id="90173">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>369</label>
+			<onclick>ActivateWindow(Videos,TVShowTitles,return)</onclick>
+		</control>
+		<control type="button" id="90174">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>135</label>
+			<onclick>ActivateWindow(Videos,TVShowGenres,return)</onclick>
+		</control>
+		<control type="button" id="90175">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>652</label>
+			<onclick>ActivateWindow(Videos,TVShowYears,return)</onclick>
+		</control>
+		<control type="button" id="90176">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>344</label>
+			<onclick>ActivateWindow(Videos,TVShowActors,return)</onclick>
+		</control>
+		<control type="image" id="90177">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+
+	<include name="HomeSubMenuMusicVideos">
+		<control type="image" id="90400">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90401">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>31328</label>
+			<onclick>ActivateWindow(Videos,RecentlyAddedMusicVideos,return)</onclick>
+		</control>
+		<control type="button" id="90402">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>369</label>
+			<onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
+		</control>
+		<control type="button" id="90403">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>135</label>
+			<onclick>ActivateWindow(Videos,MusicVideoGenres,return)</onclick>
+		</control>
+		<control type="button" id="90404">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>652</label>
+			<onclick>ActivateWindow(Videos,MusicVideoYears,return)</onclick>
+		</control>
+		<control type="button" id="90405">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>133</label>
+			<onclick>ActivateWindow(Videos,MusicVideoArtists,return)</onclick>
+		</control>
+		<control type="button" id="90406">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>132</label>
+			<onclick>ActivateWindow(Videos,MusicVideoAlbums,return)</onclick>
+		</control>
+		<control type="image" id="90407">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+
+	<include name="HomeSubMenuMusic">
+		<control type="image" id="90111">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90112">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>133</label>
+			<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
+			<visible>Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="90113">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>132</label>
+			<onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+			<visible>Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="90114">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>134</label>
+			<onclick>ActivateWindow(MusicLibrary,Songs,return)</onclick>
+			<visible>Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="90115">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>744</label>
+			<onclick>ActivateWindow(MusicFiles)</onclick>
+		</control>
+		<control type="button" id="90116">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>14022</label>
+			<onclick>ActivateWindow(MusicLibrary,root)</onclick>
+			<visible>Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="90117">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24001</label>
+			<onclick>ActivateWindow(MusicLibrary,Addons,return)</onclick>
+			<visible>Library.HasContent(Music)</visible>
+		</control>
+		<control type="button" id="90118">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24001</label>
+			<onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
+			<visible>!Library.HasContent(Music)</visible>
+		</control>
+		<control type="image" id="90119">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuSystem">
+		<control type="image" id="90121">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<!--<control type="button" id="90122">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>Update 12-01-15</label>
+			<onclick>RunScript(special://home/addons/plugin.program.openeleq.tools/resources/lib/update.py)</onclick>
+			<visible>System.HasAddon(plugin.program.openeleq.tools)</visible>
+		</control>-->
+		<control type="button" id="90120">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>[COLOR FF757677]Open[/COLOR][COLOR FF8ABEE2]ELEQ[/COLOR]</label>
+			<onclick>RunAddon(service.openelec.settings)</onclick>
+			<visible>System.HasAddon(service.openelec.settings)</visible>
+		</control>
+		<control type="button" id="90123">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>7</label>
+			<onclick>ActivateWindow(FileManager)</onclick>
+		</control>
+		<control type="button" id="90124">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>13200</label>
+			<onclick>ActivateWindow(Profiles)</onclick>
+		</control>
+		<control type="button" id="90125">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>130</label>
+			<onclick>ActivateWindow(SystemInfo)</onclick>
+		</control>
+		<control type="image" id="90126">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuPlayDisc">
+		<control type="image" id="90131">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90132">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>13391</label>
+			<onclick>SetFocus(9000)</onclick>
+			<onclick>EjectTray()</onclick>
+		</control>
+		<control type="image" id="90126">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuPictures">
+		<control type="image" id="90147">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90148">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>24001</label>
+			<onclick>ActivateWindow(Pictures,Addons,return)</onclick>
+		</control>
+		<control type="image" id="90149">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuTV">
+		<control type="image" id="90141">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90143">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19019</label>
+			<onclick>ActivateWindow(TVChannels)</onclick>
+		</control>
+		<control type="button" id="90144">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19069</label>
+			<onclick>ActivateWindow(TVGuide)</onclick>
+		</control>
+		<control type="button" id="90145">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19163</label>
+			<onclick>ActivateWindow(TVRecordings)</onclick>
+		</control>
+		<control type="button" id="90146">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19040</label>
+			<onclick>ActivateWindow(TVTimers)</onclick>
+		</control>
+		<control type="button" id="90147">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>137</label>
+			<onclick>ActivateWindow(TVSearch)</onclick>
+		</control>
+		<control type="image" id="90148">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	<include name="HomeSubMenuRadio">
+		<control type="image" id="90141">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+		</control>
+		<control type="button" id="90243">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19019</label>
+			<onclick>ActivateWindow(RadioChannels)</onclick>
+		</control>
+		<control type="button" id="90244">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19069</label>
+			<onclick>ActivateWindow(RadioGuide)</onclick>
+		</control>
+		<control type="button" id="90245">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19163</label>
+			<onclick>ActivateWindow(RadioRecordings)</onclick>
+		</control>
+		<control type="button" id="90246">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>19040</label>
+			<onclick>ActivateWindow(RadioTimers)</onclick>
+		</control>
+		<control type="button" id="90247">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>137</label>
+			<onclick>ActivateWindow(RadioSearch)</onclick>
+		</control>
+		<control type="image" id="90248">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+		</control>
+	</include>
+	
+	<include name="CustomSubMenu1">
+		<control type="image" id="90300">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu11.Path)) + IsEmpty(Skin.String(CustomSubMenu12.Path)) + IsEmpty(Skin.String(CustomSubMenu13.Path)) + IsEmpty(Skin.String(CustomSubMenu14.Path)) + IsEmpty(Skin.String(CustomSubMenu15.Path))]</visible>
+		</control>
+		<control type="button" id="90301">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu11.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu11.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu11.Path))</visible>
+		</control>
+		<control type="button" id="90302">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu12.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu12.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu12.Path))</visible>
+		</control>
+		<control type="button" id="90303">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu13.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu13.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu13.Path))</visible>
+		</control>
+		<control type="button" id="90304">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu14.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu14.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu14.Path))</visible>
+		</control>
+		<control type="button" id="90305">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu15.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu15.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu15.Path))</visible>
+		</control>
+		<control type="image" id="90306">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu11.Path)) + IsEmpty(Skin.String(CustomSubMenu12.Path)) + IsEmpty(Skin.String(CustomSubMenu13.Path)) + IsEmpty(Skin.String(CustomSubMenu14.Path)) + IsEmpty(Skin.String(CustomSubMenu15.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu2">
+		<control type="image" id="90300">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu21.Path)) + IsEmpty(Skin.String(CustomSubMenu22.Path)) + IsEmpty(Skin.String(CustomSubMenu23.Path)) + IsEmpty(Skin.String(CustomSubMenu24.Path)) + IsEmpty(Skin.String(CustomSubMenu25.Path))]</visible>
+		</control>
+		<control type="button" id="90301">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu21.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu21.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu21.Path))</visible>
+		</control>
+		<control type="button" id="90302">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu22.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu22.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu22.Path))</visible>
+		</control>
+		<control type="button" id="90303">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu23.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu23.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu23.Path))</visible>
+		</control>
+		<control type="button" id="90304">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu24.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu24.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu24.Path))</visible>
+		</control>
+		<control type="button" id="90305">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu25.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu25.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu25.Path))</visible>
+		</control>
+		<control type="image" id="90306">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu21.Path)) + IsEmpty(Skin.String(CustomSubMenu22.Path)) + IsEmpty(Skin.String(CustomSubMenu23.Path)) + IsEmpty(Skin.String(CustomSubMenu24.Path)) + IsEmpty(Skin.String(CustomSubMenu25.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu3">
+		<control type="image" id="90320">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu31.Path)) + IsEmpty(Skin.String(CustomSubMenu32.Path)) + IsEmpty(Skin.String(CustomSubMenu33.Path)) + IsEmpty(Skin.String(CustomSubMenu34.Path)) + IsEmpty(Skin.String(CustomSubMenu35.Path))]</visible>
+		</control>
+		<control type="button" id="90321">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu31.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu31.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu31.Path))</visible>
+		</control>
+		<control type="button" id="90322">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu32.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu32.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu32.Path))</visible>
+		</control>
+		<control type="button" id="90323">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu33.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu33.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu33.Path))</visible>
+		</control>
+		<control type="button" id="90324">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu34.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu34.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu34.Path))</visible>
+		</control>
+		<control type="button" id="90325">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu35.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu35.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu35.Path))</visible>
+		</control>
+		<control type="image" id="90326">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu31.Path)) + IsEmpty(Skin.String(CustomSubMenu32.Path)) + IsEmpty(Skin.String(CustomSubMenu33.Path)) + IsEmpty(Skin.String(CustomSubMenu34.Path)) + IsEmpty(Skin.String(CustomSubMenu35.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu4">
+		<control type="image" id="90330">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu41.Path)) + IsEmpty(Skin.String(CustomSubMenu42.Path)) + IsEmpty(Skin.String(CustomSubMenu43.Path)) + IsEmpty(Skin.String(CustomSubMenu44.Path)) + IsEmpty(Skin.String(CustomSubMenu45.Path))]</visible>
+		</control>
+		<control type="button" id="90331">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu41.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu41.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu41.Path))</visible>
+		</control>
+		<control type="button" id="90332">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu42.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu42.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu42.Path))</visible>
+		</control>
+		<control type="button" id="90333">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu43.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu43.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu43.Path))</visible>
+		</control>
+		<control type="button" id="90334">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu44.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu44.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu44.Path))</visible>
+		</control>
+		<control type="button" id="90335">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu45.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu45.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu45.Path))</visible>
+		</control>
+		<control type="image" id="90336">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu41.Path)) + IsEmpty(Skin.String(CustomSubMenu42.Path)) + IsEmpty(Skin.String(CustomSubMenu43.Path)) + IsEmpty(Skin.String(CustomSubMenu44.Path)) + IsEmpty(Skin.String(CustomSubMenu45.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu5">
+		<control type="image" id="90340">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu51.Path)) + IsEmpty(Skin.String(CustomSubMenu52.Path)) + IsEmpty(Skin.String(CustomSubMenu53.Path)) + IsEmpty(Skin.String(CustomSubMenu54.Path)) + IsEmpty(Skin.String(CustomSubMenu55.Path))]</visible>
+		</control>
+		<control type="button" id="90341">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu51.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu51.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu51.Path))</visible>
+		</control>
+		<control type="button" id="90342">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu52.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu52.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu52.Path))</visible>
+		</control>
+		<control type="button" id="90343">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu53.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu53.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu53.Path))</visible>
+		</control>
+		<control type="button" id="90344">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu54.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu54.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu54.Path))</visible>
+		</control>
+		<control type="button" id="90345">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu55.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu55.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu55.Path))</visible>
+		</control>
+		<control type="image" id="90346">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu51.Path)) + IsEmpty(Skin.String(CustomSubMenu52.Path)) + IsEmpty(Skin.String(CustomSubMenu53.Path)) + IsEmpty(Skin.String(CustomSubMenu54.Path)) + IsEmpty(Skin.String(CustomSubMenu55.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu6">
+		<control type="image" id="90350">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu61.Path)) + IsEmpty(Skin.String(CustomSubMenu62.Path)) + IsEmpty(Skin.String(CustomSubMenu63.Path)) + IsEmpty(Skin.String(CustomSubMenu64.Path)) + IsEmpty(Skin.String(CustomSubMenu65.Path))]</visible>
+		</control>
+		<control type="button" id="90351">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu61.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu61.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu61.Path))</visible>
+		</control>
+		<control type="button" id="90352">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu62.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu62.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu62.Path))</visible>
+		</control>
+		<control type="button" id="90353">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu63.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu63.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu63.Path))</visible>
+		</control>
+		<control type="button" id="90354">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu64.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu64.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu64.Path))</visible>
+		</control>
+		<control type="button" id="90355">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu65.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu65.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu65.Path))</visible>
+		</control>
+		<control type="image" id="90356">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu61.Path)) + IsEmpty(Skin.String(CustomSubMenu62.Path)) + IsEmpty(Skin.String(CustomSubMenu63.Path)) + IsEmpty(Skin.String(CustomSubMenu64.Path)) + IsEmpty(Skin.String(CustomSubMenu65.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu7">
+		<control type="image" id="90360">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu71.Path)) + IsEmpty(Skin.String(CustomSubMenu72.Path)) + IsEmpty(Skin.String(CustomSubMenu73.Path)) + IsEmpty(Skin.String(CustomSubMenu74.Path)) + IsEmpty(Skin.String(CustomSubMenu75.Path))]</visible>
+		</control>
+		<control type="button" id="90361">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu71.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu71.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu71.Path))</visible>
+		</control>
+		<control type="button" id="90362">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu72.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu72.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu72.Path))</visible>
+		</control>
+		<control type="button" id="90363">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu73.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu73.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu73.Path))</visible>
+		</control>
+		<control type="button" id="90364">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu74.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu74.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu74.Path))</visible>
+		</control>
+		<control type="button" id="90365">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu75.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu75.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu75.Path))</visible>
+		</control>
+		<control type="image" id="90366">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu71.Path)) + IsEmpty(Skin.String(CustomSubMenu72.Path)) + IsEmpty(Skin.String(CustomSubMenu73.Path)) + IsEmpty(Skin.String(CustomSubMenu74.Path)) + IsEmpty(Skin.String(CustomSubMenu75.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu8">
+		<control type="image" id="90370">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu81.Path)) + IsEmpty(Skin.String(CustomSubMenu82.Path)) + IsEmpty(Skin.String(CustomSubMenu83.Path)) + IsEmpty(Skin.String(CustomSubMenu84.Path)) + IsEmpty(Skin.String(CustomSubMenu85.Path))]</visible>
+		</control>
+		<control type="button" id="90371">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu81.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu81.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu81.Path))</visible>
+		</control>
+		<control type="button" id="90372">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu82.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu82.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu82.Path))</visible>
+		</control>
+		<control type="button" id="90373">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu83.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu83.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu83.Path))</visible>
+		</control>
+		<control type="button" id="90374">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu84.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu84.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu84.Path))</visible>
+		</control>
+		<control type="button" id="90375">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu85.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu85.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu85.Path))</visible>
+		</control>
+		<control type="image" id="90376">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu81.Path)) + IsEmpty(Skin.String(CustomSubMenu82.Path)) + IsEmpty(Skin.String(CustomSubMenu83.Path)) + IsEmpty(Skin.String(CustomSubMenu84.Path)) + IsEmpty(Skin.String(CustomSubMenu85.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu9">
+		<control type="image" id="90380">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu91.Path)) + IsEmpty(Skin.String(CustomSubMenu92.Path)) + IsEmpty(Skin.String(CustomSubMenu93.Path)) + IsEmpty(Skin.String(CustomSubMenu94.Path)) + IsEmpty(Skin.String(CustomSubMenu95.Path))]</visible>
+		</control>
+		<control type="button" id="90381">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu91.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu91.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu91.Path))</visible>
+		</control>
+		<control type="button" id="90382">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu92.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu92.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu92.Path))</visible>
+		</control>
+		<control type="button" id="90383">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu93.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu93.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu93.Path))</visible>
+		</control>
+		<control type="button" id="90384">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu94.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu94.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu94.Path))</visible>
+		</control>
+		<control type="button" id="90385">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu95.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu95.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu95.Path))</visible>
+		</control>
+		<control type="image" id="90386">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu91.Path)) + IsEmpty(Skin.String(CustomSubMenu92.Path)) + IsEmpty(Skin.String(CustomSubMenu93.Path)) + IsEmpty(Skin.String(CustomSubMenu94.Path)) + IsEmpty(Skin.String(CustomSubMenu95.Path))]</visible>
+		</control>
+	</include>
+	<include name="CustomSubMenu10">
+		<control type="image" id="90390">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3" flipx="true">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu101.Path)) + IsEmpty(Skin.String(CustomSubMenu102.Path)) + IsEmpty(Skin.String(CustomSubMenu103.Path)) + IsEmpty(Skin.String(CustomSubMenu104.Path)) + IsEmpty(Skin.String(CustomSubMenu105.Path))]</visible>
+		</control>
+		<control type="button" id="90391">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu101.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu101.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu101.Path))</visible>
+		</control>
+		<control type="button" id="90392">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu102.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu102.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu102.Path))</visible>
+		</control>
+		<control type="button" id="90393">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu103.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu103.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu103.Path))</visible>
+		</control>
+		<control type="button" id="90394">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu104.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu104.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu104.Path))</visible>
+		</control>
+		<control type="button" id="90395">
+			<include>ButtonHomeSubCommonValues</include>
+			<label>$INFO[Skin.String(CustomSubMenu105.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomSubMenu105.Path)]</onclick>
+			<visible>!IsEmpty(Skin.String(CustomSubMenu105.Path))</visible>
+		</control>
+		<control type="image" id="90396">
+			<width>35</width>
+			<height>35</height>
+			<texture colordiffuse="$VAR[Color1]" border="0,0,0,3">HomeSubEnd.png</texture>
+			<visible>![IsEmpty(Skin.String(CustomSubMenu101.Path)) + IsEmpty(Skin.String(CustomSubMenu102.Path)) + IsEmpty(Skin.String(CustomSubMenu103.Path)) + IsEmpty(Skin.String(CustomSubMenu104.Path)) + IsEmpty(Skin.String(CustomSubMenu105.Path))]</visible>
+		</control>
+	</include>
+
+	<include name="HomeAddonItemsVideos">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton1))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton1)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton1))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton1)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton2))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton2)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton2))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton2)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton3))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton3)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton3))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton3)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton4))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton4)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton4))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton4)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton5))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton5)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton5))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton5)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton6)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeVideosButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeVideosButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeVideosButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeVideosButton7)) + !Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite1.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite1.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite1.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite1.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite1) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite2.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite2.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite2.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite2.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite2) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite3.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite3.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite3.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite3.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite3) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite4.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite4.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite4.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite4.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite4) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite5.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite5.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite5.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite5.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite5) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite6.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite6.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite6.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite6.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite6) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite7.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite7.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite7.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite7.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite7) + Skin.HasSetting(FavouriteVideoAddons)</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsMusic">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton1))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton1)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton1))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton1)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton2))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton2)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton2))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton2)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton3))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton3)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton3))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton3)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton4))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton4)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton4))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton4)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton5))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton5)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton5))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton5)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton6)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeMusicButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeMusicButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeMusicButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeMusicButton7)) + !Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite11.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite11.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite11.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite11.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite11) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite12.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite12.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite12.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite12.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite12) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite13.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite13.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite13.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite13.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite13) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite14.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite14.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite14.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite14.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite14) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite15.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite15.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite15.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite15.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite15) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite16.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite16.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite16.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite16.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite16) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite17.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite17.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite17.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite17.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite17) + Skin.HasSetting(FavouriteMusicAddons)</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsPictures">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton1))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton1)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton1))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton1)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton2))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton2)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton2))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton2)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton3))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton3)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton3))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton3)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton4))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton4)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton4))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton4)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton5))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton5)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton5))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton5)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton6)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomePictureButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomePictureButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomePictureButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomePictureButton7)) + !Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite21.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite21.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite21.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite21.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite21) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite22.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite22.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite22.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite22.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite22) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite23.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite23.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite23.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite23.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite23) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite24.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite24.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite24.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite24.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite24) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite25.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite25.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite25.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite25.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite25) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite26.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite26.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite26.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite26.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite26) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite27.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite27.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite27.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite27.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite27) + Skin.HasSetting(FavouritePictureAddons)</visible>
+		</item>
+	</include>
+	<include name="HomeAddonItemsPrograms">
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton1))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton1)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton1))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton1)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton2))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton2)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton2))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton2)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton3))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton3)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton3))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton3)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton4))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton4)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton4))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton4)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton5))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton5)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton5))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton5)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton6))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton6)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton6))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton6)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[system.addontitle(Skin.String(HomeProgramButton7))]</label>
+			<onclick>RunAddon($INFO[Skin.String(HomeProgramButton7)])</onclick>
+			<icon>$INFO[system.addonicon(Skin.String(HomeProgramButton7))]</icon>
+			<thumb>-</thumb>
+			<visible>!IsEmpty(Skin.String(HomeProgramButton7)) + !Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>		
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite31.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite31.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite31.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite31.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite31) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite32.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite32.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite32.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite32.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite32) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite33.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite33.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite33.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite33.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite33) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite34.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite34.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite34.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite34.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite34) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite35.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite35.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite35.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite35.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite35) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite36.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite36.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite36.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite36.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite36) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+		<item>
+			<label>$INFO[Skin.String(CustomFavourite37.Label)]</label>
+			<onclick>$INFO[Skin.String(CustomFavourite37.Path)]</onclick>
+			<icon>$INFO[Skin.String(CustomFavourite37.icon)]</icon>
+			<thumb>$INFO[Skin.String(CustomFavourite37.thumb)]</thumb>
+			<visible>Skin.HasSetting(Favourite37) + Skin.HasSetting(FavouriteProgramAddons)</visible>
+		</item>
+	</include>
+</includes>

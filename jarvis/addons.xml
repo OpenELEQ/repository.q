@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="resource.images.extras" name="Extras" version="0.0.1" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<extension point="kodi.resource.images" compile="true" type="extras" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Extras for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods</summary>
+		<description lang="en">Varous extras for use in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods. Requires skintegration to work.</description>
+		<summary lang="nl">Extra's voor [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties</summary>
+		<description lang="nl">Verscheidene extra's voor gebruik in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties. Vereist skintegratie om te kunnen functioneren.</description>
+		<platform>all</platform>
+		<genre>skin-resources</genre>
+		<video_preview></video_preview>
+		<video_guide></video_guide>
+	</extension>
+</addon>
+
+<addon id="resource.images.menubars" name="Menubars" version="0.0.1" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<extension point="kodi.resource.images" compile="true" type="menubars" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Menubars for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods</summary>
+		<description lang="en">Various menubars for use in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods. Requires skintegration to work.</description>
+		<summary lang="en">Menubalken voor [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties</summary>
+		<description lang="en">Verscheidene menubalken voor gebruik in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties. Vereist skintegratie om te kunnen functioneren.</description>
+		<platform>all</platform>
+		<genre>skin-resources</genre>
+		<video_preview></video_preview>
+		<video_guide></video_guide>
+	</extension>
+</addon>
+
+<addon id="resource.images.pulses" name="Pulses" version="0.0.1" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<extension point="kodi.resource.images" compile="true" type="pulses" />
+	<requires>
+		<import addon="kodi.resource" version="1.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Pulses for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods</summary>
+		<description lang="en">Varous pulses for use in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-mods. Requires skintegration to work.</description>
+		<summary lang="nl">Pulsen voor [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties</summary>
+		<description lang="nl">Verscheidene pulsen voor gebruik in [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s skin-modificaties. Vereist skintegratie om te kunnen functioneren.</description>
+		<platform>all</platform>
+		<genre>skin-resources</genre>
+		<video_preview></video_preview>
+		<video_guide></video_guide>
+	</extension>
+</addon>
+
+<addon id="skin.aeon.noq" version="5.8.6-3.0.3" name="Aeon NoQ" provider-name="SiLVO, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<requires>
+		<import addon="xbmc.gui" version="5.10.0"/>
+		<import addon="plugin.program.super.favourites"/>
+		<import addon="plugin.video.metalliq"/>
+		<import addon="repository.q"/>
+		<import addon="resource.images.extras"/>
+		<import addon="resource.images.menubars"/>
+		<import addon="resource.images.pulses"/>
+		<import addon="resource.images.studios.white"/>
+		<import addon="resource.images.recordlabels.white"/>
+		<import addon="script.cinemavision"/>
+		<import addon="script.colorbox"/>
+		<import addon="script.extendedinfo"/>
+		<import addon="script.favourites"/>
+		<import addon="script.grab.fanart"/>
+		<import addon="script.image.resource.select"/>
+		<import addon="script.skin.helper.service"/>
+		<import addon="script.skinshortcuts"/>
+		<import addon="script.toolbox"/>
+		<import addon="script.tv.show.next.aired"/>
+		<import addon="service.library.data.provider"/>
+<!--
+		<import addon="script.libraryeditor" version="0.9.0"/>
+		<import addon="script.moviesetart" version="0.2.2"/>
+		<import addon="script.qlickplay" version="1.0.0"/>
+		<import addon="script.trakt" version="3.1.7"/>
+-->
+	</requires>
+	<extension point="xbmc.gui.skin" debugging="false" effectslowdown="0.75">
+		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i"/>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="de_DE">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="el_GR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="en_AU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="en_GB">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="en_NZ">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="en_US">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="es_ES">Creada por BigNoid, Modificada por SiLVO, y Widgets por Mr. V</summary>
+		<summary lang="fi_FI">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="fr_CA">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="fr_FR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="gl_ES">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="he_IL">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="hu_HU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="is_IS">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="it_IT">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="ko_KR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="lt_LT">Sukūrė BigNoid, modifikavo SiLVO bei valdiklius pridėjo Mr. V</summary>
+		<summary lang="ms_MY">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="nb_NO">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="nl_NL">Ontwikkeld door BigNoid, aangepast door SiLVO, en Widgets door Mr. V</summary>
+		<summary lang="pl_PL">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="pt_BR">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="pt_PT">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="ro_RO">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="ru_RU">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="sk_SK">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="sv_SE">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="th_TH">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<summary lang="vi_VN">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] - Sự trở về</summary>
+		<summary lang="zh_CN">Created by BigNoid, Modded by SiLVO, and Widgets by Mr. V, edited by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</summary>
+		<description lang="de_DE">Komplett neu designed für ein modernes Aussehen und das klassische Aeon-Feeling beizubehalten.</description>
+		<description lang="el_GR">Πλήρως επανασχεδιασμένο για να προσφέρει μια μοντέρνα αισθητική, διατηρώντας ταυτόχρονα την κλασική ομορφιά του Aeon.</description>
+		<description lang="en_AU">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_GB">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_NZ">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="en_US">Completely redesigned to create a modern look, while retaining the classic Aeon feel.</description>
+		<description lang="es_ES">Completamente rediseñado para crear un aspecto moderno, pero conservando el toque clásico Aeon.</description>
+		<description lang="fi_FI">Täysin uudelleensuunniteltu moderni ulkoasu, kuitenkin tuntuen klassiselta Aeon:lta.</description>
+		<description lang="fr_CA">complètement remanié pour créer une apparence moderne, tout en conservant l'esprit classique d'Aeon.</description>
+		<description lang="fr_FR">Totalement revu pour créer un look moderne, en gardant l'expérience Aeon.</description>
+		<description lang="he_IL">עיצוב חדש היוצר מראה מודרני אך משמר את ההרגשה של Aeon הקלאסי.</description>
+		<description lang="hr_HR">Potpuno preoblikovan moderan izgled, uz zadržani klasični Aeon osjećaj.</description>
+		<description lang="hu_HU">Teljesen áttervezett modern kinézet, de megtartva a klasszikus Aeon érzetet.</description>
+		<description lang="is_IS">Endurhannað nútímalegt útlit í anda Aeon.</description>
+		<description lang="it_IT">Completamente ridisegnato per creare un look moderno, mantenendo la consueta qualità Aeon.</description>
+		<description lang="ko_KR">고전적인 Aeon 느낌을 유지하면서 현대적인 모습으로 완전히 다시 디자인하여 만들었습니다.</description>
+		<description lang="lt_LT">Pilnai atnaujinta, kad sukurtų modernią išvaizdą, išlaikant klasikinio Aeon pojūtį.</description>
+		<description lang="ms_MY">Direka semula sepenuhnya untuk hasilkan penampilan modern, tetapi masih mengekalkan penampilan Aeon klasik.</description>
+		<description lang="nb_NO">Helt redesignet for å gi deg en moderne utforming, samtidig som man beholder den klassiske Aeon følelsen.</description>
+		<description lang="nl_NL">Volledig opnieuw ontworpen om een ​​moderne look te creëren, met behoud van het klassieke Aeon gevoel.</description>
+		<description lang="pl_PL">Całkowicie przeprojektowana skóra Aeon, o nowoczesnym wyglądzie, zachowując klasyczny układ skóry Aeon.</description>
+		<description lang="pt_BR">Design completamente novo para criar um look moderno, mantendo o feeling do Aeon Clássico.</description>
+		<description lang="pt_PT">Completamente redesenhado para criar um visual moderno enquanto retém o toque clássico Aeon.</description>
+		<description lang="ru_RU">полностью переделенная, модернизированная классическая обложка Aeon.</description>
+		<description lang="sk_SK">Kompletne prepracovaný dizajn s moderným vzhľadom pri zachovaní klasického štýlu Aeon.</description>
+		<description lang="sv_SE">Totalt omarbetad för att skapa ett modernt utseende, samtidigt som man behåller den klassiska Aeon-känslan.</description>
+		<description lang="th_TH">การออกแบบใหม่หมดจด เพื่อสร้างรูปลักษณ์ทันสมัย, ​​ขณะที่ยังคงความรู้สึกคลาสสิคของ Aeon.</description>
+		<description lang="vi_VN">Thiết kế lại hoàn toàn để tạo nên một phong cách hiện đại, trong khi đó vẫn duy trì một cảm giác Aeon cổ điển.</description>
+		<platform>all</platform>
+		<forum>http://bit.ly/24PWarX</forum>
+		<genre>skin</genre>
+		<video_preview>X2nh1pNJz5E</video_preview>
+		<video_guide>dqjasxVX84U</video_guide>
+	</extension>
+</addon>
+
+<addon id="skin.qonfluence" version="3.6.9" name="[COLOR FF8ABEE2]Q[/COLOR]onfluence" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+	<requires>
+		<import addon="xbmc.gui" version="5.10.0"/>
+		<import addon="plugin.program.super.favourites"/>
+<!--		<import addon="plugin.video.metalliq"/>-->
+<!--		<import addon="repository.q"/>-->
+		<import addon="script.extendedinfo"/>
+		<import addon="script.favourites"/>
+		<import addon="service.library.data.provider"/>
+	</requires>
+	<extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="0.75">
+		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="af">Qonfluence tema deur [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] se standaard tema)</summary>
+		<summary lang="ar">جلد "كونفليونس" من صنع Jezz_x. (الجلد المبدأى لبرنامج إكس بى إم سى)</summary>
+		<summary lang="be">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="bg">Облик от [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (стандартния за [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="ca">Pell Qonfluence, per [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Pell per defecte de l'[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="cs">Vzhled Qonfluence od [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (výchozí vzhled [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="cy">Croen Qonfluence gan [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Croen rhagosodedig [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="da">Qonfluence skin af [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s standardskin)</summary>
+		<summary lang="de">Qonfluence Skin von [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Standard-Skin von [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="el">Το κέλυφος Qonfluence από τον [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] (προεπιλεγμένο κέλυφος του [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]).</summary>
+		<summary lang="en">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="en_AU">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="en_NZ">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="en_US">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="es">Qonfluence skin por [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (skin por defecto)</summary>
+		<summary lang="es_AR">Qonfluence skin por [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (skin por defecto de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="es_MX">Skin confluende por [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (skin por defecto de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="es_VE">Tema "Qonfluence" por [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] (Tema predeterminado de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="et">Qonfluence rüü autorilt [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] vaikerüü)</summary>
+		<summary lang="fi">Qonfluence-ulkoasu [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]:ltä. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]:n oletus ulkoasu)</summary>
+		<summary lang="fil">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="fo">Qonfluence útsjónd av [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s vanliga útsjónd)</summary>
+		<summary lang="fr">Thème Qonfluence par [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (thème par défaut)</summary>
+		<summary lang="fr_CA">Habillage Qonfluence par [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (habillage par défaut de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="gl">Pel Qonfluence por Jezz_Z. (Pel predefinida do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="he">המעטפת Qonfluence של [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (ברירת המחדל של [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="hr">Qonfluence presvlaka autora [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (uobičajena [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] presvlaka)</summary>
+		<summary lang="hu">Qonfluence felszín. Készítő: [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] alapértelmezett felszín)</summary>
+		<summary lang="hy">''Qonfluence'' - տեսք՝ [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. կողմից ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] - հիմնական տեսք)</summary>
+		<summary lang="id">Skin Qonfluence oleh [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Skin bawaan [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="is">Qonfluence eftir [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Sjálfgefið útlit [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="it">Skin Qonfluence da [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Skin predefinita di [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="ja">Qonfluence スキン by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] デフォルトスキン)</summary>
+		<summary lang="km">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="ko">Qonfluence 스킨 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 만듦 ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 기본 스킨)</summary>
+		<summary lang="lt">Qonfluence teminė išvaizda, kurią sukūrė [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] numatytoji teminė išvaizda)</summary>
+		<summary lang="lv">Qonfluence apvalks no Jeez_X. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] noklusētais apvalks)</summary>
+		<summary lang="mk">Qonfluence skin by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="ms">Penyatuan, kulit daripada [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Kulit lalai [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="nl">Qonfluence skin door [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s standaard skin)</summary>
+		<summary lang="no">Qonfluence-skall av [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]s standardskall)</summary>
+		<summary lang="pl">Qonfluence autorstwa [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] (domyślna skóra [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="pt">Tema "Qonfluence" por [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Tema predefinido do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="pt_BR">Skin Qonfluence por [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Skin padrão do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="rm">Qonfluence skin da Jezz_x. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'s default skin)</summary>
+		<summary lang="ro">Costum Qonfluence de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (costum implicit)</summary>
+		<summary lang="ru">Обложка Qonfluence (стандартная обложка [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]). Автор: [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</summary>
+		<summary lang="sk">Qonfluence skin od [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (predvolený skin [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="sl">Preobleka Qonfluence avtorja [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Privzeta preobleka za [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="sq">Maska Qonfluence nga Jazz_X (maska kryesore së [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="sv">Qonfluence, ett skal av [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]:s standardskal)</summary>
+		<summary lang="ta_IN">கான்புலுஎன்சு தோலுடை - தயாரிப்பு	: [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] உடைய கொடாநிலை தோலுடை)</summary>
+		<summary lang="tg">Пӯсти ҳамҷараёнӣ аз ҷониби [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Пӯсти пешфарзи [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="th">ชุดตกแต่ง Qonfluence โดย	[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] (สกินเริ่มต้นของ [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="tr">[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] tarafından Qonfluence dış görünümü. ([COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]'nin varsayılan dış görünümü)</summary>
+		<summary lang="uk">Обкладинка Qonfluence (стандартна обкладинка [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]). Автор: [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</summary>
+		<summary lang="vi">Giao diện Qonfluence bởi [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. (Giao diện mặc định của [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR])</summary>
+		<summary lang="zh">[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 开发的 Qonfluence 皮肤（[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 的默认皮肤）。</summary>
+		<summary lang="zh_TW">[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 製作的佈景主題（[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]的預設佈景主題）</summary>
+		<description lang="af">Qonfluence is die standaard tema vir [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 en op. Dit is 'n kombinasie van konsepte van 'n klomp gewilde temas, en 'n poging om hulle goeie idees te omvat en te integreer in 'n tema wat maklik behoort te wees vir eerste keer [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] gebruikers om te verstaan en te gebruik.</description>
+		<description lang="ar">"كونفليونس" هو الجلد المبدأى لبرنامج إكس بى إم سى اﻹصدار 9.11 وما فوق. هو خلط بين اشهر اﻷجلده الاخرى معاً ومحاوله لتبنى ودمج افكارهم للخروج بِنِتَاج يُفترض به ان يكون سهل اﻹستيعاب بمجرد النظر لمستخدمى إكس بى إم سى المبتدئين.</description>
+		<description lang="be">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 and above. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] users to understand and use.</description>
+		<description lang="bg">Qonfluence е стандартният облик на [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 и по-новите версии. Представлява смесица от концепциите на много от популярните облици. Целта е да се интегрират тези добри идеи в подходящ и удобен вид за хора, които се сблъскват за първи път с [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="ca">Qonfluence és la pell per defecte de l'[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 i superiors. És una combinació de conceptes de moltes pells populars que intenta adoptar i integrar les seves bones idees en una aparença que sigui senzilla d'entendre i utilitzar per els nous usuaris d'[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="cs">Qonfluence je výchozí vzhled pro [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 a novější. Jedná se o kombinaci konceptů z mnoha jiných populárních vzhledů, která se pokouší uchopit a integrovat jejich dobré nápady do vzhledu, který by měl být pro nového uživatele [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] jednoduchý na pochopení a používání.</description>
+		<description lang="cy">Qonfluence yw croen rhagosodedig [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 ac uwch. Mae'n gyfuniad o gysyniadau o nifer o grwyn poblogaidd ac mae'n ymdrechu i gyfuno eu syniadau da hwy i groen ddylai fod yn hawdd i ddefnyddiwr cyntaf [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] ei deall a'i ddefnyddio.</description>
+		<description lang="da">Qonfluence er standardskin'et til [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 og senere versioner. Det er en kombination af koncepter fra mange populære skins, og det forsøger at omfavne og integrere de gode ideer i et skin, der er let for førstegangsbrugere af [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] at forstå og bruge.</description>
+		<description lang="de">Qonfluence ist der Standardskin ab [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 14.0. Er ist eine Kombination mehrerer unterschiedlicher Skin-Konzepte und versucht dabei die besten Ideen zu kombinieren, um einen einfachen Einstieg für neue [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]-Nutzer zu ermöglichen.</description>
+		<description lang="el">Το Qonfluence είναι το προεπιλεγμένο κέλυφος για τις εκδόσεις [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 και άνω. Είναι ένας συνδυασμός από πολλά δημοφιλή κελύφη, και επιχειρεί να συμπεριλάβει τις καλύτερες ιδέες τους σε ένα κέλυφος το οποίο είναι εύκολο σε αρχάριους χρήστες του [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] να κατανοήσουν και χρησιμοποιήσουν.</description>
+		<description lang="en">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 14.0 and above. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] users to understand and use.</description>
+		<description lang="en_AU">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 and above. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] users to understand and use.</description>
+		<description lang="en_NZ">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 and above. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] users to understand and use.</description>
+		<description lang="en_US">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 and above. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] users to understand and use.</description>
+		<description lang="es">Qonfluence es la skin por defecto de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 y posteriores. Es una combinación de conceptos de muchas skins populares, e intenta abarcar e integrar lo mejor de ellas en una skin que sea sencilla de entender y utilizar para los nuevos usuarios de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="es_AR">Qonfluence es el skin por defecto de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 y posteriores. Es una combinación de conceptos de muchos skins populares, e intenta abarcar e integrar lo mejor de ellos en un skin que sea sencillo de entender y utilizar para los nuevos usuarios de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="es_MX">Qonfluence es el skin por defecto para [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 en adelante. Es una combinación de conceptos de varias skins populares, e intenta adoptar e integrar sus buenas ideas en un skin que debería ser fá de entender y usar para quienes usen [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] por primera vez.</description>
+		<description lang="es_VE">"Qonfluence" es el tema predeterminado para [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 y más nuevos. Es una combinación de conceptos de los temas más populares e intenta acoger e integrar sus buenas ideas en un tema que debería ser fácil de entender y usar para usuarios que utilizan por primera vez [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="et">Qonfluence on [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] vaikerüü alates versioonist 9.11. Qonfluence on paljude populaarsete rüüde kombinatsioon, üritades omavahel siduda nende parimaid lahendusi, et saavutada esmakasutajale selget ja kergelt kasutatavat tulemust.</description>
+		<description lang="fi">Qonfluence on oletusulkoasu [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]:n versiosta 9.11 lähtien. Se on yhdistelmä useiden suosittujen ulkoasujen konsepteista, ja yritys omaksua ja integroida heidän hyvät ideat ulkoasuun, jonka pitäisi olla helppokäyttöinen ja -tajuinen kaikille [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]:n käyttäjille.</description>
+		<description lang="fil">Ang Qonfluence ay ang default skin ng [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 at pataas. Ito ay kombinasyon ng mga konsepto at pagsubok paghaluin ang mga mahusay na ideya mula sa maraming popular na skins para ito ay maging madali sa mga unang beses gumamit ng [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="fo">Qonfluence er vanliga útsjóndin, sum er brúkt í [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] síðan útg. 9.11. Hetta er ein samansjóðan av fleiri hugtøkum. Ætlanin er at útsjóndin skal lætta um móttøku og nýtslu av [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] fyri nýggjar brúkarar.</description>
+		<description lang="fr">Qonfluence est le thème par défaut à partir de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 14.0. Reprenant les concepts issus de plusieurs thèmes populaires, il est une tentative d'inclusion et d'intégration des meilleures idées afin d'en rendre la compréhension et l'utilisation faciles y compris par des débutants.</description>
+		<description lang="fr_CA">Qonfluence est l'habillage par défaut pour [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 et ultérieur. C'est une combinaison des concepts issus de plusieurs habillages populaires et une tentative d'inclure et d'intégrer leurs bonnes idées en un habillage qui devrait être facile à comprendre et à utiliser pour les utilisateurs débutants de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="gl">Qonfluence é a pel predeterminada para [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 e posteriores. É unha combinación de conceptos de algunhas peles populares, e tenta abranguer e integrar	as súas mellores ideas nunha pel que sexa fácil de entender e utilizar para as usuarias que utilizan por primeira vez [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="he">Qonfluence היא מעטפת ברירת המחדל של [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. המעטפת הינה תוצר של אימוץ מאפיינים ממעטפות פופולריות רבות תוך רצון לשלב מאפיינים אלה למעטפת פשוטה לשימוש ולהכרה ראשונית ע"י משתמשי [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] חדשים.</description>
+		<description lang="hr">Qonfluence je uobičajena presvlaka za [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 14.0 naviše. To je mješavina koncepta iz mnogih drugih popularnih presvlaka, pokušaj da se objedine njihove dobre osobine u presvlaku i da budu lagane za upotrebu i razumljive novim [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] korisnicima.</description>
+		<description lang="hu">A Qonfluence az alapértelmezett felszín az [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]-hez a 9.11-es verziótól kezdődően. Merít sok sok népszerű felszín elképzeléséből, megpróbálva vegyíteni a jó ötleteket úgy, hogy az könnyen kezelhető legyen az [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]-vel először találkozóknak is.</description>
+		<description lang="id">Qonfluence merupakan skin bawaan untuk [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 dan selanjutnya. Merupakan kombinasi konsep dari beberapa skin populer, dan berusaha untuk merangkul dan menyatukan ide bagus mereka ke sebuah skin yang mudah dipakai dan dipahami oleh pengguna [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] pertama kali.</description>
+		<description lang="is">Qonfluence er sjálfgefið útlit [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 og nýrra. Það er samsetning hugmynda frá mörgum vinsælum útlitum og er tilraun til að fanga og innlima þær góðu hugmyndir í útlit þar sem hugmyndin er að skuli vera einfalt fyrir fyrir nýja [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] notendur að skilja og nota</description>
+		<description lang="it">Qonfluence è la skin predefinita di [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] dalla versione 14.0 in poi. È una combinazione di elementi provenienti da altre skin popolari e cerca di integrare e coinvolgere tutte le loro grandi idee in una skin facile da usare e comprendere per l'utente inesperto di [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="ja">Qonfluence は [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 およびそれ以上のバージョンで標準のスキンです。さまざまな人気のスキンのコンセプトを組み合わせ、ユーザが初めて [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] に触れる際に便利に使えるようにしてあります。</description>
+		<description lang="km">Qonfluence គឺ ជាស្គីនចំបងរបស់ [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 and about. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] users to understand and use.</description>
+		<description lang="ko">Qonfluence 는 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 이상의 기본 스킨입니다. 많은 인기 스킨의 컨셉과 좋은 아이디어를 모아서 하나의 스킨으로 만들었으며 초보자도 사용하기 쉽습니다.</description>
+		<description lang="lt">Qonfluence yra numatytoji teminė išvaizda pradedant [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 versija. Tai daugelio populiarių teminų išvaizdų derinys. Bandymas priimti ir integruoti vartotojų idėjas į teminę išvaizdą katra turėtų būti lengvai suprantama	pirmą kartą naudojantiems [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]</description>
+		<description lang="lv">Qonfluence ir [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 un jaunāku versiju noklusētais apvalks. Tajā apvienota daudzu populāru apvalku koncepcija un centieni pieņemt un integrēt labākās idejas, lai jaunajiem [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] ietotājiem to būtu viegli izprast un lietot.</description>
+		<description lang="mk">Qonfluence е подразбирачки изглед за [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 па нагоре. Тој е комбинација на концепти од повеќе популарни изгледи, и настојува да ги обедини и истакне нивните добри идеи во еден изглед разбирлив за корисници почетници</description>
+		<description lang="ms">Penyatuan ialah kulit lalai untuk [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 dan ke atas. Ia merupakan gabungan konsep dari pelbagai kulit terkenal, dan berusaha untuk merangkumkan dan menyepadukan idea baik kulit-kulit tersebut menjadi satu kulit yang mudah difahami dan digunakan oleh pengguna baru [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] .</description>
+		<description lang="nl">Qonfluence is de standaard skin voor [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 en hoger. Het combineert de concepten van andere populaire skins, waarbij het tracht hun goede ideeën te integreren in een skin die gemakkelijk in gebruik is.</description>
+		<description lang="no">Qonfluence er standardskallet for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 og oppover. Det er en kombinasjon av konseptene fra mange populære skall, og prøver å omfavne og integrere de gode idéene i et skall som bør være lett å forstå og benytte seg av for nye [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]-brukere.</description>
+		<description lang="pl">Qonfluence jest domyślną skóra dla [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] w wersji 9.11 lub nowszych. Jest kombinacją pomysłów z wielu popularnych skór i próbą zawarcia tego, co w nich najlepsze w skórze, która będzie łatwa do opanowania dla początkującego użytkownika.</description>
+		<description lang="pt">O tema "Qonfluence" é o tema predefinido do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 e superior. É uma combinação de conceitos a partir de muitos temas populares e tenta integrar as boas ideias dos mesmos, num tema que deverá ser fácil de entender e utilizar para os novos utilizadores do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="pt_BR">Qonfluence é a skin padrão do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 e acima. É uma combinação de conceitos das mais populares skins, visando abraçar e integrar as boas ideias em uma skin	que seja fácil de entender e usar, destinada	aos usuários iniciantes do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. </description>
+		<description lang="ro">Qonfluence este costumul implicit pentru [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 și versiunile ulterioare. Este o combinație de concepte împrumutate de la mai multe costume populare, care încearcă să îmbrățișeze și să integreze ideile lor bune într-un costum care să fie ușor de înțeles și folosit de către utilizatorii [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] începători.</description>
+		<description lang="ru">Qonfluence — это стандартная обложка [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], начиная с версии 9.11. Она представляет собой сочетание концепций, взятых из многих популярных обложек, в попытке интегрировать их удачные идеи в обложке, которая была бы простой для использования и понимания новыми пользователями [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="sk">Qonfluence je predvolený pre [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 a vyššie. Je kombináciou konceptov z mnoho populárnych skinov a pokusom integrovať ich dobré nápady do skinu, ktorý by bol ľahko zrozumiteľný a použiteľný pre nových používateľov [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="sl">Qonfluence je privzeta preobleka za [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 in novejše. Je kombinacija konceptov mnogih priljubljenih preoblek in poskuša zaobjeti in integrirati njihove dobre ideje v preobleko, ki bi bila preprosta za uporabo in razumevanje tudi novim uporabnikom [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="sq">Qonfluence është maska kryesore për [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 dhe verzionet më të lartë. Është nje kombinim nga shumë maska e popullarizuar dhe përpjeket për të përqafuar dhe integruar idetë më të mira në një maskë që të jetë sa më lehtë në përdorim dhe kuptim për përdoruasit duke e përdorur [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] për herë të parë.</description>
+		<description lang="sv">Qonfluence är standardskal för [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 och senare. Det är en kombination av koncept från många populära skal i ett försök att använda och integrera flera goda idéer till ett skal som är enkelt för användare som precis har börjat använda [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] att förstå och använda.</description>
+		<description lang="ta_IN">Qonfluence தான் [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 க்கு இயல்புநிலை அலங்காரம். இது பல அலங்காரங்களின் தொகுப்பு என்று கூறலாம். இதன் மூலம் பல்வேறு அலங்காரதிலுள்ள நல்ல செயல்பாடுகளை ஒன்று செர்துள்ளபட்டுளது. முதல் முறையாக [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] பயன்படுத்துதல் எளிமையாக இருக்கும்.</description>
+		<description lang="tg">Пӯсти ҳамҷараёнӣ ҳамчун пӯсти пешфарз барои [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 ё версияи навтар истифода мешавад. Ин пӯст аз унсурҳои пӯстҳои машҳури дигар сохта шудааст ва ва ҳамаи фикрҳои беҳтарин дар як пӯст ҷамъ мекунад, то ки корбарони навомад тавонанд [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]-ро ба осонӣ фаҳманд ва истифода баранд.</description>
+		<description lang="th">Qonfluenceเป็นสกินเริ่มต้นสำหรับ [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 หรือสูงกว่า มันเป็นส่วนผสมของแนวคิดจากสกินที่ได้รับความนิยมและพยายามที่จะยอมรับและบูรณาการส่วนที่ดีของมันเข้าไปในสกิน ซึ่งน่าจะง่ายสำหรับผู้ใช้ [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]ใหม่ ที่จะเข้าใจและใช้งานได้ดี</description>
+		<description lang="tr">Qonfluence [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 ve yukarısı için varsayılan dış görünümdür. Birçok popüler dış görünümün kavramlarını bir araya getirip ilk kez [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] kullananlar için anlaşılması ve kullanımı kolaydır.</description>
+		<description lang="uk">Qonfluence — це стандартна обкладинка [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], починаючи з версії 9.11. Концепції багатьох популярних обкладинок поєднано у спробі використати та інтегрувати їхні вдалі ідеї в обкладинці, що стала б зрозумілою та простою в застосуванні для нових користувачів [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</description>
+		<description lang="vi">Qonfluence là giao diện mặc định cho [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 and các phiên bản trở về trước. Đây là sự kết hợp các khái niệm đến từ các giao diện khác nhau nhằm hướng người dùng đến sự đơn giản và dễ sử dụng.</description>
+		<description lang="zh">在 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 之后的版本中 Qonfluence 是默认皮肤。它集合了许多流行皮肤的创意，力求把这些优点融合到一个皮肤中，使得首次使用 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 的用户能更容易上手。</description>
+		<description lang="zh_TW">Qonfluence 是從 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 9.11 開始預設的佈景主題。它結合了許多受歡迎的佈景主題的概念，且試圖包含並整合它們的優點，使第一次使用 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 的使用者可以簡單地上手。</description>
+		<disclaimer lang="af">Qonfluence is die standaard tema vir [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], verwydering mag probleme veroorsaak</disclaimer>
+		<disclaimer lang="ar">"كونفليونس" هو الجلد المبدأى لبرنامج إكس بى إم سى وإزالته قد تسبب مشاكل</disclaimer>
+		<disclaimer lang="be">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removing it may cause issues</disclaimer>
+		<disclaimer lang="bg">Qonfluence е стандартният облик на [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Премахването му може да предизвика проблеми</disclaimer>
+		<disclaimer lang="ca">Qonfluence és la pell per defecte de l'[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], la seva eliminació pot causar problemes.</disclaimer>
+		<disclaimer lang="cs">Qonfluence je výchozím vzhledem [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], jeho odstranění může způsobit problémy</disclaimer>
+		<disclaimer lang="cy">Qonfluence yw croen rhagosodedig [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], gall ei dynnu achosi anhawsterau</disclaimer>
+		<disclaimer lang="da">Qonfluence er standardskin'et til [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Fjernes det, kan der opstå problemer</disclaimer>
+		<disclaimer lang="de">Qonfluence ist der Standard-Skin für [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Die Deinstallation kann zu unerwünschten Nebeneffekten führen.</disclaimer>
+		<disclaimer lang="el">Το Qonfluence είναι το προεπιλεγμένο κέλυφος για το [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], η αφαίρεσή του μπορεί να δημιουργήσει προβλήματα</disclaimer>
+		<disclaimer lang="en">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removing it may cause issues</disclaimer>
+		<disclaimer lang="en_AU">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removing it may cause issues</disclaimer>
+		<disclaimer lang="en_NZ">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removing it may cause issues</disclaimer>
+		<disclaimer lang="en_US">Qonfluence is the default skin for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removing it may cause issues</disclaimer>
+		<disclaimer lang="es">Qonfluence es la skin por defecto de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Borrarla puede causar problemas</disclaimer>
+		<disclaimer lang="es_AR">Qonfluence es el skin por defecto de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Borrarlo puede causar problemas</disclaimer>
+		<disclaimer lang="es_MX">Qonfluence es el skin por defecto para [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removerlo podría causar problemas</disclaimer>
+		<disclaimer lang="es_VE">"Qonfluence" es el tema predeterminado para [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], eliminarlo puedes causar problemas</disclaimer>
+		<disclaimer lang="et">Qonfluence on [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] vaikerüü. Selle eemaldamine võib põhjustada ootamatusi.</disclaimer>
+		<disclaimer lang="fa_IR">Qonfluence پوسته پیش فرض برای نرم افزار kodi می باشد و حذف آن موجب مشکلاتی خواهد شد.</disclaimer>
+		<disclaimer lang="fi">Qonfluence on [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]:n oletusulkoasu, sen poistaminen saattaa aiheuttaa ongelmia</disclaimer>
+		<disclaimer lang="fil">Ang Qonfluence ay ang default skin ng [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Ang pagtanggal nito ay maaring magdulot ng problema</disclaimer>
+		<disclaimer lang="fo">Qonfluence er vanliga útsjónding brúkt av [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Strikan kann viðføra brek.</disclaimer>
+		<disclaimer lang="fr">Qonfluence est le thème par défaut de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], le supprimer peut créer des problèmes</disclaimer>
+		<disclaimer lang="fr_CA">Qonfluence est l'habillage par défaut de [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], le supprimer peut créer des problèmes</disclaimer>
+		<disclaimer lang="gl">Qonfluence é a pel predefinida para [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] e eliminala pode causas problemas.</disclaimer>
+		<disclaimer lang="he">Qonfluence היא מעטפת ברירת המחדל של [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], הסרתה עלולה לגרום לתקלות</disclaimer>
+		<disclaimer lang="hr">Qonfluence je uobičajena presvlaka za [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], njegovim uklanjanjem može uzrokovati poteškoće.</disclaimer>
+		<disclaimer lang="hu">A Qonfluence az alapértelmezett [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] felszín. Eltávolítása problémákat okozhat.</disclaimer>
+		<disclaimer lang="id">Qonfluence merupakan skin bawaan untuk [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], menghapusnya mungkin menyebabkan permasalahan</disclaimer>
+		<disclaimer lang="is">Qonfluence er sjálfgefið útlit [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], það getur orsakað vandamál að fjarlægja það.</disclaimer>
+		<disclaimer lang="it">Qonfluence è la skin predefinita di [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], rimuoverla potrebbe comportare dei problemi</disclaimer>
+		<disclaimer lang="ja">Qonfluence は [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] のデフォルトスキンですので、これを削除するとうまく動かなくなる可能性があります</disclaimer>
+		<disclaimer lang="ko">Qonfluence는 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]의 기본스킨으로 제거시 문제가 생길 수 있습니다.</disclaimer>
+		<disclaimer lang="lt">Qonfluence yra numatytoji [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] teminė išvaizda, jos pašalinimas gali sukelti problemų</disclaimer>
+		<disclaimer lang="lv">Qonfluence ir [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] noklusētais apvalks, dzēšot to, var rasties problēmas</disclaimer>
+		<disclaimer lang="mk">Qonfluence е подразбирачка маска, бришењето може да предизвика пречки</disclaimer>
+		<disclaimer lang="ms">Penyatuan ialah kulit lalai [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], mengubahnya boleh menimbulkan isu.</disclaimer>
+		<disclaimer lang="nl">Qonfluence is de standaard [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] skin, het verwijderen van Qonfluence kan leiden tot problemen.</disclaimer>
+		<disclaimer lang="no">Qonfluence er standardskallet for [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], å fjerne det kan skape problemer</disclaimer>
+		<disclaimer lang="pl">Qonfluence jest domyślną skórą [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Jej usunięcie może powodować problemy.</disclaimer>
+		<disclaimer lang="pt">O tema "Qonfluence" é o tema predefinido do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], e removê-lo pode causar problemas.</disclaimer>
+		<disclaimer lang="pt_BR">Qonfluence é a skin padrão do [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], removê-la pode lhe causar problemas.</disclaimer>
+		<disclaimer lang="ro">Qonfluence este costumul implicit pentru [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], dacă îl eliminați pot apărea probleme!</disclaimer>
+		<disclaimer lang="ru">Qonfluence — это стандартная обложка [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], и ее удаление может привести к возникновению проблем</disclaimer>
+		<disclaimer lang="sk">Qonfluence je predvolený skin pre [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], jeho odstránenie môže spôsobiť problémy</disclaimer>
+		<disclaimer lang="sl">Qonfluence je privzeta preobleka za [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], njena odstranitev lahko povzroči težave</disclaimer>
+		<disclaimer lang="sq">Qonfluence është maska kryesore së [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], fshirja e saj mund të shkaktoj çështje.</disclaimer>
+		<disclaimer lang="sv">Qonfluence är standardskal för [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]. Att ta bort detta skal kan skapa problem.</disclaimer>
+		<disclaimer lang="ta_IN">Qonfluence தான் [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] யின் இயல்புநிலை அலங்காரம், அதை நீக்குவதால் சிக்கல்கள் ஏற்படலாம்</disclaimer>
+		<disclaimer lang="tg">Пӯсти ҳамҷараёнӣ ҳамчун пӯсти пешфарз барои [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] истифода шуда истодааст ва агар онро тоза кунед, мӯшкилӣ метавонад ба вуҷуд ояд</disclaimer>
+		<disclaimer lang="th">Qonfluence เป็นสกินเริ่มต้นสำหรับ [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] การลบมัน อาจทำให้เกิดปัญหา</disclaimer>
+		<disclaimer lang="tr">Qonfluence [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] için varsayılan dış görünümdür, kaldırmak sorunlara yol açabilir</disclaimer>
+		<disclaimer lang="uk">Qonfluence — основна обкладинка [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], і її видалення може призвести до проблем</disclaimer>
+		<disclaimer lang="vi">Qonfluence là giao diện mặc định của [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], loại bỏ giao diện này có thể gây ra lỗi cho chương trình</disclaimer>
+		<disclaimer lang="zh">Qonfluence 是 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 的默认皮肤，删除它可能导致故障。</disclaimer>
+		<disclaimer lang="zh_TW">Qonfluence 是 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] 預設的佈景主題，移除它可能會造成問題</disclaimer>
+		<platform>all</platform>
+		<forum>http://www.noobsandnerds.com/support/showthread.php?tid=16733</forum>
+	</extension>
+</addon>
+</addons>

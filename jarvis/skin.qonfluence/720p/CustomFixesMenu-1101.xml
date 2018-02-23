@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<window id="1101" type="dialog">
+	<allowoverlay>no</allowoverlay>
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<coordinates>
+		<system>1</system>
+		<left>0</left>
+		<top>0</top>
+	</coordinates>
+	<controls>
+		<control type="button" id="9001">
+			<description>Make sure we hit the first button in the group list and not the close window button</description>
+			<left>-16</left>
+			<top>-16</top>
+			<width>4</width>
+			<height>4</height>
+			<label>-</label>
+			<font>-</font>
+			<onfocus>down</onfocus>
+			<texturefocus>-</texturefocus>
+			<texturenofocus>-</texturenofocus>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>2</ondown>
+		</control>
+		<control type="grouplist" id="9000">
+			<left>420</left>
+			<top>0</top>
+			<width>440</width>
+			<height>720</height>
+			<onleft>9000</onleft>
+			<onright>9000</onright>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<itemgap>0</itemgap>
+			<align>center</align>
+			<control type="group" id="1">
+				<width>440</width>
+				<height>30</height>
+				<control type="image">
+					<description>background top image</description>
+					<left>0</left>
+					<top>0</top>
+					<width>440</width>
+					<height>30</height>
+					<texture border="20,19,20,0">DialogContextTop.png</texture>
+				</control>
+				<control type="button" id="22">
+					<description>Close Window button</description>
+					<left>460</left>
+					<top>5</top>
+					<width>64</width>
+					<height>32</height>
+					<label>-</label>
+					<font>-</font>
+					<onclick>PreviousMenu</onclick>
+					<texturefocus>DialogCloseButton-focus.png</texturefocus>
+					<texturenofocus>DialogCloseButton.png</texturenofocus>
+					<onleft>2</onleft>
+					<onright>15</onright>
+					<onup>15</onup>
+					<ondown>2</ondown>
+					<visible>false</visible>
+				</control>
+			</control>
+			<control type="button" id="2">
+				<description>Wrong Date</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,date)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>31210</label>
+				<visible>System.Date(01-01,01-02)</visible>
+			</control>
+			<control type="button" id="3">
+				<description>Delete: All Cache</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,cache)</onclick>
+				<onclick>RunPlugin(plugin://plugin.video.genesis/?action=cache_clear_list)</onclick>
+				<onclick>RunPlugin(plugin://plugin.video.pulsar/cmd/clear_cache)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32022] $LOCALIZE[32000]</label>
+			</control>
+			<control type="button" id="4">
+				<description>Delete: System-Cache</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,cache)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32030]-$LOCALIZE[32000]</label>
+			</control>
+			<control type="button" id="5">
+				<description>Delete: Genesis-Cache</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunPlugin(plugin://plugin.video.genesis/?action=cache_clear_list)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32039]-$LOCALIZE[32000]</label>
+                <visible>System.HasAddon(plugin.video.genesis)</visible>
+			</control>
+			<control type="button" id="6">
+				<description>Delete: Pulsar-Cache</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunPlugin(plugin://plugin.video.pulsar/cmd/clear_cache)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32038]-$LOCALIZE[32000]</label>
+				<visible>System.HasAddon(plugin.video.pulsar)</visible>
+			</control>
+			<control type="button" id="7">
+				<description>Delete: Packages</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>RunScript(special://skin/Cleaner.py,packages)</onclick>
+				<onclick>dialog.close(all,true)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32002]</label>
+			</control>
+			<control type="button" id="8">
+				<description>Delete: Icons & Textures</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,thumbs)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[31211]</label>
+			</control>
+			<control type="button" id="9">
+				<description>Delete: Video Database</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,videodb)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32004]</label>
+			</control>
+			<control type="button" id="10">
+				<description>Delete: Music Database</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,musicdb)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32005]</label>
+			</control>
+			<control type="button" id="11">
+				<description>Delete: Views Database</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>RunScript(special://skin/Cleaner.py,videoviews)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32011]</label>
+			</control>
+			<control type="button" id="12">
+				<description>Fix: SuperFavourites</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/FixSuperFavourites.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32034]$LOCALIZE[31212]</label>
+				<visible>!System.Platform.Windows + !System.Platform.Windows + !System.Platform.IOS + !System.Platform.Darwin + !System.Platform.ATV2 + !System.Platform.Android</visible>
+			</control>
+			<control type="button" id="13">
+				<description>Test: Remote</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(special://home/userdata/scripts/TestRemote.sh)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[31213]$LOCALIZE[31215]</label>
+				<visible>!System.Platform.Windows + !System.Platform.Windows + !System.Platform.IOS + !System.Platform.Darwin + !System.Platform.ATV2 + !System.Platform.Android</visible>
+			</control>
+			<control type="button" id="14">
+				<description>Delete: Pulsar .nfo's</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>System.Exec(rm -r special://home/userdata/addon_data/plugin.video.pulsar/*/*/*/*.nfo)</onclick>
+				<onclick>System.Exec(rm -r special://home/userdata/addon_data/plugin.video.pulsar/*/*/*.nfo)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>$LOCALIZE[32006]$LOCALIZE[32038] $LOCALIZE[32047]</label>
+				<visible>!System.Platform.Windows + !System.Platform.Windows + !System.Platform.IOS + !System.Platform.Darwin + !System.Platform.ATV2 + !System.Platform.Android</visible>
+			</control>
+			<control type="button" id="15">
+				<description>Donate</description>
+				<width>440</width>
+				<height>40</height>
+				<textcolor>grey2</textcolor>
+				<focusedcolor>white</focusedcolor>
+				<align>center</align>
+				<textwidth>390</textwidth>
+				<texturefocus border="25,5,25,5">ShutdownButtonFocus.png</texturefocus>
+				<texturenofocus border="25,5,25,5">ShutdownButtonNoFocus.png</texturenofocus>
+				<onclick>dialog.close(all,true)</onclick>
+				<onclick>Notification(Paypal:,dan_q_wel@hotmail.com,10000,special://profile/addon_data/pvr.iptvsimple/icoontjes/OpenELEQ.png)</onclick>
+				<pulseonselect>no</pulseonselect>
+				<font>font13</font>
+				<label>dan_q_wel@hotmail.com</label>
+				<visible>false</visible>
+			</control>
+			<control type="image" id="16">
+				<description>background bottom image</description>
+				<left>0</left>
+				<width>440</width>
+				<height>25</height>
+				<texture border="20,0,19,20">DialogContextBottom.png</texture>
+			</control>
+		</control>
+	</controls>
+</window>

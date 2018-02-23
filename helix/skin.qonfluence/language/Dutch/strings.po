@@ -1,0 +1,1029 @@
+# Kodi Media Center language file
+# Addon Name: Confluence
+# Addon id: skin.confluence
+# Addon Provider: Jezz_X, Team Kodi
+msgid ""
+msgstr ""
+"Project-Id-Version: XBMC Main\n"
+"Report-Msgid-Bugs-To: http://trac.xbmc.org/\n"
+"POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Kodi Translation Team\n"
+"Language-Team: Dutch (http://www.transifex.com/projects/p/xbmc-main/language/nl/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nl\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#31000"
+msgid "Change Your"
+msgstr "Verander jouw"
+
+msgctxt "#31003"
+msgid "Power Options"
+msgstr "Energiebeheer"
+
+msgctxt "#31004"
+msgid "Working..."
+msgstr "Bezig..."
+
+msgctxt "#31005"
+msgid "Hide Information"
+msgstr "Info verbergen"
+
+msgctxt "#31006"
+msgid "View Options"
+msgstr "Weergave opties"
+
+msgctxt "#31008"
+msgid "Full screen"
+msgstr "Volledig scherm"
+
+msgctxt "#31009"
+msgid "Total Duration"
+msgstr "Totale duur"
+
+msgctxt "#31022"
+msgid "Music - Files"
+msgstr "Muziek - Bestanden"
+
+msgctxt "#31023"
+msgid "Playing"
+msgstr "Afspelen"
+
+msgctxt "#31024"
+msgid "Page"
+msgstr "Pagina"
+
+msgctxt "#31025"
+msgid "Items"
+msgstr "Items"
+
+msgctxt "#31026"
+msgid "Misc Options"
+msgstr "Diverse opties"
+
+msgctxt "#31027"
+msgid "Location"
+msgstr "Locatie"
+
+msgctxt "#31028"
+msgid "Poster Wrap"
+msgstr "Poster Wrap"
+
+msgctxt "#31029"
+msgid "Fanart"
+msgstr "Fanart"
+
+msgctxt "#31031"
+msgid "Pic Thumbs"
+msgstr "Afbeelding miniaturen"
+
+msgctxt "#31032"
+msgid "Image Wrap"
+msgstr "Afbeelding Wrap"
+
+msgctxt "#31033"
+msgid "Info"
+msgstr "Info"
+
+msgctxt "#31039"
+msgid "Actions"
+msgstr "Acties"
+
+msgctxt "#31040"
+msgid "Now Playing"
+msgstr "Huidig spelende"
+
+msgctxt "#31042"
+msgid "PLAYING"
+msgstr "AFSPELEN"
+
+msgctxt "#31043"
+msgid "PAUSED"
+msgstr "PAUZE"
+
+msgctxt "#31044"
+msgid "FAST FORWARD"
+msgstr "VOORUIT SPOELEN"
+
+msgctxt "#31045"
+msgid "REWIND"
+msgstr "TERUGSPOELEN"
+
+msgctxt "#31046"
+msgid "SEEKING"
+msgstr "ZOEKEN"
+
+msgctxt "#31048"
+msgid "Visualisation Presets"
+msgstr "Visualisatie voorinstellingen"
+
+msgctxt "#31049"
+msgid "End Time"
+msgstr "Eindtijd"
+
+msgctxt "#31050"
+msgid "Sort: Ascending"
+msgstr "Sorteren: Oplopend"
+
+msgctxt "#31051"
+msgid "Sort: Descending"
+msgstr "Sorteren: Aflopend"
+
+msgctxt "#31055"
+msgid "Open playlist"
+msgstr "Afspeellijst openen"
+
+msgctxt "#31056"
+msgid "Save playlist"
+msgstr "Afspeellijst bewaren"
+
+msgctxt "#31057"
+msgid "Close playlist"
+msgstr "Afspeellijst sluiten"
+
+msgctxt "#31058"
+msgid "System music files"
+msgstr "Systeem muziekbestanden"
+
+msgctxt "#31059"
+msgid "Current playlist"
+msgstr "Huidige afspeellijst"
+
+msgctxt "#31060"
+msgid "This file is stacked, select the part you want to play from."
+msgstr "Dit bestand bestaat uit meerdere delen, selecteer het deel dat u wilt afspelen."
+
+msgctxt "#31061"
+msgid "Current Selected"
+msgstr "Huidig geselecteerde"
+
+msgctxt "#31101"
+msgid "Home screen options"
+msgstr "Beginschermopties"
+
+msgctxt "#31102"
+msgid "Background"
+msgstr "Achtergrond"
+
+msgctxt "#31103"
+msgid "Show \"Paused\" in picture slide show"
+msgstr "Laat \"PAUZE\" zien in diavoorstelling"
+
+msgctxt "#31104"
+msgid "Play Trailers in a window [COLOR=grey3](Video Information Dialogue Only)[/COLOR]"
+msgstr "Trailers afspelen in een venster [COLOR=grey3](Alleen Video Informatiescherm)[/COLOR]"
+
+msgctxt "#31105"
+msgid "Show weather info everywhere"
+msgstr "Weer overal weergeven"
+
+msgctxt "#31106"
+msgid "Miscellaneous options"
+msgstr "Diverse opties"
+
+msgctxt "#31107"
+msgid "Hide Flagging read from video filenames [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]"
+msgstr "Verberg markeringen uit bestandennaam [COLOR=grey3](Blu-ray, HD-DVD)[/COLOR]"
+
+msgctxt "#31108"
+msgid "Hide Main Menu Buttons"
+msgstr "Verberg knoppen in het hoofdmenu"
+
+msgctxt "#31109"
+msgid "Enable Custom Background"
+msgstr "Aangepaste achtergrond toepassen"
+
+msgctxt "#31110"
+msgid "Background path:"
+msgstr "Achtergrond locatie:"
+
+msgctxt "#31111"
+msgid "Hide"
+msgstr "Verbergen"
+
+msgctxt "#31112"
+msgid "Options"
+msgstr "Opties"
+
+msgctxt "#31113"
+msgid "Show Random Movies instead"
+msgstr "Toon willekeurige ipv recent toegevoegde films"
+
+msgctxt "#31114"
+msgid "Show Random TV Shows instead"
+msgstr "Toon willekeurige ipv recent toegevoegde afleveringen"
+
+msgctxt "#31115"
+msgid "Show Random Albums instead"
+msgstr "Toon willekeurige ipv recent toegevoegde albums"
+
+msgctxt "#31116"
+msgid "Show Recently added Albums"
+msgstr "Toon recent toegevoegde albums"
+
+msgctxt "#31117"
+msgid "Show Recently added Videos"
+msgstr "Toon recent toegevoegde video's"
+
+msgctxt "#31118"
+msgid "Home Page Programs Sub-menu"
+msgstr "Beginscherm Programma submenu"
+
+msgctxt "#31119"
+msgid "Hide Background Fanart"
+msgstr "Fanart achtergronden verbergen"
+
+msgctxt "#31120"
+msgid "Show artist slideshow "
+msgstr "Toon diashow van artiest"
+
+msgctxt "#31121"
+msgid "Fullscreen when music starts"
+msgstr "Volledig scherm als muziek start"
+
+msgctxt "#31122"
+msgid "Show date everywhere"
+msgstr "Datum overal weergeven"
+
+msgctxt "#31123"
+msgid "Switch to [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] view"
+msgstr "Wissel naar [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] uiterlijk"
+
+msgctxt "#31124"
+msgid "Show Background \"Now Playing\" Video"
+msgstr "Toon achtergrond bij \"Huidig spelende\" video"
+
+msgctxt "#31125"
+msgid "Show Background \"Now Playing\" Visualisation"
+msgstr "Laat achtergrond \"Nu Afspelen\" zien voor visualisatie"
+
+msgctxt "#31126"
+msgid "Play TV theme songs in video library (TvTunes add-on)"
+msgstr "Speel de Themasong van de TV serie af in de videobibliotheek. (TvTunes add-on)"
+
+msgctxt "#31127"
+msgid "TvTunes"
+msgstr "TvTunes"
+
+msgctxt "#31128"
+msgid "Lyrics"
+msgstr "Songteksten"
+
+msgctxt "#31129"
+msgid "Hide Fanart in full screen visualisation"
+msgstr "Verberg fanart in volledig scherm visualisatie"
+
+msgctxt "#31130"
+msgid "Developer Script"
+msgstr "Ontwikkelaar script"
+
+msgctxt "#31132"
+msgid "Lyrics Add-on"
+msgstr "Songtekst Add-on"
+
+msgctxt "#31134"
+msgid "Home Page Videos and TV-Shows Sub-menu"
+msgstr "Beginscherm Video en Serie submenu"
+
+msgctxt "#31135"
+msgid "Home Page Music Sub-menu"
+msgstr "Beginscherm Muziek submenu"
+
+msgctxt "#31136"
+msgid "Home Page Pictures and Movies Sub-menu"
+msgstr "Beginscherm Foto en Film submenu"
+
+msgctxt "#31140"
+msgid "Music OSD"
+msgstr "Muziek-OSD"
+
+msgctxt "#31141"
+msgid "Video OSD"
+msgstr "Video-OSD"
+
+msgctxt "#31142"
+msgid "Settings level"
+msgstr "Instellingen niveau"
+
+msgctxt "#31200"
+msgid "Shortcuts"
+msgstr "Snelkoppelingen"
+
+msgctxt "#31201"
+msgid "Moment AUB"
+msgstr ""
+
+msgctxt "#31202"
+msgid "Done"
+msgstr "Klaar"
+
+msgctxt "#31203"
+msgid "Choose Your Song"
+msgstr "Kies uw nummer"
+
+msgctxt "#31204"
+msgid "Reboot Required"
+msgstr "Herstart Vereist"
+
+msgctxt "#31205"
+msgid "Lyrics Source"
+msgstr "Liedtekst bron"
+
+msgctxt "#31206"
+msgid "Found"
+msgstr "Gevonden"
+
+msgctxt "#31207"
+msgid "Find More Items"
+msgstr "Vind meer items"
+
+msgctxt "#31208"
+msgid "Upcoming Episodes"
+msgstr "Aankomende afleveringen"
+
+msgctxt "#31209"
+msgid "Open subtitlescreen when video starts"
+msgstr "Open ondertitelscherm als video start"
+
+msgctxt "#31210"
+msgid "Wrong Date"
+msgstr "Verkeerde Datum"
+
+msgctxt "#31211"
+msgid "Icons & Textures"
+msgstr "Iconen & Texturen"
+
+msgctxt "#31212"
+msgid "SuperFavourites"
+msgstr "SuperFavorieten"
+
+msgctxt "#31213"
+msgid "Test: "
+msgstr "Test: "
+
+msgctxt "#31214"
+msgid "Video Library"
+msgstr "Video Bibliotheek"
+
+msgctxt "#31215"
+msgid "Remote"
+msgstr "Afstandbediening"
+
+msgctxt "#31216"
+msgid "Backup"
+msgstr "Backup"
+
+msgctxt "#31217"
+msgid "Synq"
+msgstr "Synq"
+
+msgctxt "#31218"
+msgid "Update"
+msgstr "Update"
+
+msgctxt "#31219"
+msgid "Upgrade"
+msgstr "Upgrade"
+
+msgctxt "#31220"
+msgid "Berryboot"
+msgstr "Berryboot"
+
+msgctxt "#31221"
+msgid "EPG and PVR-lists"
+msgstr "EPG en PVR-lijsten"
+
+msgctxt "#31222"
+msgid "Merge PVR Lists"
+msgstr "Alle PVR Lijsten Samenvoegen"
+
+msgctxt "#31223"
+msgid "Add Bbtspvr and Xbmcpvr to PVR"
+msgstr "Bbtspvr en Xbmcpvr toevoegen aan PVR"
+
+msgctxt "#31224"
+msgid "PVR Switch (Local/Remote)"
+msgstr "PVR Wissel (Lokaal/Online)"
+
+msgctxt "#31225"
+msgid "24/7 TV Shows"
+msgstr "24/7 TV-Series"
+
+msgctxt "#31226"
+msgid "All Sports"
+msgstr "Alles Sport"
+
+msgctxt "#31227"
+msgid "Weebly"
+msgstr "Weebly"
+
+msgctxt "#31228"
+msgid "WorldTV"
+msgstr "WereldTV"
+
+msgctxt "#31229"
+msgid "XBMCil"
+msgstr "XBMCil"
+
+msgctxt "#31230"
+msgid "Make Dutch Channels"
+msgstr "Maak NL24 Kanalen"
+
+msgctxt "#31231"
+msgid "Fix: Clean Libraries Music"
+msgstr "Herstel: Muziek Bibliotheek Leegmaken"
+
+msgctxt "#31300"
+msgid "Current Temp"
+msgstr "Huidige temperatuur"
+
+msgctxt "#31301"
+msgid "Last Updated"
+msgstr "Laatst bijgewerkt"
+
+msgctxt "#31303"
+msgid "Data provider"
+msgstr "Data provider"
+
+msgctxt "#31307"
+msgid "Hide Fanart"
+msgstr "Fanart verbergen"
+
+msgctxt "#31308"
+msgid "Movie Details"
+msgstr "Filmdetails"
+
+msgctxt "#31309"
+msgid "Memory Used:"
+msgstr "Geheugengebruik:"
+
+msgctxt "#31310"
+msgid "Track Number"
+msgstr "Tracknummer"
+
+msgctxt "#31311"
+msgid "Fanart image[CR][CR]Unavailable[CR][CR] Click button to set"
+msgstr "Fanart afbeelding[CR][CR]niet beschikbaar[CR][CR] klik hier om in te stellen"
+
+msgctxt "#31312"
+msgid "Current Scraper"
+msgstr "Huidige scanner"
+
+msgctxt "#31313"
+msgid "Choose a Scraper"
+msgstr "Scanner kiezen"
+
+msgctxt "#31314"
+msgid "Content Scanning Options"
+msgstr "Opties inhoudsscanner"
+
+msgctxt "#31317"
+msgid "Set Fanart Path"
+msgstr "Fanartpad opgeven"
+
+msgctxt "#31319"
+msgid "Selected Profile"
+msgstr "Profiel selecteren"
+
+msgctxt "#31320"
+msgid "Last Logged In"
+msgstr "Laatst ingelogd op"
+
+msgctxt "#31321"
+msgid "Karaoke Song Selector"
+msgstr "Nummerkeuze karaoke"
+
+msgctxt "#31322"
+msgid "Aired"
+msgstr "Uitgezonden"
+
+msgctxt "#31325"
+msgid "Playlist Options"
+msgstr "Afspeellijstopties"
+
+msgctxt "#31326"
+msgid "Created"
+msgstr "Gemaakt"
+
+msgctxt "#31327"
+msgid "Resolution"
+msgstr "Resolutie"
+
+msgctxt "#31328"
+msgid "Recently Added"
+msgstr "Recent toegevoegd"
+
+msgctxt "#31329"
+msgid "[B]Timer set![/B] [COLOR=grey2] - System auto shutdown in[/COLOR]"
+msgstr "[B]Timer geconfigureerd![/B] [COLOR=grey2] - Systeem schakelt automatisch uit over[/COLOR]"
+
+msgctxt "#31330"
+msgid "Click button to play[CR][CR]Movie trailer"
+msgstr "Klik op de knop om af te spelen[CR][CR]Filmtrailer"
+
+msgctxt "#31331"
+msgid "Album Details"
+msgstr "Album details"
+
+msgctxt "#31351"
+msgid "Pause"
+msgstr "Pauze"
+
+msgctxt "#31352"
+msgid "Stop"
+msgstr "Stop"
+
+msgctxt "#31353"
+msgid "Fast Forward"
+msgstr "Vooruitspoelen"
+
+msgctxt "#31354"
+msgid "Rewind"
+msgstr "Terugspoelen"
+
+msgctxt "#31355"
+msgid "Movie menu"
+msgstr "Filmmenu"
+
+msgctxt "#31356"
+msgid "Download Subtitles"
+msgstr "Ondertitels downloaden"
+
+msgctxt "#31360"
+msgid "Watch as 2D"
+msgstr "Bekijk als 2D"
+
+msgctxt "#31361"
+msgid "Change mode"
+msgstr "Verander modus"
+
+msgctxt "#31362"
+msgid "Enabled"
+msgstr "Geactiveerd"
+
+msgctxt "#31390"
+msgid "Skin default"
+msgstr "Skinstandaard"
+
+msgctxt "#31391"
+msgid "Skin default with no Caps"
+msgstr "Skinstandaard zonder hoofdletters"
+
+msgctxt "#31392"
+msgid "Arial based"
+msgstr "Gebaseerd op Arial"
+
+msgctxt "#31400"
+msgid "[B]CONFIGURE APPEARANCE SETTINGS[/B][CR][CR]Change the skin · Set language and region · Change file listing options[CR]Set up a screensaver"
+msgstr "[B]UITERLIJK INSTELLINGEN CONFIGUREREN[/B][CR][CR]Wijzig skin · Stel taal en regio in · Configureer bestandslijstopties en schermbeveiliging"
+
+msgctxt "#31401"
+msgid "[B]CONFIGURE VIDEO SETTINGS[/B][CR][CR]Manage your video library · Set video playback options · Change video listing options[CR]Set subtitle fonts"
+msgstr "[B]VIDEO-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw videobibliotheek · Configureer videoafspeelopties en -bestandslijstsopties · Stel lettertype in voor ondertitels"
+
+msgctxt "#31402"
+msgid "[B]CONFIGURE MUSIC SETTINGS[/B][CR][CR]Manage your music library · Set music playback options · Change music listing options[CR]Setup song submission · Set karaoke options"
+msgstr "[B]MUZIEKINSTELLINGEN CONFIGUREREN[/B][CR][CR]Beheer uw muziekbibliotheek · Configureer muziekafspeelopties en -bestandslijstopties · Configureer nummer indienen · Configureer karaokeopties"
+
+msgctxt "#31403"
+msgid "[B]CONFIGURE PICTURE SETTINGS[/B][CR][CR]Set picture listing options · Configure slideshows"
+msgstr "[B]FOTO-INSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer fotobestandslijstopties en diavoorstelling."
+
+msgctxt "#31404"
+msgid "[B]CONFIGURE WEATHER SETTINGS[/B][CR][CR]Set three cities to collect weather information"
+msgstr "[B]WEER INSTELLINGEN CONFIGUREREN[/B][CR][CR]Geef drie locaties op voor weersverwachtingen."
+
+msgctxt "#31406"
+msgid "[B]CONFIGURE SYSTEM SETTINGS[/B][CR][CR]Setup and calibrate displays · Configure audio output · Setup remote controls[CR]Set power saving options · Enable debugging · Setup master lock"
+msgstr "[B]SYSTEEMINSTELLINGEN CONFIGUREREN[/B][CR][CR]Configureer en kalibreer schermen · Configureer geluidsuitgang · Configureer invoerapparaten en energiebeheeropties · Schakel debugging in · Configureer vergrendelingsopties"
+
+msgctxt "#31408"
+msgid "[B]CONFIGURE ADD-ONS[/B][CR][CR]Manage your installed Add-ons · Browse for and install Add-ons from kodi.tv[CR]Modify Add-on settings"
+msgstr "[B]ADD-ONS CONFIGUREREN[/B][CR][CR]Beheer uw geïnstalleerde Add-ons · Zoek en installeer Add-ons via kodi.tv.[CR]Wijzig Add-oninstellingen"
+
+msgctxt "#31409"
+msgid "[B]CONFIGURE TV SETTINGS[/B][CR][CR]Change full screen info · Manage EPG data settings"
+msgstr "[B]CONFIGUREER TV INSTELLINGEN[/B][CR][CR]Verander volledig scherm info  · Beheer EPG data instellingen"
+
+msgctxt "#31410"
+msgid "[B]CONFIGURE SERVICE SETTINGS[/B][CR][CR]Setup control of Kodi via UPnP and HTTP · Configure file sharing[CR]Enable Zeroconf · Configure AirPlay"
+msgstr "[B]CONFIGUREER SERVICE-INSTELLINGEN[/B][CR][CR]Stel Kodi-beheer in via UPnP en HTTP · Configureer bestandsdeling[CR]Schakel Zeroconf in · Configureer AirPlay"
+
+msgctxt "#31411"
+msgid "First run help...."
+msgstr "Eerste sessie hulp..."
+
+msgctxt "#31412"
+msgid "This tab signifies that there is a menu off to the side of this window that contains extra options for this section.  To access the menu, navigate to the left with your remote control or keyboard or place your mouse pointer over the tab. [CR][CR]Click \"Ok\" to close this dialogue. It will not appear again."
+msgstr "Deze tab betekent dat er een menu met extra opties voor deze sectie aan de zijkant van het scherm beschikbaar is. Voor toegang tot het menu, navigeer naar links met de afstandsbediening of toetsenbord of ga met de muisaanwijzer naar de tab. [CR][CR]Klik \"Ok\" om het dialoogscherm te sluiten. Deze zal niet meer worden getoond. "
+
+msgctxt "#31413"
+msgid "Local subtitle available"
+msgstr "Lokale ondertitel beschikbaar"
+
+msgctxt "#31420"
+msgid "Login"
+msgstr "Log-in"
+
+msgctxt "#31421"
+msgid "Select your Kodi user Profile[CR]to login and continue"
+msgstr "Selecteer uw Kodi-gebruikersprofiel[CR]om in te loggen"
+
+msgctxt "#31422"
+msgid "Show or hide the login screen at startup."
+msgstr "Toon of verberg het log-in scherm bij opstarten"
+
+msgctxt "#31423"
+msgid "Select the profile that will be used at startup when the login screen is disabled."
+msgstr "Selecteer het profiel dat moet worden gebruikt bij opstarten wanneer het log-in scherm is gedeactiveerd."
+
+msgctxt "#31501"
+msgid "Scheduled Time"
+msgstr "Opname starttijd"
+
+msgctxt "#31502"
+msgid "Live TV"
+msgstr "Live TV"
+
+msgctxt "#31503"
+msgid "Add Group"
+msgstr "Groep toevoegen"
+
+msgctxt "#31504"
+msgid "Rename Group"
+msgstr "Groep hernoemen"
+
+msgctxt "#31505"
+msgid "Delete Group"
+msgstr "Groep verwijderen"
+
+msgctxt "#31506"
+msgid "Available[CR]Groups"
+msgstr "Beschikbare[CR]Groepen"
+
+msgctxt "#31509"
+msgid "Channel Group"
+msgstr "Kanaal groep"
+
+msgctxt "#31510"
+msgid "Timer Set"
+msgstr "Geplande opname ingesteld"
+
+msgctxt "#31511"
+msgid "Channel Options"
+msgstr "Kanaal opties"
+
+msgctxt "#31901"
+msgid "36 Hour Forecast"
+msgstr "36 Uurs Voorspelling"
+
+msgctxt "#31902"
+msgid "Hourly Forecast"
+msgstr "Uur voorspelling"
+
+msgctxt "#31903"
+msgid "Weekend Forecast"
+msgstr "Weekend voorspelling"
+
+msgctxt "#31904"
+msgid "Daily Forecast"
+msgstr "Dagelijkse voorspelling"
+
+msgctxt "#31905"
+msgid "Forecast"
+msgstr "Voorspelling"
+
+msgctxt "#31908"
+msgid "Chance of Precipitation"
+msgstr "Kans op neerslag"
+
+msgctxt "#31909"
+msgid "Fetching forecast info..."
+msgstr "Weersvoorspelling ophalen..."
+
+msgctxt "#31910"
+msgid "Maps"
+msgstr "Kaarten"
+
+msgctxt "#31950"
+msgid "WEATHER"
+msgstr "WEER"
+
+msgctxt "#31951"
+msgid "PICTURES"
+msgstr "FOTO"
+
+msgctxt "#31952"
+msgid "TV"
+msgstr "TV"
+
+msgctxt "#31953"
+msgid "VIDEOS"
+msgstr "VIDEO"
+
+msgctxt "#31954"
+msgid "MOVIES"
+msgstr "FILM"
+
+msgctxt "#31955"
+msgid "TV SHOWS"
+msgstr "SERIE"
+
+msgctxt "#31956"
+msgid "MUSIC"
+msgstr "MUZIEK"
+
+msgctxt "#31957"
+msgid "PROGRAMS"
+msgstr "PROGRAMMA"
+
+msgctxt "#31958"
+msgid "PLAY DISC"
+msgstr "DISC AFSPELEN"
+
+msgctxt "#31959"
+msgid "SYSTEM"
+msgstr "SYSTEEM"
+
+msgctxt "#31960"
+msgid "RADIO"
+msgstr "RADIO"
+
+msgctxt "#32000"
+msgid "Cache"
+msgstr "Cache"
+
+msgctxt "#32001"
+msgid "Thumbnails"
+msgstr "Miniaturen"
+
+msgctxt "#32002"
+msgid "Packages"
+msgstr "Pakketten"
+
+msgctxt "#32003"
+msgid "AdvancedSettings"
+msgstr "AdvancedSettings"
+
+msgctxt "#32004"
+msgid "Video Database"
+msgstr "Video Database"
+
+msgctxt "#32005"
+msgid "Music Database"
+msgstr "Muziek Database"
+
+msgctxt "#32006"
+msgid "Delete: "
+msgstr "Verwijder: "
+
+msgctxt "#32007"
+msgid "All Done."
+msgstr "Alles Klaar."
+
+msgctxt "#32008"
+msgid "Are You Sure?"
+msgstr "Weet Je Het Zeker?"
+
+msgctxt "#32009"
+msgid "Maintenance Tools"
+msgstr "Onderhouds Gereedschappen"
+
+msgctxt "#32010"
+msgid "Advanced Maintenance Tools, used to clean up after KODI. Or to fix some annoying issues. To be used carefully.[CR][CR]Credits to Mikey1234 and Fastcolors, modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]."
+msgstr "Geavanceerde Onderhouds Gereedschappen, worden gebruikt om KODI op te schonen. Of om sommige irritante kwesties te herstellen. Gebruik Zorgvuldig.[CR][CR]Credits naar Mikey1234 en Fastcolors, aangepast door Advanced Maintenance Tools, used to clean up after KODI. Or to fix some annoying issues. To be used carefully.[CR][CR]Credits to Mikey1234 and Fastcolors, modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]."
+
+msgctxt "#32011"
+msgid "Views Database"
+msgstr "Weergave Database"
+
+msgctxt "#32012"
+msgid "Connman Folder"
+msgstr "Connman Map"
+
+msgctxt "#32013"
+msgid "Reboot Required"
+msgstr "Herstart Vereist"
+
+msgctxt "#32014"
+msgid "Rebooting Now"
+msgstr "Nu Herstarten"
+
+msgctxt "#32015"
+msgid "Enable: "
+msgstr "Inschakelen: "
+
+msgctxt "#32016"
+msgid "Enabling: "
+msgstr "Inschakelen: "
+
+msgctxt "#32017"
+msgid "Enabled: "
+msgstr "Ingeschakeld: "
+
+msgctxt "#32018"
+msgid "Disable: "
+msgstr "Uitschakelen: "
+
+msgctxt "#32019"
+msgid "Disabling: "
+msgstr "Uitschakelen: "
+
+msgctxt "#32020"
+msgid "Disabled: "
+msgstr "Uitgeschakeld: "
+
+msgctxt "#32021"
+msgid "Add-ons"
+msgstr "Addons"
+
+msgctxt "#32022"
+msgid "All"
+msgstr "Alle"
+
+msgctxt "#32023"
+msgid "Basic"
+msgstr "Basis"
+
+msgctxt "#32024"
+msgid "Kids"
+msgstr "Kinder"
+
+msgctxt "#32025"
+msgid "Sports"
+msgstr "Sport"
+
+msgctxt "#32026"
+msgid "Music"
+msgstr "Muziek"
+
+msgctxt "#32027"
+msgid "XXX"
+msgstr "XXX"
+
+msgctxt "#32028"
+msgid "Quick Fixes"
+msgstr "Snel Herstel"
+
+msgctxt "#32029"
+msgid "Donate"
+msgstr "Doneren"
+
+msgctxt "#32030"
+msgid "System"
+msgstr "Systeem"
+
+msgctxt "#32031"
+msgid "Repos"
+msgstr "Depots"
+
+msgctxt "#32032"
+msgid "Refresh"
+msgstr "Ververs"
+
+msgctxt "#32033"
+msgid "Add-on Manager"
+msgstr "Addon Beheer"
+
+msgctxt "#32034"
+msgid "Fix: "
+msgstr "Herstel: "
+
+msgctxt "#32035"
+msgid "Disconnect"
+msgstr "Verbreek"
+
+msgctxt "#32036"
+msgid "Connection"
+msgstr "Verbinding"
+
+msgctxt "#32037"
+msgid "Video"
+msgstr "Video"
+
+msgctxt "#32038"
+msgid "Pulsar"
+msgstr "Pulsar"
+
+msgctxt "#32039"
+msgid "Genesis"
+msgstr "Genesis"
+
+msgctxt "#32040"
+msgid "File Doesn't Exist."
+msgstr "Bestand Besaat Niet."
+
+msgctxt "#32041"
+msgid "Download?"
+msgstr "Downloaden?"
+
+msgctxt "#32042"
+msgid "Favourite-shortcuts instead of add-ons"
+msgstr "Favorieten-snelkoppelingen in plaats van addons"
+
+msgctxt "#32043"
+msgid "Favourite"
+msgstr "Favoriet"
+
+msgctxt "#32044"
+msgid "KidsProfile"
+msgstr "KinderProfiel"
+
+msgctxt "#32045"
+msgid "Skin Settings"
+msgstr "Skin Instellingen"
+
+msgctxt "#32046"
+msgid "Developer Mode"
+msgstr "Ontwikkelaar Modus"
+
+msgctxt "#32047"
+msgid ".nfo's"
+msgstr ".nfo's"
+
+msgctxt "#32921"
+msgid "Installing [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]."
+msgstr "[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] installeren."
+
+msgctxt "#32922"
+msgid "Downloading and extracting, please wait."
+msgstr "Downloaden en uitpakken, moment geduld aub."
+
+msgctxt "#32923"
+msgid "Download"
+msgstr "Gedownload"
+
+msgctxt "#32924"
+msgid "Download cancelled"
+msgstr "Download geannuleerd."
+
+msgctxt "#32925"
+msgid "Unzipping, may take a while."
+msgstr "Uitpakken, kan even duren."
+
+msgctxt "#32926"
+msgid "Please wait."
+msgstr "Moment geduld aub."
+
+msgctxt "#32927"
+msgid "Install done."
+msgstr "Installatie klaar."
+
+msgctxt "#32928"
+msgid "Enjoy!"
+msgstr "Veel plezier!"
+
+msgctxt "#32929"
+msgid "Thank you for"
+msgstr "Bedankt dat u voor"
+
+msgctxt "#32930"
+msgid "choosing [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]."
+msgstr "[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] heeft gekozen"
+
+msgctxt "#32931"
+msgid "Suggestions and/or donations"
+msgstr "Suggesties en/of donaties"
+
+msgctxt "#32932"
+msgid "are always appreciated."
+msgstr "worden altijd gewaardeerd."
+
+msgctxt "#32933"
+msgid "My Paypal is"
+msgstr "Mijn Paypal is"
+
+msgctxt "#32934"
+msgid "dan_q_wel@hotmail.com"
+msgstr "dan_q_wel@hotmail.com"
+
+msgctxt "#32935"
+msgid "Install [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]?"
+msgstr "[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR] installeren?"
+
+msgctxt "#32936"
+msgid "MUSICVIDEO"
+msgstr "MUZIEKVIDEO"
+
+msgctxt "#32937"
+msgid "Enable Slideshow Background"
+msgstr "Diashow als achtergrond toepassen"
+
+msgctxt "#32938"
+msgid "Custom"
+msgstr "Aangepaste"
+
+msgctxt "#32939"
+msgid "Sub-menus"
+msgstr "Submenus"
+
+msgctxt "#32940"
+msgid "Widget Content"
+msgstr "Widget Inhoud"
+
+msgctxt "#32941"
+msgid "Sub-menu"
+msgstr "Submenu"

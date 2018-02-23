@@ -1,0 +1,18 @@
+<shortcuts>
+	<shortcut>
+		<defaultID>13009</defaultID>
+		<label>13009</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>Quit</action>
+	</shortcut>
+	<shortcut>
+		<defaultID>20126</defaultID>
+		<label>20126</label>
+		<label2 />
+		<icon>DefaultShortcut.png</icon>
+		<thumb />
+		<action>System.LogOff</action>
+	</shortcut>
+</shortcuts>
