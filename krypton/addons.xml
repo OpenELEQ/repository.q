@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-<addon id="skin.confluence.1080" version="3.0.63" name="Confluence 1080" provider-name="[COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR], original work by Jezz_X &amp; Team Kodi">
+<addon id="skin.confluence.1080" version="3.0.64" name="Confluence 1080" provider-name="OpenELEQ, original work by Jezz_X &amp; Team Kodi">
   <requires>
     <import addon="xbmc.gui" version="5.12.0"/>
   </requires>
   <extension point="xbmc.gui.skin" defaultthemename="Textures.xbt" debugging="false" effectslowdown="1.0">
-    <res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
+    <res width="1920" height="1080" aspect="16:9" default="true" folder="xml" />
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary lang="af_ZA">Confluence 1080 oortreksel deur [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR].</summary>
@@ -129,10 +129,10 @@
     <description lang="zh_TW">它結合了許多受歡迎的佈景主題的概念，且試圖包含並整合它們的優點，使第一次使用 Kodi 的使用者可以簡單地上手。</description>
     <platform>all</platform>
     <license>GNU General Public License version 2</license>
-    <forum>http://noobsandnerds.com/support/showthread.php?tid=17721</forum>
-    <website>http://noobsandnerds.com/</website>
+    <forum>https://forum.kodi.tv/showthread.php?tid=314062</forum>
+    <website>https://github.com/OpenELEQ/repository.q/</website>
     <email>OpenELEQ@gmail.com</email>
-    <source>https://github.com/OpenELEQ/repository.q.krypton/tree/master/skin.confluence.1080</source>
+    <source>https://github.com/OpenELEQ/repository.q/tree/master/krypton/skin.confluence.1080/</source>
     <!--<video_guide>yt-id</video_guide>-->
     <video_preview>BxyKxrZQ9xc</video_preview>
     <assets>
@@ -143,13 +143,13 @@
       <screenshot>resources/screenshot-03.jpg</screenshot>
       <screenshot>resources/screenshot-04.jpg</screenshot>
       <screenshot>resources/screenshot-05.jpg</screenshot>
-      <screenshot>resources/screenshot-06.jpg</screenshot>
+<!--      <screenshot>resources/screenshot-06.jpg</screenshot>
       <screenshot>resources/screenshot-07.jpg</screenshot>
       <screenshot>resources/screenshot-08.jpg</screenshot>
       <screenshot>resources/screenshot-09.jpg</screenshot>
-      <screenshot>resources/screenshot-10.jpg</screenshot>
+      <screenshot>resources/screenshot-10.jpg</screenshot>-->
     </assets>
-    <news>Added conditional visibility to Artwork Downloader and Library Editor context-menu-entries / Added color-change on focus to keyboardbutton-images / Added plot on OSD / Added some missing textures / Added screenshots to addoninfo</news>
+    <news>Added Skin.ToggleDebug-button / Changed xml-location / Changed news-section in addon-info from fadelabel to textbox / Fixed appearance of scrollbars / Fixed LeftRating (0 &amp; 1) / Tweaked positioning of home-pushbuttons and rss / Updated Textures.xbt</news>
   </extension>
 </addon>
 </addons>
