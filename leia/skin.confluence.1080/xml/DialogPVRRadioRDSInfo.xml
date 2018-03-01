@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">10</defaultcontrol>
 	<coordinates>
-		<left>200</left>
-		<top>20</top>
+		<left>300</left>
+		<top>30</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -11,8 +11,8 @@
 			<description>background image</description>
 			<left>0</left>
 			<top>0</top>
-			<width>880</width>
-			<height>680</height>
+			<width>1320</width>
+			<height>1020</height>
 			<texture border="40">DialogBack2.png</texture>
 			<visible>Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)</visible>
 		</control>
@@ -20,25 +20,25 @@
 			<description>background image</description>
 			<left>0</left>
 			<top>0</top>
-			<width>880</width>
-			<height>680</height>
+			<width>1320</width>
+			<height>1020</height>
 			<texture border="40">DialogBack.png</texture>
 			<visible>![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]</visible>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
-			<left>40</left>
-			<top>16</top>
-			<width>880</width>
-			<height>40</height>
+			<left>60</left>
+			<top>24</top>
+			<width>1320</width>
+			<height>60</height>
 			<texture>dialogheader.png</texture>
 		</control>
 		<control type="label">
 			<description>header label</description>
-			<left>40</left>
-			<top>20</top>
-			<width>800</width>
-			<height>30</height>
+			<left>60</left>
+			<top>30</top>
+			<width>1200</width>
+			<height>45</height>
 			<font>font13_title</font>
 			<label>$LOCALIZE[29900]</label>
 			<align>center</align>
@@ -48,10 +48,10 @@
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<left>800</left>
-			<top>15</top>
-			<width>64</width>
-			<height>32</height>
+			<left>1200</left>
+			<top>22</top>
+			<width>96</width>
+			<height>48</height>
 			<label></label>
 			<font></font>
 			<onclick>PreviousMenu</onclick>
@@ -66,14 +66,14 @@
 		<control type="group">
 			<description>Normal song info group</description>
 			<left>0</left>
-			<top>70</top>
+			<top>105</top>
 			<visible>![String.IsEqual(RDS.RadioStyle, classical) | String.IsEqual(RDS.RadioStyle, lightclassics) | String.IsEqual(RDS.RadioStyle, seriousclassics)]</visible>
 			<control type="label">
 				<description>Artist Title</description>
-				<left>10</left>
+				<left>15</left>
 				<top>0</top>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -83,10 +83,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Artist Value</description>
-				<left>160</left>
+				<left>240</left>
 				<top>0</top>
-				<width>704</width>
-				<height>25</height>
+				<width>1056</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -98,10 +98,10 @@
 			</control>
 			<control type="label">
 				<description>Band Title</description>
-				<left>10</left>
+				<left>15</left>
 				<top>0</top>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -111,10 +111,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Band Value</description>
-				<left>160</left>
+				<left>240</left>
 				<top>0</top>
-				<width>292</width>
-				<height>25</height>
+				<width>438</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -126,10 +126,10 @@
 			</control>
 			<control type="label">
 				<description>Artist Name (alt pos)</description>
-				<left>385</left>
+				<left>578</left>
 				<top>0</top>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -139,10 +139,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Artist Value (alt pos)</description>
-				<left>535</left>
+				<left>802</left>
 				<top>0</top>
-				<width>328</width>
-				<height>25</height>
+				<width>492</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -152,10 +152,10 @@
 			</control>
 			<control type="label">
 				<description>Song Title</description>
-				<left>10</left>
-				<top>35</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>52</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -164,10 +164,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Song Value</description>
-				<left>160</left>
-				<top>35</top>
-				<width>704</width>
-				<height>25</height>
+				<left>240</left>
+				<top>52</top>
+				<width>1056</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -178,10 +178,10 @@
 			</control>
 			<control type="label">
 				<description>Programme style Name</description>
-				<left>10</left>
-				<top>70</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>105</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -191,10 +191,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Programme style Value</description>
-				<left>160</left>
-				<top>70</top>
-				<width>704</width>
-				<height>25</height>
+				<left>240</left>
+				<top>105</top>
+				<width>1056</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -206,14 +206,14 @@
 		<control type="group">
 			<description>Classic concert music group</description>
 			<left>0</left>
-			<top>70</top>
+			<top>105</top>
 			<visible>String.IsEqual(RDS.RadioStyle, classical) | String.IsEqual(RDS.RadioStyle, lightclassics) | String.IsEqual(RDS.RadioStyle, seriousclassics)</visible>
 			<control type="label">
 				<description>Composer Title</description>
-				<left>10</left>
+				<left>15</left>
 				<top>0</top>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -222,10 +222,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Composer Value</description>
-				<left>160</left>
+				<left>240</left>
 				<top>0</top>
-				<width>704</width>
-				<height>25</height>
+				<width>1056</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -236,10 +236,10 @@
 			</control>
 			<control type="label">
 				<description>Song Title</description>
-				<left>10</left>
-				<top>35</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>52</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -248,10 +248,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Song Value</description>
-				<left>160</left>
-				<top>35</top>
-				<width>704</width>
-				<height>25</height>
+				<left>240</left>
+				<top>52</top>
+				<width>1056</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -262,10 +262,10 @@
 			</control>
 			<control type="label">
 				<description>Artist Title</description>
-				<left>10</left>
-				<top>70</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>105</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -275,10 +275,10 @@
 			</control>
 			<control type="textbox">
 				<description>Artist Value</description>
-				<left>160</left>
-				<top>66</top>
-				<width>704</width>
-				<height>29</height>
+				<left>240</left>
+				<top>99</top>
+				<width>1056</width>
+				<height>44</height>
 				<font>font13</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
@@ -289,10 +289,10 @@
 			</control>
 			<control type="label">
 				<description>Band Title</description>
-				<left>10</left>
-				<top>70</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>105</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -302,10 +302,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Band Value</description>
-				<left>160</left>
-				<top>70</top>
-				<width>292</width>
-				<height>25</height>
+				<left>240</left>
+				<top>105</top>
+				<width>438</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -317,10 +317,10 @@
 			</control>
 			<control type="label">
 				<description>Artist Name (alt pos)</description>
-				<left>385</left>
-				<top>70</top>
-				<width>140</width>
-				<height>25</height>
+				<left>578</left>
+				<top>105</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -330,10 +330,10 @@
 			</control>
 			<control type="textbox">
 				<description>Artist Value (alt pos)</description>
-				<left>535</left>
-				<top>70</top>
-				<width>328</width>
-				<height>100</height>
+				<left>802</left>
+				<top>105</top>
+				<width>492</width>
+				<height>150</height>
 				<font>font13</font>
 				<textcolor>white</textcolor>
 				<align>left</align>
@@ -344,10 +344,10 @@
 			</control>
 			<control type="label">
 				<description>Conductor Title</description>
-				<left>10</left>
-				<top>105</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>158</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -357,10 +357,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Conductor Value</description>
-				<left>160</left>
-				<top>105</top>
-				<width>300</width>
-				<height>25</height>
+				<left>240</left>
+				<top>158</top>
+				<width>450</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -372,10 +372,10 @@
 			</control>
 			<control type="label">
 				<description>Programme style Name</description>
-				<left>10</left>
-				<top>105</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>158</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -385,10 +385,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Programme style Value</description>
-				<left>160</left>
-				<top>105</top>
-				<width>704</width>
-				<height>25</height>
+				<left>240</left>
+				<top>158</top>
+				<width>1056</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -398,10 +398,10 @@
 			</control>
 			<control type="label">
 				<description>Programme style Name</description>
-				<left>385</left>
-				<top>105</top>
-				<width>140</width>
-				<height>25</height>
+				<left>578</left>
+				<top>158</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -411,10 +411,10 @@
 			</control>
 			<control type="fadelabel">
 				<description>Programme style Value</description>
-				<left>535</left>
-				<top>105</top>
-				<width>328</width>
-				<height>25</height>
+				<left>802</left>
+				<top>158</top>
+				<width>492</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -425,10 +425,10 @@
 		</control>
 		<control type="label">
 			<description>Album Title</description>
-			<left>385</left>
-			<top>175</top>
-			<width>140</width>
-			<height>25</height>
+			<left>578</left>
+			<top>262</top>
+			<width>210</width>
+			<height>38</height>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -438,10 +438,10 @@
 		</control>
 		<control type="fadelabel">
 			<description>Album Value</description>
-			<left>535</left>
-			<top>175</top>
-			<width>328</width>
-			<height>25</height>
+			<left>802</left>
+			<top>262</top>
+			<width>492</width>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -453,10 +453,10 @@
 		</control>
 		<control type="label">
 			<description>Programme host Name</description>
-			<left>10</left>
-			<top>210</top>
-			<width>140</width>
-			<height>25</height>
+			<left>15</left>
+			<top>315</top>
+			<width>210</width>
+			<height>38</height>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -466,10 +466,10 @@
 		</control>
 		<control type="fadelabel">
 			<description>Programme host Value</description>
-			<left>160</left>
-			<top>210</top>
-			<width>235</width>
-			<height>25</height>
+			<left>240</left>
+			<top>315</top>
+			<width>352</width>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -479,10 +479,10 @@
 		</control>
 		<control type="label">
 			<description>Comment Title</description>
-			<left>385</left>
-			<top>210</top>
-			<width>140</width>
-			<height>25</height>
+			<left>578</left>
+			<top>315</top>
+			<width>210</width>
+			<height>38</height>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -492,10 +492,10 @@
 		</control>
 		<control type="fadelabel">
 			<description>Comment Value</description>
-			<left>535</left>
-			<top>210</top>
-			<width>328</width>
-			<height>25</height>
+			<left>802</left>
+			<top>315</top>
+			<width>492</width>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -507,10 +507,10 @@
 		</control>
 		<control type="label">
 			<description>Channel Name</description>
-			<left>10</left>
-			<top>245</top>
-			<width>140</width>
-			<height>25</height>
+			<left>15</left>
+			<top>368</top>
+			<width>210</width>
+			<height>38</height>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -519,10 +519,10 @@
 		</control>
 		<control type="fadelabel">
 			<description>Channel Value</description>
-			<left>160</left>
-			<top>245</top>
-			<width>235</width>
-			<height>25</height>
+			<left>240</left>
+			<top>368</top>
+			<width>352</width>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -531,10 +531,10 @@
 		</control>
 		<control type="label">
 			<description>Editorial Staff Name</description>
-			<left>385</left>
-			<top>245</top>
-			<width>140</width>
-			<height>25</height>
+			<left>578</left>
+			<top>368</top>
+			<width>210</width>
+			<height>38</height>
 			<align>right</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -544,10 +544,10 @@
 		</control>
 		<control type="fadelabel">
 			<description>Editorial Staff Value</description>
-			<left>535</left>
-			<top>245</top>
-			<width>328</width>
-			<height>25</height>
+			<left>802</left>
+			<top>368</top>
+			<width>492</width>
+			<height>38</height>
 			<align>left</align>
 			<aligny>center</aligny>
 			<font>font13</font>
@@ -555,19 +555,18 @@
 			<label>$INFO[RDS.ProgEditStaff]</label>
 			<visible>!String.IsEmpty(RDS.ProgEditStaff)</visible>
 		</control>
-
 		<control type="grouplist">
-			<left>10</left>
-			<top>280</top>
-			<width>160</width>
-			<height>300</height>
-			<itemgap>8</itemgap>
+			<left>15</left>
+			<top>420</top>
+			<width>240</width>
+			<height>450</height>
+			<itemgap>12</itemgap>
 			<control type="label">
 				<description>Program basename</description>
-				<left>10</left>
-				<top>280</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>420</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
@@ -577,17 +576,17 @@
 			</control>
 			<control type="label">
 				<description>blind label</description>
-				<left>10</left>
-				<top>280</top>
-				<width>140</width>
-				<height>25</height>
+				<left>15</left>
+				<top>420</top>
+				<width>210</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNow) + !String.IsEmpty(RDS.ProgNext)</visible>
 			</control>
 			<control type="label">
 				<description>Studio basename</description>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
@@ -597,15 +596,15 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<left>160</left>
-			<top>280</top>
-			<width>160</width>
-			<height>300</height>
-			<itemgap>8</itemgap>
+			<left>240</left>
+			<top>420</top>
+			<width>240</width>
+			<height>450</height>
+			<itemgap>12</itemgap>
 			<control type="label">
 				<description>Program now Name</description>
-				<width>160</width>
-				<height>25</height>
+				<width>240</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -615,8 +614,8 @@
 			</control>
 			<control type="label">
 				<description>Program next Name</description>
-				<width>160</width>
-				<height>25</height>
+				<width>240</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -626,8 +625,8 @@
 			</control>
 			<control type="label">
 				<description>Studio phone Name</description>
-				<width>95</width>
-				<height>25</height>
+				<width>142</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -637,8 +636,8 @@
 			</control>
 			<control type="label">
 				<description>Studio email Name</description>
-				<width>95</width>
-				<height>25</height>
+				<width>142</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -648,8 +647,8 @@
 			</control>
 			<control type="label">
 				<description>Studio SMS Name</description>
-				<width>95</width>
-				<height>25</height>
+				<width>142</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -659,15 +658,15 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<left>230</left>
-			<top>280</top>
-			<width>620</width>
-			<height>300</height>
-			<itemgap>8</itemgap>
+			<left>345</left>
+			<top>420</top>
+			<width>930</width>
+			<height>450</height>
+			<itemgap>12</itemgap>
 			<control type="fadelabel">
 				<description>Program now Value</description>
-				<width>620</width>
-				<height>25</height>
+				<width>930</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -677,8 +676,8 @@
 			</control>
 			<control type="fadelabel">
 				<description>Program next Value</description>
-				<width>620</width>
-				<height>25</height>
+				<width>930</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -688,8 +687,8 @@
 			</control>
 			<control type="fadelabel">
 				<description>Studio phone Value</description>
-				<width>215</width>
-				<height>25</height>
+				<width>322</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -699,8 +698,8 @@
 			</control>
 			<control type="fadelabel">
 				<description>Studio email Value</description>
-				<width>215</width>
-				<height>25</height>
+				<width>322</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -710,8 +709,8 @@
 			</control>
 			<control type="fadelabel">
 				<description>Studio SMS Value</description>
-				<width>215</width>
-				<height>25</height>
+				<width>322</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -721,29 +720,29 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<left>385</left>
-			<top>280</top>
-			<width>520</width>
-			<height>300</height>
-			<itemgap>8</itemgap>
+			<left>578</left>
+			<top>420</top>
+			<width>780</width>
+			<height>450</height>
+			<itemgap>12</itemgap>
 			<control type="label">
 				<description>blind label</description>
-				<width>5</width>
-				<height>25</height>
+				<width>8</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNow)</visible>
 			</control>
 			<control type="label">
 				<description>blind label</description>
-				<width>5</width>
-				<height>25</height>
+				<width>8</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNext)</visible>
 			</control>
 			<control type="label">
 				<description>Hotline basename</description>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
@@ -753,17 +752,17 @@
 			</control>
 			<control type="label">
 				<description>blind label</description>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.PhoneHotline) + !String.IsEmpty(RDS.EmailHotline)</visible>
 			</control>
 			<control type="label">
 				<description>Homepage Name</description>
-				<left>385</left>
-				<top>420</top>
-				<width>140</width>
-				<height>25</height>
+				<left>578</left>
+				<top>630</top>
+				<width>210</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -773,29 +772,29 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<left>535</left>
-			<top>280</top>
-			<width>520</width>
-			<height>300</height>
-			<itemgap>8</itemgap>
+			<left>802</left>
+			<top>420</top>
+			<width>780</width>
+			<height>450</height>
+			<itemgap>12</itemgap>
 			<control type="label">
 				<description>blind label</description>
-				<width>5</width>
-				<height>25</height>
+				<width>8</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNow)</visible>
 			</control>
 			<control type="label">
 				<description>blind label</description>
-				<width>5</width>
-				<height>25</height>
+				<width>8</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNext)</visible>
 			</control>
 			<control type="label">
 				<description>Hotline phone Name</description>
-				<width>160</width>
-				<height>25</height>
+				<width>240</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -805,8 +804,8 @@
 			</control>
 			<control type="label">
 				<description>Hotline email Name</description>
-				<width>160</width>
-				<height>25</height>
+				<width>240</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -816,8 +815,8 @@
 			</control>
 			<control type="fadelabel">
 				<description>Homepage Value</description>
-				<width>320</width>
-				<height>25</height>
+				<width>480</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -827,29 +826,29 @@
 			</control>
 		</control>
 		<control type="grouplist">
-			<left>605</left>
-			<top>280</top>
-			<width>520</width>
-			<height>300</height>
-			<itemgap>8</itemgap>
+			<left>908</left>
+			<top>420</top>
+			<width>780</width>
+			<height>450</height>
+			<itemgap>12</itemgap>
 			<control type="label">
 				<description>blind label</description>
-				<width>5</width>
-				<height>25</height>
+				<width>8</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNow)</visible>
 			</control>
 			<control type="label">
 				<description>blind label</description>
-				<width>140</width>
-				<height>25</height>
+				<width>210</width>
+				<height>38</height>
 				<label></label>
 				<visible>!String.IsEmpty(RDS.ProgNext)</visible>
 			</control>
 			<control type="fadelabel">
 				<description>Hotline phone Value</description>
-				<width>248</width>
-				<height>25</height>
+				<width>372</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -859,8 +858,8 @@
 			</control>
 			<control type="fadelabel">
 				<description>Hotline email Value</description>
-				<width>248</width>
-				<height>25</height>
+				<width>372</width>
+				<height>38</height>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font13</font>
@@ -869,19 +868,18 @@
 				<visible>!String.IsEmpty(RDS.EmailHotline)</visible>
 			</control>
 		</control>
-
 		<control type="group" id="70">
 			<description>Radio text info list</description>
-			<left>40</left>
-			<top>455</top>
+			<left>60</left>
+			<top>682</top>
 			<visible>false</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>Info label</description>
-				<left>375</left>
+				<left>562</left>
 				<top>0</top>
-				<width>110</width>
-				<height>25</height>
+				<width>165</width>
+				<height>38</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>font13_title</font>
@@ -890,13 +888,13 @@
 			</control>
 			<control type="spincontrol" id="21">
 				<description>Source Type</description>
-				<left>740</left>
-				<top>5</top>
+				<left>1110</left>
+				<top>8</top>
 				<font>font13</font>
 				<textcolor>white</textcolor>
 				<aligny>center</aligny>
 				<label></label>
-				<textoffsetx>10</textoffsetx>
+				<textoffsetx>15</textoffsetx>
 				<onright>21</onright>
 				<onleft>21</onleft>
 				<onup>9000</onup>
@@ -905,7 +903,7 @@
 			<control type="spincontrol" id="60">
 				<description>Next page button</description>
 				<left>0</left>
-				<top>155</top>
+				<top>232</top>
 				<subtype>page</subtype>
 				<font></font>
 				<onright>9000</onright>
@@ -918,9 +916,9 @@
 			<control type="textbox" id="22">
 				<description>PLOT</description>
 				<left>0</left>
-				<top>30</top>
-				<width>800</width>
-				<height>120</height>
+				<top>45</top>
+				<width>1200</width>
+				<height>180</height>
 				<font>font12</font>
 				<align>justify</align>
 				<pagecontrol>60</pagecontrol>
@@ -928,11 +926,11 @@
 			</control>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>40</left>
-			<top>620</top>
-			<width>790</width>
-			<height>40</height>
-			<itemgap>5</itemgap>
+			<left>60</left>
+			<top>930</top>
+			<width>1185</width>
+			<height>60</height>
+			<itemgap>8</itemgap>
 			<align>center</align>
 			<orientation>horizontal</orientation>
 			<onleft>60</onleft>

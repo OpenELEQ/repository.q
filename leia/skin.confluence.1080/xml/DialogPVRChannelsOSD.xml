@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
 	<coordinates>
-		<left>780</left>
-		<top>30</top>
+		<left>1170</left>
+		<top>45</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,16 +12,16 @@
 				<description>background image</description>
 				<left>0</left>
 				<top>0</top>
-				<width>480</width>
-				<height>660</height>
+				<width>720</width>
+				<height>990</height>
 				<texture border="40">DialogBack2.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
-				<left>390</left>
-				<top>15</top>
-				<width>64</width>
-				<height>32</height>
+				<left>585</left>
+				<top>22</top>
+				<width>96</width>
+				<height>48</height>
 				<label></label>
 				<font></font>
 				<onclick>PreviousMenu</onclick>
@@ -35,18 +35,18 @@
 			</control>
 			<control type="image">
 				<description>Dialog Header image</description>
-				<left>40</left>
-				<top>16</top>
-				<width>400</width>
-				<height>50</height>
+				<left>60</left>
+				<top>24</top>
+				<width>600</width>
+				<height>75</height>
 				<texture>dialogheader.png</texture>
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>40</left>
-				<top>16</top>
-				<width>430</width>
-				<height>40</height>
+				<left>60</left>
+				<top>24</top>
+				<width>645</width>
+				<height>60</height>
 				<font>font12_title</font>
 				<label>$LOCALIZE[19023] - $INFO[VideoPlayer.ChannelGroup]</label>
 				<align>center</align>
@@ -57,10 +57,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>40</left>
-				<top>16</top>
-				<width>430</width>
-				<height>40</height>
+				<left>60</left>
+				<top>24</top>
+				<width>645</width>
+				<height>60</height>
 				<font>font12_title</font>
 				<label>$LOCALIZE[19024] - $INFO[MusicPlayer.ChannelGroup]</label>
 				<align>center</align>
@@ -71,10 +71,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>40</left>
-				<top>-7</top>
-				<width>430</width>
-				<height>120</height>
+				<left>60</left>
+				<top>-10</top>
+				<width>645</width>
+				<height>180</height>
 				<font>font10_title</font>
 				<label>$INFO[System.Date(DDD)], $INFO[System.Date(d)] $INFO[System.Date(mmm)] $INFO[System.Date(yyyy)] • $INFO[System.Time]</label>
 				<align>center</align>
@@ -83,10 +83,10 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="11">
-				<left>30</left>
-				<top>70</top>
-				<width>410</width>
-				<height>520</height>
+				<left>45</left>
+				<top>105</top>
+				<width>615</width>
+				<height>780</height>
 				<onleft>PreviousChannelGroup</onleft>
 				<onright>60</onright>
 				<onup>11</onup>
@@ -94,20 +94,20 @@
 				<viewtype label="535">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="70" width="410">
+				<itemlayout height="105" width="615">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>410</width>
-						<height>65</height>
+						<width>615</width>
+						<height>98</height>
 						<texture border="5">button-nofocus.png</texture>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>8</left>
 						<top>0</top>
-						<width>40</width>
-						<height>30</height>
+						<width>60</width>
+						<height>45</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -116,18 +116,18 @@
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="image">
-						<left>5</left>
-						<top>35</top>
-						<width>20</width>
-						<height>20</height>
+						<left>8</left>
+						<top>52</top>
+						<width>30</width>
+						<height>30</height>
 						<texture>PVR-IsRecording.png</texture>
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="label">
-						<left>50</left>
+						<left>75</left>
 						<top>0</top>
-						<width>350</width>
-						<height>25</height>
+						<width>525</width>
+						<height>38</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -136,10 +136,10 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<top>25</top>
-						<width>350</width>
-						<height>20</height>
+						<left>75</left>
+						<top>38</top>
+						<width>525</width>
+						<height>30</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>grey</selectedcolor>
@@ -149,10 +149,10 @@
 						<visible>String.IsEmpty(Listitem.Icon)</visible>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<top>25</top>
-						<width>300</width>
-						<height>20</height>
+						<left>75</left>
+						<top>38</top>
+						<width>450</width>
+						<height>30</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>grey</selectedcolor>
@@ -162,10 +162,10 @@
 						<visible>!String.IsEmpty(Listitem.Icon)</visible>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<top>44</top>
-						<width>60</width>
-						<height>20</height>
+						<left>75</left>
+						<top>66</top>
+						<width>90</width>
+						<height>30</height>
 						<font>font10_title</font>
 						<textcolor>blue</textcolor>
 						<selectedcolor>blue</selectedcolor>
@@ -175,19 +175,19 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<left>110</left>
-						<top>53</top>
-						<width>230</width>
-						<height>6</height>
+						<left>165</left>
+						<top>80</top>
+						<width>345</width>
+						<height>9</height>
 						<colordiffuse>88FFFFFF</colordiffuse>
 						<info>ListItem.Progress</info>
 						<visible>ListItem.HasEpg</visible>
 					</control>
 					<control type="label">
-						<left>355</left>
-						<top>44</top>
-						<width>60</width>
-						<height>20</height>
+						<left>532</left>
+						<top>66</top>
+						<width>90</width>
+						<height>30</height>
 						<font>font10_title</font>
 						<textcolor>blue</textcolor>
 						<selectedcolor>blue</selectedcolor>
@@ -196,20 +196,20 @@
 						<visible>ListItem.HasEpg</visible>
 					</control>
 					<control type="image">
-						<left>360</left>
-						<top>4</top>
-						<width>40</width>
-						<height>40</height>
+						<left>540</left>
+						<top>6</top>
+						<width>60</width>
+						<height>60</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout height="70" width="410">
+				<focusedlayout height="105" width="615">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>410</width>
-						<height>65</height>
+						<width>615</width>
+						<height>98</height>
 						<texture border="5">button-nofocus.png</texture>
 						<visible>!Control.HasFocus(11)</visible>
 						<include>VisibleFadeEffect</include>
@@ -217,17 +217,17 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>410</width>
-						<height>65</height>
+						<width>615</width>
+						<height>98</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(11)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<left>5</left>
+						<left>8</left>
 						<top>0</top>
-						<width>40</width>
-						<height>30</height>
+						<width>60</width>
+						<height>45</height>
 						<font>font12</font>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -236,18 +236,18 @@
 						<info>ListItem.ChannelNumberLabel</info>
 					</control>
 					<control type="image">
-						<left>5</left>
-						<top>35</top>
-						<width>20</width>
-						<height>20</height>
+						<left>8</left>
+						<top>52</top>
+						<width>30</width>
+						<height>30</height>
 						<texture>PVR-IsRecording.png</texture>
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="label">
-						<left>50</left>
+						<left>75</left>
 						<top>0</top>
-						<width>350</width>
-						<height>25</height>
+						<width>525</width>
+						<height>38</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -256,10 +256,10 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<top>25</top>
-						<width>350</width>
-						<height>20</height>
+						<left>75</left>
+						<top>38</top>
+						<width>525</width>
+						<height>30</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>grey</selectedcolor>
@@ -269,10 +269,10 @@
 						<visible>String.IsEmpty(Listitem.Icon)</visible>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<top>25</top>
-						<width>300</width>
-						<height>20</height>
+						<left>75</left>
+						<top>38</top>
+						<width>450</width>
+						<height>30</height>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
 						<selectedcolor>grey</selectedcolor>
@@ -282,10 +282,10 @@
 						<visible>!String.IsEmpty(Listitem.Icon)</visible>
 					</control>
 					<control type="label">
-						<left>50</left>
-						<top>44</top>
-						<width>60</width>
-						<height>20</height>
+						<left>75</left>
+						<top>66</top>
+						<width>90</width>
+						<height>30</height>
 						<font>font10_title</font>
 						<textcolor>blue</textcolor>
 						<selectedcolor>blue</selectedcolor>
@@ -295,19 +295,19 @@
 					</control>
 					<control type="progress">
 						<description>Progressbar</description>
-						<left>110</left>
-						<top>53</top>
-						<width>230</width>
-						<height>6</height>
+						<left>165</left>
+						<top>80</top>
+						<width>345</width>
+						<height>9</height>
 						<colordiffuse>88FFFFFF</colordiffuse>
 						<info>ListItem.Progress</info>
 						<visible>ListItem.HasEpg</visible>
 					</control>
 					<control type="label">
-						<left>355</left>
-						<top>44</top>
-						<width>60</width>
-						<height>20</height>
+						<left>532</left>
+						<top>66</top>
+						<width>90</width>
+						<height>30</height>
 						<font>font10_title</font>
 						<textcolor>blue</textcolor>
 						<selectedcolor>blue</selectedcolor>
@@ -316,20 +316,20 @@
 						<visible>ListItem.HasEpg</visible>
 					</control>
 					<control type="image">
-						<left>360</left>
-						<top>4</top>
-						<width>40</width>
-						<height>40</height>
+						<left>540</left>
+						<top>6</top>
+						<width>60</width>
+						<height>60</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>440</left>
-				<top>70</top>
-				<width>25</width>
-				<height>520</height>
+				<left>660</left>
+				<top>105</top>
+				<width>38</width>
+				<height>780</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -344,10 +344,10 @@
 			</control>
 			<control type="label">
 				<description>Page Count Label</description>
-				<left>50</left>
-				<top>610</top>
-				<width>400</width>
-				<height>20</height>
+				<left>75</left>
+				<top>915</top>
+				<width>600</width>
+				<height>30</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<scroll>false</scroll>

@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">5</defaultcontrol>
 	<coordinates>
-		<left>240</left>
-		<top>142</top>
+		<left>360</left>
+		<top>213</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -12,21 +12,21 @@
 			<animation effect="fade" start="100" end="0" time="300" condition="[Window.Is(osdaudiosettings) | Window.Is(osdvideosettings)] + [Window.IsVisible(SliderDialog) | Window.IsVisible(OSDAudioDSPSettings) |  Window.IsVisible(FileBrowser)]">Conditional</animation>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.Is(osdaudiodspsettings) + Window.IsVisible(SliderDialog)">Conditional</animation>
 			<include content="DialogBackgroundCommons">
-				<param name="DialogBackgroundWidth" value="800" />
-				<param name="DialogBackgroundHeight" value="458" />
-				<param name="DialogHeaderWidth" value="720" />
+				<param name="DialogBackgroundWidth" value="1200" />
+				<param name="DialogBackgroundHeight" value="687" />
+				<param name="DialogHeaderWidth" value="1080" />
 				<param name="DialogHeaderId" value="2" />
-				<param name="CloseButtonLeft" value="710" />
+				<param name="CloseButtonLeft" value="1065" />
 				<param name="CloseButtonNav" value="10" />
 			</include>
 			<control type="grouplist" id="5">
-				<animation effect="slide" start="0,0" end="-10,0" time="0" condition="Control.IsVisible(60)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-15,0" time="0" condition="Control.IsVisible(60)">Conditional</animation>
 				<description>control area</description>
-				<left>35</left>
-				<top>70</top>
-				<width>730</width>
-				<height>308</height>
-				<itemgap>4</itemgap>
+				<left>52</left>
+				<top>105</top>
+				<width>1095</width>
+				<height>462</height>
+				<itemgap>6</itemgap>
 				<pagecontrol>60</pagecontrol>
 				<onup>9001</onup>
 				<ondown>9001</ondown>
@@ -34,10 +34,10 @@
 				<onright>60</onright>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>758</left>
-				<top>70</top>
-				<width>25</width>
-				<height>308</height>
+				<left>1137</left>
+				<top>105</top>
+				<width>38</width>
+				<height>462</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -52,19 +52,19 @@
 			</control>
 			<control type="button" id="7">
 				<description>Default Button</description>
-				<height>40</height>
+				<height>60</height>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 			</control>
 			<control type="radiobutton" id="8">
 				<description>Default RadioButton</description>
-				<height>40</height>
+				<height>60</height>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 			</control>
 			<control type="spincontrolex" id="9">
 				<description>Default SpinControlex</description>
-				<height>40</height>
+				<height>60</height>
 				<font>font13</font>
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -75,12 +75,12 @@
 			</control>
 			<control type="image" id="11">
 				<description>separator image</description>
-				<height>2</height>
+				<height>3</height>
 				<texture>separator2.png</texture>
 			</control>
 			<control type="edit" id="12">
 				<description>Default Edit</description>
-				<height>40</height>
+				<height>60</height>
 				<font>font13</font>
 				<textcolor>grey2</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -89,7 +89,7 @@
 			</control>
 			<control type="sliderex" id="13">
 				<description>Default Slider</description>
-				<height>40</height>
+				<height>60</height>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<font>font13</font>
@@ -98,7 +98,7 @@
 			</control>
 			<control type="label" id="14">
 				<description>Default Heading</description>
-				<height>34</height>
+				<height>51</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -106,17 +106,17 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="grouplist" id="9001">
-				<left>170</left>
-				<top>393</top>
-				<width>460</width>
+				<left>255</left>
+				<top>590</top>
+				<width>690</width>
 				<align>center</align>
-				<itemgap>20</itemgap>
+				<itemgap>30</itemgap>
 				<orientation>horizontal</orientation>
 				<control type="button" id="28">
 					<description>OK Button</description>
 					<top>0</top>
-					<width>200</width>
-					<height>40</height>
+					<width>300</width>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
@@ -128,12 +128,12 @@
 				<control type="button" id="29">
 					<description>Cancel Button</description>
 					<top>0</top>
-					<width>200</width>
-					<height>40</height>
+					<width>300</width>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>
-					<label/>
+					<label />
 					<onleft>28</onleft>
 					<onright>30</onright>
 					<onup>5</onup>
@@ -142,8 +142,8 @@
 				<control type="button" id="30">
 					<description>Settings Button</description>
 					<top>0</top>
-					<width>200</width>
-					<height>40</height>
+					<width>300</width>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<font>font12_title</font>

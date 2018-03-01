@@ -6,8 +6,8 @@
 			<description>videowindow</description>
 			<left>0</left>
 			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
+			<width>1920</width>
+			<height>1080</height>
 			<visible>Player.HasVideo</visible>
 		</control>
 		<control type="group">
@@ -18,17 +18,17 @@
 			<description>Overlay</description>
 			<left>0</left>
 			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
+			<width>1920</width>
+			<height>1080</height>
 			<texture>black-back.png</texture>
 			<include>dialogeffect</include>
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<left>100r</left>
+			<left>150r</left>
 			<top>0</top>
-			<width>64</width>
-			<height>32</height>
+			<width>96</width>
+			<height>48</height>
 			<label></label>
 			<font></font>
 			<onclick>PreviousMenu</onclick>
@@ -44,46 +44,46 @@
 			<description>top left mover</description>
 			<left>0</left>
 			<top>0</top>
-			<width>128</width>
-			<height>128</height>
+			<width>192</width>
+			<height>192</height>
 			<texturefocus>CalibrateTopLeft.png</texturefocus>
 			<texturenofocus></texturenofocus>
 		</control>
 		<control type="mover" id="9">
 			<description>right bottom mover</description>
-			<left>700</left>
-			<top>500</top>
-			<width>128</width>
-			<height>128</height>
+			<left>1050</left>
+			<top>750</top>
+			<width>192</width>
+			<height>192</height>
 			<texturefocus>CalibrateBottomRight.png</texturefocus>
 			<texturenofocus></texturenofocus>
 		</control>
 		<control type="mover" id="10">
 			<description>subtitle position mover</description>
-			<left>200</left>
-			<top>500</top>
-			<width>512</width>
-			<height>128</height>
+			<left>300</left>
+			<top>750</top>
+			<width>768</width>
+			<height>192</height>
 			<texturefocus>CalibrateSubtitles.png</texturefocus>
 			<texturenofocus></texturenofocus>
 		</control>
 		<control type="resize" id="11">
 			<description>pixel aspect ratio box</description>
 			<left>0</left>
-			<top>232</top>
-			<width>256</width>
-			<height>256</height>
+			<top>348</top>
+			<width>384</width>
+			<height>384</height>
 			<texturefocus>CalibratePixelRatio.png</texturefocus>
 			<texturenofocus></texturenofocus>
 		</control>
 		<control type="group">
-			<left>20</left>
-			<top>80</top>
+			<left>30</left>
+			<top>120</top>
 			<control type="label" id="2">
 				<description>coordinates label</description>
 				<left>0</left>
-				<top>10</top>
-				<width>1240</width>
+				<top>15</top>
+				<width>1860</width>
 				<label></label>
 				<align>center</align>
 				<font>font13</font>
@@ -91,8 +91,8 @@
 			<control type="label" id="3">
 				<description>help information</description>
 				<left>0</left>
-				<top>40</top>
-				<width>1240</width>
+				<top>60</top>
+				<width>1860</width>
 				<label></label>
 				<align>center</align>
 				<font>font13</font>

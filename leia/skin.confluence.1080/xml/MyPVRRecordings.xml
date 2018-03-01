@@ -7,9 +7,9 @@
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
-			<top>100r</top>
-			<width>1280</width>
-			<height>100</height>
+			<top>150r</top>
+			<width>1920</width>
+			<height>150</height>
 			<texture>floor.png</texture>
 			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
@@ -20,31 +20,31 @@
 				<include>VisibleFadeEffect</include>
 				<visible>Control.IsVisible(50)</visible>
 				<control type="image">
-					<left>50</left>
-					<top>60</top>
-					<width>840</width>
-					<height>600</height>
+					<left>75</left>
+					<top>90</top>
+					<width>1260</width>
+					<height>900</height>
 					<texture border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
-					<left>50</left>
-					<top>652</top>
-					<width>840</width>
-					<height>64</height>
+					<left>75</left>
+					<top>978</top>
+					<width>1260</width>
+					<height>96</height>
 					<texture border="15">ContentPanelMirror.png</texture>
 				</control>
 				<control type="image">
-					<left>900</left>
-					<top>60</top>
-					<width>330</width>
-					<height>600</height>
+					<left>1350</left>
+					<top>90</top>
+					<width>495</width>
+					<height>900</height>
 					<texture border="15">ContentPanel.png</texture>
 				</control>
 				<control type="image">
-					<left>900</left>
-					<top>652</top>
-					<width>330</width>
-					<height>64</height>
+					<left>1350</left>
+					<top>978</top>
+					<width>495</width>
+					<height>96</height>
 					<texture border="15">ContentPanelMirror.png</texture>
 				</control>
 			</control>
@@ -57,10 +57,10 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="list" id="50">
-				<left>70</left>
-				<top>75</top>
-				<width>760</width>
-				<height>561</height>
+				<left>105</left>
+				<top>112</top>
+				<width>1140</width>
+				<height>842</height>
 				<onleft>102</onleft>
 				<onright>72</onright>
 				<onup>50</onup>
@@ -68,28 +68,28 @@
 				<viewtype label="535">list</viewtype>
 				<pagecontrol>72</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="40" width="760">
+				<itemlayout height="60" width="1140">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>760</width>
-						<height>41</height>
+						<width>1140</width>
+						<height>62</height>
 						<texture border="2">MenuItemNF.png</texture>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<top>5</top>
-						<width>30</width>
-						<height>30</height>
+						<left>15</left>
+						<top>8</top>
+						<width>45</width>
+						<height>45</height>
 						<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.ActualIcon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>50</left>
+						<left>75</left>
 						<top>0</top>
-						<width>605</width>
-						<height>40</height>
+						<width>908</width>
+						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -98,10 +98,10 @@
 						<label>$INFO[ListItem.Label,, ]$INFO[ListItem.EpisodeName,(,) ]$INFO[Listitem.Season,,.]$INFO[Listitem.Episode]</label>
 					</control>
 					<control type="label">
-						<left>225</left>
+						<left>338</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -110,28 +110,28 @@
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="image">
-						<left>730</left>
-						<top>14</top>
-						<width>16</width>
-						<height>16</height>
+						<left>1095</left>
+						<top>21</top>
+						<width>24</width>
+						<height>24</height>
 						<texture>OverlayWatching.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
 					<control type="image">
-						<left>730</left>
-						<top>14</top>
-						<width>20</width>
-						<height>16</height>
+						<left>1095</left>
+						<top>21</top>
+						<width>30</width>
+						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40" width="760">
+				<focusedlayout height="60" width="1140">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>760</width>
-						<height>41</height>
+						<width>1140</width>
+						<height>62</height>
 						<texture border="2">MenuItemFO.png</texture>
 						<visible>Control.HasFocus(50)</visible>
 						<include>VisibleFadeEffect</include>
@@ -139,33 +139,33 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>760</width>
-						<height>41</height>
+						<width>1140</width>
+						<height>62</height>
 						<texture border="2">MenuItemNF.png</texture>
 						<include>VisibleFadeEffect</include>
 						<visible>!Control.HasFocus(50)</visible>
 					</control>
 					<control type="image">
-						<left>560</left>
-						<top>5</top>
-						<width>200</width>
-						<height>31</height>
+						<left>840</left>
+						<top>8</top>
+						<width>300</width>
+						<height>46</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(50) + !String.IsEmpty(ListItem.Date)</visible>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<top>5</top>
-						<width>30</width>
-						<height>30</height>
+						<left>15</left>
+						<top>8</top>
+						<width>45</width>
+						<height>45</height>
 						<texture background="true" fallback="DefaultVideoCover.png">$INFO[ListItem.ActualIcon]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>50</left>
+						<left>75</left>
 						<top>0</top>
-						<width>630</width>
-						<height>40</height>
+						<width>945</width>
+						<height>60</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -174,10 +174,10 @@
 						<label>$INFO[ListItem.Label,, ]$INFO[ListItem.EpisodeName,(,) ]$INFO[Listitem.Season,,.]$INFO[Listitem.Episode]</label>
 					</control>
 					<control type="label">
-						<left>225</left>
+						<left>338</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -186,28 +186,28 @@
 						<label>$INFO[ListItem.Date]</label>
 					</control>
 					<control type="image">
-						<left>730</left>
-						<top>14</top>
-						<width>16</width>
-						<height>16</height>
+						<left>1095</left>
+						<top>21</top>
+						<width>24</width>
+						<height>24</height>
 						<texture>OverlayWatching.png</texture>
 						<visible>ListItem.IsResumable</visible>
 					</control>
 					<control type="image">
-						<left>730</left>
-						<top>14</top>
-						<width>20</width>
-						<height>16</height>
+						<left>1095</left>
+						<top>21</top>
+						<width>30</width>
+						<height>24</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<aspectratio>keep</aspectratio>
 					</control>
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="72">
-				<left>850</left>
-				<top>78</top>
-				<width>25</width>
-				<height>560</height>
+				<left>1275</left>
+				<top>117</top>
+				<width>38</width>
+				<height>840</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -220,12 +220,12 @@
 			</control>
 			<control type="label">
 				<depth>DepthFooter</depth>
-				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
 				<description>Page Count Label</description>
-				<right>40</right>
-				<top>53r</top>
-				<width>500</width>
-				<height>20</height>
+				<right>60</right>
+				<top>80r</top>
+				<width>750</width>
+				<height>30</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<scroll>false</scroll>
@@ -235,13 +235,13 @@
 				<include>Window_OpenClose_Animation</include>
 			</control>
 			<control type="group">
-				<left>910</left>
-				<top>80</top>
+				<left>1365</left>
+				<top>120</top>
 				<control type="fadelabel">
-					<left>10</left>
+					<left>15</left>
 					<top>0</top>
-					<width>290</width>
-					<height>25</height>
+					<width>435</width>
+					<height>38</height>
 					<label>$INFO[Container(50).ListItem.Title]$INFO[ListItem.EpisodeName, (,)]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -253,10 +253,10 @@
 				</control>
 				<control type="textbox">
 					<description>Description Value for TV Show</description>
-					<left>10</left>
-					<top>40</top>
-					<width>290</width>
-					<height>455</height>
+					<left>15</left>
+					<top>60</top>
+					<width>435</width>
+					<height>682</height>
 					<font>font13</font>
 					<align>justify</align>
 					<textcolor>white</textcolor>
@@ -265,10 +265,10 @@
 				</control>
 				<control type="label">
 					<description>Disk usage text</description>
-					<left>10</left>
-					<top>525</top>
-					<width>290</width>
-					<height>20</height>
+					<left>15</left>
+					<top>788</top>
+					<width>435</width>
+					<height>30</height>
 					<label>$INFO[PVR.backenddiskspace]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -279,11 +279,13 @@
 				</control>
 				<control type="progress">
 					<description>Disk usage bar</description>
-					<left>10</left>
-					<top>548</top>
-					<width>290</width>
-					<height>12</height>
-					<info>PVR.backenddiskspaceprogr</info><visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible></control>
+					<left>15</left>
+					<top>822</top>
+					<width>435</width>
+					<height>18</height>
+					<info>PVR.backenddiskspaceprogr</info>
+					<visible>!Integer.IsGreater(PVR.backenddiskspaceprogr,100)</visible>
+				</control>
 			</control>
 		</control>
 		<control type="group">
@@ -295,8 +297,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
+			<width>1920</width>
+			<height>1080</height>
 			<texture>black-back.png</texture>
 			<animation effect="fade" time="300">Visible</animation>
 			<animation effect="fade" time="150">Hidden</animation>

@@ -2,26 +2,26 @@
 <window>
 	<defaultcontrol always="true">9</defaultcontrol>
 	<coordinates>
-		<left>210</left>
-		<top>65</top>
+		<left>315</left>
+		<top>98</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
 		<include content="DialogBackgroundCommons">
-			<param name="DialogBackgroundWidth" value="865" />
-			<param name="DialogBackgroundHeight" value="605" />
-			<param name="DialogHeaderWidth" value="785" />
+			<param name="DialogBackgroundWidth" value="1298" />
+			<param name="DialogBackgroundHeight" value="908" />
+			<param name="DialogHeaderWidth" value="1178" />
 			<param name="DialogHeaderLabel" value="$LOCALIZE[19142]" />
 			<param name="DialogHeaderId" value="2" />
-			<param name="CloseButtonLeft" value="775" />
+			<param name="CloseButtonLeft" value="1163" />
 			<param name="CloseButtonNav" value="3" />
 		</include>
 		<control type="label">
 			<description>Search string</description>
-			<left>30</left>
-			<top>60</top>
-			<width>320</width>
-			<height>40</height>
+			<left>45</left>
+			<top>90</top>
+			<width>480</width>
+			<height>60</height>
 			<font>font13</font>
 			<label>$LOCALIZE[19133]</label>
 			<align>left</align>
@@ -30,19 +30,19 @@
 			<shadowcolor>black</shadowcolor>
 		</control>
 		<control type="image">
-			<left>30</left>
-			<top>100</top>
-			<width>800</width>
-			<height>50</height>
+			<left>45</left>
+			<top>150</top>
+			<width>1200</width>
+			<height>75</height>
 			<aspectratio>stretch</aspectratio>
 			<texture border="20">KeyboardEditArea.png</texture>
 		</control>
 		<control type="edit" id="9">
 			<description>Search string</description>
-			<left>35</left>
-			<top>105</top>
-			<width>790</width>
-			<height>40</height>
+			<left>52</left>
+			<top>158</top>
+			<width>1185</width>
+			<height>60</height>
 			<font>font13</font>
 			<textcolor>white</textcolor>
 			<shadowcolor>black</shadowcolor>
@@ -56,24 +56,24 @@
 		</control>
 		<control type="textbox">
 			<description>Search help</description>
-			<left>30</left>
-			<top>157</top>
-			<width>800</width>
-			<height>68</height>
+			<left>45</left>
+			<top>236</top>
+			<width>1200</width>
+			<height>102</height>
 			<align>left</align>
 			<font>font12</font>
 			<textcolor>grey2</textcolor>
 			<label>$LOCALIZE[19001] $LOCALIZE[19002]</label>
 		</control>
 		<control type="group">
-			<left>30</left>
-			<top>230</top>
+			<left>45</left>
+			<top>345</top>
 			<control type="radiobutton" id="10">
 				<description>Include Description</description>
 				<left>0</left>
 				<top>0</top>
-				<height>35</height>
-				<width>400</width>
+				<height>52</height>
+				<width>600</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -91,9 +91,9 @@
 			<control type="radiobutton" id="11">
 				<description>Case Sensitive</description>
 				<left>0</left>
-				<top>35</top>
-				<height>35</height>
-				<width>400</width>
+				<top>52</top>
+				<height>52</height>
+				<width>600</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -111,9 +111,9 @@
 			<control type="edit" id="14">
 				<description>Start Date</description>
 				<left>0</left>
-				<top>70</top>
-				<width>400</width>
-				<height>35</height>
+				<top>105</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -129,9 +129,9 @@
 			<control type="edit" id="15">
 				<description>Stop Date</description>
 				<left>0</left>
-				<top>105</top>
-				<width>400</width>
-				<height>35</height>
+				<top>158</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -147,9 +147,9 @@
 			<control type="spincontrolex" id="18">
 				<description>Genre</description>
 				<left>0</left>
-				<top>140</top>
-				<width>400</width>
-				<height>35</height>
+				<top>210</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -162,9 +162,9 @@
 			<control type="radiobutton" id="20">
 				<description>Include unknown Genres</description>
 				<left>0</left>
-				<top>175</top>
-				<height>35</height>
-				<width>400</width>
+				<top>262</top>
+				<height>52</height>
+				<width>600</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -183,9 +183,9 @@
 			<control type="radiobutton" id="22">
 				<description>FTA only</description>
 				<left>0</left>
-				<top>210</top>
-				<height>35</height>
-				<width>400</width>
+				<top>315</top>
+				<height>52</height>
+				<width>600</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -204,9 +204,9 @@
 			<control type="radiobutton" id="24">
 				<description>Ignore Timers</description>
 				<left>0</left>
-				<top>245</top>
-				<height>35</height>
-				<width>400</width>
+				<top>368</top>
+				<height>52</height>
+				<width>600</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -224,14 +224,14 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>440</left>
-			<top>230</top>
+			<left>660</left>
+			<top>345</top>
 			<control type="spincontrolex" id="12">
 				<description>Min Duration</description>
 				<left>0</left>
 				<top>0</top>
-				<width>400</width>
-				<height>35</height>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -244,9 +244,9 @@
 			<control type="spincontrolex" id="13">
 				<description>Max Duration</description>
 				<left>0</left>
-				<top>35</top>
-				<width>400</width>
-				<height>35</height>
+				<top>52</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -259,9 +259,9 @@
 			<control type="edit" id="16">
 				<description>Start time</description>
 				<left>0</left>
-				<top>70</top>
-				<width>400</width>
-				<height>35</height>
+				<top>105</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -277,9 +277,9 @@
 			<control type="edit" id="17">
 				<description>Stop time</description>
 				<left>0</left>
-				<top>105</top>
-				<width>400</width>
-				<height>35</height>
+				<top>158</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -295,9 +295,9 @@
 			<control type="radiobutton" id="19">
 				<description>avoid repeats</description>
 				<left>0</left>
-				<top>140</top>
-				<width>400</width>
-				<height>35</height>
+				<top>210</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -316,9 +316,9 @@
 			<control type="spincontrolex" id="21">
 				<description>Groups</description>
 				<left>0</left>
-				<top>175</top>
-				<width>400</width>
-				<height>35</height>
+				<top>262</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -331,9 +331,9 @@
 			<control type="spincontrolex" id="23">
 				<description>Channels</description>
 				<left>0</left>
-				<top>210</top>
-				<width>400</width>
-				<height>35</height>
+				<top>315</top>
+				<width>600</width>
+				<height>52</height>
 				<font>font12</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -346,9 +346,9 @@
 			<control type="radiobutton" id="27">
 				<description>Ignore Recordings</description>
 				<left>0</left>
-				<top>245</top>
-				<height>35</height>
-				<width>400</width>
+				<top>368</top>
+				<height>52</height>
+				<width>600</width>
 				<font>font12</font>
 				<textcolor>white</textcolor>
 				<focusedcolor>white</focusedcolor>
@@ -366,14 +366,14 @@
 			</control>
 		</control>
 		<control type="group" id="9000">
-			<top>540</top>
-			<left>125</left>
+			<top>810</top>
+			<left>188</left>
 			<control type="button" id="28">
 				<description>Defaults Button</description>
 				<left>0</left>
 				<top>0</top>
-				<width>200</width>
-				<height>40</height>
+				<width>300</width>
+				<height>60</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12_title</font>
@@ -385,10 +385,10 @@
 			</control>
 			<control type="button" id="25">
 				<description>Cancel Button</description>
-				<left>210</left>
+				<left>315</left>
 				<top>0</top>
-				<width>200</width>
-				<height>40</height>
+				<width>300</width>
+				<height>60</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12_title</font>
@@ -400,10 +400,10 @@
 			</control>
 			<control type="button" id="26">
 				<description>Search Button</description>
-				<left>420</left>
+				<left>630</left>
 				<top>0</top>
-				<width>200</width>
-				<height>40</height>
+				<width>300</width>
+				<height>60</height>
 				<align>center</align>
 				<aligny>center</aligny>
 				<font>font12_title</font>

@@ -7,18 +7,18 @@
 	<controls>
 		<control type="label" id="991">
 			<!-- Hide this Control off the screen because we don't use the label -->
-			<left>2000</left>
-			<top>2000</top>
-			<width>100</width>
+			<left>3000</left>
+			<top>3000</top>
+			<width>150</width>
 			<height>0</height>
 			<label>-</label>
 			<font>-</font>
 		</control>
 		<control type="label" id="999">
 			<!-- Hide this Control off the screen because we don't use the label -->
-			<left>2000</left>
-			<top>2000</top>
-			<width>100</width>
+			<left>3000</left>
+			<top>3000</top>
+			<width>150</width>
 			<height>0</height>
 			<label>-</label>
 			<font>-</font>
@@ -67,21 +67,21 @@
 			<depth>DepthHeader</depth>
 			<control type="image">
 				<description>Section header image</description>
-				<left>20</left>
-				<top>3</top>
-				<width>35</width>
-				<height>35</height>
+				<left>30</left>
+				<top>4</top>
+				<width>52</width>
+				<height>52</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_search.png</texture>
 			</control>
 			<control type="grouplist">
-				<left>65</left>
-				<top>5</top>
-				<width>1000</width>
-				<height>30</height>
+				<left>98</left>
+				<top>8</top>
+				<width>1500</width>
+				<height>45</height>
 				<orientation>horizontal</orientation>
 				<align>left</align>
-				<itemgap>5</itemgap>
+				<itemgap>8</itemgap>
 				<control type="label">
 					<include>WindowTitleCommons</include>
 					<label>$LOCALIZE[283]</label>
@@ -95,54 +95,54 @@
 		</control>
 		<control type="group">
 			<visible>!Control.IsVisible(999)</visible>
-			<left>-250</left>
+			<left>-375</left>
 			<depth>DepthSideBlade</depth>
-			<animation effect="slide" start="0,0" end="250,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9999).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)] + ![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRadioRDSInfo)]">Conditional</animation>
-			<animation effect="slide" start="0,0" end="-300,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9999).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
-			<animation effect="slide" start="0,0" end="-50,0" time="225" tween="quadratic" easing="out" condition="![ControlGroup(9999).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
-			<animation effect="slide" start="-50,0" end="0,0" time="225" tween="quadratic" easing="out">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="375,0" time="300" tween="quadratic" easing="out" condition="[ControlGroup(9999).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)] + ![Window.IsActive(PVRGuideInfo) | Window.IsActive(PVRRadioRDSInfo)]">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-450,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9999).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
+			<animation effect="slide" start="0,0" end="-75,0" time="225" tween="quadratic" easing="out" condition="![ControlGroup(9999).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
+			<animation effect="slide" start="-75,0" end="0,0" time="225" tween="quadratic" easing="out">WindowOpen</animation>
 			<control type="button" id="8999">
 				<description>Fake button for mouse control</description>
 				<left>0</left>
 				<top>0</top>
-				<width>250</width>
-				<height>720</height>
-				<label/>
-				<font/>
-				<texturenofocus/>
-				<texturefocus/>
+				<width>375</width>
+				<height>1080</height>
+				<label />
+				<font />
+				<texturenofocus />
+				<texturefocus />
 				<visible>true</visible>
 			</control>
 			<control type="button" id="9001">
-				<left>250</left>
-				<top>260</top>
-				<width>42</width>
-				<height>128</height>
-				<font/>
+				<left>375</left>
+				<top>390</top>
+				<width>63</width>
+				<height>192</height>
+				<font />
 				<texturefocus>HasSub.png</texturefocus>
 				<texturenofocus>HasSub.png</texturenofocus>
 			</control>
 			<control type="image">
-				<left>-20</left>
+				<left>-30</left>
 				<top>0</top>
-				<width>280</width>
-				<height>720</height>
+				<width>420</width>
+				<height>1080</height>
 				<texture border="0,0,10,0">MediaBladeSub.png</texture>
 			</control>
 			<control type="image">
 				<description>LOGO</description>
-				<left>15</left>
+				<left>22</left>
 				<top>0</top>
-				<width>220</width>
-				<height>80</height>
+				<width>330</width>
+				<height>120</height>
 				<aspectratio>keep</aspectratio>
 				<texture>Confluence_Logo.png</texture>
 			</control>
 			<control type="grouplist" id="9999">
 				<left>0</left>
-				<top>60</top>
-				<width>250</width>
-				<height>650</height>
+				<top>90</top>
+				<width>375</width>
+				<height>975</height>
 				<onleft>9999</onleft>
 				<onright>50</onright>
 				<onup>9999</onup>
@@ -150,8 +150,8 @@
 				<onback>50</onback>
 				<itemgap>0</itemgap>
 				<control type="label" id="200">
-					<width>250</width>
-					<height>35</height>
+					<width>375</width>
+					<height>52</height>
 					<font>font12</font>
 					<label>31006</label>
 					<textcolor>blue</textcolor>
@@ -160,10 +160,10 @@
 				</control>
 				<control type="button" id="2">
 					<description>View As button</description>
-					<textwidth>235</textwidth>
+					<textwidth>352</textwidth>
 					<include>ButtonCommonValues</include>
 					<onclick>Container.NextViewMode</onclick>
-					<label/>
+					<label />
 				</control>
 				<control type="radiobutton" id="990">
 					<description>Search button</description>
@@ -175,8 +175,8 @@
 					<label>137</label>
 				</control>
 				<control type="label" id="201">
-					<width>250</width>
-					<height>35</height>
+					<width>375</width>
+					<height>52</height>
 					<font>font12</font>
 					<label>20094</label>
 					<textcolor>blue</textcolor>
@@ -184,35 +184,35 @@
 					<aligny>center</aligny>
 				</control>
 				<control type="list" id="9000">
-					<width>250</width>
-					<height>360</height>
+					<width>375</width>
+					<height>540</height>
 					<onup>990</onup>
 					<ondown>2</ondown>
 					<onleft>50</onleft>
 					<onright>50</onright>
-					<itemlayout height="40" width="250">
+					<itemlayout height="60" width="375">
 						<control type="label">
-							<left>10</left>
+							<left>15</left>
 							<top>0</top>
-							<height>40</height>
-							<width>200</width>
+							<height>60</height>
+							<width>300</width>
 							<aligny>center</aligny>
 							<font>font13</font>
 							<label>$INFO[ListItem.Label]</label>
 						</control>
 					</itemlayout>
-					<focusedlayout height="40" width="250">
+					<focusedlayout height="60" width="375">
 						<control type="image">
-							<height>40</height>
-							<width>250</width>
+							<height>60</height>
+							<width>375</width>
 							<texture border="5">button-focus.png</texture>
 							<visible>Control.HasFocus(9000)</visible>
 						</control>
 						<control type="label">
-							<left>10</left>
+							<left>15</left>
 							<top>0</top>
-							<height>40</height>
-							<width>200</width>
+							<height>60</height>
+							<width>300</width>
 							<aligny>center</aligny>
 							<font>font13</font>
 							<label>$INFO[ListItem.Label]</label>

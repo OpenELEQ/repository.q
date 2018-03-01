@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">22</defaultcontrol>
 	<coordinates>
-		<left>240</left>
-		<top>34</top>
+		<left>360</left>
+		<top>51</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -21,10 +21,10 @@
 			</include>
 			<control type="button" id="22">
 				<description>Set Playlist type</description>
-				<left>30</left>
-				<top>70</top>
-				<width>740</width>
-				<height>40</height>
+				<left>45</left>
+				<top>105</top>
+				<width>1110</width>
+				<height>60</height>
 				<label>467</label>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
@@ -36,12 +36,12 @@
 			</control>
 			<control type="button" id="12">
 				<description>Name Button</description>
-				<left>30</left>
-				<top>120</top>
-				<width>740</width>
-				<height>40</height>
-				<textoffsetx>10</textoffsetx>
-				<textwidth>720</textwidth>
+				<left>45</left>
+				<top>180</top>
+				<width>1110</width>
+				<height>60</height>
+				<textoffsetx>15</textoffsetx>
+				<textwidth>1080</textwidth>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<label>21433</label>
@@ -52,9 +52,9 @@
 			</control>
 			<control type="label">
 				<description>rules label</description>
-				<left>30</left>
-				<top>175</top>
-				<width>740</width>
+				<left>45</left>
+				<top>262</top>
+				<width>1110</width>
 				<align>left</align>
 				<label>21434</label>
 				<font>font12</font>
@@ -63,55 +63,55 @@
 			</control>
 			<control type="list" id="10">
 				<description>Rules List Control</description>
-				<left>30</left>
-				<top>200</top>
-				<width>550</width>
-				<height>135</height>
+				<left>45</left>
+				<top>300</top>
+				<width>825</width>
+				<height>202</height>
 				<onup>12</onup>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<ondown>16</ondown>
-				<itemlayout width="560" height="45">
+				<itemlayout width="840" height="68">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>550</width>
-						<height>40</height>
+						<width>825</width>
+						<height>60</height>
 						<texture border="5">button-nofocus.png</texture>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>530</width>
-						<height>40</height>
+						<width>795</width>
+						<height>60</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<selectedcolor>selected</selectedcolor>
 						<font>font13</font>
 					</control>
 				</itemlayout>
-				<focusedlayout width="560" height="45">
+				<focusedlayout width="840" height="68">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>550</width>
-						<height>40</height>
+						<width>825</width>
+						<height>60</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(10)</visible>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>550</width>
-						<height>40</height>
+						<width>825</width>
+						<height>60</height>
 						<texture border="5">button-nofocus.png</texture>
 						<visible>!Control.HasFocus(10)</visible>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>530</width>
-						<height>40</height>
+						<width>795</width>
+						<height>60</height>
 						<aligny>center</aligny>
 						<info>ListItem.Label</info>
 						<selectedcolor>selected</selectedcolor>
@@ -120,14 +120,14 @@
 				</focusedlayout>
 			</control>
 			<control type="group" id="9000">
-				<left>590</left>
-				<top>200</top>
+				<left>885</left>
+				<top>300</top>
 				<control type="button" id="13">
 					<description>Add Rule Button</description>
 					<left>0</left>
 					<top>0</top>
-					<width>180</width>
-					<height>40</height>
+					<width>270</width>
+					<height>60</height>
 					<label>15019</label>
 					<font>font12_title</font>
 					<align>center</align>
@@ -140,9 +140,9 @@
 				<control type="button" id="14">
 					<description>Remove Rule Button</description>
 					<left>0</left>
-					<top>45</top>
-					<height>40</height>
-					<width>180</width>
+					<top>68</top>
+					<height>60</height>
+					<width>270</width>
 					<label>1210</label>
 					<font>font12_title</font>
 					<align>center</align>
@@ -155,9 +155,9 @@
 				<control type="button" id="15">
 					<description>Edit Rule Button</description>
 					<left>0</left>
-					<top>90</top>
-					<height>40</height>
-					<width>180</width>
+					<top>135</top>
+					<height>60</height>
+					<width>270</width>
 					<label>21435</label>
 					<font>font12_title</font>
 					<align>center</align>
@@ -170,19 +170,19 @@
 			</control>
 			<control type="label">
 				<description>Name Label</description>
-				<left>30</left>
-				<top>345</top>
-				<width>740</width>
+				<left>45</left>
+				<top>518</top>
+				<width>1110</width>
 				<label>31325</label>
 				<font>font12</font>
 				<textcolor>blue</textcolor>
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="button" id="16">
-				<left>30</left>
-				<top>370</top>
-				<width>740</width>
-				<height>40</height>
+				<left>45</left>
+				<top>555</top>
+				<width>1110</width>
+				<height>60</height>
 				<label>21424</label>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
@@ -193,10 +193,10 @@
 				<ondown>17</ondown>
 			</control>
 			<control type="button" id="17">
-				<left>30</left>
-				<top>415</top>
-				<width>740</width>
-				<height>40</height>
+				<left>45</left>
+				<top>622</top>
+				<width>1110</width>
+				<height>60</height>
 				<label>21427</label>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
@@ -207,10 +207,10 @@
 				<ondown>18</ondown>
 			</control>
 			<control type="button" id="18">
-				<left>30</left>
-				<top>460</top>
-				<width>550</width>
-				<height>40</height>
+				<left>45</left>
+				<top>690</top>
+				<width>825</width>
+				<height>60</height>
 				<label>21429</label>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
@@ -221,10 +221,10 @@
 				<ondown>23</ondown>
 			</control>
 			<control type="button" id="19">
-				<left>590</left>
-				<top>460</top>
-				<width>180</width>
-				<height>40</height>
+				<left>885</left>
+				<top>690</top>
+				<width>270</width>
+				<height>60</height>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
 				<texturenofocus border="5">button-nofocus.png</texturenofocus>
@@ -234,10 +234,10 @@
 				<ondown>24</ondown>
 			</control>
 			<control type="button" id="23">
-				<left>30</left>
-				<top>505</top>
-				<width>550</width>
-				<height>40</height>
+				<left>45</left>
+				<top>758</top>
+				<width>825</width>
+				<height>60</height>
 				<label>21458</label>
 				<font>font13</font>
 				<texturefocus border="5">button-focus2.png</texturefocus>
@@ -248,10 +248,10 @@
 				<ondown>9001</ondown>
 			</control>
 			<control type="radiobutton" id="24">
-				<left>590</left>
-				<top>505</top>
-				<width>180</width>
-				<height>40</height>
+				<left>885</left>
+				<top>758</top>
+				<width>270</width>
+				<height>60</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -266,10 +266,10 @@
 			<control type="group" id="9001">
 				<control type="button" id="20">
 					<description>Ok Button</description>
-					<left>195</left>
-					<top>580</top>
-					<width>200</width>
-					<height>40</height>
+					<left>292</left>
+					<top>870</top>
+					<width>300</width>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>186</label>
@@ -281,10 +281,10 @@
 				</control>
 				<control type="button" id="21">
 					<description>Cancel Button</description>
-					<left>405</left>
-					<top>580</top>
-					<width>200</width>
-					<height>40</height>
+					<left>608</left>
+					<top>870</top>
+					<width>300</width>
+					<height>60</height>
 					<align>center</align>
 					<aligny>center</aligny>
 					<label>222</label>

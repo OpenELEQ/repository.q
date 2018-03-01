@@ -5,10 +5,10 @@
 			<visible>Control.IsVisible(550)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="list" id="550">
-				<left>70</left>
-				<top>78</top>
-				<width>580</width>
-				<height>561</height>
+				<left>105</left>
+				<top>117</top>
+				<width>870</width>
+				<height>842</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>550</onup>
@@ -17,19 +17,19 @@
 				<visible>Window.IsVisible(AddonBrowser) | Container.Content(Addons)</visible>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="40" width="580">
+				<itemlayout height="60" width="870">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>580</width>
-						<height>41</height>
+						<width>870</width>
+						<height>62</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>520</width>
-						<height>40</height>
+						<width>780</width>
+						<height>60</height>
 						<font>font13</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -38,10 +38,10 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>55</left>
+						<left>82</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -50,12 +50,12 @@
 						<label>$VAR[AddonLabel2]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40" width="580">
+				<focusedlayout height="60" width="870">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>580</width>
-						<height>41</height>
+						<width>870</width>
+						<height>62</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(550)</visible>
 						<include>VisibleFadeEffect</include>
@@ -63,25 +63,25 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>580</width>
-						<height>41</height>
+						<width>870</width>
+						<height>62</height>
 						<texture border="0,2,0,2">MenuItemFO.png</texture>
 						<visible>Control.HasFocus(550)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="image">
-						<left>370</left>
-						<top>5</top>
-						<width>200</width>
-						<height>31</height>
+						<left>555</left>
+						<top>8</top>
+						<width>300</width>
+						<height>46</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(550) + !String.IsEmpty(ListItem.Property(Addon.Status))</visible>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>520</width>
-						<height>40</height>
+						<width>780</width>
+						<height>60</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -90,10 +90,10 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<left>55</left>
+						<left>82</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font12</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -104,10 +104,10 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>650</left>
-				<top>78</top>
-				<width>25</width>
-				<height>560</height>
+				<left>975</left>
+				<top>117</top>
+				<width>38</width>
+				<height>840</height>
 				<texturesliderbackground border="10,14,10,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="10,14,10,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="10,14,10,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -120,15 +120,15 @@
 				<visible>Control.IsVisible(550)</visible>
 			</control>
 			<control type="group">
-				<left>710</left>
-				<top>80</top>
+				<left>1065</left>
+				<top>120</top>
 				<visible>Control.IsVisible(550)</visible>
 				<control type="label">
 					<description>Show Title txt</description>
 					<left>0</left>
 					<top>0</top>
-					<width>510</width>
-					<height>15</height>
+					<width>765</width>
+					<height>22</height>
 					<label>$INFO[ListItem.AddonName]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -138,10 +138,10 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="image">
-					<left>10</left>
-					<top>30</top>
-					<width>490</width>
-					<height>240</height>
+					<left>15</left>
+					<top>45</top>
+					<width>735</width>
+					<height>360</height>
 					<aspectratio>keep</aspectratio>
 					<fadetime>200</fadetime>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
@@ -149,13 +149,13 @@
 					<bordersize>8</bordersize>
 				</control>
 				<control type="group">
-					<top>280</top>
+					<top>420</top>
 					<control type="label">
 						<description>Author txt</description>
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>140</width>
-						<height>25</height>
+						<width>210</width>
+						<height>38</height>
 						<label>$LOCALIZE[21863]:</label>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -164,10 +164,10 @@
 					</control>
 					<control type="fadelabel">
 						<description>Author Value</description>
-						<left>160</left>
+						<left>240</left>
 						<top>0</top>
-						<width>350</width>
-						<height>25</height>
+						<width>525</width>
+						<height>38</height>
 						<label fallback="416">$INFO[ListItem.AddonCreator]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -177,10 +177,10 @@
 					</control>
 					<control type="label">
 						<description>Version txt</description>
-						<left>10</left>
-						<top>30</top>
-						<width>140</width>
-						<height>25</height>
+						<left>15</left>
+						<top>45</top>
+						<width>210</width>
+						<height>38</height>
 						<label>$LOCALIZE[24051]</label>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -189,10 +189,10 @@
 					</control>
 					<control type="label">
 						<description>Version Value</description>
-						<left>160</left>
-						<top>30</top>
-						<width>350</width>
-						<height>25</height>
+						<left>240</left>
+						<top>45</top>
+						<width>525</width>
+						<height>38</height>
 						<label fallback="416">$INFO[ListItem.AddonVersion]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -201,17 +201,17 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>60</top>
-						<width>490</width>
-						<height>4</height>
+						<top>90</top>
+						<width>735</width>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="textbox">
 						<description>Description</description>
-						<left>10</left>
-						<top>67</top>
-						<width>490</width>
-						<height>213</height>
+						<left>15</left>
+						<top>100</top>
+						<width>735</width>
+						<height>320</height>
 						<font>font13</font>
 						<align>left</align>
 						<textcolor>white</textcolor>
@@ -227,10 +227,10 @@
 			<visible>Control.IsVisible(551)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="panel" id="551">
-				<left>70</left>
-				<top>78</top>
-				<width>772</width>
-				<height>558</height>
+				<left>105</left>
+				<top>117</top>
+				<width>1158</width>
+				<height>837</height>
 				<onleft>2</onleft>
 				<onright>60</onright>
 				<onup>551</onup>
@@ -239,12 +239,12 @@
 				<visible>Window.IsVisible(AddonBrowser) | Container.Content(Addons)</visible>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="186" width="193">
+				<itemlayout height="279" width="290">
 					<control type="image">
 						<left>1</left>
 						<top>0</top>
-						<width>191</width>
-						<height>160</height>
+						<width>286</width>
+						<height>240</height>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<fadetime>100</fadetime>
@@ -254,8 +254,8 @@
 					<control type="image">
 						<left>1</left>
 						<top>0</top>
-						<width>191</width>
-						<height>160</height>
+						<width>286</width>
+						<height>240</height>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<fadetime>100</fadetime>
@@ -267,8 +267,8 @@
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>193</width>
-						<height>186</height>
+						<width>290</width>
+						<height>279</height>
 						<font>font13_title</font>
 						<textcolor>ffaa0000</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -281,9 +281,9 @@
 					</control>
 					<control type="label">
 						<left>1</left>
-						<top>160</top>
-						<width>191</width>
-						<height>25</height>
+						<top>240</top>
+						<width>286</width>
+						<height>38</height>
 						<font>font12</font>
 						<textcolor>grey2</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -292,12 +292,12 @@
 						<info>ListItem.Label</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="186" width="193">
+				<focusedlayout height="279" width="290">
 					<control type="image">
 						<left>1</left>
 						<top>0</top>
-						<width>191</width>
-						<height>160</height>
+						<width>286</width>
+						<height>240</height>
 						<bordertexture border="5">folder-focus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<fadetime>100</fadetime>
@@ -307,8 +307,8 @@
 					<control type="image">
 						<left>1</left>
 						<top>0</top>
-						<width>191</width>
-						<height>160</height>
+						<width>286</width>
+						<height>240</height>
 						<bordertexture border="5">button-nofocus.png</bordertexture>
 						<bordersize>5</bordersize>
 						<fadetime>100</fadetime>
@@ -320,8 +320,8 @@
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>193</width>
-						<height>186</height>
+						<width>290</width>
+						<height>279</height>
 						<font>font13_title</font>
 						<textcolor>ffaa0000</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -334,9 +334,9 @@
 					</control>
 					<control type="label">
 						<left>1</left>
-						<top>160</top>
-						<width>191</width>
-						<height>25</height>
+						<top>240</top>
+						<width>286</width>
+						<height>38</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -347,10 +347,10 @@
 				</focusedlayout>
 			</control>
 			<control type="scrollbar" id="60">
-				<left>850</left>
-				<top>78</top>
-				<width>25</width>
-				<height>560</height>
+				<left>1275</left>
+				<top>117</top>
+				<width>38</width>
+				<height>840</height>
 				<texturesliderbackground border="10,14,10,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="10,14,10,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="10,14,10,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -363,15 +363,15 @@
 				<visible>Control.IsVisible(551)</visible>
 			</control>
 			<control type="group">
-				<left>910</left>
-				<top>90</top>
+				<left>1365</left>
+				<top>135</top>
 				<visible>Control.IsVisible(551)</visible>
 				<control type="label">
 					<description>Show Title txt</description>
-					<left>10</left>
+					<left>15</left>
 					<top>0</top>
-					<width>290</width>
-					<height>15</height>
+					<width>435</width>
+					<height>22</height>
 					<label>$INFO[ListItem.AddonName]</label>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -381,13 +381,13 @@
 					<wrapmultiline>true</wrapmultiline>
 				</control>
 				<control type="group">
-					<top>40</top>
+					<top>60</top>
 					<control type="label">
 						<description>Author txt</description>
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>120</width>
-						<height>25</height>
+						<width>180</width>
+						<height>38</height>
 						<label>$LOCALIZE[21863]:</label>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -396,10 +396,10 @@
 					</control>
 					<control type="fadelabel">
 						<description>Author Value</description>
-						<left>140</left>
+						<left>210</left>
 						<top>0</top>
-						<width>155</width>
-						<height>25</height>
+						<width>232</width>
+						<height>38</height>
 						<label fallback="416">$INFO[ListItem.AddonCreator]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -409,10 +409,10 @@
 					</control>
 					<control type="label">
 						<description>Version txt</description>
-						<left>10</left>
-						<top>30</top>
-						<width>120</width>
-						<height>25</height>
+						<left>15</left>
+						<top>45</top>
+						<width>180</width>
+						<height>38</height>
 						<label>$LOCALIZE[24051]</label>
 						<align>right</align>
 						<aligny>center</aligny>
@@ -421,10 +421,10 @@
 					</control>
 					<control type="label">
 						<description>Version Value</description>
-						<left>140</left>
-						<top>30</top>
-						<width>155</width>
-						<height>25</height>
+						<left>210</left>
+						<top>45</top>
+						<width>232</width>
+						<height>38</height>
 						<label fallback="416">$INFO[ListItem.AddonVersion]</label>
 						<align>left</align>
 						<aligny>center</aligny>
@@ -433,17 +433,17 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>70</top>
-						<width>290</width>
-						<height>4</height>
+						<top>105</top>
+						<width>435</width>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 					<control type="textbox">
 						<description>Description</description>
-						<left>10</left>
-						<top>77</top>
-						<width>290</width>
-						<height>443</height>
+						<left>15</left>
+						<top>116</top>
+						<width>435</width>
+						<height>664</height>
 						<font>font13</font>
 						<align>left</align>
 						<textcolor>white</textcolor>

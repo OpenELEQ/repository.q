@@ -2,8 +2,8 @@
 <window>
 	<defaultcontrol always="true">2</defaultcontrol>
 	<coordinates>
-		<left>240</left>
-		<top>60</top>
+		<left>360</left>
+		<top>90</top>
 	</coordinates>
 	<include>dialogeffect</include>
 	<controls>
@@ -11,24 +11,24 @@
 			<description>background image</description>
 			<left>0</left>
 			<top>0</top>
-			<width>800</width>
-			<height>600</height>
+			<width>1200</width>
+			<height>900</height>
 			<texture border="40">DialogBack2.png</texture>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
-			<left>40</left>
-			<top>16</top>
-			<width>720</width>
-			<height>40</height>
+			<left>60</left>
+			<top>24</top>
+			<width>1080</width>
+			<height>60</height>
 			<texture>dialogheader.png</texture>
 		</control>
 		<control type="label">
 			<description>header label</description>
-			<left>40</left>
-			<top>20</top>
-			<width>720</width>
-			<height>30</height>
+			<left>60</left>
+			<top>30</top>
+			<width>1080</width>
+			<height>45</height>
 			<font>font13_title</font>
 			<label>$LOCALIZE[298]</label>
 			<align>center</align>
@@ -38,10 +38,10 @@
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<left>710</left>
-			<top>15</top>
-			<width>64</width>
-			<height>32</height>
+			<left>1065</left>
+			<top>22</top>
+			<width>96</width>
+			<height>48</height>
 			<label></label>
 			<font></font>
 			<onclick>PreviousMenu</onclick>
@@ -55,10 +55,10 @@
 		</control>
 		<control type="label">
 			<description>number of files/pages in list text label</description>
-			<left>460</left>
-			<top>495</top>
-			<width>300</width>
-			<height>35</height>
+			<left>690</left>
+			<top>742</top>
+			<width>450</width>
+			<height>52</height>
 			<font>font12</font>
 			<align>right</align>
 			<aligny>center</aligny>
@@ -67,10 +67,10 @@
 			<label>([COLOR=blue]$INFO[Container(11).NumItems][/COLOR]) $LOCALIZE[31025] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages][/COLOR])</label>
 		</control>
 		<control type="panel" id="11">
-			<left>40</left>
-			<top>65</top>
-			<width>720</width>
-			<height>430</height>
+			<left>60</left>
+			<top>98</top>
+			<width>1080</width>
+			<height>645</height>
 			<onleft>2</onleft>
 			<onright>3</onright>
 			<ondown>2</ondown>
@@ -79,27 +79,27 @@
 			<viewtype label="536">icon</viewtype>
 			<pagecontrol></pagecontrol>
 			<orientation>vertical</orientation>
-			<itemlayout height="215" width="240">
+			<itemlayout height="322" width="360">
 				<control type="image">
-					<left>2</left>
-					<top>2</top>
-					<width>235</width>
-					<height>211</height>
+					<left>3</left>
+					<top>3</top>
+					<width>352</width>
+					<height>316</height>
 					<texture border="3">button-nofocus.png</texture>
 				</control>
 				<control type="image">
-					<left>7</left>
-					<top>20</top>
-					<width>220</width>
-					<height>150</height>
+					<left>10</left>
+					<top>30</top>
+					<width>330</width>
+					<height>225</height>
 					<aspectratio>scale</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<left>7</left>
-					<top>185</top>
-					<width>226</width>
-					<height>15</height>
+					<left>10</left>
+					<top>278</top>
+					<width>339</width>
+					<height>22</height>
 					<font>font12</font>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -107,27 +107,27 @@
 					<label>$INFO[ListItem.Label]$INFO[ListItem.Label2, (,)]</label>
 				</control>
 			</itemlayout>
-			<focusedlayout height="215" width="240">
+			<focusedlayout height="322" width="360">
 				<control type="image">
-					<left>2</left>
-					<top>2</top>
-					<width>235</width>
-					<height>211</height>
+					<left>3</left>
+					<top>3</top>
+					<width>352</width>
+					<height>316</height>
 					<texture border="3">folder-focus.png</texture>
 				</control>
 				<control type="image">
-					<left>7</left>
-					<top>20</top>
-					<width>220</width>
-					<height>150</height>
+					<left>10</left>
+					<top>30</top>
+					<width>330</width>
+					<height>225</height>
 					<aspectratio>scale</aspectratio>
 					<texture background="true">$INFO[ListItem.Icon]</texture>
 				</control>
 				<control type="label">
-					<left>7</left>
-					<top>185</top>
-					<width>226</width>
-					<height>15</height>
+					<left>10</left>
+					<top>278</top>
+					<width>339</width>
+					<height>22</height>
 					<font>font12</font>
 					<selectedcolor>selected</selectedcolor>
 					<align>center</align>
@@ -137,11 +137,11 @@
 			</focusedlayout>
 		</control>
 		<control type="grouplist" id="9000">
-			<left>20</left>
-			<top>535</top>
-			<width>760</width>
-			<height>40</height>
-			<itemgap>5</itemgap>
+			<left>30</left>
+			<top>802</top>
+			<width>1140</width>
+			<height>60</height>
+			<itemgap>8</itemgap>
 			<align>center</align>
 			<orientation>horizontal</orientation>
 			<onleft>9000</onleft>
@@ -151,19 +151,19 @@
 			<control type="button" id="2">
 				<description>Create Bookmark button</description>
 				<label>294</label>
-				<width>240</width>
+				<width>360</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 			</control>
 			<control type="button" id="3">
 				<description>Clear Bookmark button</description>
 				<label>296</label>
-				<width>240</width>
+				<width>360</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 			</control>
 			<control type="button" id="4">
 				<description>Clear Bookmark button</description>
 				<label>20406</label>
-				<width>240</width>
+				<width>360</width>
 				<include>ButtonInfoDialogsCommonValues</include>
 				<visible>videoplayer.content(episodes)</visible>
 			</control>

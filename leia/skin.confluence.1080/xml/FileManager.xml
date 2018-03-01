@@ -5,43 +5,43 @@
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
-			<top>100r</top>
-			<width>1280</width>
-			<height>100</height>
+			<top>150r</top>
+			<width>1920</width>
+			<height>150</height>
 			<texture>floor.png</texture>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="slide" start="0,15" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,15" time="150" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="group">
-			<left>30</left>
-			<top>40</top>
+			<left>45</left>
+			<top>60</top>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+				<effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="225" />
 				<effect type="fade" start="0" end="100" time="225" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+				<effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="225" />
 				<effect type="fade" start="100" end="0" time="225" />
 			</animation>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>610</width>
-				<height>620</height>
+				<width>915</width>
+				<height>930</height>
 				<texture border="20">ContentPanel.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
-				<top>612</top>
-				<width>610</width>
-				<height>64</height>
+				<top>918</top>
+				<width>915</width>
+				<height>96</height>
 				<texture border="10">ContentPanelMirror.png</texture>
 			</control>
 			<control type="image">
-				<left>510</left>
-				<top>20</top>
-				<width>80</width>
-				<height>80</height>
+				<left>765</left>
+				<top>30</top>
+				<width>120</width>
+				<height>120</height>
 				<aspectratio>keep</aspectratio>
 				<info>Container(20).ListItem.Icon</info>
 				<bordertexture border="5">button-nofocus.png</bordertexture>
@@ -49,10 +49,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>30</left>
-				<top>30</top>
-				<width>470</width>
-				<height>30</height>
+				<left>45</left>
+				<top>45</top>
+				<width>705</width>
+				<height>45</height>
 				<font>font35_title</font>
 				<label>A</label>
 				<align>left</align>
@@ -62,10 +62,10 @@
 			</control>
 			<control type="label" id="101">
 				<description>current directory text label</description>
-				<left>30</left>
-				<top>70</top>
-				<width>470</width>
-				<height>30</height>
+				<left>45</left>
+				<top>105</top>
+				<width>705</width>
+				<height>45</height>
 				<font>font12_title</font>
 				<textcolor>selected</textcolor>
 				<shadowcolor>black</shadowcolor>
@@ -74,10 +74,10 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="scrollbar" id="30">
-				<left>10</left>
-				<top>110</top>
-				<width>25</width>
-				<height>490</height>
+				<left>15</left>
+				<top>165</top>
+				<width>38</width>
+				<height>735</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -91,29 +91,29 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="20">
-				<left>40</left>
-				<top>110</top>
-				<width>540</width>
-				<height>491</height>
+				<left>60</left>
+				<top>165</top>
+				<width>810</width>
+				<height>736</height>
 				<onleft>30</onleft>
 				<onright>21</onright>
 				<onup>20</onup>
 				<ondown>20</ondown>
 				<pagecontrol>30</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="40" width="540">
+				<itemlayout height="60" width="810">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>540</width>
-						<height>41</height>
+						<width>810</width>
+						<height>62</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -122,10 +122,10 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
+						<left>495</left>
 						<top>0</top>
-						<width>200</width>
-						<height>40</height>
+						<width>300</width>
+						<height>60</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -134,36 +134,36 @@
 						<info>ListItem.Label2</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40" width="540">
+				<focusedlayout height="60" width="810">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>540</width>
-						<height>41</height>
+						<width>810</width>
+						<height>62</height>
 						<visible>!Control.HasFocus(20)</visible>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>540</width>
-						<height>41</height>
+						<width>810</width>
+						<height>62</height>
 						<visible>Control.HasFocus(20)</visible>
 						<texture border="0,2,0,2">MenuItemFO.png</texture>
 					</control>
 					<control type="image">
-						<left>340</left>
-						<top>5</top>
-						<width>200</width>
-						<height>31</height>
+						<left>510</left>
+						<top>8</top>
+						<width>300</width>
+						<height>46</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(20) + !String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -172,10 +172,10 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
+						<left>495</left>
 						<top>0</top>
-						<width>200</width>
-						<height>40</height>
+						<width>300</width>
+						<height>60</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -187,35 +187,35 @@
 			</control>
 		</control>
 		<control type="group">
-			<left>650</left>
-			<top>40</top>
+			<left>975</left>
+			<top>60</top>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+				<effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="225" />
 				<effect type="fade" start="0" end="100" time="225" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+				<effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="225" />
 				<effect type="fade" start="100" end="0" time="225" />
 			</animation>
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>610</width>
-				<height>620</height>
+				<width>915</width>
+				<height>930</height>
 				<texture border="20">ContentPanel.png</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
-				<top>612</top>
-				<width>610</width>
-				<height>64</height>
+				<top>918</top>
+				<width>915</width>
+				<height>96</height>
 				<texture border="10">ContentPanelMirror.png</texture>
 			</control>
 			<control type="image">
-				<left>20</left>
-				<top>20</top>
-				<width>80</width>
-				<height>80</height>
+				<left>30</left>
+				<top>30</top>
+				<width>120</width>
+				<height>120</height>
 				<aspectratio>keep</aspectratio>
 				<info>Container(21).ListItem.Icon</info>
 				<bordertexture border="5">button-nofocus.png</bordertexture>
@@ -223,10 +223,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>110</left>
-				<top>30</top>
-				<width>470</width>
-				<height>30</height>
+				<left>165</left>
+				<top>45</top>
+				<width>705</width>
+				<height>45</height>
 				<font>font35_title</font>
 				<label>B</label>
 				<align>right</align>
@@ -236,10 +236,10 @@
 			</control>
 			<control type="label" id="102">
 				<description>current directory text label</description>
-				<left>110</left>
-				<top>70</top>
-				<width>470</width>
-				<height>30</height>
+				<left>165</left>
+				<top>105</top>
+				<width>705</width>
+				<height>45</height>
 				<font>font12_title</font>
 				<textcolor>selected</textcolor>
 				<shadowcolor>black</shadowcolor>
@@ -248,10 +248,10 @@
 				<aligny>center</aligny>
 			</control>
 			<control type="scrollbar" id="31">
-				<left>575</left>
-				<top>110</top>
-				<width>25</width>
-				<height>490</height>
+				<left>862</left>
+				<top>165</top>
+				<width>38</width>
+				<height>735</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="2,16,2,16">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="2,16,2,16">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -265,29 +265,29 @@
 				<orientation>vertical</orientation>
 			</control>
 			<control type="list" id="21">
-				<left>30</left>
-				<top>110</top>
-				<width>540</width>
-				<height>491</height>
+				<left>45</left>
+				<top>165</top>
+				<width>810</width>
+				<height>736</height>
 				<onleft>20</onleft>
 				<onright>31</onright>
 				<onup>21</onup>
 				<ondown>21</ondown>
 				<pagecontrol>31</pagecontrol>
 				<scrolltime>200</scrolltime>
-				<itemlayout height="40">
+				<itemlayout height="60">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>540</width>
-						<height>41</height>
+						<width>810</width>
+						<height>62</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -296,10 +296,10 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
+						<left>495</left>
 						<top>0</top>
-						<width>200</width>
-						<height>40</height>
+						<width>300</width>
+						<height>60</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -308,36 +308,36 @@
 						<info>ListItem.Label2</info>
 					</control>
 				</itemlayout>
-				<focusedlayout height="40">
+				<focusedlayout height="60">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>540</width>
-						<height>41</height>
+						<width>810</width>
+						<height>62</height>
 						<visible>!Control.HasFocus(21)</visible>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>540</width>
-						<height>41</height>
+						<width>810</width>
+						<height>62</height>
 						<visible>Control.HasFocus(21)</visible>
 						<texture border="0,2,0,2">MenuItemFO.png</texture>
 					</control>
 					<control type="image">
-						<left>340</left>
-						<top>5</top>
-						<width>200</width>
-						<height>31</height>
+						<left>510</left>
+						<top>8</top>
+						<width>300</width>
+						<height>46</height>
 						<texture border="0,0,14,0">MediaItemDetailBG.png</texture>
 						<visible>Control.HasFocus(21) + !String.IsEmpty(ListItem.Label2)</visible>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>500</width>
-						<height>40</height>
+						<width>750</width>
+						<height>60</height>
 						<font>font13</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -346,10 +346,10 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<left>330</left>
+						<left>495</left>
 						<top>0</top>
-						<width>200</width>
-						<height>40</height>
+						<width>300</width>
+						<height>60</height>
 						<font>font12</font>
 						<aligny>center</aligny>
 						<selectedcolor>selected</selectedcolor>
@@ -364,9 +364,9 @@
 			<depth>DepthFooter</depth>
 			<control type="label">
 				<description>number of files/pages in left list text label</description>
-				<left>40</left>
-				<top>53r</top>
-				<width>570</width>
+				<left>60</left>
+				<top>80r</top>
+				<width>855</width>
 				<font>font12</font>
 				<align>left</align>
 				<scroll>true</scroll>
@@ -376,9 +376,9 @@
 			</control>
 			<control type="label">
 				<description>number of files/pages in left list text label</description>
-				<right>40</right>
-				<top>53r</top>
-				<width>570</width>
+				<right>60</right>
+				<top>80r</top>
+				<width>855</width>
 				<font>font12</font>
 				<align>right</align>
 				<scroll>true</scroll>
@@ -388,8 +388,8 @@
 			</control>
 		</control>
 		<control type="group" id="10">
-			<left>595</left>
-			<top>55r</top>
+			<left>892</left>
+			<top>82r</top>
 			<include>Window_OpenClose_Animation</include>
 			<visible>system.getbool(input.enablemouse)</visible>
 			<include>Window_OpenClose_Animation</include>
@@ -397,8 +397,8 @@
 				<description>Back push button</description>
 				<left>0</left>
 				<top>0</top>
-				<width>45</width>
-				<height>45</height>
+				<width>68</width>
+				<height>68</height>
 				<label>1036</label>
 				<font></font>
 				<onclick>back</onclick>
@@ -411,19 +411,19 @@
 			</control>
 			<control type="image">
 				<description>Back Icon</description>
-				<left>5</left>
-				<top>5</top>
-				<width>35</width>
-				<height>35</height>
+				<left>8</left>
+				<top>8</top>
+				<width>52</width>
+				<height>52</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_back.png</texture>
 			</control>
 			<control type="button">
 				<description>Home push button</description>
-				<left>55</left>
+				<left>82</left>
 				<top>0</top>
-				<width>45</width>
-				<height>45</height>
+				<width>68</width>
+				<height>68</height>
 				<label>31003</label>
 				<font></font>
 				<onclick>ActivateWindow(home)</onclick>
@@ -436,10 +436,10 @@
 			</control>
 			<control type="image">
 				<description>Home Icon</description>
-				<left>60</left>
-				<top>5</top>
-				<width>35</width>
-				<height>35</height>
+				<left>90</left>
+				<top>8</top>
+				<width>52</width>
+				<height>52</height>
 				<aspectratio>keep</aspectratio>
 				<texture>icon_home.png</texture>
 			</control>

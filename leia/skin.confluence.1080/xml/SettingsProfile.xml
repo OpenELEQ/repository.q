@@ -5,44 +5,44 @@
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
-			<top>100r</top>
-			<width>1280</width>
-			<height>100</height>
+			<top>150r</top>
+			<width>1920</width>
+			<height>150</height>
 			<texture>floor.png</texture>
-			<animation effect="slide" start="0,10" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
-			<animation effect="slide" start="0,0" end="0,10" time="150" condition="Window.Next(Home)">WindowClose</animation>
+			<animation effect="slide" start="0,15" end="0,0" time="150" condition="Window.Previous(Home)">WindowOpen</animation>
+			<animation effect="slide" start="0,0" end="0,15" time="150" condition="Window.Next(Home)">WindowClose</animation>
 		</control>
 		<control type="group">
-			<left>90</left>
-			<top>30</top>
+			<left>135</left>
+			<top>45</top>
 			<animation type="WindowOpen" reversible="false">
-				<effect type="zoom" start="80" end="100" center="640,360" easing="out" tween="back" time="225" />
+				<effect type="zoom" start="80" end="100" center="960,540" easing="out" tween="back" time="225" />
 				<effect type="fade" start="0" end="100" time="225" />
 			</animation>
 			<animation type="WindowClose" reversible="false">
-				<effect type="zoom" start="100" end="80" center="640,360" easing="in" tween="back" time="225" />
+				<effect type="zoom" start="100" end="80" center="960,540" easing="in" tween="back" time="225" />
 				<effect type="fade" start="100" end="0" time="225" />
 			</animation>
 			<control type="image">
-				<left>5</left>
-				<top>5</top>
-				<width>1090</width>
-				<height>630</height>
+				<left>8</left>
+				<top>8</top>
+				<width>1635</width>
+				<height>945</height>
 				<texture border="15">ContentPanel.png</texture>
 			</control>
 			<control type="image">
-				<left>5</left>
-				<top>625</top>
-				<width>1090</width>
-				<height>64</height>
+				<left>8</left>
+				<top>938</top>
+				<width>1635</width>
+				<height>96</height>
 				<texture border="15">ContentPanelMirror.png</texture>
 			</control>
 			<control type="button">
 				<description>Close Window button</description>
-				<left>980</left>
-				<top>11</top>
-				<width>64</width>
-				<height>32</height>
+				<left>1470</left>
+				<top>16</top>
+				<width>96</width>
+				<height>48</height>
 				<label></label>
 				<font></font>
 				<onclick>PreviousMenu</onclick>
@@ -56,37 +56,37 @@
 			</control>
 			<control type="image">
 				<description>LOGO</description>
-				<left>30</left>
-				<top>15</top>
-				<width>220</width>
-				<height>80</height>
+				<left>45</left>
+				<top>22</top>
+				<width>330</width>
+				<height>120</height>
 				<aspectratio>keep</aspectratio>
 				<texture>Confluence_Logo.png</texture>
 			</control>
 			<control type="list" id="9000">
-				<left>10</left>
-				<top>82</top>
-				<width>260</width>
-				<height>541</height>
+				<left>15</left>
+				<top>123</top>
+				<width>390</width>
+				<height>812</height>
 				<onleft>9010</onleft>
 				<onright>9010</onright>
 				<onup>9000</onup>
 				<ondown>9000</ondown>
 				<pagecontrol></pagecontrol>
 				<scrolltime>300</scrolltime>
-				<itemlayout height="54" width="260">
+				<itemlayout height="81" width="390">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>260</width>
-						<height>55</height>
+						<width>390</width>
+						<height>82</height>
 						<texture border="5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>240</width>
-						<height>55</height>
+						<width>360</width>
+						<height>82</height>
 						<font>font24_title</font>
 						<textcolor>grey3</textcolor>
 						<align>right</align>
@@ -94,20 +94,20 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="54" width="260">
+				<focusedlayout height="81" width="390">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>260</width>
-						<height>55</height>
+						<width>390</width>
+						<height>82</height>
 						<texture border="5">MenuItemFO.png</texture>
 						<animation effect="fade" start="100" end="30" time="75" condition="!Control.HasFocus(9000)">Conditional</animation>
 					</control>
 					<control type="label">
-						<left>10</left>
+						<left>15</left>
 						<top>0</top>
-						<width>240</width>
-						<height>55</height>
+						<width>360</width>
+						<height>82</height>
 						<font>font24_title</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
@@ -128,13 +128,13 @@
 			</control>
 			<control type="group">
 				<visible>Container(9000).Hasfocus(2)</visible>
-				<left>20</left>
-				<top>260</top>
+				<left>30</left>
+				<top>390</top>
 				<control type="image">
 					<left>0</left>
 					<top>0</top>
-					<width>240</width>
-					<height>200</height>
+					<width>360</width>
+					<height>300</height>
 					<aspectratio>keep</aspectratio>
 					<bordertexture border="12">ThumbBorder.png</bordertexture>
 					<bordersize>10</bordersize>
@@ -142,9 +142,9 @@
 				</control>
 				<control type="label">
 					<left>0</left>
-					<top>210</top>
-					<width>240</width>
-					<height>20</height>
+					<top>315</top>
+					<width>360</width>
+					<height>30</height>
 					<font>font12_title</font>
 					<textcolor>blue</textcolor>
 					<align>center</align>
@@ -153,9 +153,9 @@
 				</control>
 				<control type="label">
 					<left>0</left>
-					<top>235</top>
-					<width>240</width>
-					<height>20</height>
+					<top>352</top>
+					<width>360</width>
+					<height>30</height>
 					<font>font13</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -164,9 +164,9 @@
 				</control>
 				<control type="label">
 					<left>0</left>
-					<top>265</top>
-					<width>240</width>
-					<height>30</height>
+					<top>398</top>
+					<width>360</width>
+					<height>45</height>
 					<font>font12_title</font>
 					<textcolor>blue</textcolor>
 					<align>center</align>
@@ -175,9 +175,9 @@
 				</control>
 				<control type="label">
 					<left>0</left>
-					<top>290</top>
-					<width>240</width>
-					<height>30</height>
+					<top>435</top>
+					<width>360</width>
+					<height>45</height>
 					<font>font13</font>
 					<textcolor>white</textcolor>
 					<align>center</align>
@@ -186,25 +186,25 @@
 				</control>
 			</control>
 			<control type="image">
-				<left>268</left>
-				<top>10</top>
-				<width>790</width>
-				<height>618</height>
+				<left>402</left>
+				<top>15</top>
+				<width>1185</width>
+				<height>927</height>
 				<texture border="5">black-back2.png</texture>
 			</control>
 			<control type="image">
-				<left>268</left>
-				<top>10</top>
-				<width>790</width>
-				<height>52</height>
+				<left>402</left>
+				<top>15</top>
+				<width>1185</width>
+				<height>78</height>
 				<texture>dialogheader.png</texture>
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>300</left>
-				<top>20</top>
-				<width>726</width>
-				<height>30</height>
+				<left>450</left>
+				<top>30</top>
+				<width>1089</width>
+				<height>45</height>
 				<font>font16</font>
 				<label>$LOCALIZE[13200] - $LOCALIZE[5]</label>
 				<align>center</align>
@@ -215,11 +215,11 @@
 			<control type="group" id="9010">
 				<control type="grouplist" id="9001">
 					<visible>Container(9000).Hasfocus(1)</visible>
-					<left>290</left>
-					<top>60</top>
-					<width>750</width>
-					<height>440</height>
-					<itemgap>-1</itemgap>
+					<left>435</left>
+					<top>90</top>
+					<width>1125</width>
+					<height>660</height>
+					<itemgap>-2</itemgap>
 					<pagecontrol>60</pagecontrol>
 					<onleft>9000</onleft>
 					<onright>9000</onright>
@@ -227,8 +227,8 @@
 					<ondown>9001</ondown>
 					<control type="radiobutton" id="4">
 						<description>enable login screen</description>
-						<width>750</width>
-						<height>40</height>
+						<width>1125</width>
+						<height>60</height>
 						<font>font13</font>
 						<label>20096</label>
 						<textcolor>grey2</textcolor>
@@ -238,8 +238,8 @@
 					</control>
 					<control type="button" id="5">
 						<description>auto login</description>
-						<width>750</width>
-						<height>40</height>
+						<width>1125</width>
+						<height>60</height>
 						<font>font13</font>
 						<label>33084</label>
 						<label2>$INFO[System.ProfileAutoLogin]</label2>
@@ -252,25 +252,25 @@
 				</control>
 				<control type="group">
 					<visible>Container(9000).Hasfocus(1)</visible>
-					<left>290</left>
-					<top>500</top>
-					<width>750</width>
-					<height>40</height>
+					<left>435</left>
+					<top>750</top>
+					<width>1125</width>
+					<height>60</height>
 					<control type="image">
 						<description>separator image</description>
 						<left>0</left>
-						<top>25</top>
-						<width>750</width>
-						<height>2</height>
+						<top>38</top>
+						<width>1125</width>
+						<height>3</height>
 						<texture>separator2.png</texture>
 						<colordiffuse>40FFFFFF</colordiffuse>
 					</control>
 					<control type="textbox">
 						<description>description area</description>
-						<left>7</left>
-						<top>32</top>
-						<width>736</width>
-						<height>83</height>
+						<left>10</left>
+						<top>48</top>
+						<width>1104</width>
+						<height>124</height>
 						<font>font12</font>
 						<label>$LOCALIZE[31422]</label>
 						<align>justify</align>
@@ -280,10 +280,10 @@
 					</control>
 					<control type="textbox">
 						<description>description area</description>
-						<left>7</left>
-						<top>32</top>
-						<width>736</width>
-						<height>83</height>
+						<left>10</left>
+						<top>48</top>
+						<width>1104</width>
+						<height>124</height>
 						<font>font12</font>
 						<label>$LOCALIZE[31423]</label>
 						<align>justify</align>
@@ -294,10 +294,10 @@
 				</control>
 				<control type="panel" id="2">
 					<visible>Container(9000).Hasfocus(2)</visible>
-					<left>290</left>
-					<top>72</top>
-					<width>760</width>
-					<height>540</height>
+					<left>435</left>
+					<top>108</top>
+					<width>1140</width>
+					<height>810</height>
 					<onleft>9000</onleft>
 					<onright>60</onright>
 					<onup>9010</onup>
@@ -305,22 +305,22 @@
 					<viewtype label="21371">list</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="180" width="190">
+					<itemlayout height="270" width="285">
 						<control type="image">
 							<left>1</left>
 							<top>0</top>
-							<width>188</width>
-							<height>145</height>
+							<width>282</width>
+							<height>218</height>
 							<bordertexture border="5">button-nofocus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<texture fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>145</top>
-							<width>178</width>
-							<height>25</height>
+							<left>9</left>
+							<top>218</top>
+							<width>267</width>
+							<height>38</height>
 							<font>font13</font>
 							<textcolor>grey2</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -329,22 +329,22 @@
 							<info>ListItem.Label</info>
 						</control>
 					</itemlayout>
-					<focusedlayout height="180" width="190">
+					<focusedlayout height="270" width="285">
 						<control type="image">
 							<left>1</left>
 							<top>0</top>
-							<width>188</width>
-							<height>145</height>
+							<width>282</width>
+							<height>218</height>
 							<bordertexture border="5">folder-focus.png</bordertexture>
 							<bordersize>5</bordersize>
 							<texture fallback="DefaultUser.png">$INFO[Listitem.Icon]</texture>
 							<aspectratio>keep</aspectratio>
 						</control>
 						<control type="label">
-							<left>6</left>
-							<top>145</top>
-							<width>178</width>
-							<height>25</height>
+							<left>9</left>
+							<top>218</top>
+							<width>267</width>
+							<height>38</height>
 							<font>font13</font>
 							<textcolor>white</textcolor>
 							<selectedcolor>selected</selectedcolor>
@@ -355,10 +355,10 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="60">
-					<left>1060</left>
-					<top>60</top>
-					<width>25</width>
-					<height>530</height>
+					<left>1590</left>
+					<top>90</top>
+					<width>38</width>
+					<height>795</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>

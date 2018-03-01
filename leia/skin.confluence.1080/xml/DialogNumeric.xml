@@ -4,31 +4,31 @@
 	<include>dialogeffect</include>
 	<depth>DepthDialog+</depth>
 	<coordinates>
-		<left>420</left>
-		<top>175</top>
+		<left>630</left>
+		<top>262</top>
 	</coordinates>
 	<controls>
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>380</width>
-			<height>430</height>
+			<width>570</width>
+			<height>645</height>
 			<texture border="40">DialogBack.png</texture>
 		</control>
 		<control type="image">
 			<description>Dialog Header image</description>
-			<left>40</left>
-			<top>18</top>
-			<width>300</width>
-			<height>50</height>
+			<left>60</left>
+			<top>27</top>
+			<width>450</width>
+			<height>75</height>
 			<texture>dialogheader.png</texture>
 		</control>
 		<control type="button">
 			<description>Close Window button</description>
-			<left>290</left>
-			<top>15</top>
-			<width>64</width>
-			<height>32</height>
+			<left>435</left>
+			<top>22</top>
+			<width>96</width>
+			<height>48</height>
 			<label></label>
 			<font></font>
 			<onclick>PreviousMenu</onclick>
@@ -38,10 +38,10 @@
 		</control>
 		<control type="label" id="1">
 			<description>dialog Heading</description>
-			<left>20</left>
-			<top>28</top>
-			<width>340</width>
-			<height>35</height>
+			<left>30</left>
+			<top>42</top>
+			<width>510</width>
+			<height>52</height>
 			<font>font12_title</font>
 			<textcolor>selected</textcolor>
 			<shadowcolor>black</shadowcolor>
@@ -50,19 +50,19 @@
 			<wrapmultiline>true</wrapmultiline>
 		</control>
 		<control type="image">
-			<left>30</left>
-			<top>70</top>
-			<width>320</width>
-			<height>50</height>
+			<left>45</left>
+			<top>105</top>
+			<width>480</width>
+			<height>75</height>
 			<aspectratio>stretch</aspectratio>
 			<texture border="20">KeyboardEditArea.png</texture>
 		</control>
 		<control type="label" id="4">
 			<description>Edit Text</description>
-			<left>35</left>
-			<top>70</top>
-			<width>310</width>
-			<height>50</height>
+			<left>52</left>
+			<top>105</top>
+			<width>465</width>
+			<height>75</height>
 			<font>font13</font>
 			<textcolor>selected</textcolor>
 			<disabledcolor>grey2</disabledcolor>
@@ -70,22 +70,22 @@
 			<aligny>center</aligny>
 		</control>
 		<control type="image">
-			<left>40</left>
-			<top>120</top>
-			<width>300</width>
-			<height>30</height>
+			<left>60</left>
+			<top>180</top>
+			<width>450</width>
+			<height>45</height>
 			<aspectratio>stretch</aspectratio>
 			<texture>dialogheader.png</texture>
 		</control>
 		<control type="group">
-			<left>55</left>
-			<top>155</top>
+			<left>82</left>
+			<top>232</top>
 			<control type="button" id="11">
 				<description>1 button</description>
 				<left>0</left>
 				<top>0</top>
-				<width>60</width>
-				<height>60</height>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -100,10 +100,10 @@
 			</control>
 			<control type="button" id="12">
 				<description>2 button</description>
-				<left>60</left>
+				<left>90</left>
 				<top>0</top>
-				<width>60</width>
-				<height>60</height>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -118,10 +118,10 @@
 			</control>
 			<control type="button" id="13">
 				<description>3 button</description>
-				<left>120</left>
+				<left>180</left>
 				<top>0</top>
-				<width>60</width>
-				<height>60</height>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -136,16 +136,16 @@
 			</control>
 			<control type="button" id="23">
 				<description>Backspace button</description>
-				<left>180</left>
+				<left>270</left>
 				<top>0</top>
-				<width>90</width>
-				<height>120</height>
+				<width>135</width>
+				<height>180</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturenofocus flipx="true" border="5,25,25,5">KeyboardCornerTopNF.png</texturenofocus>
 				<texturefocus flipx="true" border="5,25,25,5">KeyboardCornerTop.png</texturefocus>
-				<textwidth>120</textwidth>
+				<textwidth>180</textwidth>
 				<label></label>
 				<focusedcolor>black</focusedcolor>
 				<onleft>13</onleft>
@@ -155,18 +155,18 @@
 			</control>
 			<control type="image">
 				<description>Backspace icon</description>
-				<left>210</left>
-				<top>45</top>
-				<width>30</width>
-				<height>30</height>
+				<left>315</left>
+				<top>68</top>
+				<width>45</width>
+				<height>45</height>
 				<texture>KeyboardBackKey.png</texture>
 			</control>
 			<control type="button" id="14">
 				<description>4 button</description>
 				<left>0</left>
-				<top>60</top>
-				<width>60</width>
-				<height>60</height>
+				<top>90</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -181,10 +181,10 @@
 			</control>
 			<control type="button" id="15">
 				<description>5 button</description>
-				<left>60</left>
-				<top>60</top>
-				<width>60</width>
-				<height>60</height>
+				<left>90</left>
+				<top>90</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -199,10 +199,10 @@
 			</control>
 			<control type="button" id="16">
 				<description>6 button</description>
-				<left>120</left>
-				<top>60</top>
-				<width>60</width>
-				<height>60</height>
+				<left>180</left>
+				<top>90</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -218,9 +218,9 @@
 			<control type="button" id="17">
 				<description>7 button</description>
 				<left>0</left>
-				<top>120</top>
-				<width>60</width>
-				<height>60</height>
+				<top>180</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -235,10 +235,10 @@
 			</control>
 			<control type="button" id="18">
 				<description>8 button</description>
-				<left>60</left>
-				<top>120</top>
-				<width>60</width>
-				<height>60</height>
+				<left>90</left>
+				<top>180</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -253,10 +253,10 @@
 			</control>
 			<control type="button" id="19">
 				<description>9 button</description>
-				<left>120</left>
-				<top>120</top>
-				<width>60</width>
-				<height>60</height>
+				<left>180</left>
+				<top>180</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -271,16 +271,16 @@
 			</control>
 			<control type="button" id="21">
 				<description>Done button</description>
-				<left>180</left>
-				<top>120</top>
-				<width>90</width>
-				<height>120</height>
+				<left>270</left>
+				<top>180</top>
+				<width>135</width>
+				<height>180</height>
 				<font>font12</font>
 				<align>center</align>
 				<aligny>center</aligny>
 				<texturenofocus flipx="true" border="25,5,5,25">KeyboardCornerBottomNF.png</texturenofocus>
 				<texturefocus flipx="true" border="5,5,25,25">KeyboardCornerBottom.png</texturefocus>
-				<textwidth>120</textwidth>
+				<textwidth>180</textwidth>
 				<label></label>
 				<focusedcolor>black</focusedcolor>
 				<onleft>19</onleft>
@@ -290,18 +290,18 @@
 			</control>
 			<control type="image">
 				<description>Done icon</description>
-				<left>210</left>
-				<top>165</top>
-				<width>30</width>
-				<height>30</height>
+				<left>315</left>
+				<top>248</top>
+				<width>45</width>
+				<height>45</height>
 				<texture>KeyboardDoneKey.png</texture>
 			</control>
 			<control type="button" id="20">
 				<description>prev button</description>
 				<left>0</left>
-				<top>180</top>
-				<width>60</width>
-				<height>60</height>
+				<top>270</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font30</font>
 				<label>&lt;</label>
 				<focusedcolor>black</focusedcolor>
@@ -316,10 +316,10 @@
 			</control>
 			<control type="button" id="10">
 				<description>0 button</description>
-				<left>60</left>
-				<top>180</top>
-				<width>60</width>
-				<height>60</height>
+				<left>90</left>
+				<top>270</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font13</font>
 				<align>center</align>
 				<aligny>center</aligny>
@@ -334,10 +334,10 @@
 			</control>
 			<control type="button" id="22">
 				<description>next button</description>
-				<left>120</left>
-				<top>180</top>
-				<width>60</width>
-				<height>60</height>
+				<left>180</left>
+				<top>270</top>
+				<width>90</width>
+				<height>90</height>
 				<font>font30</font>
 				<label>&gt;</label>
 				<focusedcolor>black</focusedcolor>

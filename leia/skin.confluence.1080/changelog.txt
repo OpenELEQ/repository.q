@@ -1,5 +1,11 @@
-[B]4.3.0[/B]
-- Forked from Confluence v4.3.0
+[B]4.3.1[/B]
+Forked from Confluence v4.3.0
+- Added conversion info
+- Added AutoComplete icon
+- Added themed artwork
+- Updated logo's
+- Updated addon.xml
+- Upscaled dimensions to 1080
 
 [B]4.1.41[/B]
 

@@ -4,10 +4,10 @@
 		<control type="group">
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>15</top>
-				<width>610</width>
-				<height>30</height>
+				<left>30</left>
+				<top>22</top>
+				<width>915</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>31904</label>
 				<align>center</align>
@@ -18,10 +18,10 @@
 				<visible>Control.IsVisible(51)</visible>
 			</control>
 			<control type="list" id="51">
-				<left>15</left>
-				<top>60</top>
-				<width>600</width>
-				<height>541</height>
+				<left>22</left>
+				<top>90</top>
+				<width>900</width>
+				<height>812</height>
 				<onleft>9000</onleft>
 				<onright>61</onright>
 				<onup>51</onup>
@@ -31,26 +31,26 @@
 				<scrolltime>200</scrolltime>
 				<include>VisibleFadeEffect</include>
 				<visible>String.IsEmpty(Window.Property(Weather.CurrentView))</visible>
-				<itemlayout height="135" width="600" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+				<itemlayout height="202" width="900" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
-						<left>150</left>
-						<top>5</top>
-						<width>300</width>
-						<height>25</height>
+						<left>225</left>
+						<top>8</top>
+						<width>450</width>
+						<height>38</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -60,18 +60,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>460</left>
+						<left>690</left>
 						<top>0</top>
-						<width>135</width>
-						<height>135</height>
+						<width>202</width>
+						<height>202</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
-						<left>30</left>
-						<top>35</top>
-						<width>390</width>
-						<height>30</height>
+						<left>45</left>
+						<top>52</top>
+						<width>585</width>
+						<height>45</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -82,10 +82,10 @@
 						<visible>!String.IsEmpty(ListItem.Property(HighTemp))</visible>
 					</control>
 					<control type="textbox">
-						<left>30</left>
-						<top>72</top>
-						<width>400</width>
-						<height>48</height>
+						<left>45</left>
+						<top>108</top>
+						<width>600</width>
+						<height>72</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -94,12 +94,12 @@
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="135" width="600" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
+				<focusedlayout height="202" width="900" condition="String.IsEmpty(Window.Property(Daily.IsFetched))">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
@@ -107,8 +107,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
@@ -116,17 +116,17 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="10">button-focus2.png</texture>
 						<visible>Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
-						<left>150</left>
-						<top>5</top>
-						<width>300</width>
-						<height>25</height>
+						<left>225</left>
+						<top>8</top>
+						<width>450</width>
+						<height>38</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -136,18 +136,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>460</left>
+						<left>690</left>
 						<top>0</top>
-						<width>135</width>
-						<height>135</height>
+						<width>202</width>
+						<height>202</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.ActualIcon]</texture>
 					</control>
 					<control type="label">
-						<left>30</left>
-						<top>35</top>
-						<width>390</width>
-						<height>30</height>
+						<left>45</left>
+						<top>52</top>
+						<width>585</width>
+						<height>45</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -158,10 +158,10 @@
 						<visible>!String.IsEmpty(ListItem.Property(HighTemp))</visible>
 					</control>
 					<control type="textbox">
-						<left>30</left>
-						<top>72</top>
-						<width>400</width>
-						<height>48</height>
+						<left>45</left>
+						<top>108</top>
+						<width>600</width>
+						<height>72</height>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<shadowcolor>black</shadowcolor>
@@ -170,19 +170,19 @@
 						<label>$INFO[ListItem.Property(Outlook)]</label>
 					</control>
 				</focusedlayout>
-				<itemlayout height="135" width="600" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+				<itemlayout height="202" width="900" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>100</width>
-						<height>120</height>
+						<width>150</width>
+						<height>180</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -191,18 +191,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>110</left>
-						<top>5</top>
-						<width>80</width>
-						<height>80</height>
+						<left>165</left>
+						<top>8</top>
+						<width>120</width>
+						<height>120</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
 					<control type="label">
-						<left>200</left>
+						<left>300</left>
 						<top>0</top>
-						<width>390</width>
-						<height>70</height>
+						<width>585</width>
+						<height>105</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -211,10 +211,10 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="textbox">
-						<left>5</left>
-						<top>82</top>
-						<width>590</width>
-						<height>48</height>
+						<left>8</left>
+						<top>123</top>
+						<width>885</width>
+						<height>72</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -222,12 +222,12 @@
 						<label>$INFO[ListItem.ActualIcon]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="135" width="600" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
+				<focusedlayout height="202" width="900" condition="!String.IsEmpty(Window.Property(Daily.IsFetched))">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
@@ -235,8 +235,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="10">button-focus2.png</texture>
 						<visible>Control.HasFocus(51)</visible>
 						<include>VisibleFadeEffect</include>
@@ -244,8 +244,8 @@
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>100</width>
-						<height>120</height>
+						<width>150</width>
+						<height>180</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -254,18 +254,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>110</left>
-						<top>5</top>
-						<width>80</width>
-						<height>80</height>
+						<left>165</left>
+						<top>8</top>
+						<width>120</width>
+						<height>120</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
 					<control type="label">
-						<left>200</left>
+						<left>300</left>
 						<top>0</top>
-						<width>390</width>
-						<height>70</height>
+						<width>585</width>
+						<height>105</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -274,10 +274,10 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="textbox">
-						<left>5</left>
-						<top>82</top>
-						<width>590</width>
-						<height>48</height>
+						<left>8</left>
+						<top>123</top>
+						<width>885</width>
+						<height>72</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -357,10 +357,10 @@
 				</content>
 			</control>
 			<control type="scrollbar" id="61">
-				<left>615</left>
-				<top>60</top>
-				<width>25</width>
-				<height>540</height>
+				<left>922</left>
+				<top>90</top>
+				<width>38</width>
+				<height>810</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -374,11 +374,11 @@
 			</control>
 			<control type="label">
 				<depth>DepthFooter</depth>
-				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
 				<description>number of files/pages</description>
-				<left>90</left>
-				<top>627</top>
-				<width>570</width>
+				<left>135</left>
+				<top>940</top>
+				<width>855</width>
 				<font>font12</font>
 				<align>right</align>
 				<scroll>true</scroll>
@@ -433,8 +433,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="997">
 				<description>Hidden Button for focus</description>
-				<left>-600</left>
-				<top>-20</top>
+				<left>-900</left>
+				<top>-30</top>
 				<width>1</width>
 				<height>1</height>
 				<texturenofocus></texturenofocus>
@@ -444,10 +444,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>15</top>
-				<width>610</width>
-				<height>30</height>
+				<left>30</left>
+				<top>22</top>
+				<width>915</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>31901</label>
 				<align>center</align>
@@ -456,16 +456,16 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group">
-				<left>20</left>
-				<top>50</top>
+				<left>30</left>
+				<top>75</top>
 				<control type="group">
 					<left>0</left>
 					<top>0</top>
 					<control type="label">
 						<left>0</left>
-						<top>5</top>
-						<width>600</width>
-						<height>30</height>
+						<top>8</top>
+						<width>900</width>
+						<height>45</height>
 						<font>font13_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
@@ -474,17 +474,17 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>10</top>
-						<width>120</width>
-						<height>110</height>
+						<top>15</top>
+						<width>180</width>
+						<height>165</height>
 						<aspectratio>keep</aspectratio>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(36Hour.1.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
-						<left>120</left>
-						<top>40</top>
-						<width>100</width>
-						<height>40</height>
+						<left>180</left>
+						<top>60</top>
+						<width>150</width>
+						<height>60</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -493,10 +493,10 @@
 						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.1.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.1.Temperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<right>90</right>
-						<top>20</top>
-						<width>390</width>
-						<height>130</height>
+						<right>135</right>
+						<top>30</top>
+						<width>585</width>
+						<height>195</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -506,9 +506,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>147</top>
-						<width>590</width>
-						<height>68</height>
+						<top>220</top>
+						<width>885</width>
+						<height>102</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -517,20 +517,20 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>180</top>
-						<width>650</width>
-						<height>4</height>
+						<top>270</top>
+						<width>975</width>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
 					<left>0</left>
-					<top>185</top>
+					<top>278</top>
 					<control type="label">
 						<left>0</left>
-						<top>5</top>
-						<width>600</width>
-						<height>30</height>
+						<top>8</top>
+						<width>900</width>
+						<height>45</height>
 						<font>font13_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
@@ -539,17 +539,17 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>10</top>
-						<width>120</width>
-						<height>110</height>
+						<top>15</top>
+						<width>180</width>
+						<height>165</height>
 						<aspectratio>keep</aspectratio>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(36Hour.2.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
-						<left>120</left>
-						<top>40</top>
-						<width>100</width>
-						<height>40</height>
+						<left>180</left>
+						<top>60</top>
+						<width>150</width>
+						<height>60</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -558,10 +558,10 @@
 						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.2.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.2.Temperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<right>90</right>
-						<top>20</top>
-						<width>390</width>
-						<height>130</height>
+						<right>135</right>
+						<top>30</top>
+						<width>585</width>
+						<height>195</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -571,9 +571,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>147</top>
-						<width>590</width>
-						<height>68</height>
+						<top>220</top>
+						<width>885</width>
+						<height>102</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -582,20 +582,20 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>180</top>
-						<width>650</width>
-						<height>4</height>
+						<top>270</top>
+						<width>975</width>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
 					<left>0</left>
-					<top>370</top>
+					<top>555</top>
 					<control type="label">
 						<left>0</left>
-						<top>5</top>
-						<width>600</width>
-						<height>30</height>
+						<top>8</top>
+						<width>900</width>
+						<height>45</height>
 						<font>font13_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
@@ -604,17 +604,17 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>10</top>
-						<width>120</width>
-						<height>110</height>
+						<top>15</top>
+						<width>180</width>
+						<height>165</height>
 						<aspectratio>keep</aspectratio>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(36Hour.3.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
-						<left>120</left>
-						<top>40</top>
-						<width>100</width>
-						<height>40</height>
+						<left>180</left>
+						<top>60</top>
+						<width>150</width>
+						<height>60</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -623,10 +623,10 @@
 						<label>[COLOR=grey2]$INFO[Window.Property(36Hour.3.TemperatureHeading)][CR][/COLOR]$INFO[Window.Property(36Hour.3.Temperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<right>90</right>
-						<top>20</top>
-						<width>390</width>
-						<height>130</height>
+						<right>135</right>
+						<top>30</top>
+						<width>585</width>
+						<height>195</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -636,9 +636,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>147</top>
-						<width>590</width>
-						<height>68</height>
+						<top>220</top>
+						<width>885</width>
+						<height>102</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -655,8 +655,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="998">
 				<description>Hidden Button for focus</description>
-				<left>-600</left>
-				<top>-20</top>
+				<left>-900</left>
+				<top>-30</top>
 				<width>1</width>
 				<height>1</height>
 				<texturenofocus></texturenofocus>
@@ -666,10 +666,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>15</top>
-				<width>610</width>
-				<height>30</height>
+				<left>30</left>
+				<top>22</top>
+				<width>915</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>31903</label>
 				<align>center</align>
@@ -678,16 +678,16 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="group">
-				<left>20</left>
-				<top>50</top>
+				<left>30</left>
+				<top>75</top>
 				<control type="group">
 					<left>0</left>
 					<top>0</top>
 					<control type="label">
 						<left>0</left>
-						<top>5</top>
-						<width>600</width>
-						<height>30</height>
+						<top>8</top>
+						<width>900</width>
+						<height>45</height>
 						<font>font13_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
@@ -695,18 +695,18 @@
 						<label>$INFO[Window.Property(Weekend.1.LongDay)] - $INFO[Window.Property(Weekend.1.ShortDate)]</label>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<top>20</top>
-						<width>130</width>
-						<height>160</height>
+						<left>15</left>
+						<top>30</top>
+						<width>195</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.1.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
-						<left>140</left>
-						<top>40</top>
-						<width>100</width>
-						<height>50</height>
+						<left>210</left>
+						<top>60</top>
+						<width>150</width>
+						<height>75</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -715,10 +715,10 @@
 						<label>[COLOR=grey2]$LOCALIZE[393][CR][/COLOR]$INFO[Window.Property(Weekend.1.HighTemperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
-						<top>100</top>
-						<width>100</width>
-						<height>50</height>
+						<left>210</left>
+						<top>150</top>
+						<width>150</width>
+						<height>75</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -727,10 +727,10 @@
 						<label>[COLOR=grey2]$LOCALIZE[391][CR][/COLOR]$INFO[Window.Property(Weekend.1.LowTemperature),[B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
-						<left>240</left>
-						<top>42</top>
-						<width>350</width>
-						<height>128</height>
+						<left>360</left>
+						<top>63</top>
+						<width>525</width>
+						<height>192</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
@@ -738,9 +738,9 @@
 					</control>
 					<control type="label">
 						<left>0</left>
-						<top>180</top>
-						<width>590</width>
-						<height>20</height>
+						<top>270</top>
+						<width>885</width>
+						<height>30</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -750,9 +750,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>217</top>
-						<width>590</width>
-						<height>68</height>
+						<top>326</top>
+						<width>885</width>
+						<height>102</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -761,20 +761,20 @@
 					</control>
 					<control type="image">
 						<left>0</left>
-						<top>270</top>
-						<width>650</width>
-						<height>4</height>
+						<top>405</top>
+						<width>975</width>
+						<height>6</height>
 						<texture>separator.png</texture>
 					</control>
 				</control>
 				<control type="group">
 					<left>0</left>
-					<top>280</top>
+					<top>420</top>
 					<control type="label">
 						<left>0</left>
-						<top>5</top>
-						<width>600</width>
-						<height>30</height>
+						<top>8</top>
+						<width>900</width>
+						<height>45</height>
 						<font>font13_title</font>
 						<textcolor>blue</textcolor>
 						<align>center</align>
@@ -782,18 +782,18 @@
 						<label>$INFO[Window.Property(Weekend.2.LongDay)] - $INFO[Window.Property(Weekend.2.ShortDate)]</label>
 					</control>
 					<control type="image">
-						<left>10</left>
-						<top>20</top>
-						<width>130</width>
-						<height>160</height>
+						<left>15</left>
+						<top>30</top>
+						<width>195</width>
+						<height>240</height>
 						<aspectratio>keep</aspectratio>
 						<texture>resource://resource.images.weathericons.default/$INFO[Window.Property(Weekend.2.OutlookIcon)]</texture>
 					</control>
 					<control type="label">
-						<left>140</left>
-						<top>40</top>
-						<width>100</width>
-						<height>50</height>
+						<left>210</left>
+						<top>60</top>
+						<width>150</width>
+						<height>75</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -802,10 +802,10 @@
 						<label>[COLOR=grey2]$LOCALIZE[393][CR][/COLOR]$INFO[Window.Property(Weekend.2.HighTemperature),[B] ,[/B]]</label>
 					</control>
 					<control type="label">
-						<left>140</left>
-						<top>100</top>
-						<width>100</width>
-						<height>50</height>
+						<left>210</left>
+						<top>150</top>
+						<width>150</width>
+						<height>75</height>
 						<font>font13_title</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -814,10 +814,10 @@
 						<label>[COLOR=grey2]$LOCALIZE[391][CR][/COLOR]$INFO[Window.Property(Weekend.2.LowTemperature),[B] ,[/B]]</label>
 					</control>
 					<control type="textbox">
-						<left>240</left>
-						<top>42</top>
-						<width>350</width>
-						<height>128</height>
+						<left>360</left>
+						<top>63</top>
+						<width>525</width>
+						<height>192</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<align>right</align>
@@ -825,9 +825,9 @@
 					</control>
 					<control type="label">
 						<left>0</left>
-						<top>180</top>
-						<width>590</width>
-						<height>20</height>
+						<top>270</top>
+						<width>885</width>
+						<height>30</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -837,9 +837,9 @@
 					</control>
 					<control type="textbox">
 						<left>0</left>
-						<top>217</top>
-						<width>590</width>
-						<height>68</height>
+						<top>326</top>
+						<width>885</width>
+						<height>102</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -854,10 +854,10 @@
 		<control type="group">
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>15</top>
-				<width>610</width>
-				<height>30</height>
+				<left>30</left>
+				<top>22</top>
+				<width>915</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>31902</label>
 				<align>center</align>
@@ -868,10 +868,10 @@
 				<visible>Control.IsVisible(52)</visible>
 			</control>
 			<control type="list" id="52">
-				<left>15</left>
-				<top>60</top>
-				<width>600</width>
-				<height>541</height>
+				<left>22</left>
+				<top>90</top>
+				<width>900</width>
+				<height>812</height>
 				<onleft>9000</onleft>
 				<onright>62</onright>
 				<onup>52</onup>
@@ -881,19 +881,19 @@
 				<scrolltime>200</scrolltime>
 				<include>VisibleFadeEffect</include>
 				<visible>String.IsEqual(Window.Property(Weather.CurrentView),hourly) + !String.IsEmpty(Window.Property(Hourly.IsFetched))</visible>
-				<itemlayout height="135" width="600">
+				<itemlayout height="202" width="900">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,5,0,5">MenuItemNF.png</texture>
 					</control>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>100</width>
-						<height>120</height>
+						<width>150</width>
+						<height>180</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -902,18 +902,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>110</left>
-						<top>5</top>
-						<width>80</width>
-						<height>80</height>
+						<left>165</left>
+						<top>8</top>
+						<width>120</width>
+						<height>120</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
 					<control type="label">
-						<left>200</left>
-						<top>5</top>
-						<width>390</width>
-						<height>70</height>
+						<left>300</left>
+						<top>8</top>
+						<width>585</width>
+						<height>105</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -922,10 +922,10 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="textbox">
-						<left>5</left>
-						<top>82</top>
-						<width>590</width>
-						<height>48</height>
+						<left>8</left>
+						<top>123</top>
+						<width>885</width>
+						<height>72</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -933,12 +933,12 @@
 						<label>$INFO[ListItem.ActualIcon]</label>
 					</control>
 				</itemlayout>
-				<focusedlayout height="135" width="600">
+				<focusedlayout height="202" width="900">
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="0,2,0,2">MenuItemNF.png</texture>
 						<visible>!Control.HasFocus(52)</visible>
 						<include>VisibleFadeEffect</include>
@@ -946,8 +946,8 @@
 					<control type="image">
 						<left>0</left>
 						<top>0</top>
-						<width>600</width>
-						<height>136</height>
+						<width>900</width>
+						<height>204</height>
 						<texture border="10">button-focus2.png</texture>
 						<visible>Control.HasFocus(52)</visible>
 						<include>VisibleFadeEffect</include>
@@ -955,8 +955,8 @@
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>100</width>
-						<height>120</height>
+						<width>150</width>
+						<height>180</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -965,18 +965,18 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="image">
-						<left>110</left>
-						<top>5</top>
-						<width>80</width>
-						<height>80</height>
+						<left>165</left>
+						<top>8</top>
+						<width>120</width>
+						<height>120</height>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Thumb]</texture>
 					</control>
 					<control type="label">
-						<left>200</left>
-						<top>5</top>
-						<width>390</width>
-						<height>70</height>
+						<left>300</left>
+						<top>8</top>
+						<width>585</width>
+						<height>105</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -985,10 +985,10 @@
 						<label>$INFO[ListItem.Label2]</label>
 					</control>
 					<control type="textbox">
-						<left>5</left>
-						<top>82</top>
-						<width>590</width>
-						<height>48</height>
+						<left>8</left>
+						<top>123</top>
+						<width>885</width>
+						<height>72</height>
 						<font>font12</font>
 						<textcolor>white</textcolor>
 						<selectedcolor>selected</selectedcolor>
@@ -1076,10 +1076,10 @@
 				</content>
 			</control>
 			<control type="scrollbar" id="62">
-				<left>615</left>
-				<top>60</top>
-				<width>25</width>
-				<height>540</height>
+				<left>922</left>
+				<top>90</top>
+				<width>38</width>
+				<height>810</height>
 				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -1094,11 +1094,11 @@
 			</control>
 			<control type="label">
 				<depth>DepthFooter</depth>
-				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
 				<description>number of files/pages</description>
-				<right>40</right>
-				<top>627</top>
-				<width>570</width>
+				<right>60</right>
+				<top>940</top>
+				<width>855</width>
 				<font>font12</font>
 				<align>right</align>
 				<scroll>true</scroll>
@@ -1116,10 +1116,10 @@
 			<include>VisibleFadeEffect</include>
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>15</top>
-				<width>610</width>
-				<height>30</height>
+				<left>30</left>
+				<top>22</top>
+				<width>915</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>31910</label>
 				<align>center</align>
@@ -1129,17 +1129,17 @@
 			</control>
 			<control type="image">
 				<description>Background image</description>
-				<left>25</left>
-				<top>65</top>
-				<width>600</width>
-				<height>480</height>
+				<left>38</left>
+				<top>98</top>
+				<width>900</width>
+				<height>720</height>
 				<texture border="5">button-nofocus.png</texture>
 			</control>
 			<control type="button" id="992">
-				<left>580</left>
-				<top>565</top>
-				<width>25</width>
-				<height>25</height>
+				<left>870</left>
+				<top>848</top>
+				<width>38</width>
+				<height>38</height>
 				<label></label>
 				<texturefocus>scroll-right-focus.png</texturefocus>
 				<texturenofocus>scroll-right.png</texturenofocus>
@@ -1148,10 +1148,10 @@
 				<onclick>Control.Move(53,1)</onclick>
 			</control>
 			<control type="button" id="991">
-				<left>45</left>
-				<top>565</top>
-				<width>25</width>
-				<height>25</height>
+				<left>68</left>
+				<top>848</top>
+				<width>38</width>
+				<height>38</height>
 				<label></label>
 				<texturefocus>scroll-left-focus.png</texturefocus>
 				<texturenofocus>scroll-left.png</texturenofocus>
@@ -1161,10 +1161,10 @@
 			</control>
 			<control type="label">
 				<description>heading label</description>
-				<left>75</left>
-				<top>565</top>
-				<width>500</width>
-				<height>30</height>
+				<left>112</left>
+				<top>848</top>
+				<width>750</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>$INFO[Container(53).ListItem.Label]</label>
 				<align>center</align>
@@ -1173,10 +1173,10 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="list" id="53">
-				<left>30</left>
-				<top>70</top>
-				<width>590</width>
-				<height>470</height>
+				<left>45</left>
+				<top>105</top>
+				<width>885</width>
+				<height>705</height>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<onup>9000</onup>
@@ -1186,13 +1186,13 @@
 				<orientation>horizontal</orientation>
 				<include>VisibleFadeEffect</include>
 				<visible>String.IsEqual(Window.Property(Weather.CurrentView),map) + !String.IsEmpty(Window.Property(Map.IsFetched))</visible>
-				<itemlayout height="470" width="590">
+				<itemlayout height="705" width="885">
 					<control type="image">
 						<description>area image</description>
 						<left>0</left>
 						<top>0</top>
-						<width>590</width>
-						<height>470</height>
+						<width>885</width>
+						<height>705</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
@@ -1200,28 +1200,28 @@
 						<description>layer image</description>
 						<left>0</left>
 						<top>0</top>
-						<width>590</width>
-						<height>470</height>
+						<width>885</width>
+						<height>705</height>
 						<texture>$INFO[ListItem.Property(Layer)]</texture>
 						<aspectratio>scale</aspectratio>
 						<colordiffuse>70FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<left>360</left>
-						<top>430</top>
-						<width>224</width>
-						<height>35</height>
+						<left>540</left>
+						<top>645</top>
+						<width>336</width>
+						<height>52</height>
 						<texture>$INFO[ListItem.Label2]</texture>
 					</control>
 				</itemlayout>
-				<focusedlayout height="490" width="590">
+				<focusedlayout height="735" width="885">
 					<control type="image">
 						<description>layer image</description>
 						<left>0</left>
 						<top>0</top>
-						<width>590</width>
-						<height>470</height>
+						<width>885</width>
+						<height>705</height>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
@@ -1229,18 +1229,18 @@
 						<description>area image</description>
 						<left>0</left>
 						<top>0</top>
-						<width>590</width>
-						<height>470</height>
+						<width>885</width>
+						<height>705</height>
 						<texture>$INFO[ListItem.Property(Layer)]</texture>
 						<aspectratio>scale</aspectratio>
 						<colordiffuse>70FFFFFF</colordiffuse>
 					</control>
 					<control type="image">
 						<description>legend image</description>
-						<left>360</left>
-						<top>430</top>
-						<width>224</width>
-						<height>35</height>
+						<left>540</left>
+						<top>645</top>
+						<width>336</width>
+						<height>52</height>
 						<texture>$INFO[ListItem.Label2]</texture>
 					</control>
 				</focusedlayout>
@@ -1264,9 +1264,9 @@
 			</control>
 			<control type="image">
 				<left>0</left>
-				<top>550</top>
-				<width>650</width>
-				<height>4</height>
+				<top>825</top>
+				<width>975</width>
+				<height>6</height>
 				<texture>separator.png</texture>
 			</control>
 		</control>
@@ -1277,8 +1277,8 @@
 			<include>VisibleFadeEffect</include>
 			<control type="button" id="996">
 				<description>Hidden Button for focus</description>
-				<left>-600</left>
-				<top>-20</top>
+				<left>-900</left>
+				<top>-30</top>
 				<width>1</width>
 				<height>1</height>
 				<texturenofocus></texturenofocus>
@@ -1288,10 +1288,10 @@
 			</control>
 			<control type="label">
 				<description>header label</description>
-				<left>20</left>
-				<top>15</top>
-				<width>610</width>
-				<height>30</height>
+				<left>30</left>
+				<top>22</top>
+				<width>915</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<label>33050</label>
 				<align>center</align>
@@ -1300,10 +1300,10 @@
 				<shadowcolor>black</shadowcolor>
 			</control>
 			<control type="label">
-				<left>40</left>
-				<top>75</top>
-				<width>570</width>
-				<height>30</height>
+				<left>60</left>
+				<top>112</top>
+				<width>855</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<textcolor>blue</textcolor>
 				<align>center</align>
@@ -1313,10 +1313,10 @@
 			<control type="group">
 				<visible>!String.IsEqual(Window.Property(Alerts.Count),0)</visible>
 				<control type="textbox">
-					<left>40</left>
-					<top>117</top>
-					<width>570</width>
-					<height>398</height>
+					<left>60</left>
+					<top>176</top>
+					<width>855</width>
+					<height>597</height>
 					<font>font12</font>
 					<textcolor>white</textcolor>
 					<selectedcolor>selected</selectedcolor>
@@ -1326,10 +1326,10 @@
 				</control>
 			</control>
 			<control type="label">
-				<left>40</left>
-				<top>200</top>
-				<width>570</width>
-				<height>30</height>
+				<left>60</left>
+				<top>300</top>
+				<width>855</width>
+				<height>45</height>
 				<font>font13_title</font>
 				<textcolor>white</textcolor>
 				<align>center</align>

@@ -7,9 +7,9 @@
 		<include>CommonBackground</include>
 		<control type="image">
 			<left>0</left>
-			<top>100r</top>
-			<width>1280</width>
-			<height>100</height>
+			<top>150r</top>
+			<width>1920</width>
+			<height>150</height>
 			<texture>floor.png</texture>
 			<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 			<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
@@ -18,9 +18,9 @@
 			<include>Window_OpenClose_Animation</include>
 			<control type="image">
 				<left>0</left>
-				<top>100r</top>
-				<width>1280</width>
-				<height>100</height>
+				<top>150r</top>
+				<width>1920</width>
+				<height>150</height>
 				<texture>floor.png</texture>
 				<animation effect="fade" time="200" condition="Window.Previous(Home)">WindowOpen</animation>
 				<animation effect="fade" time="200" condition="Window.Next(Home)">WindowClose</animation>
@@ -30,17 +30,17 @@
 				<control type="group">
 					<include>VisibleFadeEffect</include>
 					<control type="image">
-						<left>55</left>
-						<top>60</top>
-						<width>1170</width>
-						<height>600</height>
+						<left>82</left>
+						<top>90</top>
+						<width>1755</width>
+						<height>900</height>
 						<texture border="15">ContentPanel.png</texture>
 					</control>
 					<control type="image">
-						<left>55</left>
-						<top>652</top>
-						<width>1170</width>
-						<height>64</height>
+						<left>82</left>
+						<top>978</top>
+						<width>1755</width>
+						<height>96</height>
 						<texture border="15">ContentPanelMirror.png</texture>
 					</control>
 				</control>
@@ -54,14 +54,14 @@
 			<visible>Control.IsVisible(50)</visible>
 			<include>VisibleFadeEffect</include>
 			<control type="group">
-				<left>80</left>
-				<top>60</top>
+				<left>120</left>
+				<top>90</top>
 				<control type="label">
 					<description>Channel header label</description>
-					<left>50</left>
-					<top>20</top>
-					<width>220</width>
-					<height>20</height>
+					<left>75</left>
+					<top>30</top>
+					<width>330</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -70,10 +70,10 @@
 				</control>
 				<control type="label">
 					<description>Title header label</description>
-					<left>240</left>
-					<top>20</top>
-					<width>200</width>
-					<height>20</height>
+					<left>360</left>
+					<top>30</top>
+					<width>300</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -82,10 +82,10 @@
 				</control>
 				<control type="label">
 					<description>Schedule Time header label</description>
-					<left>480</left>
-					<top>20</top>
-					<width>200</width>
-					<height>20</height>
+					<left>720</left>
+					<top>30</top>
+					<width>300</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -94,10 +94,10 @@
 				</control>
 				<control type="label">
 					<description>Type header label</description>
-					<left>770</left>
-					<top>20</top>
-					<width>150</width>
-					<height>20</height>
+					<left>1155</left>
+					<top>30</top>
+					<width>225</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -106,10 +106,10 @@
 				</control>
 				<control type="label">
 					<description>Status header label</description>
-					<left>980</left>
-					<top>20</top>
-					<width>150</width>
-					<height>20</height>
+					<left>1470</left>
+					<top>30</top>
+					<width>225</width>
+					<height>30</height>
 					<font>font13_title</font>
 					<textcolor>white</textcolor>
 					<shadowcolor>black</shadowcolor>
@@ -119,17 +119,17 @@
 				<control type="image">
 					<description>separator image</description>
 					<left>0</left>
-					<top>50</top>
-					<width>1100</width>
+					<top>75</top>
+					<width>1650</width>
 					<height>1</height>
 					<colordiffuse>88FFFFFF</colordiffuse>
 					<texture>separator2.png</texture>
 				</control>
 				<control type="list" id="50">
 					<left>0</left>
-					<top>55</top>
-					<width>1100</width>
-					<height>330</height>
+					<top>82</top>
+					<width>1650</width>
+					<height>495</height>
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<onleft condition="Window.IsActive(TVTimers) | Window.IsActive(RadioTimers)">103</onleft>
@@ -137,21 +137,21 @@
 					<onright>73</onright>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="40">
+					<itemlayout height="60">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1100</width>
-							<height>41</height>
+							<width>1650</width>
+							<height>62</height>
 							<texture border="5">MenuItemNF.png</texture>
 						</control>
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<control type="label">
-								<left>50</left>
+								<left>75</left>
 								<top>0</top>
-								<width>150</width>
-								<height>40</height>
+								<width>225</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
@@ -162,57 +162,57 @@
 							<visible>!String.IsEmpty(ListItem.Date)</visible>
 							<control type="image">
 								<left>0</left>
-								<top>8</top>
-								<width>50</width>
-								<height>26</height>
+								<top>12</top>
+								<width>75</width>
+								<height>39</height>
 								<texture border="1">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<left>50</left>
+								<left>75</left>
 								<top>0</top>
-								<width>150</width>
-								<height>40</height>
+								<width>225</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.ChannelName</info>
 							</control>
 							<control type="label">
-								<left>240</left>
+								<left>360</left>
 								<top>0</top>
-								<width>200</width>
-								<height>40</height>
+								<width>300</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
-								<left>480</left>
+								<left>720</left>
 								<top>0</top>
-								<width>250</width>
-								<height>40</height>
+								<width>375</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Date</info>
 							</control>
 							<control type="label">
-								<left>770</left>
+								<left>1155</left>
 								<top>0</top>
-								<width>180</width>
-								<height>40</height>
+								<width>270</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Timertype</info>
 							</control>
 							<control type="label">
-								<left>980</left>
+								<left>1470</left>
 								<top>0</top>
-								<width>150</width>
-								<height>40</height>
+								<width>225</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
@@ -220,19 +220,19 @@
 							</control>
 						</control>
 					</itemlayout>
-					<focusedlayout height="40">
+					<focusedlayout height="60">
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1100</width>
-							<height>41</height>
+							<width>1650</width>
+							<height>62</height>
 							<texture border="5">MenuItemFO.png</texture>
 						</control>
 						<control type="image">
 							<left>0</left>
 							<top>0</top>
-							<width>1100</width>
-							<height>41</height>
+							<width>1650</width>
+							<height>62</height>
 							<colordiffuse>33FFFFFF</colordiffuse>
 							<texture border="5">MenuItemFO.png</texture>
 							<visible>Control.HasFocus(50)</visible>
@@ -240,10 +240,10 @@
 						<control type="group">
 							<visible>String.IsEmpty(ListItem.Date)</visible>
 							<control type="label">
-								<left>50</left>
+								<left>75</left>
 								<top>0</top>
-								<width>150</width>
-								<height>40</height>
+								<width>225</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
@@ -254,57 +254,57 @@
 							<visible>!String.IsEmpty(ListItem.Date)</visible>
 							<control type="image">
 								<left>0</left>
-								<top>8</top>
-								<width>50</width>
-								<height>26</height>
+								<top>12</top>
+								<width>75</width>
+								<height>39</height>
 								<texture border="1">$INFO[ListItem.Icon]</texture>
 								<aspectratio>keep</aspectratio>
 							</control>
 							<control type="label">
-								<left>50</left>
+								<left>75</left>
 								<top>0</top>
-								<width>150</width>
-								<height>40</height>
+								<width>225</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.ChannelName</info>
 							</control>
 							<control type="label">
-								<left>240</left>
+								<left>360</left>
 								<top>0</top>
-								<width>200</width>
-								<height>40</height>
+								<width>300</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Label</info>
 							</control>
 							<control type="label">
-								<left>480</left>
+								<left>720</left>
 								<top>0</top>
-								<width>250</width>
-								<height>40</height>
+								<width>375</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Date</info>
 							</control>
 							<control type="label">
-								<left>770</left>
+								<left>1155</left>
 								<top>0</top>
-								<width>180</width>
-								<height>40</height>
+								<width>270</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
 								<info>ListItem.Timertype</info>
 							</control>
 							<control type="label">
-								<left>980</left>
+								<left>1470</left>
 								<top>0</top>
-								<width>150</width>
-								<height>40</height>
+								<width>225</width>
+								<height>60</height>
 								<font>font12</font>
 								<aligny>center</aligny>
 								<selectedcolor>selected</selectedcolor>
@@ -314,10 +314,10 @@
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="73">
-					<left>1105</left>
-					<top>50</top>
-					<width>25</width>
-					<height>330</height>
+					<left>1658</left>
+					<top>75</top>
+					<width>38</width>
+					<height>495</height>
 					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
 					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
 					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
@@ -332,8 +332,8 @@
 				<control type="image">
 					<description>separator image</description>
 					<left>0</left>
-					<top>390</top>
-					<width>1100</width>
+					<top>585</top>
+					<width>1650</width>
 					<height>1</height>
 					<colordiffuse>88FFFFFF</colordiffuse>
 					<texture>separator2.png</texture>
@@ -341,12 +341,12 @@
 				<control type="group">
 					<visible>!ListItem.HasEPG</visible>
 					<left>0</left>
-					<top>400</top>
+					<top>600</top>
 					<control type="label">
 						<left>0</left>
 						<top>0</top>
-						<width>1100</width>
-						<height>20</height>
+						<width>1650</width>
+						<height>30</height>
 						<label>$LOCALIZE[19055]</label>
 						<font>font13</font>
 						<textcolor>white</textcolor>
@@ -356,40 +356,40 @@
 				<control type="group">
 					<visible>ListItem.HasEPG</visible>
 					<left>0</left>
-					<top>400</top>
+					<top>600</top>
 					<control type="image">
-						<left>62</left>
-						<top>6</top>
-						<width>130</width>
-						<height>130</height>
+						<left>93</left>
+						<top>9</top>
+						<width>195</width>
+						<height>195</height>
 						<texture background="true">$INFO[ListItem.Icon]</texture>
 						<aspectratio align="center" aligny="center">keep</aspectratio>
 					</control>
 					<control type="label">
-						<left>280</left>
+						<left>420</left>
 						<top>0</top>
-						<width>800</width>
-						<height>20</height>
+						<width>1200</width>
+						<height>30</height>
 						<label>[B]$INFO[ListItem.EpgEventTitle]$INFO[ListItem.EpisodeName, (,)][/B]</label>
 						<font>font13</font>
 						<textcolor>white</textcolor>
 						<scroll>true</scroll>
 					</control>
 					<control type="label">
-						<left>280</left>
-						<top>25</top>
-						<width>800</width>
-						<height>20</height>
+						<left>420</left>
+						<top>38</top>
+						<width>1200</width>
+						<height>30</height>
 						<label>$INFO[ListItem.StartTime]$INFO[ListItem.EndTime, - ]$INFO[ListItem.Season, • $LOCALIZE[20373] ]$INFO[ListItem.Episode, • $LOCALIZE[20359] ]$INFO[ListItem.Genre, • ]</label>
 						<font>font12</font>
 						<textcolor>grey</textcolor>
 					</control>
 					<control type="textbox">
 						<description>Plot value</description>
-						<left>280</left>
-						<top>57</top>
-						<width>800</width>
-						<height>63</height>
+						<left>420</left>
+						<top>86</top>
+						<width>1200</width>
+						<height>94</height>
 						<font>font12</font>
 						<align>justify</align>
 						<textcolor>grey</textcolor>
@@ -400,18 +400,18 @@
 				<control type="image">
 					<description>separator image</description>
 					<left>0</left>
-					<top>540</top>
-					<width>1100</width>
+					<top>810</top>
+					<width>1650</width>
 					<height>1</height>
 					<colordiffuse>88FFFFFF</colordiffuse>
 					<texture>separator2.png</texture>
 				</control>
 				<control type="label">
 					<description>Next timer date</description>
-					<left>55</left>
-					<top>545</top>
-					<width>1010</width>
-					<height>30</height>
+					<left>82</left>
+					<top>818</top>
+					<width>1515</width>
+					<height>45</height>
 					<font>font13</font>
 					<align>center</align>
 					<aligny>center</aligny>
@@ -423,12 +423,12 @@
 			</control>
 			<control type="label">
 				<depth>DepthFooter</depth>
-				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
 				<description>Page Count Label for Timer Rules</description>
-				<right>40</right>
-				<top>53r</top>
-				<width>500</width>
-				<height>20</height>
+				<right>60</right>
+				<top>80r</top>
+				<width>750</width>
+				<height>30</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<scroll>false</scroll>
@@ -440,12 +440,12 @@
 			</control>
 			<control type="label">
 				<depth>DepthFooter</depth>
-				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
+				<animation effect="slide" start="0,0" end="-135,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
 				<description>Page Count Label for Timers</description>
-				<right>40</right>
-				<top>53r</top>
-				<width>500</width>
-				<height>20</height>
+				<right>60</right>
+				<top>80r</top>
+				<width>750</width>
+				<height>30</height>
 				<font>font12</font>
 				<textcolor>grey</textcolor>
 				<scroll>false</scroll>
@@ -465,8 +465,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>1280</width>
-			<height>720</height>
+			<width>1920</width>
+			<height>1080</height>
 			<texture>black-back.png</texture>
 			<animation effect="fade" time="300">Visible</animation>
 			<animation effect="fade" time="150">Hidden</animation>
