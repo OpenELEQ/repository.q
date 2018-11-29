@@ -475,14 +475,14 @@ def get_episode_parameters(show, season, episode):
         parameters['epday'] = int(parameters['firstaired'].split("-")[2].strip())
     else:
         parameters["epyear"] = 1980
-        parameters["epmonth"] = 0
-        parameters["epday"] = 0
+        parameters["epmonth"] = 1
+        parameters["epday"] = 1
     parameters['imdb'] = show.get('imdb_id', '')
     parameters['tvrage'] = 0
-    parameters['ep_imdb'] = episode_obj.get('imdb_id', '')
-    parameters['ep_tmdb'] = 0
-    parameters['ep_trakt'] = 0
-    parameters['ep_tvrage'] = 0
+    parameters['epimdb'] = episode_obj.get('imdb_id', '')
+    parameters['eptmdb'] = 0
+    parameters['eptrakt'] = 0
+    parameters['eptvrage'] = 0
     parameters['epid'] = episode_obj.get('id')
     if episode_obj.get('id') != "": parameters['plot'] = episode_obj.get('overview')
     else: parameters['plot'] = show['overview']
