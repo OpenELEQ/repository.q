@@ -475,14 +475,14 @@ def get_episode_parameters(show, season, episode):
         parameters['epday'] = int(parameters['firstaired'].split("-")[2].strip())
     else:
         parameters["epyear"] = 1980
-        parameters["epmonth"] = 1
-        parameters["epday"] = 1
+        parameters["epmonth"] = 0
+        parameters["epday"] = 0
     parameters['imdb'] = show.get('imdb_id', '')
     parameters['tvrage'] = 0
-    parameters['epimdb'] = episode_obj.get('imdb_id', '')
-    parameters['eptmdb'] = 0
-    parameters['eptrakt'] = 0
-    parameters['eptvrage'] = 0
+    parameters['ep_imdb'] = episode_obj.get('imdb_id', '')
+    parameters['ep_tmdb'] = 0
+    parameters['ep_trakt'] = 0
+    parameters['ep_tvrage'] = 0
     parameters['epid'] = episode_obj.get('id')
     if episode_obj.get('id') != "": parameters['plot'] = episode_obj.get('overview')
     else: parameters['plot'] = show['overview']
@@ -498,10 +498,10 @@ def get_episode_parameters(show, season, episode):
     parameters['directors'] = episode_obj.get('Director')
     parameters['status'] = show.get('status')
     parameters['mpaa'] = show.get('contentrating', '')
-    if show.get('Actors') != None and show.get('Actors') != "": parameters['actors'] = show.get('Actors').split("|")
+    if show.get('actors') not in ("", None): parameters['actors'] = show.get('actors').split("|")
     else: parameters['actors'] = []
-    if show.get('Genre') != None and '|' in show.get('Genre'): parameters['genres'] = show.get('Genre').replace('|',' / ')[3:-3]
-    else: parameters['genres'] = show.get('Genre')
+    if show.get('genre') not in ("", None) and '|' in show.get('genre'): parameters['genres'] = show.get('genre').replace('|',' / ')[3:-3]
+    else: parameters['genres'] = show.get('genre')
     parameters['runtime'] = show['runtime']
     parameters['duration'] = int(show['runtime']) * 60
     tvdb_base = "http://thetvdb.com/banners/"
