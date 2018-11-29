@@ -479,10 +479,10 @@ def get_episode_parameters(show, season, episode):
         parameters["epday"] = 0
     parameters['imdb'] = show.get('imdb_id', '')
     parameters['tvrage'] = 0
-    parameters['ep_imdb'] = episode_obj.get('imdb_id', '')
-    parameters['ep_tmdb'] = 0
-    parameters['ep_trakt'] = 0
-    parameters['ep_tvrage'] = 0
+    parameters['epimdb'] = episode_obj.get('imdb_id', '')
+    parameters['eptmdb'] = 0
+    parameters['eptrakt'] = 0
+    parameters['eptvrage'] = 0
     parameters['epid'] = episode_obj.get('id')
     if episode_obj.get('id') != "": parameters['plot'] = episode_obj.get('overview')
     else: parameters['plot'] = show['overview']
@@ -492,15 +492,15 @@ def get_episode_parameters(show, season, episode):
     else: parameters['rating'] = 0.0
     if show.get('rating') not in (None, ""): parameters['series_rating'] = show.get('rating')
     else: parameters['series_rating'] = 0
-    if episode_obj.get('RatingCount') != "": parameters['votes'] = episode_obj.get('RatingCount')
-    else: parameters['votes'] = show['RatingCount']
+    if episode_obj.get('ratingcount') != "": parameters['votes'] = episode_obj.get('ratingcount')
+    else: parameters['votes'] = show['ratingcount']
     parameters['writers'] = episode_obj.get('Writer')
     parameters['directors'] = episode_obj.get('Director')
     parameters['status'] = show.get('status')
     parameters['mpaa'] = show.get('contentrating', '')
-    if show.get('actors') not in ("", None): parameters['actors'] = show.get('actors').split("|")
+    if show.get('Actors') != None and show.get('actors') != "": parameters['actors'] = show.get('actors').split("|")
     else: parameters['actors'] = []
-    if show.get('genre') not in ("", None) and '|' in show.get('genre'): parameters['genres'] = show.get('genre').replace('|',' / ')[3:-3]
+    if show.get('genre') != None and '|' in show.get('genre'): parameters['genres'] = show.get('genre').replace('|',' / ')[3:-3]
     else: parameters['genres'] = show.get('genre')
     parameters['runtime'] = show['runtime']
     parameters['duration'] = int(show['runtime']) * 60
